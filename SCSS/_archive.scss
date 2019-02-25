@@ -1,0 +1,159 @@
+.blogHero{
+  background-image: url("/wp-content/uploads/2019/02/momWithChildrens.jpg");
+}
+.postWrapper{
+  margin: 25px 0;
+}
+.post{
+  background-color: $lightGrey;
+  padding: 20px;
+  border-radius: 5px;
+    h2{
+      margin-block-end: 15px;
+    }
+    p{
+      margin-top: 15px;
+    }
+}
+.screen-reader-text{
+  display: none;
+}
+.blogTitleLink{
+	text-decoration: none;
+	color: $primaryGrey;
+	transition: .3s ease all;
+	position: relative;
+    &:hover{
+    color: $primaryGrey;
+    transition: .3s ease all;
+  }
+}
+.updated{
+  display: none;
+}
+.posted-on{
+  a{
+  	text-decoration: none;
+  	color: $primaryGrey !important;
+  	transition: .3s ease all;
+  	position: relative;
+      &:hover{
+      color: $primaryGrey;
+      transition: .3s ease all;
+  			&:after{
+  				position: absolute;
+  				height: 2px;
+  				width: 100%;
+  				background: $primaryGrey;
+  				content: "";
+  				bottom: 0;
+  				left: 0;
+  				opacity: 1;
+  				transition: .3s ease all;
+  			}
+      }
+  		&:after{
+  			position: absolute;
+  			height: 2px;
+  			width: 100%;
+  			background: $primaryGrey;
+  			content: "";
+  			bottom: 25%;
+  			left: 0;
+  			opacity: 0;
+  			transition: .3s ease all;
+  		}
+  }
+}
+.author{
+  a{
+  	text-decoration: none;
+  	color: $primaryGrey !important;
+  	transition: .3s ease all;
+  	position: relative;
+      &:hover{
+      color: $primaryGrey;
+      transition: .3s ease all;
+  			&:after{
+  				position: absolute;
+  				height: 2px;
+  				width: 100%;
+  				background: $primaryGrey;
+  				content: "";
+  				bottom: 0;
+  				left: 0;
+  				opacity: 1;
+  				transition: .3s ease all;
+  			}
+      }
+  		&:after{
+  			position: absolute;
+  			height: 2px;
+  			width: 100%;
+  			background: $primaryGrey;
+  			content: "";
+  			bottom: 25%;
+  			left: 0;
+  			opacity: 0;
+  			transition: .3s ease all;
+  		}
+  }
+}
+.nav-links{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.nav-previous{
+  background: $primaryGrey;
+  padding: 10px;
+  transition: .3s ease all;
+  a{
+    color: $white;
+    text-decoration: none;
+  }
+  &:hover{
+    background: $primaryGrey;
+    transition: .3s ease all;
+  }
+}
+.nav-next{
+  background: $primaryGrey;
+  padding: 10px;
+  transition: .3s ease all;
+  a{
+    color: $white;
+    text-decoration: none;
+  }
+  &:hover{
+    background: $primaryGrey;
+    transition: .3s ease all;
+  }
+}
+.attachment-post-thumbnail{
+  width: 100%;
+  height: auto;
+}
+.entry-content{
+  h2{
+    font-size: 1.5em;
+  }
+}
+.size-full{
+  width: 100%;
+  height: auto;
+}
+.search-form{
+  .search-submit{
+    background-color: $primaryGrey;
+    border: 2px solid $primaryGrey;
+    color: $black;
+    transition: .3s ease all;
+    &:hover{
+      background-color: $transparent;
+      border: 2px solid $primaryGrey;
+      color: $primaryGrey;
+      transition: .3s ease all;
+    }
+  }
+}
