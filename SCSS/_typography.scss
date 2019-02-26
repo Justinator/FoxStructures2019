@@ -110,9 +110,27 @@ h6{
 .uppercaseHeading{
 	text-transform: uppercase;
 }
-.removeHeaderMargin{
-	margin-block-end: 0;
+.noMargin{
+	margin: 0 !important;
 }
 .smallMarginHeader{
 	margin-block-end: 10px;
+}
+.underline{
+	content: "";
+	background-color: $primaryYellow;
+	height: 3px;
+	width: 4em;
+	margin-block-start: 5px;
+  margin-block-end: 20px;
+}
+.centerUnderline{
+	content: "";
+	position: relative;
+	background-color: $primaryYellow;
+	height: 3px;
+	width: 4em;
+	left: calc(50% - 4em);
+	margin-block-start: 5px;
+  margin-block-end: 20px;
 }

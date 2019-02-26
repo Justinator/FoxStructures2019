@@ -11,6 +11,18 @@
       width: 20%;
     }
 }
+.col25{
+	width: 25%;
+    @include breakpoint(smallScreen){
+      width: 100%;
+    }
+    @include breakpoint(largeMobileScreen){
+      width: 100%;
+    }
+    @include breakpoint(laptopScreen){
+      width: 25%;
+    }
+}
 .col30{
 	width: 33.3333%;
     @include breakpoint(smallScreen){
@@ -138,8 +150,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-color: $lightGrey;
-	border-radius: 3px;
+	max-width: 800px;
+  margin: 0 auto;
     @include breakpoint(smallScreen){
       padding: 20px;
     }
@@ -198,22 +210,6 @@
       height: 90vh;
 			background-position: left;
     }
-	}
-	.heroHeadingContainer{
-		display: flex;
-		@include breakpoint(smallScreen){
-			align-items: flex-end;
-			position: relative;
-			bottom: 10px;
-		}
-		@include breakpoint(largeMobileScreen){
-			align-items: flex-end;
-			position: relative;
-			bottom: 20px;
-		}
-		@include breakpoint(tabletScreen){
-			align-items: center;
-		}
 	}
 .marginedHero{
 	@include breakpoint(smallScreen){

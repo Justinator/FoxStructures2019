@@ -34,9 +34,9 @@
 
 			<h6>2201 Eastline Rd <br>
 			Kaukauna, Wisconsin 54130</h6>
-			<p>Local: 920-766-9305</p>
-			<p>Phone: 800-236-1369</p>
-			<p>Fax: 920-766-9354</p>
+			<p class="noMargin">Local: 920-766-9305</p>
+			<p class="noMargin">Phone: 800-236-1369</p>
+			<p class="noMargin">Fax: 920-766-9354</p>
 
 		</div>
 

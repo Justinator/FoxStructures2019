@@ -23,27 +23,46 @@ get_header();
 
 			<main id="main" class="site-main">
 
-				<section id="hero" class="marginedHero">
+				<section>
 
 					<div class="hero homeHero">
 
-						<div class="navWidth heroHeadingContainer">
+						<div class="fullWidth heroHeadingContainer">
 
-							<div class="homeHeading flex-container">
+							<div class="col50 heroHeadingWrapper">
 
-								<div>
+								<div class="heroHeading">
 
-									<div class="heroHeading">
+									<h1 class="noMargin">Premier Design/Build Agricultural and Commercial Construction Company</h1>
 
-										<h1 id="mainHeader"></h1>
+								</div>
 
-									</div>
+							</div>
+
+							<div class="col50">
+
+							</div>
+
+							<div id="heroSwooshWrapper" class="fullWidth">
+
+								<img src="/wp-content/uploads/2019/02/bottomSmallCurve2-1.png" class="image">
+
+							</div>
+
+							<div class="heroCTA fullWidth">
+
+								<div class="heroCTAContent pageWidth">
+
+									<h3 class="noMargin">Contact Us to Discuss Your Project</h3>
+
+									<a href="/contact/" class="heroCTAButton" role="link"><span>Contact Us</span></a>
 
 								</div>
 
 							</div>
 
 						</div>
+
 
 					</div>
 
@@ -51,275 +70,41 @@ get_header();
 
 				<section id="pageContent">
 
-					<section id ="foxStructuresIntro" class="marginContainer">
+					<section id ="foxStructuresIntro" class="paddedSection">
 
 						<div class="fullWidth flex-container-reverse centerAlignedContainer">
-
-							<div id="introImage" class="col50 removeBottomMargin">
-
-								<img src="" class="image" role="image" alt="">
-
-							</div>
 
 							<div id="introCopy" class="col50">
 
 								<div class="blockText">
 
-									<h2 id="whatWeHeader"><span class="underlinedHeading"></span></h2>
-
-									<p></p>
-
-								</div>
-
-							</div>
-
-						</div>
-
-					</section>
-
-					<section id="services" class="smallPaddedSection">
-
-						<div class="fullWidth centerText">
-
-							<h2 id="whatWeHeader"><span class="underlinedHeading"></span></h2>
-
-						</div>
-
-						<div class="fullWidth blueBlock smallPaddedSection">
-
-							<div class="pageWidth flex-container centerAlignedContainer">
-
-								<div class="col30 centerText">
-
-									<img src="" class="serviceImage" role="image" alt="">
-
-								</div>
-
-								<div class="col70">
-
-									<h3 class="whiteText">PROGRAMS</h3>
-
-									<p class="whiteText"></p>
-
-										<a href="/programs/" class="primaryButton" role="link"><span class="marginRight">View Our Programs </span>
-
-											<svg class="footerSocialIcon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-												<defs>
-
-													<symbol id="icon-chevron-right" viewBox="0 0 19 28">
-
-														<title>chevron-right</title>
-
-														<path d="M17.297 13.703l-11.594 11.594c-0.391 0.391-1.016 0.391-1.406 0l-2.594-2.594c-0.391-0.391-0.391-1.016 0-1.406l8.297-8.297-8.297-8.297c-0.391-0.391-0.391-1.016 0-1.406l2.594-2.594c0.391-0.391 1.016-0.391 1.406 0l11.594 11.594c0.391 0.391 0.391 1.016 0 1.406z"></path>
-
-													</symbol>
-
-												</defs>
-
-											</svg>
-
-											<svg class="icon icon-chevron-right"><use xlink:href="#icon-chevron-right"></use></svg>
-
-										</a>
-
-								</div>
-
-							</div>
-
-						</div>
-
-						<div class="fullWidth smallPaddedSection">
-
-							<div class="pageWidth flex-container-reverse centerAlignedContainer">
-
-								<div class="col70">
-
-									<h3 class="primaryText">RESOURCES</h3>
-
-									<p class="primaryText"></p>
-
-										<a href="/programs/" class="primaryButtonReverse" role="button"><span class="marginRight">View Our Resources </span>
-
-											<svg class="footerSocialIcon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-												<defs>
-
-													<symbol id="icon-chevron-right" viewBox="0 0 19 28">
-
-														<title>chevron-right</title>
-
-														<path d="M17.297 13.703l-11.594 11.594c-0.391 0.391-1.016 0.391-1.406 0l-2.594-2.594c-0.391-0.391-0.391-1.016 0-1.406l8.297-8.297-8.297-8.297c-0.391-0.391-0.391-1.016 0-1.406l2.594-2.594c0.391-0.391 1.016-0.391 1.406 0l11.594 11.594c0.391 0.391 0.391 1.016 0 1.406z"></path>
-
-													</symbol>
-
-												</defs>
-
-											</svg>
-
-											<svg class="blueIcon icon-chevron-right"><use xlink:href="#icon-chevron-right"></use></svg>
-
-										</a>
-
-								</div>
-
-								<div class="col30 centerText">
-
-									<img src="" class="serviceImage" role="image" alt="">
-
-								</div>
-
-							</div>
-
-						</div>
-
-						<div class="fullWidth blueBlock smallPaddedSection">
-
-							<div class="pageWidth flex-container centerAlignedContainer">
-
-								<div class="col30 centerText">
-
-									<img src="" class="serviceImage" role="image" alt="">
-
-								</div>
-
-								<div class="col70">
-
-									<h3 class="whiteText">EVENTS</h3>
-
-									<p class="whiteText"></p>
-
-										<a href="/programs/" class="primaryButton" role="button"><span class="marginRight">View Our Events </span>
-
-											<svg class="footerSocialIcon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-												<defs>
-
-													<symbol id="icon-chevron-right" viewBox="0 0 19 28">
-
-														<title>chevron-right</title>
-
-														<path d="M17.297 13.703l-11.594 11.594c-0.391 0.391-1.016 0.391-1.406 0l-2.594-2.594c-0.391-0.391-0.391-1.016 0-1.406l8.297-8.297-8.297-8.297c-0.391-0.391-0.391-1.016 0-1.406l2.594-2.594c0.391-0.391 1.016-0.391 1.406 0l11.594 11.594c0.391 0.391 0.391 1.016 0 1.406z"></path>
-
-													</symbol>
-
-												</defs>
-
-											</svg>
-
-											<svg class="icon icon-chevron-right"><use xlink:href="#icon-chevron-right"></use></svg>
-
-										</a>
-
-								</div>
-
-							</div>
-
-						</div>
-
-					</section>
-
-					<section id="stories" class="smallPaddedSection marginContainer">
-
-						<div class="fullWidth centerText">
-
-							<h2><span class="underlinedHeading"></span></h2>
-
-						</div>
-
-						<div class="fullWidth flex-container-reverse centerAlignedContainer greyBlock">
-
-							<div class="col50 removeBottomMargin">
-
-								<img src="" class="image" role="image" alt="">
-
-							</div>
-
-							<div class="col50">
-
-								<div class="blockText">
-
-									<h3 class="primaryText">STORY TITLE</h3>
-
-									<p>
-										Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
-										enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
-										in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
-										blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+									<h2 class="noMargin">Our Building Success Starts with You.</h2>
+
+									<div class="underline"></div>
+
+									<p>Fox Structures is known throughout northeast Wisconsin as a premier
+										design/build agricultural and commercial construction company. For over
+										thirty years our design savvy, construction expertise and commitment to
+										quality have been matched only by our high level of customer satisfaction.
+										That’s why we are so proud that 80% of our business comes from satisfied
+										repeat clients.
 									</p>
 
-									<a href="/programs/" class="primaryButtonReverse" role="link"><span class="marginRight">Read The Full Story </span>
-
-										<svg class="footerSocialIcon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-											<defs>
-
-												<symbol id="icon-chevron-right" viewBox="0 0 19 28">
-
-													<title>chevron-right</title>
-
-													<path d="M17.297 13.703l-11.594 11.594c-0.391 0.391-1.016 0.391-1.406 0l-2.594-2.594c-0.391-0.391-0.391-1.016 0-1.406l8.297-8.297-8.297-8.297c-0.391-0.391-0.391-1.016 0-1.406l2.594-2.594c0.391-0.391 1.016-0.391 1.406 0l11.594 11.594c0.391 0.391 0.391 1.016 0 1.406z"></path>
-
-												</symbol>
-
-											</defs>
-
-										</svg>
-
-										<svg class="blueIcon icon-chevron-right"><use xlink:href="#icon-chevron-right"></use></svg>
-
-									</a>
-
-								</div>
-
-							</div>
-
-						</div>
-
-						<div class="fullWidth flex-container centerAlignedContainer greyBlock">
-
-							<div class="col50">
-
-								<div class="blockText">
-
-									<h3 class="primaryText">STORY TITLE</h3>
-
 									<p>
-										Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
-										enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor
-										in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui
-										blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+										Browse some of the unique <a href="/services/agricultural/" class="primaryLink">agricultural</a>
+										and <a href="/services/commercial/" class="primaryLink">commercial</a> construction
+										projects we’ve built in the past. Then <a href="/services/agricultural/" class="primaryLink">contact us</a>
+										and see why we build with you in mind!
 									</p>
 
-									<a href="/programs/" class="primaryButtonReverse" role="button"><span class="marginRight">Read The Full Story </span>
-
-										<svg class="footerSocialIcon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-
-											<defs>
-
-												<symbol id="icon-chevron-right" viewBox="0 0 19 28">
-
-													<title>chevron-right</title>
-
-													<path d="M17.297 13.703l-11.594 11.594c-0.391 0.391-1.016 0.391-1.406 0l-2.594-2.594c-0.391-0.391-0.391-1.016 0-1.406l8.297-8.297-8.297-8.297c-0.391-0.391-0.391-1.016 0-1.406l2.594-2.594c0.391-0.391 1.016-0.391 1.406 0l11.594 11.594c0.391 0.391 0.391 1.016 0 1.406z"></path>
-
-												</symbol>
-
-											</defs>
-
-										</svg>
-
-										<svg class="blueIcon icon-chevron-right"><use xlink:href="#icon-chevron-right"></use></svg>
-
-									</a>
-
 								</div>
 
 							</div>
 
-							<div class="col50 removeBottomMargin">
+							<div id="introImage" class="col50">
 
-								<img src="" class="image" role="image" alt="">
+								<img src="/wp-content/uploads/2019/02/foxStructuresCustomBuild.jpg" class="image" role="image"
+								alt="A Custom built garage by Fox Structures">
 
 							</div>
 
@@ -327,7 +112,101 @@ get_header();
 
 					</section>
 
+					<section class="featuredProjects">
 
+						<div class="pageWidth centerText">
+
+							<h3 class="noMargin">Featured Building Projects</h3>
+
+							<div class="centerUnderline"></div>
+
+						</div>
+
+						<div class="fullWidth flex-container">
+
+							<div class="col25 featuredProjectWrapper">
+
+								<div class="featuredProjectOverlay"></div>
+
+								<div class="featuredProjectContent">
+
+									<img src="/wp-content/uploads/2019/02/OaksIntExtStillsMediumSquare.jpg" class="featuredProjectImage">
+
+									<h4 class="featuredProjectTitle"><span class="projectTitleSpan">The Oaks Golf Course</span></h4>
+
+								</div>
+
+							</div>
+
+							<div class="col25 featuredProjectWrapper">
+
+								<div class="featuredProjectOverlay"></div>
+
+								<div class="featuredProjectContent">
+
+									<img src="/wp-content/uploads/2019/02/virClarFarmsSquare.jpg" class="featuredProjectImage">
+
+									<h4 class="featuredProjectTitle"><span class="projectTitleSpan">Vir-Clar Farms</span></h4>
+
+								</div>
+
+							</div>
+
+							<div class="col25 featuredProjectWrapper">
+
+								<div class="featuredProjectOverlay"></div>
+
+								<div class="featuredProjectContent">
+
+									<img src="/wp-content/uploads/2019/02/waterRightSquare.jpg" class="featuredProjectImage">
+
+									<h4 class="featuredProjectTitle"><span class="projectTitleSpan">Water Right</span></h4>
+
+								</div>
+
+							</div>
+
+							<div class="col25 featuredProjectWrapper">
+
+								<div class="featuredProjectOverlay"></div>
+
+								<div class="featuredProjectContent">
+
+									<img src="/wp-content/uploads/2019/02/randomWeldingProjectSquare.jpg" class="featuredProjectImage">
+
+									<h4 class="featuredProjectTitle"><span class="projectTitleSpan">Future Welding Project</span></h4>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="pageWidth buttonWrapper">
+
+							<div class="centerButton">
+
+								<a href="/portfolio/" class="primaryButton">View all building projects</a>
+
+							</div>
+
+						</div>
+
+					</section>
+
+					<section class="servicesOverview greyBlock">
+
+						<div class="fullWidth centerText paddedSection">
+
+							<h3 class="noMargin">Agricultural and Commercial Construction Services</h3>
+
+							<div class="centerUnderline"></div>
+
+						</div>
+
+						<div class="navWidth"></div>
+
+					</section>
 
 				</section>
 

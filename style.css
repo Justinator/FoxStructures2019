@@ -325,6 +325,18 @@ template {
     .col20 {
       width: 20%; } }
 
+.col25 {
+  width: 25%; }
+  @media (max-width: 600px) {
+    .col25 {
+      width: 100%; } }
+  @media (min-width: 600px) {
+    .col25 {
+      width: 100%; } }
+  @media (min-width: 992px) {
+    .col25 {
+      width: 25%; } }
+
 .col30 {
   width: 33.3333%; }
   @media (max-width: 600px) {
@@ -452,8 +464,8 @@ template {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #f6f6f6;
-  border-radius: 3px; }
+  max-width: 800px;
+  margin: 0 auto; }
   @media (max-width: 600px) {
     .blockText {
       padding: 20px; } }
@@ -512,22 +524,6 @@ template {
     .hero {
       height: 90vh;
       background-position: left; } }
-
-.heroHeadingContainer {
-  display: flex; }
-  @media (max-width: 600px) {
-    .heroHeadingContainer {
-      align-items: flex-end;
-      position: relative;
-      bottom: 10px; } }
-  @media (min-width: 600px) {
-    .heroHeadingContainer {
-      align-items: flex-end;
-      position: relative;
-      bottom: 20px; } }
-  @media (min-width: 768px) {
-    .heroHeadingContainer {
-      align-items: center; } }
 
 @media (max-width: 600px) {
   .marginedHero {
@@ -1268,7 +1264,7 @@ nav {
   padding: 0 0 50px 0;
   margin: 0 auto;
   background-color: #000000;
-  background-image: url("/wp-content/uploads/2019/02/bottomSmallCurve2.svg");
+  background-image: url("/wp-content/uploads/2019/02/bottomSmallCurve-1.svg");
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -1282,7 +1278,7 @@ nav {
 
 .footerContact {
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 70px;
   display: flex;
   flex-direction: column; }
   .footerContact a {
@@ -1572,11 +1568,29 @@ h6 {
 .uppercaseHeading {
   text-transform: uppercase; }
 
-.removeHeaderMargin {
-  margin-block-end: 0; }
+.noMargin {
+  margin: 0 !important; }
 
 .smallMarginHeader {
   margin-block-end: 10px; }
+
+.underline {
+  content: "";
+  background-color: #efae1e;
+  height: 3px;
+  width: 4em;
+  margin-block-start: 5px;
+  margin-block-end: 20px; }
+
+.centerUnderline {
+  content: "";
+  position: relative;
+  background-color: #efae1e;
+  height: 3px;
+  width: 4em;
+  left: calc(50% - 4em);
+  margin-block-start: 5px;
+  margin-block-end: 20px; }
 
 /* 7.0 Button Stylings ---------------------------------------*/
 .plainLink {
@@ -1611,10 +1625,21 @@ h6 {
 .primaryLink {
   color: #404041 !important;
   transition: .3s ease all;
-  text-decoration: none; }
-  .primaryLink:hover {
-    transition: .3s ease all;
-    color: #404041 !important; }
+  text-decoration: none;
+  position: relative; }
+  .primaryLink:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-color: #efae1e;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transition: .3s ease all; }
+  .primaryLink:hover:after {
+    height: 100%;
+    transition: .3s ease all; }
 
 .plainBlackLink a {
   color: #000000;
@@ -1626,63 +1651,34 @@ h6 {
 .primaryButton {
   position: relative;
   z-index: 1;
-  background: rgba(0, 0, 0, 0);
   text-decoration: none;
   width: fit-content;
-  color: #FFFFFF !important;
-  margin-bottom: 10px;
-  transition: .1s ease all;
-  border-width: 0;
-  border-bottom: 2px solid #FFFFFF;
-  border-top: 2px solid rgba(0, 0, 0, 0);
+  color: #404041;
+  transition: .2s ease all;
   padding: 10px 20px 10px 20px;
   cursor: pointer; }
-  .primaryButton:after {
-    position: absolute;
-    z-index: 2;
-    right: 0;
-    bottom: 0;
-    content: "";
-    width: 2px;
-    opacity: 0;
-    background-color: #FFFFFF;
-    height: 0%;
-    transition: .2s ease all; }
   .primaryButton:before {
     position: absolute;
-    z-index: 2;
-    left: 0;
-    bottom: 0;
     content: "";
-    width: 2px;
-    opacity: 0;
-    background-color: #FFFFFF;
-    height: 0%;
-    transition: .2s ease all; }
-  .primaryButton:hover {
-    border-top: 2px solid #FFFFFF;
-    transition: .1s .18s ease all; }
-    .primaryButton:hover:after {
-      position: absolute;
-      z-index: 2;
-      right: 0;
-      top: 0;
-      content: "";
-      width: 2px;
-      opacity: 1;
-      background-color: #FFFFFF;
-      height: 100%;
-      transition: .2s .15s ease all; }
-    .primaryButton:hover:before {
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      content: "";
-      width: 2px;
-      opacity: 1;
-      background-color: #FFFFFF;
-      height: 100%;
-      transition: .2s ease all; }
+    background: #efae1e;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 2px;
+    transition: 0.2s ease-out; }
+  .primaryButton:after {
+    position: absolute;
+    content: "";
+    background: #efae1e;
+    bottom: 0;
+    right: 0;
+    width: 10%;
+    height: 2px;
+    transition: 0.2s ease-out; }
+  .primaryButton:hover:before {
+    width: 100%; }
+  .primaryButton:hover:after {
+    width: 100%; }
 
 .primaryButtonReverse {
   position: relative;
@@ -1798,19 +1794,22 @@ h6 {
     transition: .3s ease all;
     color: #404041 !important; }
 
+.buttonWrapper {
+  padding: 50px 0; }
+
 /* 8.0 General Body Styles -------------------------------------------*/
 body {
   background: #FFFFFF;
   margin: 0; }
 
 ::selection {
-  background: rgba(0, 87, 151, 0.5); }
+  background: rgba(239, 174, 30, 0.5); }
 
 ::-moz-selection {
-  background: rgba(0, 87, 151, 0.5); }
+  background: rgba(239, 174, 30, 0.5); }
 
 ::-ms-selection {
-  background: rgba(0, 87, 151, 0.5); }
+  background: rgba(239, 174, 30, 0.5); }
 
 .removeBottomMargin {
   margin-bottom: -7px; }
@@ -1916,10 +1915,30 @@ body {
   justify-content: center; }
 
 .homeHero {
-  background-image: url("/wp-content/uploads/2019/02/interesting-story-gm927656288-254467050Cropped.png"); }
+  background-image: url("/wp-content/uploads/2019/02/centerFeedAlleyLookingSouth2NoCrop.jpg"); }
 
-#heroHeading {
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+.heroHeadingContainer {
+  display: flex;
+  position: relative;
+  height: 100%; }
+  @media (max-width: 600px) {
+    .heroHeadingContainer {
+      align-items: flex-end;
+      position: relative;
+      bottom: 10px; } }
+  @media (min-width: 600px) {
+    .heroHeadingContainer {
+      align-items: flex-end;
+      position: relative; } }
+  @media (min-width: 768px) {
+    .heroHeadingContainer {
+      align-items: center; } }
+
+.heroHeadingWrapper {
+  height: 100%;
+  background-color: rgba(165, 167, 170, 0.8);
+  display: flex;
+  align-items: center; }
 
 .homeHeading {
   align-items: center;
@@ -1939,6 +1958,60 @@ body {
   @media (min-width: 1600px) {
     .homeHeading {
       width: 40%; } }
+
+#heroSwooshWrapper {
+  position: absolute;
+  bottom: 0; }
+
+.heroCTA {
+  position: absolute;
+  bottom: 0;
+  color: #000000;
+  background-color: #efae1e; }
+
+.heroCTAContent {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.heroCTAButton {
+  position: relative;
+  background: #404041;
+  text-decoration: none;
+  color: #FFFFFF !important;
+  transition: .1s ease all;
+  padding: 25px 20px;
+  cursor: pointer;
+  margin-left: 50px;
+  transition: .2s ease all; }
+  .heroCTAButton span:before {
+    position: absolute;
+    content: "";
+    background: #efae1e;
+    top: 20px;
+    left: 15px;
+    width: 80%;
+    transform: scaleX(0);
+    height: 2px;
+    transition: transform 0.2s ease-out;
+    transform-origin: top right; }
+  .heroCTAButton span:after {
+    position: absolute;
+    content: "";
+    background: #efae1e;
+    bottom: 20px;
+    right: 15px;
+    width: 80%;
+    transform: scaleX(0);
+    height: 2px;
+    transition: transform 0.2s ease-out;
+    transform-origin: bottom left; }
+  .heroCTAButton:hover span:before {
+    transform-origin: top left;
+    transform: scaleX(1); }
+  .heroCTAButton:hover span:after {
+    transform-origin: bottom right;
+    transform: scaleX(1); }
 
 #mainHeader {
   margin-bottom: 0; }
@@ -1960,15 +2033,15 @@ body {
 
 .heroHeading {
   padding: 25px;
-  background-color: #f6f6f6;
   color: #000000;
-  border-radius: 3px; }
+  border-radius: 3px;
+  text-align: center; }
   @media (max-width: 600px) {
     .heroHeading {
       padding: 20px; } }
   @media (min-width: 600px) {
     .heroHeading {
-      padding: 25px; } }
+      padding: 50px; } }
 
 @media (max-width: 600px) {
   .marginContainer {
@@ -1977,47 +2050,58 @@ body {
   .marginContainer {
     margin: 20px; } }
 
-@media (min-width: 1600px) {
-  #pageContent {
-    margin-top: 100px; } }
-@media (min-width: 1800px) {
-  #pageContent {
-    margin-top: 20px; } }
-
-@media (min-width: 992px) {
-  #foxStructuresIntro {
-    margin-bottom: -50px; } }
-@media (min-width: 1250px) {
-  #foxStructuresIntro {
-    margin-bottom: 0; } }
-@media (min-width: 1600px) {
-  #foxStructuresIntro {
-    background-color: #f6f6f6; } }
-
-#introImage {
+.projectTitleSpan {
   position: relative; }
-  @media (min-width: 992px) {
-    #introImage {
-      top: -150px; } }
-  @media (min-width: 1250px) {
-    #introImage {
-      top: 0; } }
 
-#introCopy {
-  position: relative;
-  z-index: 5; }
-  @media (min-width: 992px) {
-    #introCopy {
-      top: -120px; } }
-  @media (min-width: 1600px) {
-    #introCopy {
-      top: -170px; } }
-  @media (min-width: 1800px) {
-    #introCopy {
-      top: 0; } }
+.featuredProjectWrapper {
+  position: relative; }
+  .featuredProjectWrapper span:before {
+    position: absolute;
+    content: "";
+    background: #efae1e;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 2px;
+    transition: 0.2s ease-out; }
+  .featuredProjectWrapper span:after {
+    position: absolute;
+    content: "";
+    background: #efae1e;
+    bottom: 0;
+    right: 0;
+    width: 10%;
+    height: 2px;
+    transition: 0.2s ease-out; }
+  .featuredProjectWrapper:hover span:before {
+    width: 100%; }
+  .featuredProjectWrapper:hover span:after {
+    width: 100%; }
+  .featuredProjectWrapper:hover .featuredProjectOverlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: .2s ease all; }
 
-#whatWeHeader {
-  margin-block-end: 40px; }
+.featuredProjectOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: "";
+  transition: .2s ease all;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.featuredProjectImage {
+  width: 100%;
+  height: auto;
+  margin-bottom: -10px; }
+
+.featuredProjectTitle {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  color: #FFFFFF;
+  text-align: center; }
 
 .serviceImage {
   height: auto; }
