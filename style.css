@@ -349,6 +349,18 @@ template {
     .col30 {
       width: 33.3333%; } }
 
+.col30SplitTablet {
+  width: 33.3333%; }
+  @media (max-width: 600px) {
+    .col30SplitTablet {
+      width: 100%; } }
+  @media (min-width: 600px) {
+    .col30SplitTablet {
+      width: 50%; } }
+  @media (min-width: 1250px) {
+    .col30SplitTablet {
+      width: 33.3333%; } }
+
 .col40 {
   width: 40%; }
   @media (max-width: 600px) {
@@ -510,11 +522,11 @@ template {
   background-repeat: no-repeat; }
   @media (max-width: 600px) {
     .hero {
-      height: 90vh;
+      height: 60vh;
       background-position: center; } }
   @media (min-width: 600px) {
     .hero {
-      height: 90vh;
+      height: 60vh;
       background-position: center; } }
   @media (min-width: 768px) {
     .hero {
@@ -608,6 +620,11 @@ template {
   @media (min-width: 992px) {
     .flex-container-reverse {
       flex-direction: row; } }
+
+.wrappedFlexContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
 
 .centerAlignedContainer {
   display: flex;
@@ -761,6 +778,9 @@ template {
   .defaultPadding {
     padding: 150px 0; } }
 
+.removeBottomPadding {
+  padding-bottom: 0; }
+
 /*4.0 Header Styling -------------------------------------------*/
 .site-header {
   position: fixed;
@@ -800,7 +820,7 @@ template {
   #primary-menu {
     display: flex; } }
 #primary-menu li {
-  padding: 0 25px;
+  padding: 0 15px;
   list-style-type: none; }
   #primary-menu li a {
     text-decoration: none;
@@ -819,7 +839,7 @@ template {
   .menu-item a:before {
     position: absolute;
     content: "";
-    background: #efae1e;
+    background: #f4a81d;
     top: 0;
     left: 0;
     width: 100%;
@@ -830,7 +850,7 @@ template {
   .menu-item a:after {
     position: absolute;
     content: "";
-    background: #efae1e;
+    background: #f4a81d;
     bottom: 0;
     right: 0;
     width: 100%;
@@ -883,8 +903,13 @@ template {
 
 .siteLogo {
   margin-top: 8px;
-  height: auto;
-  width: 150px; }
+  height: auto; }
+  @media (max-width: 600px) {
+    .siteLogo {
+      width: 120px; } }
+  @media (min-width: 600px) {
+    .siteLogo {
+      width: 150px; } }
 
 nav {
   display: flex;
@@ -1041,7 +1066,7 @@ nav {
   bottom: 0;
   left: 0;
   height: 60px;
-  background-color: #efae1e; }
+  background-color: #f4a81d; }
 
 #closeMenuTitle {
   margin: 0 auto;
@@ -1070,6 +1095,13 @@ nav {
     .linkList2 a:hover {
       color: #404041 !important;
       transition: .3s ease all; }
+
+@media (max-width: 600px) {
+  #emailLink {
+    display: none; } }
+@media (min-width: 600px) {
+  #emailLink {
+    display: flex; } }
 
 .linkList3 {
   display: flex;
@@ -1213,7 +1245,7 @@ nav {
   #footer-menu {
     display: flex; } }
 #footer-menu li {
-  padding: 0 25px;
+  padding: 0 15px;
   list-style-type: none; }
   #footer-menu li a {
     text-decoration: none;
@@ -1264,7 +1296,7 @@ nav {
   padding: 0 0 50px 0;
   margin: 0 auto;
   background-color: #000000;
-  background-image: url("/wp-content/uploads/2019/02/bottomSmallCurve-1.svg");
+  background-image: url("/wp-content/uploads/2019/02/bottomSmallCurve.png");
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -1364,9 +1396,9 @@ nav {
       font-size: 16px; } }
   #copyright a {
     text-decoration: none;
-    color: #FFFFFF; }
+    color: #f4a81d; }
     #copyright a:hover {
-      color: #404041; }
+      color: #FFFFFF; }
 
 #footerIcon {
   font-size: 12px; }
@@ -1486,15 +1518,45 @@ p {
 h1 {
   font-size: 2.2em;
   font-weight: 700; }
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.2em; } }
+  @media (min-width: 600px) {
+    h1 {
+      font-size: 2em; } }
 
 h2 {
   font-size: 2em; }
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 1.8em; } }
+  @media (min-width: 600px) {
+    h2 {
+      font-size: 1.8em; } }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 2em; } }
 
 h3 {
   font-size: 1.8em; }
+  @media (max-width: 600px) {
+    h3 {
+      font-size: 1.4em; } }
+  @media (min-width: 600px) {
+    h3 {
+      font-size: 1.8em; } }
 
 h4 {
   font-size: 1.6em; }
+  @media (max-width: 600px) {
+    h4 {
+      font-size: 1.4em; } }
+  @media (min-width: 600px) {
+    h4 {
+      font-size: 1.4em; } }
+  @media (min-width: 768px) {
+    h4 {
+      font-size: 1.6em; } }
 
 h5 {
   font-size: 1.4em; }
@@ -1576,7 +1638,7 @@ h6 {
 
 .underline {
   content: "";
-  background-color: #efae1e;
+  background-color: #f4a81d;
   height: 3px;
   width: 4em;
   margin-block-start: 5px;
@@ -1585,12 +1647,13 @@ h6 {
 .centerUnderline {
   content: "";
   position: relative;
-  background-color: #efae1e;
   height: 3px;
   width: 4em;
-  left: calc(50% - 4em);
+  margin: 0 auto;
   margin-block-start: 5px;
-  margin-block-end: 20px; }
+  margin-block-end: 20px;
+  border-bottom: 3px solid #f4a81d;
+  transition: .2s ease all; }
 
 /* 7.0 Button Stylings ---------------------------------------*/
 .plainLink {
@@ -1631,7 +1694,7 @@ h6 {
     content: "";
     position: absolute;
     z-index: -1;
-    background-color: #efae1e;
+    background-color: #f4a81d;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -1660,7 +1723,7 @@ h6 {
   .primaryButton:before {
     position: absolute;
     content: "";
-    background: #efae1e;
+    background: #f4a81d;
     top: 0;
     left: 0;
     width: 10%;
@@ -1669,7 +1732,7 @@ h6 {
   .primaryButton:after {
     position: absolute;
     content: "";
-    background: #efae1e;
+    background: #f4a81d;
     bottom: 0;
     right: 0;
     width: 10%;
@@ -1924,8 +1987,7 @@ body {
   @media (max-width: 600px) {
     .heroHeadingContainer {
       align-items: flex-end;
-      position: relative;
-      bottom: 10px; } }
+      position: relative; } }
   @media (min-width: 600px) {
     .heroHeadingContainer {
       align-items: flex-end;
@@ -1935,10 +1997,23 @@ body {
       align-items: center; } }
 
 .heroHeadingWrapper {
+  width: 50%;
   height: 100%;
   background-color: rgba(165, 167, 170, 0.8);
   display: flex;
   align-items: center; }
+  @media (max-width: 600px) {
+    .heroHeadingWrapper {
+      width: 100%; } }
+  @media (min-width: 600px) {
+    .heroHeadingWrapper {
+      width: 100%; } }
+  @media (min-width: 768px) {
+    .heroHeadingWrapper {
+      width: 60%; } }
+  @media (min-width: 1250px) {
+    .heroHeadingWrapper {
+      width: 50%; } }
 
 .homeHeading {
   align-items: center;
@@ -1960,19 +2035,38 @@ body {
       width: 40%; } }
 
 #heroSwooshWrapper {
-  position: absolute;
-  bottom: 0; }
+  position: absolute; }
+  @media (max-width: 600px) {
+    #heroSwooshWrapper {
+      bottom: -10px; } }
+  @media (min-width: 600px) {
+    #heroSwooshWrapper {
+      bottom: 0; } }
 
 .heroCTA {
   position: absolute;
-  bottom: 0;
   color: #000000;
-  background-color: #efae1e; }
+  background-color: #f4a81d; }
+  @media (max-width: 600px) {
+    .heroCTA {
+      bottom: -50px; } }
+  @media (min-width: 600px) {
+    .heroCTA {
+      bottom: 0; } }
 
 .heroCTAContent {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media (max-width: 600px) {
+    .heroCTAContent h3 {
+      font-size: 1em; } }
+  @media (min-width: 600px) {
+    .heroCTAContent h3 {
+      font-size: 1.2em; } }
+  @media (min-width: 768px) {
+    .heroCTAContent h3 {
+      font-size: 1.8em; } }
 
 .heroCTAButton {
   position: relative;
@@ -1980,17 +2074,23 @@ body {
   text-decoration: none;
   color: #FFFFFF !important;
   transition: .1s ease all;
-  padding: 25px 20px;
   cursor: pointer;
-  margin-left: 50px;
   transition: .2s ease all; }
+  @media (max-width: 600px) {
+    .heroCTAButton {
+      margin-left: 10px;
+      padding: 10px 20px; } }
+  @media (min-width: 600px) {
+    .heroCTAButton {
+      margin-left: 50px;
+      padding: 25px 20px; } }
   .heroCTAButton span:before {
     position: absolute;
     content: "";
-    background: #efae1e;
+    background: #f4a81d;
     top: 20px;
-    left: 15px;
-    width: 80%;
+    left: 18px;
+    width: 70%;
     transform: scaleX(0);
     height: 2px;
     transition: transform 0.2s ease-out;
@@ -1998,10 +2098,10 @@ body {
   .heroCTAButton span:after {
     position: absolute;
     content: "";
-    background: #efae1e;
+    background: #f4a81d;
     bottom: 20px;
-    right: 15px;
-    width: 80%;
+    right: 18px;
+    width: 70%;
     transform: scaleX(0);
     height: 2px;
     transition: transform 0.2s ease-out;
@@ -2012,6 +2112,13 @@ body {
   .heroCTAButton:hover span:after {
     transform-origin: bottom right;
     transform: scaleX(1); }
+
+@media (max-width: 600px) {
+  #pageContent {
+    margin-top: 40px; } }
+@media (min-width: 600px) {
+  #pageContent {
+    margin-top: 0; } }
 
 #mainHeader {
   margin-bottom: 0; }
@@ -2055,10 +2162,19 @@ body {
 
 .featuredProjectWrapper {
   position: relative; }
+  @media (max-width: 600px) {
+    .featuredProjectWrapper {
+      width: 100%; } }
+  @media (min-width: 600px) {
+    .featuredProjectWrapper {
+      width: 50%; } }
+  @media (min-width: 1250px) {
+    .featuredProjectWrapper {
+      width: 25%; } }
   .featuredProjectWrapper span:before {
     position: absolute;
     content: "";
-    background: #efae1e;
+    background: #f4a81d;
     top: 0;
     left: 0;
     width: 10%;
@@ -2067,7 +2183,7 @@ body {
   .featuredProjectWrapper span:after {
     position: absolute;
     content: "";
-    background: #efae1e;
+    background: #f4a81d;
     bottom: 0;
     right: 0;
     width: 10%;
@@ -2102,6 +2218,57 @@ body {
   bottom: 0;
   color: #FFFFFF;
   text-align: center; }
+
+@media (max-width: 600px) {
+  .categoryWrapper {
+    margin: 0; } }
+@media (min-width: 600px) {
+  .categoryWrapper {
+    margin: 10px; } }
+@media (min-width: 768px) {
+  .categoryWrapper {
+    margin: 25px; } }
+
+.categoryDescWrapper {
+  padding: 20px;
+  background: #FFFFFF;
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+  top: -50px; }
+
+.categoryImageWrapper {
+  position: relative; }
+
+.categoryImageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 10px);
+  width: 100%;
+  content: "";
+  transition: .2s ease all;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; }
+  .categoryImageOverlay h4 {
+    color: #FFFFFF;
+    padding: 10px;
+    border: 1px solid #f4a81d; }
+
+.categoryWrapper a {
+  text-decoration: none;
+  color: #404041;
+  transition: .2s ease all; }
+  .categoryWrapper a:hover .categoryImageOverlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: .2s ease all;
+    opacity: 1; }
+  .categoryWrapper a:hover .centerUnderline {
+    width: 10em;
+    transition: .2s ease all; }
 
 .serviceImage {
   height: auto; }
@@ -2230,6 +2397,52 @@ body {
 .caldera-grid label {
   font-size: 14px;
   color: #FFFFFF !important; }
+
+@media (max-width: 600px) {
+  .CTAcontent {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px; } }
+@media (min-width: 600px) {
+  .CTAcontent {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px; } }
+@media (min-width: 992px) {
+  .CTAcontent {
+    width: 60%; } }
+.CTAcontent a {
+  color: #FFFFFF; }
+
+.siteCTAWrap {
+  position: relative;
+  background-image: url("/wp-content/uploads/2018/12/welderWorkingInShopMedium.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding: 50px 0 50px 0; }
+  @media (max-width: 600px) {
+    .siteCTAWrap {
+      height: 450px; } }
+  @media (min-width: 600px) {
+    .siteCTAWrap {
+      height: 400px; } }
+  .siteCTAWrap a {
+    text-decoration: none; }
+
+.CTAWrapOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center; }
 
 /* 12.0 Service Page stylings -------------------------------------------*/
 @media (max-width: 600px) {

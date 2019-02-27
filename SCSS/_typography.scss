@@ -26,15 +26,45 @@ p{
 h1{
 	font-size: 2.2em;
 	font-weight: 700;
+	@include breakpoint(smallScreen){
+		font-size: 1.2em;
+	}
+	@include breakpoint(largeMobileScreen){
+		font-size: 2em;
+	}
 }
 h2{
 	font-size: 2em;
+	@include breakpoint(smallScreen){
+		font-size: 1.8em;
+	}
+	@include breakpoint(largeMobileScreen){
+		font-size: 1.8em;
+	}
+	@include breakpoint(tabletScreen){
+		font-size: 2em;
+	}
 }
 h3{
 	font-size: 1.8em;
+	@include breakpoint(smallScreen){
+		font-size: 1.4em;
+	}
+	@include breakpoint(largeMobileScreen){
+		font-size: 1.8em;
+	}
 }
 h4{
 	font-size: 1.6em;
+	@include breakpoint(smallScreen){
+		font-size: 1.4em;
+	}
+	@include breakpoint(largeMobileScreen){
+		font-size: 1.4em;
+	}
+	@include breakpoint(tabletScreen){
+		font-size: 1.6em;
+	}
 }
 h5{
 	font-size: 1.4em;
@@ -127,10 +157,11 @@ h6{
 .centerUnderline{
 	content: "";
 	position: relative;
-	background-color: $primaryYellow;
 	height: 3px;
 	width: 4em;
-	left: calc(50% - 4em);
+	margin: 0 auto;
 	margin-block-start: 5px;
   margin-block-end: 20px;
+	border-bottom: 3px solid $primaryYellow;
+	transition: .2s ease all;
 }

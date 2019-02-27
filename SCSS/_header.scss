@@ -38,7 +38,7 @@
 		display: flex;
 	}
 	li{
-		padding: 0 25px;
+		padding: 0 15px;
 		list-style-type: none;
 		a{
 			text-decoration: none;
@@ -133,7 +133,12 @@
 .siteLogo{
 	margin-top: 8px;
 	height: auto;
-	width: 150px;
+	@include breakpoint(smallScreen){
+		width: 120px;
+	}
+	@include breakpoint(largeMobileScreen){
+		width: 150px;
+	}
 }
 nav{
 	display: flex;
@@ -341,6 +346,14 @@ nav{
 				transition: .3s ease all;
 			}
 		}
+}
+#emailLink{
+	@include breakpoint(smallScreen){
+		display:none;
+	}
+	@include breakpoint(largeMobileScreen){
+		display:flex;
+	}
 }
 .linkList3{
 	display: flex;

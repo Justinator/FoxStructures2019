@@ -24,7 +24,7 @@
 		display: flex;
 	}
 	li{
-		padding: 0 25px;
+		padding: 0 15px;
 		list-style-type: none;
 		a{
 			text-decoration: none;
@@ -82,7 +82,7 @@
 	padding: 0 0 50px 0;
 	margin: 0 auto;
 	background-color: $black;
-	background-image: url("/wp-content/uploads/2019/02/bottomSmallCurve-1.svg");
+	background-image: url("/wp-content/uploads/2019/02/bottomSmallCurve.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -191,9 +191,9 @@
     }
       a{
         text-decoration: none;
-      	color: $white;
+      	color: $primaryYellow;
 				&:hover{
-					color: $primaryGrey;
+					color: $white;
 				}
       }
 }

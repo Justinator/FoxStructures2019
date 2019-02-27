@@ -17,7 +17,6 @@
 	@include breakpoint(smallScreen){
 		align-items: flex-end;
 		position: relative;
-		bottom: 10px;
 	}
 	@include breakpoint(largeMobileScreen){
 		align-items: flex-end;
@@ -28,10 +27,23 @@
 	}
 }
 .heroHeadingWrapper{
+	width: 50%;
 	height: 100%;
 	background-color: rgba(165,167,170, .8);
 	display: flex;
 	align-items: center;
+	@include breakpoint(smallScreen){
+		width: 100%;
+	}
+	@include breakpoint(largeMobileScreen){
+		width: 100%;
+	}
+	@include breakpoint(tabletScreen){
+		width: 60%;
+	}
+	@include breakpoint(largeScreen){
+		width: 50%;
+	}
 }
 .homeHeading{
   align-items: center;
@@ -54,18 +66,39 @@
 }
 #heroSwooshWrapper{
 	position: absolute;
-	bottom: 0;
+	@include breakpoint(smallScreen){
+		bottom: -10px;
+	}
+	@include breakpoint(largeMobileScreen){
+		bottom: 0;
+	}
 }
 .heroCTA{
 	position: absolute;
-  bottom: 0;
   color: #000000;
   background-color: $primaryYellow;
+	@include breakpoint(smallScreen){
+		bottom: -50px;
+	}
+	@include breakpoint(largeMobileScreen){
+		bottom: 0;
+	}
 }
 .heroCTAContent{
 	display: flex;
   align-items: center;
   justify-content: center;
+	h3{
+		@include breakpoint(smallScreen){
+			font-size: 1em;
+		}
+		@include breakpoint(largeMobileScreen){
+			font-size: 1.2em;
+		}
+		@include breakpoint(tabletScreen){
+			font-size: 1.8em;
+		}
+	}
 }
 .heroCTAButton{
 		position: relative;
@@ -73,18 +106,24 @@
     text-decoration: none;
     color: #FFFFFF !important;
     transition: .1s ease all;
-    padding: 25px 20px;
     cursor: pointer;
-    margin-left: 50px;
 		transition: .2s ease all;
+		@include breakpoint(smallScreen){
+			margin-left: 10px;
+			padding: 10px 20px;
+		}
+		@include breakpoint(largeMobileScreen){
+			margin-left: 50px;
+			padding: 25px 20px;
+		}
 		span{
 			&:before{
 				position: absolute;
 				content: "";
 				background: $primaryYellow;
 				top: 20px;
-				left: 15px;
-				width: 80%;
+				left: 18px;
+				width: 70%;
 	  		transform: scaleX(0);
 				height: 2px;
 				transition: transform 0.2s ease-out;
@@ -95,8 +134,8 @@
 				content: "";
 				background: $primaryYellow;
 				bottom: 20px;
-				right: 15px;
-				width: 80%;
+				right: 18px;
+				width: 70%;
 	  		transform: scaleX(0);
 				height: 2px;
 				transition: transform 0.2s ease-out;
@@ -115,6 +154,14 @@
 				}
 			}
 		}
+}
+#pageContent{
+	@include breakpoint(smallScreen){
+		margin-top: 40px;
+	}
+	@include breakpoint(largeMobileScreen){
+		margin-top: 0;
+	}
 }
 #mainHeader{
 	margin-bottom: 0;
@@ -159,6 +206,15 @@
 }
 .featuredProjectWrapper{
 	position: relative;
+	@include breakpoint(smallScreen){
+		width: 100%;
+	}
+	@include breakpoint(largeMobileScreen){
+		width: 50%;
+	}
+	@include breakpoint(largeScreen){
+		width: 25%;
+	}
 	span{
 		&:before{
 			position: absolute;
@@ -217,6 +273,68 @@
   bottom: 0;
   color: $white;
   text-align: center;
+	h4{
+
+	}
+}
+.categoryWrapper{
+	@include breakpoint(smallScreen){
+		margin: 0;
+	}
+	@include breakpoint(largeMobileScreen){
+		margin: 10px;
+	}
+	@include breakpoint(tabletScreen){
+		margin: 25px;
+	}
+}
+.categoryDescWrapper{
+	padding: 20px;
+  background: $white;
+  width: 85%;
+  margin: 0 auto;
+	position: relative;
+  top: -50px;
+}
+.categoryImageWrapper{
+	position: relative;
+}
+.categoryImageOverlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: calc(100% - 10px);
+	width: 100%;
+	content: "";
+	transition: .2s ease all;
+	background-color: rgba(0,0,0,.0);
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+	h4{
+		color: $white;
+		padding: 10px;
+		border: 1px solid $primaryYellow;
+	}
+}
+.categoryWrapper{
+	a{
+		text-decoration: none;
+		color: $primaryGrey;
+		transition: .2s ease all;
+		&:hover{
+			.categoryImageOverlay{
+				background-color: rgba(0,0,0,.5);
+				transition: .2s ease all;
+				opacity: 1;
+			}
+			.centerUnderline{
+				width: 10em;
+				transition: .2s ease all;
+			}
+		}
+	}
 }
 .serviceImage{
 	height: auto;
@@ -348,4 +466,53 @@
 .caldera-grid label{
 	font-size: 14px;
 	color: $white !important;
+}
+.CTAcontent{
+    @include breakpoint(smallScreen){
+      width: 90%;
+		  margin: 0 auto;
+		  text-align: center;
+		  padding: 20px;
+    }
+    @include breakpoint(largeMobileScreen){
+      width: 90%;
+		  margin: 0 auto;
+		  text-align: center;
+		  padding: 20px;
+    }
+    @include breakpoint(laptopScreen){
+      width: 60%;
+    }
+		a{
+			color: $white;
+		}
+}
+.siteCTAWrap{
+	position: relative;
+	background-image: url("/wp-content/uploads/2018/12/welderWorkingInShopMedium.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding: 50px 0 50px 0;
+		@include breakpoint(smallScreen){
+			height: 450px;
+		}
+		@include breakpoint(largeMobileScreen){
+			height: 400px;
+		}
+    a{
+      text-decoration: none;
+    }
+}
+.CTAWrapOverlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0,.7);
+	z-index: 999;
+	content: "";
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
 }
