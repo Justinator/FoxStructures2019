@@ -94,9 +94,6 @@
 			height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			 End Google Tag Manager (noscript) -->
 
-			<!-- Script for barba.js-->
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js" type="text/javascript"></script>
-
 	</footer><!-- #colophon -->
 
 </div><!-- #page -->

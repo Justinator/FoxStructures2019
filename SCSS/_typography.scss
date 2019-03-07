@@ -26,6 +26,9 @@ p{
 h1{
 	font-size: 2.2em;
 	font-weight: 700;
+	@include breakpoint(tinyScreen){
+		font-size: .9em;
+	}
 	@include breakpoint(smallScreen){
 		font-size: 1.2em;
 	}

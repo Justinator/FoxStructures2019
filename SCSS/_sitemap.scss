@@ -15,34 +15,27 @@
 .page_item{
   a{
     text-decoration: none;
-  	color: $primaryGrey !important;
   	transition: .3s ease all;
   	position: relative;
-      &:hover{
-      color: $primaryGrey;
-      transition: .3s ease all;
-  			&:after{
-  				position: absolute;
-  				height: 2px;
-  				width: 100%;
-  				background: $primaryGrey;
-  				content: "";
-  				bottom: 0;
-  				left: 0;
-  				opacity: 1;
-  				transition: .3s ease all;
+  			&:before{
+          position: absolute;
+    			content: "";
+    			background: $primaryYellow;
+    			top: 0;
+    			left: 0;
+    			width: 100%;
+      		transform: scaleX(1);
+    			height: 2px;
   			}
-      }
   		&:after{
-  			position: absolute;
-  			height: 2px;
-  			width: 100%;
-  			background: $primaryGrey;
+        position: absolute;
   			content: "";
-  			bottom: 25%;
-  			left: 0;
-  			opacity: 0;
-  			transition: .3s ease all;
+  			background: $primaryYellow;
+  			bottom: 0;
+  			right: 0;
+  			width: 100%;
+    		transform: scaleX(1);
+  			height: 2px;
   		}
   }
 }
