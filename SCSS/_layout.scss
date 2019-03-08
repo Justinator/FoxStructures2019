@@ -316,6 +316,12 @@
 .centerAlignedContainer{
 	display: flex;
 	align-items: center;
+	@include breakpoint(laptopScreen){
+		align-items: flex-start;
+	}
+	@include breakpoint(largeScreen){
+		align-items: center;
+	}
 }
 .centeredContainer{
 	display: flex;
@@ -394,7 +400,7 @@
 	@include breakpoint(largeMobileScreen){
 		padding: 50px 0 50px 0;
 	}
-	@include breakpoint(laptopScreen){
+	@include breakpoint(largeScreen){
 		padding: 100px 0 100px 0;
 	}
 }

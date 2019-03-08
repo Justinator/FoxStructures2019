@@ -1,11 +1,5 @@
 <?php
 /**
- * Template Name: Contact
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
@@ -58,7 +52,7 @@ get_header();
 
 								<div id="formWrapInner">
 
-									<h4 class="redText">Contact Family & Childcare Resources of N.E.W.</h4>
+									<h4 class="redText">Contact</h4>
 
 									<p>
 									Have some questions that you still need help with? We're here to help.
@@ -78,7 +72,6 @@ get_header();
 
 								<div class="smallMapWrapper">
 
-									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d364875.7839881406!2d-88.52319203995803!3d44.40049514337188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8802fab7ec509b89%3A0x33d2e3312b97fd9a!2sFamily+%26+Childcare+Resources+of+N.E.W.!5e0!3m2!1sen!2sus!4v1548888903310" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 								</div>
 
@@ -86,15 +79,15 @@ get_header();
 
 									<div class="locationContent">
 
-										<h5>Family & Childcare Resources of N.E.W.</h5>
+										<h5></h5>
 
 										<a class="plainLink" target="_blank" href="http://bit.ly/2sXZA1Y">
 
-										<p>201 W. Walnut Street, Suite 100<br>
+										<p><br>
 
-										Green Bay, WI 54303</p></a>
+										</p></a>
 
-										<a class="plainLink" href="tel:(920)432-8899">(920) 432-8899</a>
+										<a class="plainLink" href="tel:(920)432-8899"></a>
 
 										<br>
 

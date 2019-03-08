@@ -2,6 +2,15 @@
 .aboutHero{
   background-image: url("/wp-content/uploads/2019/03/OaksGolfCourseDroneShot.jpg");
 }
+#leadershipImage{
+  margin-top: 25px;
+  @include breakpoint(laptopScreen){
+		margin-top: 25px;
+	}
+  @include breakpoint(largeScreen){
+		margin-top: 0;
+	}
+}
 .leaderImageOverlay{
   position: absolute;
 	top: 0;

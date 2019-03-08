@@ -63,7 +63,7 @@ get_header();
 
 					</div>
 
-					<div id="introImage" class="col50">
+					<div id="leadershipImage" class="col50">
 
 						<img src="/wp-content/uploads/2018/12/Fox_MainGroupMedium.jpg" class="image" role="image"
 						alt="Fox Structures Leadership Team">
@@ -93,7 +93,7 @@ get_header();
 
 			</section>
 
-			<section class="leadership">
+			<section class="leadership paddedSection removeBottomPadding">
 
 				<div class="centerText">
 

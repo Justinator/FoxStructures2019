@@ -629,6 +629,12 @@ template {
 .centerAlignedContainer {
   display: flex;
   align-items: center; }
+  @media (min-width: 992px) {
+    .centerAlignedContainer {
+      align-items: flex-start; } }
+  @media (min-width: 1250px) {
+    .centerAlignedContainer {
+      align-items: center; } }
 
 .centeredContainer {
   display: flex;
@@ -705,7 +711,7 @@ template {
 @media (min-width: 600px) {
   .paddedSection {
     padding: 50px 0 50px 0; } }
-@media (min-width: 992px) {
+@media (min-width: 1250px) {
   .paddedSection {
     padding: 100px 0 100px 0; } }
 
@@ -863,6 +869,12 @@ template {
     transform-origin: top left;
     transform: scaleX(1); }
   .menu-item a:hover:after {
+    transform-origin: bottom right;
+    transform: scaleX(1); }
+  .menu-item a:focus:before {
+    transform-origin: top left;
+    transform: scaleX(1); }
+  .menu-item a:focus:after {
     transform-origin: bottom right;
     transform: scaleX(1); }
 
@@ -1864,6 +1876,10 @@ h6 {
 .buttonWrapper {
   padding: 50px 0; }
 
+button {
+  background-color: none;
+  border: none; }
+
 /* 8.0 General Body Styles -------------------------------------------*/
 body {
   background: #FFFFFF;
@@ -2162,6 +2178,13 @@ body {
 @media (min-width: 600px) {
   .marginContainer {
     margin: 20px; } }
+
+@media (min-width: 992px) {
+  #introImage {
+    margin-top: 25px; } }
+@media (min-width: 1250px) {
+  #introImage {
+    margin-top: 0; } }
 
 .projectTitleSpan {
   position: relative; }
@@ -2543,6 +2566,15 @@ body {
 .aboutHero {
   background-image: url("/wp-content/uploads/2019/03/OaksGolfCourseDroneShot.jpg"); }
 
+#leadershipImage {
+  margin-top: 25px; }
+  @media (min-width: 992px) {
+    #leadershipImage {
+      margin-top: 25px; } }
+  @media (min-width: 1250px) {
+    #leadershipImage {
+      margin-top: 0; } }
+
 .leaderImageOverlay {
   position: absolute;
   top: 0;
@@ -2612,10 +2644,7 @@ body {
 .jobPostContent {
   padding: 20px; }
 
-/* 15.0 Programs Pages stylings -------------------------------------------*/
-.programHero {
-  background-image: url("/wp-content/uploads/2019/02/triplePPresentationCropped.jpg"); }
-
+/* 15.0 Sitemap stylings -------------------------------------------*/
 @media (max-width: 600px) {
   #sitemapEntry {
     margin-top: 75px; } }
@@ -2652,6 +2681,7 @@ body {
     transform: scaleX(1);
     height: 2px; }
 
+/* 16.0 Archive/News Page stylings -------------------------------------------*/
 .blogHero {
   background-image: url("/wp-content/uploads/2019/02/momWithChildrens.jpg"); }
 
@@ -2788,5 +2818,102 @@ body {
     border: 2px solid #404041;
     color: #404041;
     transition: .3s ease all; }
+
+/* 17.0 Portfolio Page stylings -------------------------------------------*/
+.paddedWrapper {
+  padding: 20px; }
+
+.portFeaturedProjectWrapper {
+  position: relative;
+  width: 100%; }
+  .portFeaturedProjectWrapper span:before {
+    position: absolute;
+    content: "";
+    background: #f4a81d;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 2px;
+    transition: 0.2s ease-out; }
+  .portFeaturedProjectWrapper span:after {
+    position: absolute;
+    content: "";
+    background: #f4a81d;
+    bottom: 0;
+    right: 0;
+    width: 10%;
+    height: 2px;
+    transition: 0.2s ease-out; }
+  .portFeaturedProjectWrapper:hover span:before {
+    width: 100%; }
+  .portFeaturedProjectWrapper:hover span:after {
+    width: 100%; }
+  .portFeaturedProjectWrapper:hover .featuredProjectOverlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: .2s ease all; }
+
+.outerWrapper {
+  margin: 10px 0; }
+
+.column {
+  display: none; }
+
+.show {
+  display: block; }
+
+.primaryButton.active {
+  background-color: #666;
+  color: white; }
+
+.leaderImageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 10px);
+  width: 100%;
+  content: "";
+  transition: .2s ease all;
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0; }
+
+.portfolioWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .portfolioWrapper a {
+    text-decoration: none;
+    color: #404041;
+    transition: .2s ease all; }
+    .portfolioWrapper a:hover .leaderImageOverlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: .2s ease all;
+      opacity: 1; }
+    .portfolioWrapper a:hover .centerUnderline {
+      width: 10em;
+      transition: .2s ease all; }
+    @media (max-width: 600px) {
+      .portfolioWrapper a {
+        width: 80%; } }
+    @media (min-width: 600px) {
+      .portfolioWrapper a {
+        width: 40%; } }
+    @media (min-width: 1250px) {
+      .portfolioWrapper a {
+        width: 50%; } }
+
+.featuredImageWrap {
+  padding: 10px; }
+
+.imageWrapper {
+  position: relative; }
+
+.employeeName {
+  margin-bottom: 15px; }
+
+.imageWrap {
+  text-align: center; }
+
+.leaderImage {
+  width: 60%; }
 
 /*# sourceMappingURL=style.css.map */

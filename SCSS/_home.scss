@@ -203,6 +203,14 @@
 		margin: 20px;
 	}
 }
+#introImage{
+	@include breakpoint(laptopScreen){
+		margin-top: 25px;
+	}
+	@include breakpoint(largeScreen){
+		margin-top: 0;
+	}
+}
 .projectTitleSpan{
 	position: relative;
 }

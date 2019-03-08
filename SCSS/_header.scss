@@ -91,6 +91,16 @@
 				transform: scaleX(1);
 			}
 		}
+		&:focus{
+			&:before{
+				transform-origin: top left;
+				transform: scaleX(1);
+			}
+			&:after{
+				transform-origin: bottom right;
+				transform: scaleX(1);
+			}
+		}
 	}
 }
 .menuLinkWrap{
