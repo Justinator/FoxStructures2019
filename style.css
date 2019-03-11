@@ -771,7 +771,7 @@ template {
       background-color: #404041; }
 
 .limitWidth {
-  max-width: 800px;
+  max-width: 1050px;
   margin: 0 auto;
   padding: 20px; }
 
@@ -2689,9 +2689,7 @@ body {
   margin: 25px 0; }
 
 .post {
-  background-color: #f6f6f6;
-  padding: 20px;
-  border-radius: 5px; }
+  padding: 20px; }
   .post h2 {
     margin-block-end: 15px; }
   .post p {

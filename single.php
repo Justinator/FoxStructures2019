@@ -10,41 +10,33 @@
 get_header();
 ?>
 
-<div id="barba-wrapper">
+<div class="pageWidth defaultPadding limitWidth">
 
-	<div class="barba-container">
+	<div id="primary" class="content-area">
 
-		<div class="pageWidth defaultPadding limitWidth">
+		<main id="main" class="site-main">
 
-			<div id="primary" class="content-area">
+		<?php
+		while ( have_posts() ) :
+			the_post();
 
-				<main id="main" class="site-main">
+			get_template_part( 'template-parts/content', 'single' );
 
-				<?php
-				while ( have_posts() ) :
-					the_post();
+			// If comments are open or we have at least one comment, load up the comment template.
+			if ( comments_open() || get_comments_number() ) :
+				comments_template();
+			endif;
 
-					get_template_part( 'template-parts/content', 'single' );
+		endwhile; // End of the loop.
 
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) :
-						comments_template();
-					endif;
+		?>
 
-				endwhile; // End of the loop.
-
-				?>
-
-				<div class="navigation"><p><?php posts_nav_link(' ','Go 
+		<div class="navigation"><p><?php posts_nav_link(' ','Go
 Forward In Time','Go Back in Time'); ?></p></div>
 
-				</main><!-- #main -->
+		</main><!-- #main -->
 
-			</div><!-- #primary -->
-
-		</div>
-
-	</div>
+	</div><!-- #primary -->
 
 </div>
 

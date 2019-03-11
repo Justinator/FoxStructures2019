@@ -68,23 +68,27 @@ get_header();
 
 				</div>
 
-				<div class="pageWidth flex-container">
+				<div class="pageWidth flex-container centerAlignedContainer">
 
 					<div class="col50 paddedWrapper">
 
-						<div class="portFeaturedProjectWrapper">
+						<a href="/portfolio/the-oaks-golf-club/">
 
-							<div class="featuredProjectOverlay"></div>
+							<div class="portFeaturedProjectWrapper">
 
-							<div class="featuredProjectContent">
+								<div class="featuredProjectOverlay"></div>
 
-								<img src="/wp-content/uploads/2019/02/OaksIntExtStillsMediumSquare.jpg" class="featuredProjectImage">
+								<div class="featuredProjectContent">
 
-								<h4 class="featuredProjectTitle"><span class="projectTitleSpan">The Oaks Golf Course</span></h4>
+									<img src="/wp-content/uploads/2019/02/OaksIntExtStillsMediumSquare.jpg" class="featuredProjectImage">
+
+									<h4 class="featuredProjectTitle"><span class="projectTitleSpan">The Oaks Golf Course</span></h4>
+
+								</div>
 
 							</div>
 
-						</div>
+						</a>
 
 					</div>
 
