@@ -725,6 +725,9 @@ template {
   .smallPaddedSection {
     padding: 50px 0 50px 0; } }
 
+.tinyPaddedSection {
+  padding: 5px 0; }
+
 .paddedContainer {
   padding: 2em 0; }
 
@@ -775,6 +778,11 @@ template {
   margin: 0 auto;
   padding: 20px; }
 
+.limitPortfolioWidth {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding: 20px; }
+
 @media (max-width: 600px) {
   .defaultPadding {
     padding: 50px 0; } }
@@ -787,6 +795,9 @@ template {
 
 .removeBottomPadding {
   padding-bottom: 0; }
+
+.site-content {
+  margin-top: 75px; }
 
 /*4.0 Header Styling -------------------------------------------*/
 .site-header {
@@ -907,9 +918,6 @@ template {
   @media (max-width: 600px) {
     .secondaryLink {
       font-size: 12px; } }
-
-.site-content {
-  margin-top: 35px; }
 
 .entry-header {
   display: none; }
@@ -2299,6 +2307,11 @@ body {
     width: 10em;
     transition: .2s ease all; }
 
+.categoryLinkDesc h4 {
+  color: #FFFFFF;
+  padding: 10px;
+  border: 1px solid #f4a81d; }
+
 .serviceImage {
   height: auto; }
   @media (max-width: 600px) {
@@ -2818,8 +2831,25 @@ body {
     transition: .3s ease all; }
 
 /* 17.0 Portfolio Page stylings -------------------------------------------*/
-.paddedWrapper {
-  padding: 20px; }
+@media (max-width: 600px) {
+  .paddedWrapper {
+    padding: 0; } }
+@media (min-width: 600px) {
+  .paddedWrapper {
+    padding: 0; } }
+@media (min-width: 992px) {
+  .paddedWrapper {
+    padding: 5px; } }
+
+@media (max-width: 600px) {
+  .paddedSideWrapper {
+    padding: 0; } }
+@media (min-width: 600px) {
+  .paddedSideWrapper {
+    padding: 0; } }
+@media (min-width: 992px) {
+  .paddedSideWrapper {
+    padding: 0 5px; } }
 
 .portFeaturedProjectWrapper {
   position: relative;
@@ -2882,13 +2912,10 @@ body {
     text-decoration: none;
     color: #404041;
     transition: .2s ease all; }
-    .portfolioWrapper a:hover .leaderImageOverlay {
+    .portfolioWrapper a:hover .ImageOverlay {
       background-color: rgba(0, 0, 0, 0.5);
       transition: .2s ease all;
       opacity: 1; }
-    .portfolioWrapper a:hover .centerUnderline {
-      width: 10em;
-      transition: .2s ease all; }
     @media (max-width: 600px) {
       .portfolioWrapper a {
         width: 80%; } }
@@ -2913,5 +2940,87 @@ body {
 
 .leaderImage {
   width: 60%; }
+
+.portfolioFeaturedImage {
+  margin-bottom: 25px; }
+
+@media (max-width: 600px) {
+  .smallMarginRight {
+    margin-right: 0; } }
+@media (min-width: 600px) {
+  .smallMarginRight {
+    margin-right: 0; } }
+@media (min-width: 992px) {
+  .smallMarginRight {
+    margin-right: 5px; } }
+
+@media (max-width: 600px) {
+  .smallMarginLeft {
+    margin-left: 0; } }
+@media (min-width: 600px) {
+  .smallMarginLeft {
+    margin-left: 0; } }
+@media (min-width: 992px) {
+  .smallMarginLeft {
+    margin-left: 5px; } }
+
+#oaksProject {
+  padding-bottom: 50px;
+  border-bottom: 1px solid #000000; }
+
+.moreFeaturedProjectsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .moreFeaturedProjectsWrapper a {
+    text-decoration: none;
+    color: #404041;
+    transition: .2s ease all; }
+    .moreFeaturedProjectsWrapper a:hover .ImageOverlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: .2s ease all;
+      opacity: 1; }
+    .moreFeaturedProjectsWrapper a:hover .centerUnderline {
+      width: 10em;
+      transition: .2s ease all; }
+    @media (max-width: 600px) {
+      .moreFeaturedProjectsWrapper a {
+        width: 100%; } }
+    @media (min-width: 600px) {
+      .moreFeaturedProjectsWrapper a {
+        width: 50%; } }
+    @media (min-width: 1250px) {
+      .moreFeaturedProjectsWrapper a {
+        width: 33%; } }
+
+@media (max-width: 600px) {
+  #largeDroneImage {
+    margin-top: 10px; } }
+@media (min-width: 600px) {
+  #largeDroneImage {
+    margin-top: 10px; } }
+@media (min-width: 992px) {
+  #largeDroneImage {
+    margin-top: 0; } }
+
+.portfolioTitle {
+  margin-top: 1em; }
+
+.ImageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 10px);
+  width: 100%;
+  content: "";
+  transition: .2s ease all;
+  background-color: rgba(0, 0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; }
+
+.featuredProjectsBlock {
+  border-top: 1px solid #000000; }
 
 /*# sourceMappingURL=style.css.map */

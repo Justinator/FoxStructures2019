@@ -15,7 +15,7 @@ get_header();
 
 	<main id="main" class="site-main">
 
-		<div class="pageWidth defaultPadding limitWidth">
+		<div class="pageWidth defaultPadding">
 
 			<div class="centerText">
 
@@ -33,6 +33,8 @@ get_header();
 					endif;
 				endwhile; // End of the loop.
 			?>
+
+			<?php get_template_part("/inc/featured-projects"); ?>
 
 		</div>
 

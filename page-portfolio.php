@@ -48,8 +48,8 @@ get_header();
 							some of our completed projects and see why over 80% of our business today comes from repeat clients.
 						</p>
 						<p>
-							Browse some of the unique projects we’ve built in the past. Then contact us and see why our
-							building success starts with you!
+							Browse some of the unique projects we’ve built in the past. Then <a href="/contact/" class="primaryLink">contact us</a>
+							and see why our building success starts with you!
 						</p>
 
 					</div>
@@ -96,37 +96,45 @@ get_header();
 
 						<div class="outerWrapper">
 
-							<div class="portFeaturedProjectWrapper">
+							<a href="/portfolio/water-right/">
 
-								<div class="featuredProjectOverlay"></div>
+								<div class="portFeaturedProjectWrapper">
 
-								<div class="featuredProjectContent">
+									<div class="featuredProjectOverlay"></div>
 
-									<img src="/wp-content/uploads/2017/09/tinedale-farms.jpg" class="featuredProjectImage">
+									<div class="featuredProjectContent">
 
-									<h4 class="featuredProjectTitle"><span class="projectTitleSpan">Vir-Clar Farms</span></h4>
+										<img src="/wp-content/uploads/2019/03/waterRightExteriorFrontViewCropped.jpg" class="featuredProjectImage">
+
+										<h4 class="featuredProjectTitle"><span class="projectTitleSpan">Water Right, Inc.</span></h4>
+
+									</div>
 
 								</div>
 
-							</div>
+							</a>
 
 						</div>
 
 						<div class="outerWrapper">
 
-							<div class="portFeaturedProjectWrapper">
+							<a href="/portfolio/rosendale-dairy/">
 
-								<div class="featuredProjectOverlay"></div>
+								<div class="portFeaturedProjectWrapper">
 
-								<div class="featuredProjectContent">
+									<div class="featuredProjectOverlay"></div>
 
-									<img src="/wp-content/uploads/2017/09/ted-schott-calf-barn.jpg" class="featuredProjectImage">
+									<div class="featuredProjectContent">
 
-									<h4 class="featuredProjectTitle"><span class="projectTitleSpan">Vir-Clar Farms</span></h4>
+										<img src="/wp-content/uploads/2019/03/rosendale-dairy-cropped.jpg" class="featuredProjectImage">
+
+										<h4 class="featuredProjectTitle"><span class="projectTitleSpan">Rosendale Dairy, LLC</span></h4>
+
+									</div>
 
 								</div>
 
-							</div>
+							</a>
 
 						</div>
 
@@ -156,7 +164,7 @@ get_header();
 
 				</div>
 
-				<div class="pageWidth portfolioWrapper">
+				<div id="portfolioWrapper" class="pageWidth portfolioWrapper">
 
 					<a href="/leadership/mark-mashlan/" class="column commercial">
 
@@ -166,7 +174,7 @@ get_header();
 
 								<img src="/wp-content/uploads/2018/12/OaksIntExtStillsMedium.jpg" class="image">
 
-								<div class="ImageOverlay"></div>
+									<?php get_template_part("/inc/portfolio-overlay"); ?>
 
 							</div>
 
@@ -188,7 +196,7 @@ get_header();
 
 								<img src="/wp-content/uploads/2018/12/OaksIntExtStillsMedium.jpg" class="image">
 
-								<div class="ImageOverlay"></div>
+								<?php get_template_part("/inc/portfolio-overlay"); ?>
 
 							</div>
 
@@ -210,7 +218,7 @@ get_header();
 
 								<img src="/wp-content/uploads/2018/12/OaksIntExtStillsMedium.jpg" class="image">
 
-								<div class="ImageOverlay"></div>
+								<?php get_template_part("/inc/portfolio-overlay"); ?>
 
 							</div>
 
@@ -232,7 +240,7 @@ get_header();
 
 								<img src="/wp-content/uploads/2018/12/OaksIntExtStillsMedium.jpg" class="image">
 
-								<div class="ImageOverlay"></div>
+								<?php get_template_part("/inc/portfolio-overlay"); ?>
 
 							</div>
 
@@ -254,7 +262,7 @@ get_header();
 
 								<img src="/wp-content/uploads/2018/12/OaksIntExtStillsMedium.jpg" class="image">
 
-								<div class="ImageOverlay"></div>
+								<?php get_template_part("/inc/portfolio-overlay"); ?>
 
 							</div>
 
@@ -276,7 +284,7 @@ get_header();
 
 								<img src="/wp-content/uploads/2018/12/OaksIntExtStillsMedium.jpg" class="image">
 
-								<div class="ImageOverlay"></div>
+								<?php get_template_part("/inc/portfolio-overlay"); ?>
 
 							</div>
 
@@ -298,7 +306,7 @@ get_header();
 
 								<img src="/wp-content/uploads/2018/12/OaksIntExtStillsMedium.jpg" class="image">
 
-								<div class="ImageOverlay"></div>
+								<?php get_template_part("/inc/portfolio-overlay"); ?>
 
 							</div>
 
@@ -320,7 +328,7 @@ get_header();
 
 								<img src="/wp-content/uploads/2018/12/OaksIntExtStillsMedium.jpg" class="image">
 
-								<div class="ImageOverlay"></div>
+								<?php get_template_part("/inc/portfolio-overlay"); ?>
 
 							</div>
 

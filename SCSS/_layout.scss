@@ -415,6 +415,9 @@
 		padding: 50px 0 50px 0;
 	}
 }
+.tinyPaddedSection{
+	padding: 5px 0;
+}
 .paddedContainer{
 	padding: 2em 0;
 }
@@ -469,6 +472,11 @@
   margin: 0 auto;
 	padding: 20px;
 }
+.limitPortfolioWidth{
+	max-width: 1350px;
+  margin: 0 auto;
+	padding: 20px;
+}
 .defaultPadding{
 	@include breakpoint(smallScreen){
 		padding: 50px 0;
@@ -482,4 +490,7 @@
 }
 .removeBottomPadding{
 	padding-bottom: 0;
+}
+.site-content{
+	margin-top: 75px;
 }

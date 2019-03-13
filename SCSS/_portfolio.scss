@@ -1,6 +1,25 @@
 /* 17.0 Portfolio Page stylings -------------------------------------------*/
 .paddedWrapper{
-  padding: 20px;
+  @include breakpoint(smallScreen){
+    padding: 0;
+  }
+  @include breakpoint(largeMobileScreen){
+    padding: 0;
+  }
+  @include breakpoint(laptopScreen){
+    padding: 5px;
+  }
+}
+.paddedSideWrapper{
+  @include breakpoint(smallScreen){
+    padding: 0;
+  }
+  @include breakpoint(largeMobileScreen){
+    padding: 0;
+  }
+  @include breakpoint(laptopScreen){
+    padding: 0 5px;
+  }
 }
 .portFeaturedProjectWrapper{
 	position: relative;
@@ -75,14 +94,10 @@
 		color: $primaryGrey;
 		transition: .2s ease all;
 		&:hover{
-			.leaderImageOverlay{
+			.ImageOverlay{
 				background-color: rgba(0,0,0,.5);
 				transition: .2s ease all;
 				opacity: 1;
-			}
-			.centerUnderline{
-				width: 10em;
-				transition: .2s ease all;
 			}
 		}
     @include breakpoint(smallScreen){
@@ -110,4 +125,94 @@
 }
 .leaderImage{
   width: 60%;
+}
+.portfolioFeaturedImage{
+  margin-bottom: 25px;
+}
+.smallMarginRight{
+  @include breakpoint(smallScreen){
+    margin-right:0;
+  }
+  @include breakpoint(largeMobileScreen){
+    margin-right:0;
+  }
+  @include breakpoint(laptopScreen){
+    margin-right:5px;
+  }
+}
+.smallMarginLeft{
+  @include breakpoint(smallScreen){
+    margin-left:0;
+  }
+  @include breakpoint(largeMobileScreen){
+    margin-left:0;
+  }
+  @include breakpoint(laptopScreen){
+    margin-left:5px;
+  }
+}
+#oaksProject{
+  padding-bottom: 50px;
+  border-bottom: 1px solid $black;
+}
+.moreFeaturedProjectsWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+	a{
+		text-decoration: none;
+		color: $primaryGrey;
+		transition: .2s ease all;
+		&:hover{
+			.ImageOverlay{
+				background-color: rgba(0,0,0,.5);
+				transition: .2s ease all;
+				opacity: 1;
+			}
+			.centerUnderline{
+				width: 10em;
+				transition: .2s ease all;
+			}
+		}
+    @include breakpoint(smallScreen){
+      width: 100%;
+    }
+    @include breakpoint(largeMobileScreen){
+      width: 50%;
+    }
+    @include breakpoint(largeScreen){
+      width: 33%;
+    }
+	}
+}
+#largeDroneImage{
+  @include breakpoint(smallScreen){
+    margin-top: 10px;
+  }
+  @include breakpoint(largeMobileScreen){
+    margin-top: 10px;
+  }
+  @include breakpoint(laptopScreen){
+    margin-top: 0;
+  }
+}
+.portfolioTitle{
+  margin-top: 1em;
+}
+.ImageOverlay{
+  position: absolute;
+	top: 0;
+	left: 0;
+	height: calc(100% - 10px);
+	width: 100%;
+	content: "";
+	transition: .2s ease all;
+	background-color: rgba(0,0,0,.0);
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.featuredProjectsBlock{
+  border-top: 1px solid $black;
 }

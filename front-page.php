@@ -195,47 +195,6 @@ get_header();
 
 						<div class="categoryWrapper">
 
-							<a href="/services/commercial/">
-
-								<div class="categoryImageWrapper">
-
-									<img src="/wp-content/uploads/2019/02/WaterRightSmall.jpg" class="image">
-
-									<div class="categoryImageOverlay">
-
-										<div class="categoryLinkDesc">
-
-											<h4>Learn More</h4>
-
-										</div>
-
-									</div>
-
-								</div>
-
-								<div class="categoryDescWrapper">
-
-									<h3 class="categoryTitle centerText noMargin">Commercial</h3>
-
-									<div class="centerUnderline"></div>
-
-									<p>
-										From retail storefronts to light industrial buildings to specialized structures, we know that your needs
-											are unique.
-										</p>
-
-								</div>
-
-							</a>
-
-						</div>
-
-					</div>
-
-					<div class="col30SplitTablet">
-
-						<div class="categoryWrapper">
-
 							<a href="/services/agricultural/">
 
 								<div class="categoryImageWrapper">
@@ -264,6 +223,47 @@ get_header();
 										Our significant experience means we understand the specialized challenges
 										facing the agricultural industry.
 									</p>
+
+								</div>
+
+							</a>
+
+						</div>
+
+					</div>
+
+					<div class="col30SplitTablet">
+
+						<div class="categoryWrapper">
+
+							<a href="/services/commercial/">
+
+								<div class="categoryImageWrapper">
+
+									<img src="/wp-content/uploads/2019/02/WaterRightSmall.jpg" class="image">
+
+									<div class="categoryImageOverlay">
+
+										<div class="categoryLinkDesc">
+
+											<h4>Learn More</h4>
+
+										</div>
+
+									</div>
+
+								</div>
+
+								<div class="categoryDescWrapper">
+
+									<h3 class="categoryTitle centerText noMargin">Commercial</h3>
+
+									<div class="centerUnderline"></div>
+
+									<p>
+										From retail storefronts to light industrial buildings to specialized structures, we know that your needs
+											are unique.
+										</p>
 
 								</div>
 

@@ -346,6 +346,13 @@
 		}
 	}
 }
+.categoryLinkDesc{
+	h4{
+		color: $white;
+    padding: 10px;
+    border: 1px solid $primaryYellow;
+	}
+}
 .serviceImage{
 	height: auto;
 	@include breakpoint(smallScreen){
