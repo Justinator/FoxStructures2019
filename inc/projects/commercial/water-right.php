@@ -1,4 +1,4 @@
-<a href="/portfolio/water-right/">
+<a href="/portfolio/water-right/" class="column commercial">
 
   <div class="featuredImageWrap">
 

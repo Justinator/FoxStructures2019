@@ -166,181 +166,21 @@ get_header();
 
 				<div id="portfolioWrapper" class="pageWidth portfolioWrapper">
 
-					<a href="/leadership/mark-mashlan/" class="column commercial">
+					<?php get_template_part("/inc/projects/equestrian/vlach-horse-barn"); ?>
 
-						<div class="featuredImageWrap">
+					<?php get_template_part("/inc/projects/agricultural/shiloh"); ?>
 
-							<div class="imageWrapper">
+					<?php get_template_part("/inc/projects/storage/apple-storage"); ?>
 
-								<img src="/wp-content/uploads/2018/12/OaksIntExtStillsMedium.jpg" class="image">
+					<?php get_template_part("/inc/projects/commercial/milksource"); ?>
 
-									<?php get_template_part("/inc/portfolio-overlay"); ?>
+					<?php get_template_part("/inc/projects/equestrian/steve-firsch"); ?>
 
-							</div>
+					<?php get_template_part("/inc/projects/agricultural/tidy-view"); ?>
 
-							<div class="projectInfo">
+					<?php get_template_part("/inc/projects/agricultural/seven-oaks"); ?>
 
-								<h5 class="employeeName"><span class="primaryText">The Oaks Golf Club</span></h5>
-
-							</div>
-
-						</div>
-
-					</a>
-
-					<a href="/leadership/mark-mashlan/" class="column commercial">
-
-						<div class="featuredImageWrap">
-
-							<div class="imageWrapper">
-
-								<img src="/wp-content/uploads/2018/12/OaksIntExtStillsMedium.jpg" class="image">
-
-								<?php get_template_part("/inc/portfolio-overlay"); ?>
-
-							</div>
-
-							<div class="projectInfo">
-
-								<h5 class="employeeName"><span class="primaryText">The Oaks Golf Club</span></h5>
-
-							</div>
-
-						</div>
-
-					</a>
-
-					<a href="/leadership/mark-mashlan/" class="column agricultural">
-
-						<div class="featuredImageWrap">
-
-							<div class="imageWrapper">
-
-								<img src="/wp-content/uploads/2018/12/OaksIntExtStillsMedium.jpg" class="image">
-
-								<?php get_template_part("/inc/portfolio-overlay"); ?>
-
-							</div>
-
-							<div class="projectInfo">
-
-								<h5 class="employeeName"><span class="primaryText">The Oaks Golf Club</span></h5>
-
-							</div>
-
-						</div>
-
-					</a>
-
-					<a href="/leadership/mark-mashlan/" class="column equestrian">
-
-						<div class="featuredImageWrap">
-
-							<div class="imageWrapper">
-
-								<img src="/wp-content/uploads/2018/12/OaksIntExtStillsMedium.jpg" class="image">
-
-								<?php get_template_part("/inc/portfolio-overlay"); ?>
-
-							</div>
-
-							<div class="projectInfo">
-
-								<h5 class="employeeName"><span class="primaryText">The Oaks Golf Club</span></h5>
-
-							</div>
-
-						</div>
-
-					</a>
-
-					<a href="/leadership/mark-mashlan/" class="column residential">
-
-						<div class="featuredImageWrap">
-
-							<div class="imageWrapper">
-
-								<img src="/wp-content/uploads/2018/12/OaksIntExtStillsMedium.jpg" class="image">
-
-								<?php get_template_part("/inc/portfolio-overlay"); ?>
-
-							</div>
-
-							<div class="projectInfo">
-
-								<h5 class="employeeName"><span class="primaryText">The Oaks Golf Club</span></h5>
-
-							</div>
-
-						</div>
-
-					</a>
-
-					<a href="/leadership/mark-mashlan/" class="column commercial">
-
-						<div class="featuredImageWrap">
-
-							<div class="imageWrapper">
-
-								<img src="/wp-content/uploads/2018/12/OaksIntExtStillsMedium.jpg" class="image">
-
-								<?php get_template_part("/inc/portfolio-overlay"); ?>
-
-							</div>
-
-							<div class="projectInfo">
-
-								<h5 class="employeeName"><span class="primaryText">The Oaks Golf Club</span></h5>
-
-							</div>
-
-						</div>
-
-					</a>
-
-					<a href="/leadership/mark-mashlan/" class="column storage">
-
-						<div class="featuredImageWrap">
-
-							<div class="imageWrapper">
-
-								<img src="/wp-content/uploads/2018/12/OaksIntExtStillsMedium.jpg" class="image">
-
-								<?php get_template_part("/inc/portfolio-overlay"); ?>
-
-							</div>
-
-							<div class="projectInfo">
-
-								<h5 class="employeeName"><span class="primaryText">The Oaks Golf Club</span></h5>
-
-							</div>
-
-						</div>
-
-					</a>
-
-					<a href="/leadership/mark-mashlan/" class="column agricultural">
-
-						<div class="featuredImageWrap">
-
-							<div class="imageWrapper">
-
-								<img src="/wp-content/uploads/2018/12/OaksIntExtStillsMedium.jpg" class="image">
-
-								<?php get_template_part("/inc/portfolio-overlay"); ?>
-
-							</div>
-
-							<div class="projectInfo">
-
-								<h5 class="employeeName"><span class="primaryText">The Oaks Golf Club</span></h5>
-
-							</div>
-
-						</div>
-
-					</a>
+					<?php get_template_part("/inc/projects/agricultural/schuh-view"); ?>
 
 				</div>
 

@@ -10,11 +10,11 @@
 
   <div class="moreFeaturedProjectsWrapper">
 
-    <?php get_template_part("/inc/the-oaks"); ?>
+    <?php get_template_part("/inc/projects/commercial/the-oaks"); ?>
 
-    <?php get_template_part("/inc/rosendale-dairy"); ?>
+    <?php get_template_part("/inc/projects/commercial/water-right"); ?>
 
-    <?php get_template_part("/inc/water-right"); ?>
+    <?php get_template_part("/inc/projects/agricultural/rosendale-dairy"); ?>
 
   </div>
 

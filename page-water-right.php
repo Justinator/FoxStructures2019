@@ -16,6 +16,8 @@ get_header();
 
 			<h1 class="portfolioTitle centerText">Water Right, Inc.</h1>
 
+			<div class="centerUnderline"></div>
+
 			<img src="/wp-content/uploads/2017/09/water-right-inc.jpg" class="image portfolioFeaturedImage">
 
 			<p>
@@ -76,11 +78,11 @@ get_header();
 
 				<div class="moreFeaturedProjectsWrapper ">
 
-					<?php get_template_part("/inc/the-oaks"); ?>
+					<?php get_template_part("/inc/projects/commercial/the-oaks"); ?>
 
-					<?php get_template_part("/inc/rosendale-dairy"); ?>
+					<?php get_template_part("/inc/projects/agricultural/rosendale-dairy"); ?>
 
-					<?php get_template_part("/inc/clean-water"); ?>
+					<?php get_template_part("/inc/projects/commercial/clean-water"); ?>
 
 				</div>
 

@@ -1,4 +1,4 @@
-<a href="/portfolio/rosendale-dairy/">
+<a href="/portfolio/rosendale-dairy/" class="column agricultural">
 
   <div class="featuredImageWrap">
 

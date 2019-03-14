@@ -1,4 +1,4 @@
-<a href="/portfolio/clean-water-center-clean-water-testing/">
+<a href="/portfolio/clean-water-center-clean-water-testing/" class="column commercial">
 
   <div class="featuredImageWrap">
 

@@ -16,6 +16,8 @@ get_header();
 
 			<h1 class="centerText portfolioTitle">Clean Water Center/Clean Water Testing</h1>
 
+			<div class="centerUnderline"></div>
+
 			<img src="/wp-content/uploads/2019/03/CleanWaterTestingExteriorLarge.jpg" class="image portfolioFeaturedImage">
 
 			<p>
@@ -91,11 +93,11 @@ get_header();
 
 				<div class="moreFeaturedProjectsWrapper">
 
-					<?php get_template_part("/inc/water-right"); ?>
+					<?php get_template_part("/inc/projects/commercial/water-right"); ?>
 
-					<?php get_template_part("/inc/rosendale-dairy"); ?>
+					<?php get_template_part("/inc/projects/agricultural/rosendale-dairy"); ?>
 
-					<?php get_template_part("/inc/the-oaks"); ?>
+					<?php get_template_part("/inc/projects/commercial/the-oaks"); ?>
 
 				</div>
 

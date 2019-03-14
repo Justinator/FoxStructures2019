@@ -775,8 +775,16 @@ template {
 
 .limitWidth {
   max-width: 1050px;
-  margin: 0 auto;
-  padding: 20px; }
+  margin: 0 auto; }
+  @media (max-width: 600px) {
+    .limitWidth {
+      padding: 0; } }
+  @media (min-width: 600px) {
+    .limitWidth {
+      padding: 0; } }
+  @media (min-width: 992px) {
+    .limitWidth {
+      padding: 20px; } }
 
 .limitPortfolioWidth {
   max-width: 1350px;
@@ -2487,50 +2495,22 @@ body {
   align-items: center; }
 
 /* 12.0 Service Page stylings -------------------------------------------*/
-@media (max-width: 600px) {
-  #servicesIntro {
-    margin-top: 300px; } }
-@media (min-width: 600px) {
-  #servicesIntro {
-    margin-top: 350px; } }
-@media (min-width: 768px) {
-  #servicesIntro {
-    margin-top: 150px; } }
+.servicesSidebar {
+  border-right: 1px solid #404041;
+  margin-top: 45px; }
+  @media (max-width: 600px) {
+    .servicesSidebar {
+      display: none; } }
+  @media (min-width: 600px) {
+    .servicesSidebar {
+      display: none; } }
+  @media (min-width: 992px) {
+    .servicesSidebar {
+      display: block; } }
 
-@media (max-width: 600px) {
-  .tabletRow {
-    display: none; } }
-@media (min-width: 600px) {
-  .tabletRow {
-    display: none; } }
-@media (min-width: 768px) {
-  .tabletRow {
-    display: flex; } }
-@media (min-width: 992px) {
-  .tabletRow {
-    display: none; } }
-
-.serviceBlock {
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: 2; }
-  .serviceBlock:after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    content: "";
-    z-index: 3;
-    background-color: rgba(255, 255, 255, 0.9); }
-
-.serviceBlockContent {
-  position: relative;
-  z-index: 4; }
-
-.serviceBlockImage {
-  margin-bottom: -8px; }
+.servicesList {
+  list-style-type: none;
+  padding-left: 0; }
 
 /* 13.0 Contact Page stylings -------------------------------------------*/
 .contactContent {
@@ -2916,6 +2896,9 @@ body {
       background-color: rgba(0, 0, 0, 0.5);
       transition: .2s ease all;
       opacity: 1; }
+    .portfolioWrapper a:hover h5 {
+      transition: .2s ease all;
+      color: #f4a81d; }
     @media (max-width: 600px) {
       .portfolioWrapper a {
         width: 80%; } }
@@ -3004,7 +2987,8 @@ body {
     margin-top: 0; } }
 
 .portfolioTitle {
-  margin-top: 1em; }
+  margin-top: 1em;
+  margin-bottom: 0; }
 
 .ImageOverlay {
   position: absolute;
@@ -3022,5 +3006,8 @@ body {
 
 .featuredProjectsBlock {
   border-top: 1px solid #000000; }
+
+#simpleProject .post-thumbnail {
+  margin-top: -5px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -470,7 +470,15 @@
 .limitWidth{
   max-width: 1050px;
   margin: 0 auto;
-	padding: 20px;
+	@include breakpoint(smallScreen){
+		padding: 0;
+	}
+	@include breakpoint(largeMobileScreen){
+		padding: 0;
+	}
+	@include breakpoint(laptopScreen){
+		padding: 20px;
+	}
 }
 .limitPortfolioWidth{
 	max-width: 1350px;

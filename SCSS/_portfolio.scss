@@ -99,6 +99,10 @@
 				transition: .2s ease all;
 				opacity: 1;
 			}
+      h5{
+        transition: .2s ease all;
+        color: $primaryYellow;
+      }
 		}
     @include breakpoint(smallScreen){
       width: 80%;
@@ -198,6 +202,7 @@
 }
 .portfolioTitle{
   margin-top: 1em;
+  margin-bottom: 0;
 }
 .ImageOverlay{
   position: absolute;
@@ -215,4 +220,9 @@
 }
 .featuredProjectsBlock{
   border-top: 1px solid $black;
+}
+#simpleProject{
+  .post-thumbnail{
+      margin-top: -5px;
+  }
 }

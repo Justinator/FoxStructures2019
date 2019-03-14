@@ -14,7 +14,15 @@ get_header();
 
 		<section class="pageWidth paddedSection limitPortfolioWidth">
 
-			<h1 class="centerText portfolioTitle">The Oaks Golf Club</h1>
+			<div class="centerText">
+
+				<h1 class="centerText portfolioTitle">The Oaks Golf Club</h1>
+
+				<div class="centerUnderline"></div>
+
+				<a href="/services/commerical/" class="primaryLink">Commercial</a>
+
+			</div>	
 
 			<img src="/wp-content/uploads/2019/03/OaksGolfClubExteriorLarge.jpg" class="image portfolioFeaturedImage">
 
@@ -115,11 +123,11 @@ get_header();
 
 				<div class="moreFeaturedProjectsWrapper">
 
-					<?php get_template_part("/inc/water-right"); ?>
+					<?php get_template_part("/inc/projects/commercial/water-right"); ?>
 
-					<?php get_template_part("/inc/rosendale-dairy"); ?>
+					<?php get_template_part("/inc/projects/agricultural/rosendale-dairy"); ?>
 
-					<?php get_template_part("/inc/clean-water"); ?>
+					<?php get_template_part("/inc/projects/commercial/clean-water"); ?>
 
 				</div>
 
