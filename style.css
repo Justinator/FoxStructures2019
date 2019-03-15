@@ -629,11 +629,15 @@ template {
 .centerAlignedContainer {
   display: flex;
   align-items: center; }
+
+.centerAlignedContainerTop {
+  display: flex;
+  align-items: center; }
   @media (min-width: 992px) {
-    .centerAlignedContainer {
+    .centerAlignedContainerTop {
       align-items: flex-start; } }
   @media (min-width: 1250px) {
-    .centerAlignedContainer {
+    .centerAlignedContainerTop {
       align-items: center; } }
 
 .centeredContainer {
@@ -705,15 +709,8 @@ template {
   margin-top: 50vh;
   background: #FFFFFF; }
 
-@media (max-width: 600px) {
-  .paddedSection {
-    padding: 50px 0 50px 0; } }
-@media (min-width: 600px) {
-  .paddedSection {
-    padding: 50px 0 50px 0; } }
-@media (min-width: 1250px) {
-  .paddedSection {
-    padding: 100px 0 100px 0; } }
+.paddedSection {
+  padding: 50px 0; }
 
 @media (max-width: 600px) {
   .smallPaddedSection {
@@ -1344,12 +1341,12 @@ nav {
   flex-direction: column; }
   .footerContact a {
     text-decoration: none;
-    color: #404041;
-    transition: .3s ease all;
+    color: #f4a81d;
+    transition: .2s ease all;
     font-weight: 700; }
     .footerContact a:hover {
-      color: #000000;
-      transition: .3s ease all; }
+      color: #404041;
+      transition: .2s ease all; }
 
 .footerLink {
   position: relative;
@@ -1896,6 +1893,20 @@ button {
   background-color: none;
   border: none; }
 
+.filterButton {
+  padding: 10px;
+  cursor: pointer;
+  transition: .2s ease all; }
+  .filterButton:active {
+    background: #404041;
+    color: #FFFFFF; }
+  .filterButton:focus {
+    background: #404041;
+    color: #FFFFFF; }
+  .filterButton:hover {
+    background: #f4a81d;
+    transition: .2s ease all; }
+
 /* 8.0 General Body Styles -------------------------------------------*/
 body {
   background: #FFFFFF;
@@ -2179,8 +2190,7 @@ body {
 .heroHeading {
   padding: 25px;
   color: #000000;
-  border-radius: 3px;
-  text-align: center; }
+  border-radius: 3px; }
   @media (max-width: 600px) {
     .heroHeading {
       padding: 20px; } }
@@ -2511,20 +2521,40 @@ body {
 .servicesList {
   list-style-type: none;
   padding-left: 0; }
+  .servicesList li {
+    margin-bottom: 10px; }
+
+.commercialHero {
+  background-image: url("/wp-content/uploads/2019/03/waterRightCropped.jpg"); }
+
+.weldHero {
+  background-image: url("/wp-content/uploads/2019/03/foxWeldingEmployeeCroppedMedium.jpg"); }
+
+.weldHero2 {
+  background-image: url("/wp-content/uploads/2019/03/foxStructuresWeldAShop.jpg"); }
+
+.agHero {
+  background-image: url("/wp-content/uploads/2019/02/centerFeedAlleyLookingSouthCropped.jpg"); }
+
+.serviceHero {
+  background-image: url("/wp-content/uploads/2019/03/virClarFarmsCroppedMedium.jpg"); }
+
+.equestrianHero {
+  background-image: url("/wp-content/uploads/2019/03/equestrianHero.jpg"); }
+
+.residentialHero {
+  background-image: url("/wp-content/uploads/2019/03/larson-cottage-large.jpg"); }
+
+.storageHero {
+  background-image: url("/wp-content/uploads/2019/03/appleStrageCropped2.jpg"); }
 
 /* 13.0 Contact Page stylings -------------------------------------------*/
 .contactContent {
   margin-top: 150px !important; }
 
-.contactHero {
-  background-image: url("/wp-content/uploads/2019/02/kidSearchingOnMap.jpg"); }
-
 #contactContent {
-  margin-top: 25px;
+  margin-top: 125px;
   margin-bottom: 25px; }
-
-#formWrap {
-  background-color: #f6f6f6; }
 
 #formWrapInner {
   padding: 25px; }
@@ -2533,7 +2563,7 @@ body {
   padding: 20px; }
 
 .smallMapWrapper {
-  padding: 20px; }
+  padding: 40px 20px 20px 20px; }
 
 .caldera-grid label {
   color: #000000 !important; }
@@ -2554,6 +2584,10 @@ body {
 
 #fld_7683514_1 {
   height: 100px; }
+
+.formWrapper {
+  padding: 20px;
+  background-color: #f6f6f6; }
 
 /* 14.0 About Pages stylings -------------------------------------------*/
 .aboutHero {
@@ -2653,26 +2687,21 @@ body {
 
 .page_item a {
   text-decoration: none;
-  transition: .3s ease all;
-  position: relative; }
-  .page_item a:before {
-    position: absolute;
-    content: "";
-    background: #f4a81d;
-    top: 0;
-    left: 0;
-    width: 100%;
-    transform: scaleX(1);
-    height: 2px; }
-  .page_item a:after {
-    position: absolute;
-    content: "";
-    background: #f4a81d;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    transform: scaleX(1);
-    height: 2px; }
+  transition: .2s ease all;
+  position: relative;
+  color: #404041; }
+  .page_item a:hover {
+    color: #f4a81d;
+    transition: .2s ease all; }
+
+.newsPosts a {
+  text-decoration: none;
+  transition: .2s ease all;
+  position: relative;
+  color: #404041; }
+  .newsPosts a:hover {
+    color: #f4a81d;
+    transition: .2s ease all; }
 
 /* 16.0 Archive/News Page stylings -------------------------------------------*/
 .blogHero {
@@ -2705,60 +2734,18 @@ body {
 
 .posted-on a {
   text-decoration: none;
-  color: #404041 !important;
-  transition: .3s ease all;
-  position: relative; }
+  color: #f4a81d !important;
+  transition: .3s ease all; }
   .posted-on a:hover {
-    color: #404041;
-    transition: .3s ease all; }
-    .posted-on a:hover:after {
-      position: absolute;
-      height: 2px;
-      width: 100%;
-      background: #404041;
-      content: "";
-      bottom: 0;
-      left: 0;
-      opacity: 1;
-      transition: .3s ease all; }
-  .posted-on a:after {
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background: #404041;
-    content: "";
-    bottom: 25%;
-    left: 0;
-    opacity: 0;
+    color: #404041 !important;
     transition: .3s ease all; }
 
-.author a {
+.vcard a {
   text-decoration: none;
-  color: #404041 !important;
-  transition: .3s ease all;
-  position: relative; }
-  .author a:hover {
-    color: #404041;
-    transition: .3s ease all; }
-    .author a:hover:after {
-      position: absolute;
-      height: 2px;
-      width: 100%;
-      background: #404041;
-      content: "";
-      bottom: 0;
-      left: 0;
-      opacity: 1;
-      transition: .3s ease all; }
-  .author a:after {
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background: #404041;
-    content: "";
-    bottom: 25%;
-    left: 0;
-    opacity: 0;
+  color: #f4a81d !important;
+  transition: .3s ease all; }
+  .vcard a:hover {
+    color: #404041 !important;
     transition: .3s ease all; }
 
 .nav-links {
@@ -2809,6 +2796,9 @@ body {
     border: 2px solid #404041;
     color: #404041;
     transition: .3s ease all; }
+
+.postHeader {
+  margin-bottom: 40px; }
 
 /* 17.0 Portfolio Page stylings -------------------------------------------*/
 @media (max-width: 600px) {
@@ -2925,7 +2915,8 @@ body {
   width: 60%; }
 
 .portfolioFeaturedImage {
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  margin-top: 25px; }
 
 @media (max-width: 600px) {
   .smallMarginRight {
@@ -3009,5 +3000,21 @@ body {
 
 #simpleProject .post-thumbnail {
   margin-top: -5px; }
+
+.hidden {
+  display: none; }
+
+/* 18.0 Careers Page stylings -------------------------------------------*/
+.subNavLink {
+  color: #000000;
+  text-decoration: none;
+  transition: .2s ease all;
+  font-size: 16px; }
+  .subNavLink:hover {
+    color: #f4a81d;
+    transition: .2s ease all; }
+
+.careersHero {
+  background-image: url("/wp-content/uploads/2019/03/foxStructuresEmployeeOnJob.jpg"); }
 
 /*# sourceMappingURL=style.css.map */

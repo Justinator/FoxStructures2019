@@ -14,7 +14,7 @@ get_header();
 
 		<section>
 
-			<div class="mediumHero aboutHero">
+			<div class="mediumHero commercialHero">
 
 				<div class="fullWidth heroHeadingContainer">
 

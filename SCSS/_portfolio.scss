@@ -132,6 +132,7 @@
 }
 .portfolioFeaturedImage{
   margin-bottom: 25px;
+  margin-top: 25px;
 }
 .smallMarginRight{
   @include breakpoint(smallScreen){
@@ -225,4 +226,7 @@
   .post-thumbnail{
       margin-top: -5px;
   }
+}
+.hidden{
+  display: none;
 }

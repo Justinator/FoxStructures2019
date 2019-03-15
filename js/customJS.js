@@ -27,20 +27,7 @@ $(function() {
           }
         });
   });
-//smooth scroll to elements in inner services nav
 
-$(document).on('click', 'a[href^="#aluminum"]', function (event) {
-
-    event.preventDefault();
-
-
-    $('html, body').animate({
-
-      scrollTop: $($.attr(this, 'href')).offset().top
-
-     -150}, 1000);
-
-});
 // Add tabIndex="-1" to mobile nav so that does not interfere with keyboard navigation
 const x = document.getElementById('mobile-menu');
 
@@ -90,23 +77,4 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
-}
-
-// Image rotation for manual portfolio slider
-var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  x[slideIndex-1].style.display = "block";
 }

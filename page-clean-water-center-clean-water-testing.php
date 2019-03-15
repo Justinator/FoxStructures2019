@@ -14,9 +14,15 @@ get_header();
 
 		<section class="pageWidth paddedSection limitPortfolioWidth">
 
-			<h1 class="centerText portfolioTitle">Clean Water Center/Clean Water Testing</h1>
+			<div class="centerText">
 
-			<div class="centerUnderline"></div>
+				<h1 class="centerText portfolioTitle">Clean Water Center/Clean Water Testing</h1>
+
+				<div class="centerUnderline"></div>
+
+				<a href="/services/commerical/" class="primaryLink">Commercial</a>
+
+			</div>
 
 			<img src="/wp-content/uploads/2019/03/CleanWaterTestingExteriorLarge.jpg" class="image portfolioFeaturedImage">
 

@@ -39,7 +39,7 @@ get_header();
 
 			<section id ="foxStructuresIntro" class="paddedSection">
 
-				<div class="fullWidth flex-container centerAlignedContainer">
+				<div class="fullWidth flex-container centerAlignedContainerTop">
 
 					<div id="introCopy" class="col50">
 

@@ -2,15 +2,9 @@
 .contactContent{
   margin-top: 150px !important;
 }
-.contactHero{
-  background-image: url("/wp-content/uploads/2019/02/kidSearchingOnMap.jpg");
-}
 #contactContent{
-  margin-top: 25px;
+  margin-top: 125px;
   margin-bottom: 25px;
-}
-#formWrap{
-  background-color: $lightGrey;
 }
 #formWrapInner{
   padding: 25px;
@@ -19,7 +13,7 @@
   padding: 20px;
 }
 .smallMapWrapper{
-  padding: 20px;
+  padding: 40px 20px 20px 20px;
 }
 .caldera-grid label{
   color: $black !important;
@@ -40,4 +34,8 @@
 }
 #fld_7683514_1{
   height: 100px;
+}
+.formWrapper{
+  padding: 20px;
+  background-color: $lightGrey;
 }

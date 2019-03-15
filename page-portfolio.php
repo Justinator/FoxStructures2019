@@ -152,13 +152,13 @@ get_header();
 
 					<div id="myBtnContainer">
 
-						<button class="primaryButton active" onclick="filterSelection('all')"> All</button>
-					  <button class="primaryButton" onclick="filterSelection('agricultural')"> Agricultural</button>
-						<button class="primaryButton" onclick="filterSelection('commercial')"> Commercial</button>
-					  <button class="primaryButton" onclick="filterSelection('equestrian')"> Equestrian</button>
-					  <button class="primaryButton" onclick="filterSelection('residential')"> Residential</button>
-						<button class="primaryButton" onclick="filterSelection('storage')"> Storage</button>
-						<button class="primaryButton" onclick="filterSelection('welding')"> Welding</button>
+						<button class="filterButton active" onclick="filterSelection('all')"> All</button>
+					  <button class="filterButton" onclick="filterSelection('agricultural')"> Agricultural</button>
+						<button class="filterButton" onclick="filterSelection('commercial')"> Commercial</button>
+					  <button class="filterButton" onclick="filterSelection('equestrian')"> Equestrian</button>
+					  <button class="filterButton" onclick="filterSelection('residential')"> Residential</button>
+						<button class="filterButton" onclick="filterSelection('storage')"> Storage</button>
+						<!--<button class="filterButton" onclick="filterSelection('welding')"> Welding</button>-->
 
 					</div>
 
@@ -178,19 +178,67 @@ get_header();
 
 					<?php get_template_part("/inc/projects/agricultural/tidy-view"); ?>
 
+					<?php get_template_part("/inc/projects/commercial/clean-water"); ?>
+
 					<?php get_template_part("/inc/projects/agricultural/seven-oaks"); ?>
 
 					<?php get_template_part("/inc/projects/agricultural/schuh-view"); ?>
 
-				</div>
+					<!-- Hide the rest of the projects on first load -->
 
-				<div class="pageWidth buttonWrapper">
+					<?php get_template_part("/inc/projects/commercial/gillett"); ?>
 
-					<div class="centerButton">
+					<?php get_template_part("/inc/projects/equestrian/gordy"); ?>
 
-						<a href="/portfolio/" class="primaryButton">View more building projects</a>
+					<?php get_template_part("/inc/projects/residential/hartzheim-shed"); ?>
 
-					</div>
+					<?php get_template_part("/inc/projects/storage/appleton-northest"); ?>
+
+					<?php get_template_part("/inc/projects/agricultural/bill-kocourek"); ?>
+
+					<?php get_template_part("/inc/projects/agricultural/brickstead"); ?>
+
+					<?php get_template_part("/inc/projects/commercial/greenville"); ?>
+
+					<?php get_template_part("/inc/projects/equestrian/john-keri-vosters"); ?>
+
+					<?php get_template_part("/inc/projects/residential/hobby-storage"); ?>
+
+					<?php get_template_part("/inc/projects/storage/badgerland"); ?>
+
+					<?php get_template_part("/inc/projects/agricultural/conard"); ?>
+
+					<?php get_template_part("/inc/projects/agricultural/fitzpine"); ?>
+
+					<?php get_template_part("/inc/projects/agricultural/grandview"); ?>
+
+					<?php get_template_part("/inc/projects/agricultural/grotegut"); ?>
+
+					<?php get_template_part("/inc/projects/commercial/schmidt"); ?>
+
+					<?php get_template_part("/inc/projects/equestrian/vlach-horse-barn"); ?>
+
+					<?php get_template_part("/inc/projects/residential/larson-cottage"); ?>
+
+					<?php get_template_part("/inc/projects/storage/salm-storage"); ?>
+
+					<?php get_template_part("/inc/projects/agricultural/larry-becker"); ?>
+
+					<?php get_template_part("/inc/projects/agricultural/rieden"); ?>
+
+					<?php get_template_part("/inc/projects/residential/reiter-shed"); ?>
+
+					<?php get_template_part("/inc/projects/agricultural/scott-seward"); ?>
+
+					<?php get_template_part("/inc/projects/storage/mini-warehouse"); ?>
+
+					<?php get_template_part("/inc/projects/agricultural/siemers"); ?>
+
+					<?php get_template_part("/inc/projects/agricultural/tidy-view"); ?>
+
+					<?php get_template_part("/inc/projects/agricultural/tinedale"); ?>
+
+					<?php get_template_part("/inc/projects/agricultural/vogel"); ?>
 
 				</div>
 

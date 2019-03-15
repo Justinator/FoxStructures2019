@@ -46,12 +46,12 @@ get_header();
 						<h3>Pages</h3>
 
 						<ul>
-							<?php wp_list_pages( 'sort_column=post_title' ); ?>
+							<?php wp_list_pages(array('sort_column' => 'post_title', 'exclude' => '419')); ?>
 						</ul>
 
-						<h3>Blog</h3>
+						<h3>News</h3>
 
-						<ul>
+						<ul class="newsPosts">
 							<?php wp_get_archives('type=alpha'); ?>
 						</ul>
 

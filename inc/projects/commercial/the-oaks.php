@@ -1,4 +1,4 @@
-<a href="/portfolio/the-oaks-golf-club/" class="column agricultural">
+<a href="/portfolio/the-oaks-golf-club/" class="column commercial">
 
   <div class="featuredImageWrap">
 

@@ -14,9 +14,15 @@ get_header();
 
 		<section class="pageWidth paddedSection limitPortfolioWidth">
 
-			<h1 class="portfolioTitle centerText">Rosendale Dairy, LLC</h1>
+			<div class="centerText">
 
-			<div class="centerUnderline"></div>
+				<h1 class="portfolioTitle centerText">Rosendale Dairy, LLC</h1>
+
+				<div class="centerUnderline"></div>
+
+				<a href="/services/agricultural/" class="primaryLink">Agricultural</a>
+
+			</div>
 
 			<img src="/wp-content/uploads/2017/09/rosendale-dairy.jpg" class="image portfolioFeaturedImage">
 

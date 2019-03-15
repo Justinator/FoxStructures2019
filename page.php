@@ -18,7 +18,7 @@ get_header();
 
 		<main id="main" class="site-main">
 
-			<div class="pageWidth defaultPadding limitPortfolioWidth portfolioBlock">
+			<div class="pageWidth limitPortfolioWidth portfolioBlock">
 
 					<?php
 				while ( have_posts() ) :

@@ -16,27 +16,24 @@
 .page_item{
   a{
     text-decoration: none;
-  	transition: .3s ease all;
+  	transition: .2s ease all;
   	position: relative;
-  			&:before{
-          position: absolute;
-    			content: "";
-    			background: $primaryYellow;
-    			top: 0;
-    			left: 0;
-    			width: 100%;
-      		transform: scaleX(1);
-    			height: 2px;
-  			}
-  		&:after{
-        position: absolute;
-  			content: "";
-  			background: $primaryYellow;
-  			bottom: 0;
-  			right: 0;
-  			width: 100%;
-    		transform: scaleX(1);
-  			height: 2px;
-  		}
+    color: $primaryGrey;
+    &:hover{
+      color: $primaryYellow;
+      transition: .2s ease all;
+    }
+  }
+}
+.newsPosts{
+  a{
+    text-decoration: none;
+  	transition: .2s ease all;
+  	position: relative;
+    color: $primaryGrey;
+    &:hover{
+      color: $primaryYellow;
+      transition: .2s ease all;
+    }
   }
 }

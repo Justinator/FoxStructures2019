@@ -40,7 +40,7 @@ get_header();
 
 							<h3 class="noMargin">Contact Us to Discuss Your Project</h3>
 
-							<a href="/contact/" class="heroCTAButton" role="link"><span>Contact</span></a>
+							<a href="/contact/" class="heroCTAButton"><span>Contact</span></a>
 
 						</div>
 
@@ -57,7 +57,7 @@ get_header();
 
 			<section id ="foxStructuresIntro" class="paddedSection">
 
-				<div class="fullWidth flex-container centerAlignedContainer">
+				<div class="fullWidth flex-container centerAlignedContainerTop">
 
 					<div id="introCopy" class="col50">
 
@@ -78,7 +78,7 @@ get_header();
 							<p>
 								Browse some of the unique <a href="/services/agricultural/" class="primaryLink">agricultural</a>
 								and <a href="/services/commercial/" class="primaryLink">commercial</a> construction
-								projects we’ve built in the past. Then <a href="/services/agricultural/" class="primaryLink">contact us</a>
+								projects we’ve built in the past. Then <a href="/contact/" class="primaryLink">contact us</a>
 								and see why we build with you in mind!
 							</p>
 
@@ -189,7 +189,7 @@ get_header();
 
 			<section id ="foxStructuresIntro" class="paddedSection">
 
-				<div class="fullWidth flex-container-reverse centerAlignedContainer">
+				<div class="fullWidth flex-container-reverse centerAlignedContainerTop">
 
 					<div id="introCopy" class="col50">
 

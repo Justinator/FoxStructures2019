@@ -2,18 +2,18 @@
 
   <div class="servicesSidebarWrapper">
 
-    <h4 class="noMargin">Services</h4>
+    <h2 class="noMargin">Services</h2>
 
     <div class="underline"></div>
 
     <ul class="servicesList">
 
-      <li><a href="/services/agricultural/" class="primaryLink">Agricultural</a></li>
-      <li><a href="/services/commercial/" class="primaryLink">Commercial</a></li>
-      <li><a href="/services/equestrian/" class="primaryLink">Equestrian</a></li>
-      <li><a href="/services/residential/" class="primaryLink">Residential</a></li>
-      <li><a href="/services/storage/" class="primaryLink">Storage</a></li>
-      <li><a href="/services/welding/" class="primaryLink">Welding</a></li>
+      <li><a href="/services/agricultural/" class="subNavLink">Agricultural</a></li>
+      <li><a href="/services/commercial/" class="subNavLink">Commercial</a></li>
+      <li><a href="/services/equestrian/" class="subNavLink">Equestrian</a></li>
+      <li><a href="/services/residential/" class="subNavLink">Residential</a></li>
+      <li><a href="/services/storage/" class="subNavLink">Storage</a></li>
+      <li><a href="/services/welding/" class="subNavLink">Welding</a></li>
 
     </ul>
 

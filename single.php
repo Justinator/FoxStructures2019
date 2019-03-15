@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-<div class="pageWidth defaultPadding limitWidth">
+<div class="pageWidth limitWidth">
 
 	<div id="primary" class="content-area">
 
