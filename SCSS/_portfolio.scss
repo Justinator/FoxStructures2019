@@ -1,4 +1,7 @@
 /* 17.0 Portfolio Page stylings -------------------------------------------*/
+.portfolioHero{
+  background-image: url("/wp-content/uploads/2019/03/waterRightCropped.jpg");
+}
 .paddedWrapper{
   @include breakpoint(smallScreen){
     padding: 0;
@@ -105,12 +108,9 @@
       }
 		}
     @include breakpoint(smallScreen){
-      width: 80%;
+      width: 100%;
     }
     @include breakpoint(largeMobileScreen){
-      width: 40%;
-    }
-    @include breakpoint(largeScreen){
       width: 50%;
     }
 	}
@@ -126,9 +126,6 @@
 }
 .imageWrap{
   text-align: center;
-}
-.leaderImage{
-  width: 60%;
 }
 .portfolioFeaturedImage{
   margin-bottom: 25px;
@@ -156,9 +153,9 @@
     margin-left:5px;
   }
 }
-#oaksProject{
+.project{
   padding-bottom: 50px;
-  border-bottom: 1px solid $black;
+  border-bottom: 1px solid $primaryGrey;
 }
 .moreFeaturedProjectsWrapper{
   display: flex;
@@ -185,7 +182,7 @@
     @include breakpoint(largeMobileScreen){
       width: 50%;
     }
-    @include breakpoint(largeScreen){
+    @include breakpoint(laptopScreen){
       width: 33%;
     }
 	}
@@ -220,7 +217,7 @@
   opacity: 0;
 }
 .featuredProjectsBlock{
-  border-top: 1px solid $black;
+  border-top: 1px solid $primaryGrey;
 }
 #simpleProject{
   .post-thumbnail{
@@ -229,4 +226,38 @@
 }
 .hidden{
   display: none;
+}
+.largePortfolioImage{
+  margin: -5px 0;
+  @include breakpoint(smallScreen){
+    margin: 10px 0 0 0;
+  }
+  @include breakpoint(largeMobileScreen){
+    margin: 10px 0 0 0;
+  }
+  @include breakpoint(laptopScreen){
+    margin: -5px 0;
+  }
+}
+.doubleImageWrapper{
+  @include breakpoint(smallScreen){
+    margin-bottom: -8px;
+  }
+  @include breakpoint(largeMobileScreen){
+    margin-bottom: -8px;
+  }
+  @include breakpoint(laptopScreen){
+    margin-bottom: 0;
+  }
+}
+.doubleImageWrapper2{
+  @include breakpoint(smallScreen){
+    margin: 10px 0 -10px 0;
+  }
+  @include breakpoint(largeMobileScreen){
+    margin: 10px 0 -10px 0;
+  }
+  @include breakpoint(laptopScreen){
+    margin: 0;
+  }
 }

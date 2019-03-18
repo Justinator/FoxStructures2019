@@ -11,50 +11,67 @@
 
 <div class="postWrapper">
 
-	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<header class="entry-header">
-			<?php
-			if ( is_singular() ) :
-				the_title( '<h1 class="entry-title">', '</h1>' );
-			else :
-				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-			endif;
+	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
 
-			if ( 'post' === get_post_type() ) :
-				?>
-				<div class="entry-meta">
+		<div class="flex-container">
+
+			<div class="col40">
+
+				<header class="entry-header">
 					<?php
-					foxStructuresresponsive_posted_on();
-					foxStructuresresponsive_posted_by();
-					?>
-				</div><!-- .entry-meta -->
-			<?php endif; ?>
-		</header><!-- .entry-header -->
+					if ( is_singular() ) :
+						the_title( '<h1 class="entry-title">', '</h1>' );
+					else :
+						the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+					endif;
 
-		<?php foxStructuresresponsive_post_thumbnail(); ?>
+					if ( 'post' === get_post_type() ) :
+						?>
+						<div class="entry-meta">
+							<?php
+							foxStructuresresponsive_posted_on();
+							foxStructuresresponsive_posted_by();
+							?>
+						</div><!-- .entry-meta -->
+					<?php endif; ?>
+				</header><!-- .entry-header -->
 
-		<div class="entry-content">
-			<?php
-				the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark" class="blogTitleLink">', '</a></h2>' );
+				<?php foxStructuresresponsive_post_thumbnail(); ?>
 
-				foxStructuresresponsive_posted_on();
-				foxStructuresresponsive_posted_by();
+			</div>
 
-				the_excerpt();
-			?>
-		</div><!-- .entry-content -->
+			<div class="col60">
 
-		<div class="continue-reading">
+				<div class="blogText">
 
-			<?php
-			$read_more_link = sprintf(
-				/* translators: %s: Name of current post. */
-				wp_kses( __( 'Continue Reading %s', 'foxStructuresResponsive' ), array( 'span' => array( 'class' => array() ) ) ),
-				the_title( '<span class="screen-reader-text">"', '"</span>', false )
-			);
-			?>
+					<div class="entry-content">
+						<?php
+							the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark" class="blogTitleLink">', '</a></h2>' );
 
-			<a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark" class="primaryButton"><?php echo $read_more_link; ?></a>
+							foxStructuresresponsive_posted_on();
+							foxStructuresresponsive_posted_by();
+
+							the_excerpt();
+						?>
+					</div><!-- .entry-content -->
+
+					<div class="continue-reading">
+
+						<?php
+						$read_more_link = sprintf(
+							/* translators: %s: Name of current post. */
+							wp_kses( __( 'Continue Reading %s', 'foxStructuresResponsive' ), array( 'span' => array( 'class' => array() ) ) ),
+							the_title( '<span class="screen-reader-text">"', '"</span>', false )
+						);
+						?>
+
+						<a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark" class="primaryButton"><?php echo $read_more_link; ?></a>
+
+					</div>
+
+				</div>
+
+			</div>
 
 		</div>
 

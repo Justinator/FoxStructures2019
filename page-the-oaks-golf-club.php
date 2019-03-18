@@ -20,9 +20,9 @@ get_header();
 
 				<div class="centerUnderline"></div>
 
-				<a href="/services/commerical/" class="primaryLink">Commercial</a>
+				<a href="/services/commercial/" class="primaryLink">Commercial</a>
 
-			</div>	
+			</div>
 
 			<img src="/wp-content/uploads/2019/03/OaksGolfClubExteriorLarge.jpg" class="image portfolioFeaturedImage">
 
@@ -34,7 +34,7 @@ get_header();
 
 		<section id="pageContent" class="limitPortfolioWidth">
 
-			<section id="oaksProject">
+			<section class="project">
 
 				<div class="fullWidth flex-container">
 
@@ -89,7 +89,7 @@ get_header();
 
 				<div id="largeDroneImage" class="tinyPaddedSection paddedSideWrapper">
 
-					<img src="/wp-content/uploads/2019/03/OaksDroneShotsLarge.jpg" class="image">
+					<img src="/wp-content/uploads/2019/03/OaksDroneShotsLarge.jpg" class="image largePortfolioImage">
 
 				</div>
 

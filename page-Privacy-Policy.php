@@ -154,7 +154,7 @@ get_header();
 
 				      <p>
 				      We use Google Analytics to analyze the use of our website. Google Analytics gathers information about how our website is used by means of cookies. The information gathered relating to
-				      our website is used to create reports about the use of our website. View <a href="https://policies.google.com/privacy?hl=en&gl=uk" target="_blank" class="plainLink">Google's privacy policy.</a>
+				      our website is used to create reports about the use of our website. View <a href="https://policies.google.com/privacy?hl=en&gl=uk" target="_blank" class="primaryLink">Google's privacy policy.</a>
 				      </p>
 
 				      <h4>
@@ -198,17 +198,17 @@ get_header();
 				      </p>
 
 				      <p>
-				        <a href="https://support.google.com/chrome/answer/95647?hl=en&" target="_blank" class ="plainLink">Google Chrome<br></a>
+				        <a href="https://support.google.com/chrome/answer/95647?hl=en&" target="_blank" class="primaryLink">Google Chrome</a><br>
 
-				        <a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank" class ="plainLink">Firefox<br></a>
+				        <a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank" class ="primaryLink">Firefox</a><br>
 
-				        <a href="https://www.opera.com/help/tutorials/security/cookies/" target="_blank" class="plainLink">Opera<br></a>
+				        <a href="https://www.opera.com/help/tutorials/security/cookies/" target="_blank" class="primaryLink">Opera</a><br>
 
-				        <a href="https://support.microsoft.com/en-gb/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank" class="plainLink">Internet Explorer<br></a>
+				        <a href="https://support.microsoft.com/en-gb/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank" class="primaryLink">Internet Explorer</a><br>
 
-				        <a href="https://support.apple.com/kb/PH21411?locale=en_US" target="_blank" class="plainLink">Safari<br></a>
+				        <a href="https://support.apple.com/kb/PH21411?locale=en_US" target="_blank" class="primaryLink">Safari</a><br>
 
-				        <a href="https://privacy.microsoft.com/en-us/windows-10-microsoft-edge-and-privacy" target="_blank" class="plainLink">Edge<br></a>
+				        <a href="https://privacy.microsoft.com/en-us/windows-10-microsoft-edge-and-privacy" target="_blank" class="primaryLink">Edge</a><br>
 
 				      </p>
 

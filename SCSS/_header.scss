@@ -45,6 +45,7 @@
 			color: $white;
 			font-weight: 700;
     	letter-spacing: 1px;
+			padding: 5px;
 			@include breakpoint(tabletScreen){
 				font-size: 16px;
 			}
@@ -199,7 +200,7 @@ nav{
 #mobile-menu{
 	position: relative;
 	width: 90%;
-	top: 75px;
+	top: 25px;
 	padding: 0;
 	margin: 0 auto;
 	li{

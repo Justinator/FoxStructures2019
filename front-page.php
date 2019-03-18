@@ -111,57 +111,73 @@ get_header();
 
 					<div class="featuredProjectWrapper">
 
-						<div class="featuredProjectOverlay"></div>
+						<a href="/portfolio/the-oaks-golf-club/">
 
-						<div class="featuredProjectContent">
+							<div class="featuredProjectOverlay"></div>
 
-							<img src="/wp-content/uploads/2019/02/OaksIntExtStillsMediumSquare.jpg" class="featuredProjectImage">
+							<div class="featuredProjectContent">
 
-							<h4 class="featuredProjectTitle"><span class="projectTitleSpan">The Oaks Golf Course</span></h4>
+								<img src="/wp-content/uploads/2019/02/OaksIntExtStillsMediumSquare.jpg" class="featuredProjectImage">
 
-						</div>
+								<h5 class="featuredProjectTitle"><span class="projectTitleSpan">The Oaks Golf Course</span></h5>
 
-					</div>
+							</div>
 
-					<div class="featuredProjectWrapper">
-
-						<div class="featuredProjectOverlay"></div>
-
-						<div class="featuredProjectContent">
-
-							<img src="/wp-content/uploads/2019/02/virClarFarmsSquare.jpg" class="featuredProjectImage">
-
-							<h4 class="featuredProjectTitle"><span class="projectTitleSpan">Vir-Clar Farms</span></h4>
-
-						</div>
+						</a>
 
 					</div>
 
 					<div class="featuredProjectWrapper">
 
-						<div class="featuredProjectOverlay"></div>
+						<a href="/portfolio/water-right/">
 
-						<div class="featuredProjectContent">
+							<div class="featuredProjectOverlay"></div>
 
-							<img src="/wp-content/uploads/2019/02/waterRightSquare.jpg" class="featuredProjectImage">
+							<div class="featuredProjectContent">
 
-							<h4 class="featuredProjectTitle"><span class="projectTitleSpan">Water Right</span></h4>
+								<img src="/wp-content/uploads/2019/02/waterRightSquare.jpg" class="featuredProjectImage">
 
-						</div>
+								<h5 class="featuredProjectTitle"><span class="projectTitleSpan">Water Right</span></h5>
+
+							</div>
+
+						</a>
 
 					</div>
 
 					<div class="featuredProjectWrapper">
 
-						<div class="featuredProjectOverlay"></div>
+						<a href="/portfolio/rosendale-dairy/">
 
-						<div class="featuredProjectContent">
+							<div class="featuredProjectOverlay"></div>
 
-							<img src="/wp-content/uploads/2019/02/randomWeldingProjectSquare.jpg" class="featuredProjectImage">
+							<div class="featuredProjectContent">
 
-							<h4 class="featuredProjectTitle"><span class="projectTitleSpan">Future Welding Project</span></h4>
+								<img src="/wp-content/uploads/2019/03/rosendaleDairySquare.jpg" class="featuredProjectImage">
 
-						</div>
+								<h5 class="featuredProjectTitle"><span class="projectTitleSpan">Rosendale Dairy</span></h5>
+
+							</div>
+
+						</a>
+
+					</div>
+
+					<div class="featuredProjectWrapper">
+
+						<a href="/portfolio/clean-water-center-clean-water-testing/">
+
+							<div class="featuredProjectOverlay"></div>
+
+							<div class="featuredProjectContent">
+
+								<img src="/wp-content/uploads/2019/03/CleanWaterTestingExteriorSquare.jpg" class="featuredProjectImage">
+
+								<h5 class="featuredProjectTitle"><span class="projectTitleSpan">Clean Water Center</span></h5>
+
+							</div>
+
+						</a>
 
 					</div>
 

@@ -55,11 +55,11 @@ get_header();
 									</p>
 
 									<p>
-										Phone: <a class="primaryLink" href="tel:(920)432-8899">800-236-1369</a>
+										Phone: <a class="primaryLink" href="tel:(800)236-1369">800-236-1369</a>
 										<br>
-										Local: <a class="primaryLink" href="tel:(920)432-8899">(920) 766-9305</a>
+										Local: <a class="primaryLink" href="tel:(920)766-9305">(920) 766-9305</a>
 										<br>
-										Fax: <a class="primaryLink" href="tel:(920)432-8899">920-766-9354</a>
+										Fax: 920-766-9354
 									</p>
 									<p>E-mail: <a href="mailto:info@foxstructures.com" class="primaryLink">info@foxstructures.com</a>
 

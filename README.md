@@ -57,14 +57,46 @@ Each individual pages custom styles are held in the scss file with the correspon
 
 ## :milky_way: JavaScript
 
-The js folder holds all your JavaScript files, here you will find JavaScript for barba.js and our sites custom JavaScript
+The js folder holds all your JavaScript files
 
 ## :computer: Functions
 
-Functions.php contains any custom funtions not originally apart of the underscores starter theme
+Functions.php contains any custom funtions for the site
 
 # :eyes: Usage
 
 ## :black_nib: Writing to your SCSS file
 
 sass --watch \SCSS/style.scss:style.css
+
+## :hammer: Adding projects to the portfolio
+
+I know this may have not been the most elegant way of setting this up but, I don't like using WordPress plugins like contentViews for things like displaying content. I set
+things up this way to have full control of styles and usage. I also wanted full control of the order that projects are displayed. Since so many of them have very little to no detail,
+I didn't want to bury the good projects like the old site did. Projects are displayed exactly the way you set them, so if you have a great new project to add, add it in the featured projects
+section at the top and then move the project you're replacing to the first spot of the main portfolio section so it's easy for site visitors to see.
+
+To allow full customization on project pages, the more detailed projects have their own page files. The projects that have little to no detail just use the default template. To create a
+new project page duplicate the oaks golf club page for a good base and start adding in your new info and project images.
+
+### Add your new project to the portfolio.
+
+Projects are stored in the inc folder. inc>projects>projectType
+
+1. Navigate to the folder for the project type that you're creating.
+2. In your text editor duplicate one of the existing projects and rename it with whatever your new project is titled.
+3. Change the project url to the new page that you created for this project.
+4. Make sure your project has the proper class ex. commercial projects will be classed "column commercial". The class titles are used for the gallery filter so make sure those are accurate
+5. Change your projects featured image. To prevent the image issues the old site had I've been using 600x400 images sizes for all projects so the gallery remains consistent. The old images
+were all different sizes and created an uneven and scattered gallery display
+6. In the projectInfo div change your projects Title
+7. Open the portfolio page file page-portfolio.php and add your new template part to the portfolio.
+8. Upload and enjoy your new project
+
+## :construction: Adding a new job posting to the careers page
+
+1. Add your new career page to the sites
+2. Enter your job details and add a featured image to the page. This will be the hero image for the job post
+3. Careers pages use the careers-single.php page template. This loads our sidebar and all components for the page.
+4. To update the sidebar navigate to the inc folder and find careers-sidebar.php.
+5. Add a new list item and upload  

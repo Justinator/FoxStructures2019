@@ -17,7 +17,7 @@ get_header();
 
 <section>
 
-	<div class="mediumHero weldHero2">
+	<div class="mediumHero blueprintHero">
 
 		<div class="fullWidth heroHeadingContainer">
 
@@ -38,7 +38,7 @@ get_header();
 
 </section>
 
-<div class="pageWidth defaultPadding limitWidth">
+<div class="pageWidth limitWidth">
 
 	<div id="primary" class="content-area">
 
