@@ -236,6 +236,7 @@ button{
 	padding: 10px;
 	cursor: pointer;
 	transition: .2s ease all;
+	margin: 5px 0;
 	&:active{
 		background: $primaryGrey;
 		color: $white;

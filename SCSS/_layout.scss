@@ -496,5 +496,13 @@
 	padding-bottom: 0;
 }
 .site-content{
-	margin-top: 75px;
+	@include breakpoint(smallScreen){
+		margin-top: 45px;
+	}
+	@include breakpoint(largeMobileScreen){
+		margin-top: 45px;
+	}
+	@include breakpoint(laptopScreen){
+		margin-top: 75px;
+	}
 }

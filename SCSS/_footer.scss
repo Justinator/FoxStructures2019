@@ -31,48 +31,31 @@
 			color: $secondaryGrey;
 			font-weight: 700;
     	letter-spacing: 1px;
+			padding: 5px;
 			@include breakpoint(tabletScreen){
 				font-size: 16px;
 			}
+			@include breakpoint(laptopScreen){
+				font-size: 14px;
+			}
 			@include breakpoint(largeScreen){
+				font-size: 16px;
+			}
+			@include breakpoint(extraLargeScreen){
 				font-size: 20px;
 			}
 		}
 	}
 }
 #contactInfo{
-	a{
-		text-decoration: none;
-		color: $primaryGrey !important;
-		transition: .3s ease all;
-		position: relative;
-		transition: .3s ease all;
-			&:hover{
-			color: $primaryGrey;
-			transition: .3s ease all;
-				&:after{
-					position: absolute;
-					height: 2px;
-					width: 100%;
-					background: $primaryGrey;
-					content: "";
-					bottom: 0;
-					left: 0;
-					opacity: 1;
-					transition: .3s ease all;
-				}
-			}
-			&:after{
-				position: absolute;
-				height: 2px;
-				width: 100%;
-				background: $primaryGrey;
-				content: "";
-				bottom: 25%;
-				left: 0;
-				opacity: 0;
-				transition: .3s ease all;
-			}
+	@include breakpoint(smallScreen){
+		width: 100%;
+	}
+	@include breakpoint(largeMobileScreen){
+		width: 50%;
+	}
+	@include breakpoint(laptopScreen){
+		width: 40%;
 	}
 }
 .site-footer{

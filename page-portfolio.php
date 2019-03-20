@@ -14,7 +14,7 @@ get_header();
 
 		<section>
 
-			<div class="mediumHero aboutHero">
+			<div class="mediumHero portfolioHero">
 
 				<div class="fullWidth heroHeadingContainer">
 
@@ -43,14 +43,18 @@ get_header();
 
 					<div class="limitWidth">
 
-						<p>
-							Exemplary finished projects and satisfied customers are our greatest reward. Take a look at just
-							some of our completed projects and see why over 80% of our business today comes from repeat clients.
-						</p>
-						<p>
-							Browse some of the unique projects we’ve built in the past. Then <a href="/contact/" class="primaryLink">contact us</a>
-							and see why our building success starts with you!
-						</p>
+						<div class="blockText">
+
+							<p>
+								Exemplary finished projects and satisfied customers are our greatest reward. Take a look at just
+								some of our completed projects and see why over 80% of our business today comes from repeat clients.
+							</p>
+							<p>
+								Browse some of the unique projects we’ve built in the past. Then <a href="/contact/" class="primaryLink">contact us</a>
+								and see why our building success starts with you!
+							</p>
+
+						</div>
 
 					</div>
 
@@ -166,6 +170,8 @@ get_header();
 
 				<div id="portfolioWrapper" class="pageWidth portfolioWrapper">
 
+					<?php get_template_part("/inc/projects/commercial/N.E.W.Printing"); ?>
+
 					<?php get_template_part("/inc/projects/equestrian/vlach-horse-barn"); ?>
 
 					<?php get_template_part("/inc/projects/agricultural/shiloh"); ?>
@@ -183,6 +189,8 @@ get_header();
 					<?php get_template_part("/inc/projects/agricultural/seven-oaks"); ?>
 
 					<?php get_template_part("/inc/projects/agricultural/schuh-view"); ?>
+
+						<?php get_template_part("/inc/projects/agricultural/grotegut"); ?>
 
 					<!-- Hide the rest of the projects on first load -->
 
@@ -211,8 +219,6 @@ get_header();
 					<?php get_template_part("/inc/projects/agricultural/fitzpine"); ?>
 
 					<?php get_template_part("/inc/projects/agricultural/grandview"); ?>
-
-					<?php get_template_part("/inc/projects/agricultural/grotegut"); ?>
 
 					<?php get_template_part("/inc/projects/commercial/schmidt"); ?>
 

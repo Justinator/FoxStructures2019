@@ -1,6 +1,6 @@
-<section class="servicesOverview greyBlock">
+<section class="servicesOverview greyBlock smallPaddedSection">
 
-  <div class="fullWidth centerText smallPaddedSection">
+  <div class="fullWidth centerText">
 
     <h3 class="noMargin">Agricultural and Commercial Construction Services</h3>
 
@@ -8,7 +8,7 @@
 
   </div>
 
-  <div class="navWidth wrappedFlexContainer">
+  <div class="servicesWrapper wrappedFlexContainer">
 
     <div class="col30SplitTablet">
 
@@ -24,7 +24,7 @@
 
               <div class="categoryLinkDesc">
 
-                <h4>Learn More</h4>
+                <h4>Learn More</h4><span class="screen-reader-text">About Fox Structures' Agricultural Services</span>
 
               </div>
 
@@ -65,7 +65,7 @@
 
               <div class="categoryLinkDesc">
 
-                <h4>Learn More</h4>
+                <h4>Learn More</h4><span class="screen-reader-text">About Fox Structures' Commercial Services</span>
 
               </div>
 
@@ -106,7 +106,7 @@
 
               <div class="categoryLinkDesc">
 
-                <h4>Learn More</h4>
+                <h4>Learn More</h4><span class="screen-reader-text">About Fox Structures' Equestrian Services</span>
 
               </div>
 
@@ -148,7 +148,7 @@
 
               <div class="categoryLinkDesc">
 
-                <h4>Learn More</h4>
+                <h4>Learn More</h4><span class="screen-reader-text">About Fox Structures' Residential Services</span>
 
               </div>
 
@@ -189,7 +189,7 @@
 
               <div class="categoryLinkDesc">
 
-                <h4>Learn More</h4>
+                <h4>Learn More</h4><span class="screen-reader-text">About Fox Structures' Storage Services</span>
 
               </div>
 
@@ -230,7 +230,7 @@
 
               <div class="categoryLinkDesc">
 
-                <h4>Learn More</h4>
+                <h4>Learn More</h4><span class="screen-reader-text">About Fox Structures' Welding Services</span>
 
               </div>
 

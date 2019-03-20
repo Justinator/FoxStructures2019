@@ -801,8 +801,15 @@ template {
 .removeBottomPadding {
   padding-bottom: 0; }
 
-.site-content {
-  margin-top: 75px; }
+@media (max-width: 600px) {
+  .site-content {
+    margin-top: 45px; } }
+@media (min-width: 600px) {
+  .site-content {
+    margin-top: 45px; } }
+@media (min-width: 992px) {
+  .site-content {
+    margin-top: 75px; } }
 
 /*4.0 Header Styling -------------------------------------------*/
 .site-header {
@@ -849,7 +856,8 @@ template {
     text-decoration: none;
     color: #FFFFFF;
     font-weight: 700;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    padding: 5px; }
     @media (min-width: 768px) {
       #primary-menu li a {
         font-size: 16px; } }
@@ -988,7 +996,7 @@ nav {
 #mobile-menu {
   position: relative;
   width: 90%;
-  top: 75px;
+  top: 25px;
   padding: 0;
   margin: 0 auto; }
   #mobile-menu li {
@@ -1277,43 +1285,30 @@ nav {
     text-decoration: none;
     color: #a5a7aa;
     font-weight: 700;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    padding: 5px; }
     @media (min-width: 768px) {
       #footer-menu li a {
         font-size: 16px; } }
+    @media (min-width: 992px) {
+      #footer-menu li a {
+        font-size: 14px; } }
     @media (min-width: 1250px) {
+      #footer-menu li a {
+        font-size: 16px; } }
+    @media (min-width: 1600px) {
       #footer-menu li a {
         font-size: 20px; } }
 
-#contactInfo a {
-  text-decoration: none;
-  color: #404041 !important;
-  transition: .3s ease all;
-  position: relative;
-  transition: .3s ease all; }
-  #contactInfo a:hover {
-    color: #404041;
-    transition: .3s ease all; }
-    #contactInfo a:hover:after {
-      position: absolute;
-      height: 2px;
-      width: 100%;
-      background: #404041;
-      content: "";
-      bottom: 0;
-      left: 0;
-      opacity: 1;
-      transition: .3s ease all; }
-  #contactInfo a:after {
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    background: #404041;
-    content: "";
-    bottom: 25%;
-    left: 0;
-    opacity: 0;
-    transition: .3s ease all; }
+@media (max-width: 600px) {
+  #contactInfo {
+    width: 100%; } }
+@media (min-width: 600px) {
+  #contactInfo {
+    width: 50%; } }
+@media (min-width: 992px) {
+  #contactInfo {
+    width: 40%; } }
 
 .site-footer {
   position: relative;
@@ -1558,10 +1553,10 @@ h2 {
   font-size: 2em; }
   @media (max-width: 600px) {
     h2 {
-      font-size: 1.8em; } }
+      font-size: 1.4em; } }
   @media (min-width: 600px) {
     h2 {
-      font-size: 1.8em; } }
+      font-size: 1.4em; } }
   @media (min-width: 768px) {
     h2 {
       font-size: 2em; } }
@@ -1570,8 +1565,11 @@ h3 {
   font-size: 1.8em; }
   @media (max-width: 600px) {
     h3 {
-      font-size: 1.4em; } }
+      font-size: 1.3em; } }
   @media (min-width: 600px) {
+    h3 {
+      font-size: 1.3em; } }
+  @media (min-width: 768px) {
     h3 {
       font-size: 1.8em; } }
 
@@ -1579,10 +1577,10 @@ h4 {
   font-size: 1.6em; }
   @media (max-width: 600px) {
     h4 {
-      font-size: 1.4em; } }
+      font-size: 1.2em; } }
   @media (min-width: 600px) {
     h4 {
-      font-size: 1.4em; } }
+      font-size: 1.2em; } }
   @media (min-width: 768px) {
     h4 {
       font-size: 1.6em; } }
@@ -1896,7 +1894,8 @@ button {
 .filterButton {
   padding: 10px;
   cursor: pointer;
-  transition: .2s ease all; }
+  transition: .2s ease all;
+  margin: 5px 0; }
   .filterButton:active {
     background: #404041;
     color: #FFFFFF; }
@@ -2162,12 +2161,8 @@ body {
     transform-origin: bottom right;
     transform: scaleX(1); }
 
-@media (max-width: 600px) {
-  #pageContent {
-    margin-top: 40px; } }
-@media (min-width: 600px) {
-  #pageContent {
-    margin-top: 0; } }
+#pageContent {
+  margin-top: 0; }
 
 #mainHeader {
   margin-bottom: 0; }
@@ -2274,13 +2269,25 @@ body {
   color: #FFFFFF;
   text-align: center; }
 
+.servicesWrapper {
+  margin: 0 auto; }
+  @media (max-width: 600px) {
+    .servicesWrapper {
+      width: 100%; } }
+  @media (min-width: 600px) {
+    .servicesWrapper {
+      width: 100%; } }
+  @media (min-width: 1250px) {
+    .servicesWrapper {
+      width: 90%; } }
+
 @media (max-width: 600px) {
   .categoryWrapper {
     margin: 0; } }
 @media (min-width: 600px) {
   .categoryWrapper {
     margin: 10px; } }
-@media (min-width: 768px) {
+@media (min-width: 1600px) {
   .categoryWrapper {
     margin: 25px; } }
 
@@ -2548,6 +2555,9 @@ body {
 .storageHero {
   background-image: url("/wp-content/uploads/2019/03/appleStrageCropped2.jpg"); }
 
+.blueprintHero {
+  background-image: url("/wp-content/uploads/2019/03/CustomPlans-CroppedMedium.jpg"); }
+
 /* 13.0 Contact Page stylings -------------------------------------------*/
 .contactContent {
   margin-top: 150px !important; }
@@ -2556,8 +2566,12 @@ body {
   margin-top: 125px;
   margin-bottom: 25px; }
 
-#formWrapInner {
-  padding: 25px; }
+@media (max-width: 600px) {
+  #formWrapInner {
+    padding: 0; } }
+@media (min-width: 600px) {
+  #formWrapInner {
+    padding: 25px; } }
 
 .locationContent {
   padding: 20px; }
@@ -2569,7 +2583,7 @@ body {
   color: #000000 !important; }
 
 .field_required {
-  color: #404041 !important; }
+  color: #f4a81d !important; }
 
 .CF5c3c73e0407dd input[type=text], .CF5c3c73e0407dd input[type=email], #fld_7683514_1 {
   margin-top: 10px;
@@ -2588,6 +2602,22 @@ body {
 .formWrapper {
   padding: 20px;
   background-color: #f6f6f6; }
+
+#fld_7908577_1 {
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  width: fit-content;
+  color: #404041;
+  transition: .2s ease all;
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+  border: none;
+  background: #f4a81d; }
+  #fld_7908577_1:hover {
+    transition: .2s ease all;
+    background: #404041;
+    color: #FFFFFF; }
 
 /* 14.0 About Pages stylings -------------------------------------------*/
 .aboutHero {
@@ -2650,8 +2680,18 @@ body {
 .imageWrap {
   text-align: center; }
 
-.leaderImage {
-  width: 60%; }
+@media (max-width: 600px) {
+  .leaderImage {
+    width: 80%; } }
+@media (min-width: 600px) {
+  .leaderImage {
+    width: 60%; } }
+@media (min-width: 992px) {
+  .leaderImage {
+    width: 45%; } }
+@media (min-width: 1600px) {
+  .leaderImage {
+    width: 35%; } }
 
 .jobPostWrapper {
   margin: 10px;
@@ -2703,19 +2743,23 @@ body {
     color: #f4a81d;
     transition: .2s ease all; }
 
+.pagenav {
+  list-style-type: none; }
+
 /* 16.0 Archive/News Page stylings -------------------------------------------*/
-.blogHero {
-  background-image: url("/wp-content/uploads/2019/02/momWithChildrens.jpg"); }
-
-.postWrapper {
-  margin: 25px 0; }
-
-.post {
-  padding: 20px; }
-  .post h2 {
-    margin-block-end: 15px; }
-  .post p {
-    margin-top: 15px; }
+@media (max-width: 600px) {
+  .post {
+    padding: 0 0 20px 0; } }
+@media (min-width: 600px) {
+  .post {
+    padding: 20px 0; } }
+@media (min-width: 992px) {
+  .post {
+    padding: 20px; } }
+.post h2 {
+  margin-block-end: 15px; }
+.post p {
+  margin-top: 15px; }
 
 .screen-reader-text {
   display: none; }
@@ -2775,15 +2819,20 @@ body {
     background: #404041;
     transition: .3s ease all; }
 
+.post-thumbnail {
+  text-align: center; }
+
 .attachment-post-thumbnail {
   width: 100%;
-  height: auto; }
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 40px; }
 
 .entry-content h2 {
   font-size: 1.5em; }
 
 .size-full {
-  width: 100%;
+  width: 70%;
   height: auto; }
 
 .search-form .search-submit {
@@ -2798,9 +2847,31 @@ body {
     transition: .3s ease all; }
 
 .postHeader {
-  margin-bottom: 40px; }
+  margin-bottom: 15px; }
+
+.blogText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto; }
+  @media (max-width: 600px) {
+    .blogText {
+      padding: 0; } }
+  @media (min-width: 600px) {
+    .blogText {
+      padding: 0; } }
+  @media (min-width: 992px) {
+    .blogText {
+      padding: 25px; } }
+
+.thumbnailWrapper .post-thumbnail .attachment-post-thumbnail {
+  width: 70%; }
 
 /* 17.0 Portfolio Page stylings -------------------------------------------*/
+.portfolioHero {
+  background-image: url("/wp-content/uploads/2019/03/waterRightCropped.jpg"); }
+
 @media (max-width: 600px) {
   .paddedWrapper {
     padding: 0; } }
@@ -2891,11 +2962,8 @@ body {
       color: #f4a81d; }
     @media (max-width: 600px) {
       .portfolioWrapper a {
-        width: 80%; } }
+        width: 100%; } }
     @media (min-width: 600px) {
-      .portfolioWrapper a {
-        width: 40%; } }
-    @media (min-width: 1250px) {
       .portfolioWrapper a {
         width: 50%; } }
 
@@ -2910,9 +2978,6 @@ body {
 
 .imageWrap {
   text-align: center; }
-
-.leaderImage {
-  width: 60%; }
 
 .portfolioFeaturedImage {
   margin-bottom: 25px;
@@ -2938,9 +3003,9 @@ body {
   .smallMarginLeft {
     margin-left: 5px; } }
 
-#oaksProject {
+.project {
   padding-bottom: 50px;
-  border-bottom: 1px solid #000000; }
+  border-bottom: 1px solid #404041; }
 
 .moreFeaturedProjectsWrapper {
   display: flex;
@@ -2963,7 +3028,7 @@ body {
     @media (min-width: 600px) {
       .moreFeaturedProjectsWrapper a {
         width: 50%; } }
-    @media (min-width: 1250px) {
+    @media (min-width: 992px) {
       .moreFeaturedProjectsWrapper a {
         width: 33%; } }
 
@@ -2996,13 +3061,45 @@ body {
   opacity: 0; }
 
 .featuredProjectsBlock {
-  border-top: 1px solid #000000; }
+  border-top: 1px solid #404041; }
 
 #simpleProject .post-thumbnail {
   margin-top: -5px; }
 
 .hidden {
   display: none; }
+
+.largePortfolioImage {
+  margin: -5px 0; }
+  @media (max-width: 600px) {
+    .largePortfolioImage {
+      margin: 10px 0 0 0; } }
+  @media (min-width: 600px) {
+    .largePortfolioImage {
+      margin: 10px 0 0 0; } }
+  @media (min-width: 992px) {
+    .largePortfolioImage {
+      margin: -5px 0; } }
+
+@media (max-width: 600px) {
+  .doubleImageWrapper {
+    margin-bottom: -8px; } }
+@media (min-width: 600px) {
+  .doubleImageWrapper {
+    margin-bottom: -8px; } }
+@media (min-width: 992px) {
+  .doubleImageWrapper {
+    margin-bottom: 0; } }
+
+@media (max-width: 600px) {
+  .doubleImageWrapper2 {
+    margin: 10px 0 -10px 0; } }
+@media (min-width: 600px) {
+  .doubleImageWrapper2 {
+    margin: 10px 0 -10px 0; } }
+@media (min-width: 992px) {
+  .doubleImageWrapper2 {
+    margin: 0; } }
 
 /* 18.0 Careers Page stylings -------------------------------------------*/
 .subNavLink {
@@ -3015,6 +3112,6 @@ body {
     transition: .2s ease all; }
 
 .careersHero {
-  background-image: url("/wp-content/uploads/2019/03/foxStructuresEmployeeOnJob.jpg"); }
+  background-image: url("/wp-content/uploads/2019/03/foxStructuresCareers.jpg"); }
 
 /*# sourceMappingURL=style.css.map */

@@ -33,7 +33,11 @@
 
 		<?php get_the_title();?>
 
-		<?php foxStructuresresponsive_post_thumbnail(); ?>
+		<div class="thumbnailWrapper">
+
+			<?php foxStructuresresponsive_post_thumbnail(); ?>
+
+		</div>
 
 		<div class="entry-content">
 			<?php

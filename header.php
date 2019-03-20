@@ -102,7 +102,7 @@
 
 						<svg class="blackIcon icon-envelope"><use xlink:href="#icon-envelope"></use></svg>
 
-						<a class="secondaryLink" href="/blog/" role="link">info@foxstructures.com</a>
+						<a class="secondaryLink" href="mailto:info@foxstructures.com" role="link">info@foxstructures.com</a>
 
 					</div>
 
@@ -144,7 +144,9 @@
 
 						<a href="https://wordpress-154794-763481.cloudwaysapps.com/" role="link">
 
-							<img src="/wp-content/uploads/2019/01/FoxStructuresLogo-REV.png" class="siteLogo" alt="Fox Structures Logo"></a>
+							<img src="/wp-content/uploads/2019/01/FoxStructuresLogo-REV.png" class="siteLogo" alt="Fox Structures Logo"><span class="screen-reader-text">Go back to the homepage</span>
+
+						</a>
 
 						<?php wp_nav_menu( array( 'theme_location' => 'Primary', 'menu_id' => 'primary-menu' ) ); ?>
 

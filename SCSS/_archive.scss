@@ -1,12 +1,14 @@
 /* 16.0 Archive/News Page stylings -------------------------------------------*/
-.blogHero{
-  background-image: url("/wp-content/uploads/2019/02/momWithChildrens.jpg");
-}
-.postWrapper{
-  margin: 25px 0;
-}
 .post{
-  padding: 20px;
+  @include breakpoint(smallScreen){
+    padding: 0 0 20px 0;
+  }
+  @include breakpoint(largeMobileScreen){
+    padding: 20px 0;
+  }
+  @include breakpoint(laptopScreen){
+    padding: 20px;
+  }
     h2{
       margin-block-end: 15px;
     }
@@ -83,9 +85,14 @@
     transition: .3s ease all;
   }
 }
+.post-thumbnail{
+  text-align:center;
+}
 .attachment-post-thumbnail{
   width: 100%;
   height: auto;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 .entry-content{
   h2{
@@ -93,7 +100,7 @@
   }
 }
 .size-full{
-  width: 100%;
+  width: 70%;
   height: auto;
 }
 .search-form{
@@ -111,5 +118,28 @@
   }
 }
 .postHeader{
-  margin-bottom: 40px;
+  margin-bottom: 15px;
+}
+.blogText{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width: 800px;
+  margin: 0 auto;
+    @include breakpoint(smallScreen){
+      padding: 0;
+    }
+    @include breakpoint(largeMobileScreen){
+      padding: 0;
+    }
+    @include breakpoint(laptopScreen){
+      padding: 25px;
+    }
+}
+.thumbnailWrapper{
+  .post-thumbnail{
+    .attachment-post-thumbnail{
+      width: 70%;
+    }
+  }
 }

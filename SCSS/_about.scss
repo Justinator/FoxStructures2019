@@ -65,7 +65,18 @@
   text-align: center;
 }
 .leaderImage{
-  width: 60%;
+  @include breakpoint(smallScreen){
+    width: 80%;
+  }
+  @include breakpoint(largeMobileScreen){
+    width: 60%;
+  }
+  @include breakpoint(laptopScreen){
+    width: 45%;
+  }
+  @include breakpoint(extraLargeScreen){
+    width: 35%;
+  }
 }
 .jobPostWrapper{
   margin: 10px;
