@@ -103,6 +103,8 @@ get_header();
 
 				<div id="portfolioWrapper" class="pageWidth portfolioWrapper">
 
+					<?php get_template_part("/inc/projects/agricultural/forest-brook-farms"); ?>
+
 					<?php get_template_part("/inc/projects/agricultural/rosendale-dairy"); ?>
 
 					<?php get_template_part("/inc/projects/agricultural/bill-kocourek"); ?>

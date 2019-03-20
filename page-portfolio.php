@@ -76,7 +76,7 @@ get_header();
 
 					<div class="col50 paddedWrapper">
 
-						<a href="/portfolio/the-oaks-golf-club/">
+						<a href="/portfolio/forest-brook-farms/"><span class="screen-reader-text">View the Forest Brook Farms Project</span>
 
 							<div class="portFeaturedProjectWrapper">
 
@@ -84,9 +84,9 @@ get_header();
 
 								<div class="featuredProjectContent">
 
-									<img src="/wp-content/uploads/2019/02/OaksIntExtStillsMediumSquare.jpg" class="featuredProjectImage">
+									<img src="/wp-content/uploads/2019/03/forestBrookFarmsExteriorSquareLarge.jpg" class="featuredProjectImage">
 
-									<h4 class="featuredProjectTitle"><span class="projectTitleSpan">The Oaks Golf Course</span></h4>
+									<h4 class="featuredProjectTitle"><span class="projectTitleSpan">Forest Brook Farms</span></h4>
 
 								</div>
 
@@ -100,7 +100,7 @@ get_header();
 
 						<div class="outerWrapper">
 
-							<a href="/portfolio/water-right/">
+							<a href="/portfolio/the-oaks-golf-club/"><span class="screen-reader-text">View the Oaks Golf Course Project</span>
 
 								<div class="portFeaturedProjectWrapper">
 
@@ -108,9 +108,9 @@ get_header();
 
 									<div class="featuredProjectContent">
 
-										<img src="/wp-content/uploads/2019/03/waterRightExteriorFrontViewCropped.jpg" class="featuredProjectImage">
+										<img src="/wp-content/uploads/2019/03/OaksIntExtStillsMediumCropped.jpg" class="featuredProjectImage">
 
-										<h4 class="featuredProjectTitle"><span class="projectTitleSpan">Water Right, Inc.</span></h4>
+										<h4 class="featuredProjectTitle"><span class="projectTitleSpan">The Oaks Golf Course</span></h4>
 
 									</div>
 
@@ -122,7 +122,7 @@ get_header();
 
 						<div class="outerWrapper">
 
-							<a href="/portfolio/rosendale-dairy/">
+							<a href="/portfolio/water-right/"><span class="screen-reader-text">View the Water Right Project</span>
 
 								<div class="portFeaturedProjectWrapper">
 
@@ -130,9 +130,9 @@ get_header();
 
 									<div class="featuredProjectContent">
 
-										<img src="/wp-content/uploads/2019/03/rosendale-dairy-cropped.jpg" class="featuredProjectImage">
+										<img src="/wp-content/uploads/2019/03/waterRightExteriorFrontViewCropped.jpg" class="featuredProjectImage">
 
-										<h4 class="featuredProjectTitle"><span class="projectTitleSpan">Rosendale Dairy, LLC</span></h4>
+										<h4 class="featuredProjectTitle"><span class="projectTitleSpan">Water Right, Inc.</span></h4>
 
 									</div>
 
@@ -156,12 +156,12 @@ get_header();
 
 					<div id="myBtnContainer">
 
-						<button class="filterButton active" onclick="filterSelection('all')"> All</button>
-					  <button class="filterButton" onclick="filterSelection('agricultural')"> Agricultural</button>
-						<button class="filterButton" onclick="filterSelection('commercial')"> Commercial</button>
-					  <button class="filterButton" onclick="filterSelection('equestrian')"> Equestrian</button>
-					  <button class="filterButton" onclick="filterSelection('residential')"> Residential</button>
-						<button class="filterButton" onclick="filterSelection('storage')"> Storage</button>
+						<button class="filterButton active" onclick="filterSelection('all')"> All</button><span class="screen-reader-text">View all projects</span>
+					  <button class="filterButton" onclick="filterSelection('agricultural')"> Agricultural</button><span class="screen-reader-text">Filter Agricultural Projects</span>
+						<button class="filterButton" onclick="filterSelection('commercial')"> Commercial</button><span class="screen-reader-text">Filter Commercial Projects</span>
+					  <button class="filterButton" onclick="filterSelection('equestrian')"> Equestrian</button><span class="screen-reader-text">Filter Equestrian Projects</span>
+					  <button class="filterButton" onclick="filterSelection('residential')"> Residential</button><span class="screen-reader-text">Filter Residential Projects</span>
+						<button class="filterButton" onclick="filterSelection('storage')"> Storage</button><span class="screen-reader-text">Filter Storage Projects</span>
 						<!--<button class="filterButton" onclick="filterSelection('welding')"> Welding</button>-->
 
 					</div>

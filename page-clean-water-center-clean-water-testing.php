@@ -101,7 +101,7 @@ get_header();
 
 					<?php get_template_part("/inc/projects/commercial/water-right"); ?>
 
-					<?php get_template_part("/inc/projects/agricultural/rosendale-dairy"); ?>
+					<?php get_template_part("/inc/projects/agricultural/forest-brook-farms"); ?>
 
 					<?php get_template_part("/inc/projects/commercial/the-oaks"); ?>
 

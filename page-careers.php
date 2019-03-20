@@ -68,7 +68,8 @@ get_header();
 								—please include the job title for which you are applying for in the subject line of the
 								email or visit our offices at 2201 Eastline Road Kaukauna, WI to complete an employment
 								application. Or
-								<a href="https://fs10.formsite.com/InsightCreative/form41/index.html" class="primaryLink">click here</a>
+								<a href="https://fs10.formsite.com/InsightCreative/form41/index.html" class="primaryLink">click here
+								<span class="screen-reader-text">Opens in a new tab to fill out a job application</span></a>
 								to apply.
 							</p>
 							<p>

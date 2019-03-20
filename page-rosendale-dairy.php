@@ -90,7 +90,7 @@ get_header();
 
 					<?php get_template_part("/inc/projects/commercial/water-right"); ?>
 
-					<?php get_template_part("/inc/projects/commercial/clean-water"); ?>
+					<?php get_template_part("/inc/projects/agricultural/forest-brook-farms"); ?>
 
 				</div>
 

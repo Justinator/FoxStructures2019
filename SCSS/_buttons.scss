@@ -69,6 +69,10 @@
 	z-index:1;
 	text-decoration: none;
   width: fit-content;
+	width: -moz-max-content;
+  width: -ms-max-content;
+  width: -webkit-max-content;
+  width: -o-max-content;
 	color: $primaryGrey;
 	transition: .2s ease all;
   padding: 10px 20px 10px 20px;

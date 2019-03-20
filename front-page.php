@@ -111,6 +111,24 @@ get_header();
 
 					<div class="featuredProjectWrapper">
 
+						<a href="/portfolio/forest-brook-farms/">
+
+							<div class="featuredProjectOverlay"></div>
+
+							<div class="featuredProjectContent">
+
+								<img src="/wp-content/uploads/2019/03/forestBrookFarmsExteriorSquareMedium.jpg" class="featuredProjectImage">
+
+								<h5 class="featuredProjectTitle"><span class="projectTitleSpan">Forest Brook Farms</span></h5>
+
+							</div>
+
+						</a>
+
+					</div>
+
+					<div class="featuredProjectWrapper">
+
 						<a href="/portfolio/the-oaks-golf-club/">
 
 							<div class="featuredProjectOverlay"></div>
@@ -156,24 +174,6 @@ get_header();
 								<img src="/wp-content/uploads/2019/03/rosendaleDairySquare.jpg" class="featuredProjectImage">
 
 								<h5 class="featuredProjectTitle"><span class="projectTitleSpan">Rosendale Dairy</span></h5>
-
-							</div>
-
-						</a>
-
-					</div>
-
-					<div class="featuredProjectWrapper">
-
-						<a href="/portfolio/clean-water-center-clean-water-testing/">
-
-							<div class="featuredProjectOverlay"></div>
-
-							<div class="featuredProjectContent">
-
-								<img src="/wp-content/uploads/2019/03/CleanWaterTestingExteriorSquare.jpg" class="featuredProjectImage">
-
-								<h5 class="featuredProjectTitle"><span class="projectTitleSpan">Clean Water Center</span></h5>
 
 							</div>
 

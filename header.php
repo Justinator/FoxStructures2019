@@ -21,6 +21,8 @@
 
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
+	<link href="/wp-content/uploads/2019/03/favicon.png" rel="shortcut icon">
+
 	<link href="/wp-content/themes/foxStructuresResponsiveChild/Assets/webfonts/fontawesome-all.css" rel="stylesheet">
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
@@ -51,6 +53,8 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+<a class="screenReaderSkipToContent" href="#primary" tabindex="1">Skip to main content</a>	
 
 <nav role="navigation" aria-label="mobile navigation">
 
@@ -102,7 +106,7 @@
 
 						<svg class="blackIcon icon-envelope"><use xlink:href="#icon-envelope"></use></svg>
 
-						<a class="secondaryLink" href="mailto:info@foxstructures.com" role="link">info@foxstructures.com</a>
+						<a class="secondaryLink" href="mailto:info@foxstructures.com" role="link" tabindex="-1">info@foxstructures.com</a>
 
 					</div>
 
@@ -126,7 +130,7 @@
 
 						<svg class="blackIcon icon-phone"><use xlink:href="#icon-phone"></use></svg>
 
-						<a class="secondaryLink" href="tel:(920)766-9305" role="link">(920) 766-9305</a>
+						<a class="secondaryLink" href="tel:(920)766-9305" role="link" tabindex="-1">(920) 766-9305</a>
 
 					</div>
 

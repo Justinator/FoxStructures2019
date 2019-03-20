@@ -23,6 +23,10 @@
       color: $primaryYellow;
       transition: .2s ease all;
     }
+    &:focus{
+      color: $primaryYellow;
+      transition: .2s ease all;
+    }
   }
 }
 .newsPosts{
