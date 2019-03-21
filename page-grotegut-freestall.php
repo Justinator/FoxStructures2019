@@ -64,7 +64,7 @@ get_header();
 
 				</div>
 
-				<div class="flex-container paddedWrapper doubleImageWrapper">
+				<div class="flex-container paddedWrapper doubleImageWrapper removeBottomMargin">
 
 					<div class="col50 smallMarginRight">
 
@@ -96,35 +96,9 @@ get_header();
 
 				</div>
 
-				<div class="tinyPaddedSection paddedSideWrapper">
-
-					<img src="/wp-content/uploads/2019/03/GrotegutGates13Medium.jpg" class="image largePortfolioImage">
-
-				</div>
-
 			</section>
 
-			<section class="moreFeaturedProjects smallPaddedSection">
-
-				<div class="pageWidth">
-
-					<h3 class="centerText noMargin">More Featured Projects</h3>
-
-					<div class="centerUnderline"></div>
-
-				</div>
-
-				<div class="moreFeaturedProjectsWrapper">
-
-					<?php get_template_part("/inc/projects/commercial/water-right"); ?>
-
-					<?php get_template_part("/inc/projects/agricultural/rosendale-dairy"); ?>
-
-					<?php get_template_part("/inc/projects/commercial/clean-water"); ?>
-
-				</div>
-
-			</section>
+			<?php get_template_part("/inc/projects/featured-projects"); ?>
 
 		</section>
 

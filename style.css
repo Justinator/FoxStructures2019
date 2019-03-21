@@ -2795,6 +2795,16 @@ body {
 .post p {
   margin-top: 15px; }
 
+@media (max-width: 600px) {
+  .singlePost .entry-title {
+    margin-top: 125px; } }
+@media (min-width: 600px) {
+  .singlePost .entry-title {
+    margin-top: 75px; } }
+@media (min-width: 992px) {
+  .singlePost .entry-title {
+    margin-top: 50px; } }
+
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -2864,6 +2874,13 @@ body {
 
 .post-thumbnail {
   text-align: center; }
+  .post-thumbnail .size-full {
+    width: 70%;
+    height: auto; }
+
+.size-full {
+  width: 100%;
+  height: auto; }
 
 .attachment-post-thumbnail {
   width: 100%;
@@ -2873,10 +2890,6 @@ body {
 
 .entry-content h2 {
   font-size: 1.5em; }
-
-.size-full {
-  width: 70%;
-  height: auto; }
 
 .search-form .search-submit {
   background-color: #404041;

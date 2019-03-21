@@ -96,7 +96,7 @@ get_header();
 
 				</div>
 
-				<div class="flex-container paddedWrapper">
+				<div class="flex-container paddedWrapper removeBottomMargin">
 
 					<div class="col50 smallMarginRight">
 
@@ -112,7 +112,7 @@ get_header();
 
 				</div>
 
-				<div class="flex-container paddedWrapper">
+				<div class="flex-container paddedWrapper removeBottomMargin">
 
 					<div class="col50 smallMarginRight">
 

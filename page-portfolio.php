@@ -172,6 +172,8 @@ get_header();
 
 					<?php get_template_part("/inc/projects/commercial/N.E.W.Printing"); ?>
 
+					<?php get_template_part("/inc/projects/agricultural/grotegut"); ?>
+
 					<?php get_template_part("/inc/projects/equestrian/vlach-horse-barn"); ?>
 
 					<?php get_template_part("/inc/projects/agricultural/shiloh"); ?>
@@ -189,8 +191,6 @@ get_header();
 					<?php get_template_part("/inc/projects/agricultural/seven-oaks"); ?>
 
 					<?php get_template_part("/inc/projects/agricultural/schuh-view"); ?>
-
-						<?php get_template_part("/inc/projects/agricultural/grotegut"); ?>
 
 					<!-- Hide the rest of the projects on first load -->
 
@@ -221,8 +221,6 @@ get_header();
 					<?php get_template_part("/inc/projects/agricultural/grandview"); ?>
 
 					<?php get_template_part("/inc/projects/commercial/schmidt"); ?>
-
-					<?php get_template_part("/inc/projects/equestrian/vlach-horse-barn"); ?>
 
 					<?php get_template_part("/inc/projects/residential/larson-cottage"); ?>
 
