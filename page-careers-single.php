@@ -29,7 +29,7 @@ get_header();
 
 						<div class="heroHeading">
 
-							<h1><?php echo esc_html( get_the_title() ); ?></h1>
+							<h1>Careers</h1>
 
 						</div>
 

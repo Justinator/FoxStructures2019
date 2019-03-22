@@ -58,8 +58,8 @@ get_header();
 							<p>
 								When it comes to residential construction, the choices and decisions may seem endless.
 								One choice that’s easy is Fox Structures! We take the time to learn your needs and
-								expectations—such as space for your hobbies, a cozy lake retreat or an attractive storage
-								shed. Put Fox Structures’ years of knowledge, attention to detail and craftsmanship to
+								expectations such as space for your hobbies, a cozy lake retreat or an attractive storage
+								shed. Put Fox Structures’ years of experience, attention to detail and craftsmanship to
 								work on your next residential project.
 							</p>
 
@@ -71,7 +71,7 @@ get_header();
 							</ul>
 
 							<p>
-								<a href="/contact/" class="primaryLink">Contact us</a> and see why our building success starts with you!
+								<a href="/contact/" class="primaryLink">Contact us</a> and see how <em><strong>we build with you in mind</strong></em> !
 							</p>
 
 						</div>

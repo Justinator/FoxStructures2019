@@ -71,7 +71,7 @@ get_header();
 							</p>
 
 							<p>
-								<a href="/contact/" class="primaryLink">Contact us</a> and see why our building success starts with you!
+								<a href="/contact/" class="primaryLink">Contact us</a> and see how <em><strong>we build with you in mind</strong></em> !
 							</p>
 
 						</div>

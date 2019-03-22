@@ -51,7 +51,7 @@ get_header();
 							</p>
 							<p>
 								Browse some of the unique projects we’ve built in the past. Then <a href="/contact/" class="primaryLink">contact us</a>
-								and see why our building success starts with you!
+								and see how <em><strong>we build with you in mind</strong></em> !
 							</p>
 
 						</div>

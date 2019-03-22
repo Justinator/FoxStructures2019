@@ -57,9 +57,9 @@ get_header();
 
 							<p>
 								From crafting blueprints to custom engineering, our full-service weld shop takes construction to the
-								next level. Fox Welding, a division of Fox Structures, has over 35 years of experience and provides
-								custom welding design/build services for all the finishing touches on commercial, agricultural and
-								equestrian facilities.
+								next level. Fox Welding and Fabrication, Inc. a division of Fox Structures, has over 35 years of
+								experience and provides custom welding design/build services for all the finishing touches on
+								commercial, agricultural, equestrian and residential projects.
 							</p>
 							<p>
 								We also offer delivery, installation and mobile weld services for every project, big or small.
@@ -103,7 +103,7 @@ get_header();
 							</ul>
 
 							<p>
-								<a href="/contact/" class="primaryLink">Contact us</a> and see why our building success starts with you!
+								<a href="/contact/" class="primaryLink">Contact us</a> and see how <em><strong>we build with you in mind</strong></em> !
 							</p>
 
 						</div>

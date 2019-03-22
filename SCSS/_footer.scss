@@ -159,8 +159,8 @@
 	margin-bottom: -50px;
 	font-size: 12px;
 		p{
-			margin-block-start: 1em;
-			margin-block-end: 1em;
+			margin-top: 1em;
+			margin-bottom: 1em;
 		}
 		@include breakpoint(smallScreen){
 			font-size: 14px;
@@ -218,9 +218,6 @@
 	a{
 		padding: 10px;
 	}
-	@include breakpoint(smallScreen){
-		margin: 15px 0 25px 0;
-	}
 }
 #privacyWrap{
 	display: flex;
@@ -263,16 +260,16 @@
 	}
 }
 .footerNavWrapper h4{
-	margin-block-end: 20px;
+	margin-bottom: 20px;
 }
 .footerNavWrapper h6{
-	margin-block-end: 10px;
+	margin-bottom: 10px;
 	@include breakpoint(smallScreen){
 		padding: 10px 0;
-		margin-block-end: 0;
+		margin-bottom: 0;
 	}
 	@include breakpoint(largeMobileScreen){
 		padding: 10px 0;
-		margin-block-end: 0;
+		margin-bottom: 0;
 	}
 }

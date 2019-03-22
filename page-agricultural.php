@@ -51,12 +51,12 @@ get_header();
 
 						<div class="blockText">
 
-							<h2 class="noMargin">Our Agricultural Construction Success Keeps Growing.</h2>
+							<h2 class="noMargin">Our Agricultural Expertise can Help You Grow.</h2>
 
 							<div class="underline"></div>
 
 							<p>
-								Fox Structures designs and builds unique agricultural facilities for customers in Northeast Wisconsin.
+								Fox Structures designs and builds unique agricultural facilities for customers in northeast Wisconsin.
 								Our significant experience means we understand the specialized challenges facing the agricultural industry.
 							</p>
 							<p>
@@ -80,7 +80,7 @@ get_header();
 							</ul>
 
 							<p>
-								<a href="/contact/" class="primaryLink">Contact us</a> and see why our building success starts with you!
+								<a href="/contact/" class="primaryLink">Contact us</a> and see how <em><strong>we build with you in mind</strong></em> !
 							</p>
 
 						</div>

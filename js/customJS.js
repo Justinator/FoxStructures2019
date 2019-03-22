@@ -1,7 +1,7 @@
 // open menu
 $(function() {
     $(".menuButtonWrap").click(function(e){
-        $(".mobile-menu").addClass("open");
+        $("#mobile-menu").toggleClass("open");
         	e.stopPropagation();
     });
 });
@@ -18,23 +18,12 @@ $(function() {
     	}
     });
 });
-
+// Hamburger menu animation
 $(function() {
-  $(".menuTextWrap").click(function(e){
-    if($(".menu").hasClass("open")){
-          document.querySelector(".linkList").addEventListener("click", closeMenu);
-            $(".menu").removeClass("open");
-          }
-        });
-  });
-
-// Add tabIndex="-1" to mobile nav so that does not interfere with keyboard navigation
-const x = document.getElementById('mobile-menu');
-
-const y = x.getElementsByTagName('li');
-
-y.setAttribute("tabindex", "-1");
-
+    $(".menuButtonWrap").click(function(e){
+        $(".hamburger").toggleClass("is-active");
+    });
+});
 // filter for our portfolio categories
 filterSelection("all");
 function filterSelection(c) {

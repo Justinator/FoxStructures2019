@@ -63,8 +63,7 @@ get_header();
 								the latest design technology—we do it all to ensure your finished project works for you.
 								We also assist with local and state approvals, building code reviews, site design and permitting.
 								Our dedication to detail and years of experience make your move to a new facility—or the
-								upgrade of your existing facility—as efficient and hassle free as possible. Call us for
-								your commercial building needs.
+								upgrade of your existing facility—as efficient and hassle free as possible.
 							</p>
 
 							<ul>
@@ -80,7 +79,7 @@ get_header();
 							</ul>
 
 							<p>
-								<a href="/contact/" class="primaryLink">Contact us</a> and see why our building success starts with you!
+								<a href="/contact/" class="primaryLink">Contact us</a> and see how <em><strong>we build with you in mind</strong></em> !
 							</p>
 
 						</div>

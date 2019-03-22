@@ -16,6 +16,12 @@
 
 	<div class="entry-content">
 		<?php
+		the_title( '<h2 class="noMargin">', '</h2>' );
+		?>
+
+		<div class="underline"></div>
+
+		<?php
 		the_content();
 
 		wp_link_pages( array(

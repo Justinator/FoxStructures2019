@@ -45,7 +45,7 @@ get_header();
 
 						<div class="blockText">
 
-							<h2 class="noMargin">For expert agricultural, commercial and residential construction in northeast Wisconsin,
+							<h2 class="noMargin">For expert design, welding and construction,
 								count on Fox Structures.</h2>
 
 							<div class="underline"></div>
@@ -81,14 +81,13 @@ get_header();
 					<div class="blockText">
 
 						<p>
-							Today Fox Structures provides design and construction services for all types of agricultural, commercial,
+							Today Fox Structures provides design, welding and construction services for all types of agricultural, commercial,
 							retail, light manufacturing and residential buildings. In addition, mini warehouses, storage facilities
-							and special-use buildings have continued to fuel our growth and progress.
+							and special-use buildings have continued to fuel our growth and progress in northeast Wisconsin.
 						</p>
 						<p>
 							Browse some of the <a href="/portfolio/" class="primaryLink">unique projects</a> we’ve built in the past.
-							Then <a href="/contact/" class="primaryLink">contact us</a> and see why our building
-							success starts with you!
+							Then <a href="/contact/" class="primaryLink">contact us</a> and see how <em><strong>we build with you in mind</strong></em> !
 						</p>
 
 					</div>

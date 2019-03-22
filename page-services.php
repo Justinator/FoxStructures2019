@@ -22,7 +22,7 @@ get_header();
 
 						<div class="heroHeading">
 
-							<h1 class="noMargin">Fox Structures is a Full Service Agricultural, Commercial and Residential Contractor.</h1>
+							<h1 class="noMargin">Fox Structures is a Full-service Agricultural, Commercial and Residential Contractor.</h1>
 
 						</div>
 
@@ -59,7 +59,7 @@ get_header();
 									budget and to your satisfaction.
 								</p>
 								<p>
-									Look through our site to review our similar <a href="/portfolio/" class="primaryLink">past projects</a>, than <a href="/contact/" class="primaryLink">contact us</a>
+									Review our similar <a href="/portfolio/" class="primaryLink">past projects</a>, then <a href="/contact/" class="primaryLink">contact us</a>
 									to share plans or ideas and discuss options. You can count on us for:
 								</p>
 								<ul>
@@ -67,6 +67,7 @@ get_header();
 									<li>State plan approval</li>
 									<li>General contracting and turnkey services</li>
 										<ul>
+											<li>Welding</li>
 											<li>Electrical</li>
 											<li>Plumbing</li>
 											<li>Painting</li>
@@ -82,7 +83,7 @@ get_header();
 									<li>Successful completion within budget</li>
 								</ul>
 								<p>
-									<a href="/contact/" class="primaryLink">Contact us</a> and see why our building success starts with you!
+									<a href="/contact/" class="primaryLink">Contact us</a> and see how <em><strong>we build with you in mind</strong></em> !
 								</p>
 
 							</div>

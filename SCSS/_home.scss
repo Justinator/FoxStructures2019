@@ -92,40 +92,34 @@
   justify-content: center;
 	h3{
 		@include breakpoint(smallScreen){
-			font-size: 1em;
+			font-size: .8em;
+			padding: 20px;
 		}
 		@include breakpoint(largeMobileScreen){
 			font-size: 1.2em;
+			padding: 20px;
 		}
 		@include breakpoint(tabletScreen){
 			font-size: 1.8em;
+			padding: 20px;
 		}
 	}
 }
 .heroCTAButton{
 		position: relative;
-    background: $primaryGrey;
     text-decoration: none;
     color: #FFFFFF !important;
     transition: .1s ease all;
     cursor: pointer;
 		transition: .2s ease all;
-		@include breakpoint(smallScreen){
-			margin-left: 10px;
-			padding: 10px 20px;
-		}
-		@include breakpoint(largeMobileScreen){
-			margin-left: 50px;
-			padding: 25px 20px;
-		}
 		span{
 			&:before{
 				position: absolute;
 				content: "";
-				background: $primaryYellow;
-				top: 20px;
-				left: 18px;
-				width: 70%;
+				background: $primaryGrey;
+				top: 0;
+				left: 0;
+				width: 100%;
 	  		transform: scaleX(0);
 				height: 2px;
 				transition: transform 0.2s ease-out;
@@ -134,10 +128,10 @@
 			&:after{
 				position: absolute;
 				content: "";
-				background: $primaryYellow;
-				bottom: 20px;
-				right: 18px;
-				width: 70%;
+				background: $primaryGrey;
+				bottom: 0;
+				right: 0;
+				width: 100%;
 	  		transform: scaleX(0);
 				height: 2px;
 				transition: transform 0.2s ease-out;
@@ -433,11 +427,11 @@
 	}
 }
 .processHeader{
-	margin-block-start: 25px !important;
-	margin-block-end: 0 !important;
+	margin-top: 25px !important;
+	margin-bottom: 0 !important;
 }
 .recommendationAuthor{
-	margin-block-end: 0 !important;
+	margin-bottom: 0 !important;
 }
 .greenBorder{
 	border: 5px solid $primaryGrey;

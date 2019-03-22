@@ -16,14 +16,15 @@
 	flex-direction: column;
 }
 .footerSocialIcon{
-	stroke: $primaryGrey;
-  fill: $primaryGrey;
+	stroke: $primaryYellow;
+  fill: $primaryYellow;
 	margin: -5px;
 	transition: .3s ease all;
 	height: 30px;
 	width: 30px;
 		&:hover{
-			color: $primaryGrey;
+			stroke: $white;
+		  fill: $white;
 			transition: .3s ease all;
 		}
 }

@@ -39,7 +39,7 @@
             <div class="centerUnderline"></div>
 
             <p>
-              Our significant experience means we understand the specialized challenges
+              Our agricultural experience means we understand the specialized challenges
               facing the agricultural industry.
             </p>
 
@@ -121,7 +121,7 @@
             <div class="centerUnderline"></div>
 
             <p>
-              When it comes to superior facilities to accommodate horses, we have years of
+              When it comes to superior facilities for horses, we have years of
               experience building unique and functional riding arenas, stall barns,
               storage areas, run-in shelters and more.
             </p>
@@ -163,7 +163,7 @@
             <div class="centerUnderline"></div>
 
             <p>
-              We take the time to learn your needs and expectations—such as space for
+              We take the time to learn your needs and expectations such as space for
               your hobbies, a cozy lake retreat or an attractive storage shed.
             </p>
 
@@ -204,7 +204,7 @@
             <div class="centerUnderline"></div>
 
             <p>
-              Count on us for site design and comprehensive design/build services
+              Count on us for site design and total design/build services
               for steel and wood structures featuring all siding and roofing options.
             </p>
 

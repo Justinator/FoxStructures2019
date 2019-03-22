@@ -14,7 +14,7 @@
 
           <div class="centeredButton">
 
-            <a href="/careers/" class="primaryButton">Join the team</a>
+            <a href="/careers/" class="primaryButton">Join our team</a>
 
           </div>
 
