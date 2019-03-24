@@ -24,7 +24,7 @@ get_header();
 
 			</div>
 
-			<img src="/wp-content/uploads/2019/03/CleanWaterTestingExteriorLarge.jpg" class="image portfolioFeaturedImage">
+			<img src="/wp-content/uploads/2019/03/CleanWaterTestingExteriorLarge-1.jpg" class="image portfolioFeaturedImage">
 
 			<p>
 				A divison of Water-Right, Inc., located in Appleton, WI. This building features a combination split
@@ -65,7 +65,7 @@ get_header();
 
 				<div class="tinyPaddedSection paddedSideWrapper">
 
-					<img src="/wp-content/uploads/2019/03/CleanWaterTestingExteriorLarge-2.jpg" class="image">
+					<img src="/wp-content/uploads/2019/03/CleanWaterTestingExteriorLarge-2-1.jpg" class="image">
 
 				</div>
 
@@ -73,13 +73,13 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/03/CleanWaterTestingExteriorMedium.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/CleanWaterTestingExteriorMedium-1.jpg" class="image">
 
 					</div>
 
 					<div class="col50 smallMarginLeft">
 
-						<img src="/wp-content/uploads/2019/03/CleanWaterTestingExteriorMedium-2.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/CleanWaterTestingExteriorMedium-2-1.jpg" class="image">
 
 					</div>
 

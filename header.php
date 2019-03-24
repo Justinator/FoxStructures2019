@@ -134,7 +134,7 @@
 
 				<div class="navWidth menuLinkWrap">
 
-						<a href="https://wordpress-154794-763481.cloudwaysapps.com/" role="link">
+						<a href="http://www.foxstructures.com" role="link">
 
 							<img src="/wp-content/uploads/2019/01/FoxStructuresLogo-REV.png" class="siteLogo" alt="Fox Structures Logo"><span class="screen-reader-text">Go back to the homepage</span>
 

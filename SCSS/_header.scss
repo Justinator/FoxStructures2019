@@ -1,6 +1,7 @@
 /*4.0 Header Styling -------------------------------------------*/
 .screenReaderSkipToContent{
 	position: absolute;
+	top: -100px;
 	&:focus{
 		left: 6px;
     top: 7px;
@@ -510,6 +511,7 @@ nav{
 .subNav{
 	height: 70px;
 }
+// Add Animation to our hamburger Menu
 .hamburger {
   display: inline-block;
   cursor: pointer;

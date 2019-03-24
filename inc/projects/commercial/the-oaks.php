@@ -1,4 +1,4 @@
-<a href="/portfolio/the-oaks-golf-club/" class="column commercial">
+<a href="/portfolio/the-oaks-golf-course/" class="column commercial">
 
   <div class="featuredImageWrap">
 
@@ -12,7 +12,7 @@
 
     <div class="projectInfo">
 
-      <h5 class="employeeName"><span class="primaryText">The Oaks Golf Club</span></h5>
+      <h5 class="employeeName"><span class="primaryText">The Oaks Golf Course</span></h5>
 
     </div>
 

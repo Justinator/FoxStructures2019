@@ -24,7 +24,7 @@ get_header();
 
 			</div>
 
-			<img src="/wp-content/uploads/2019/03/forestBrookFarmsExterior.jpg" class="image portfolioFeaturedImage">
+			<img src="/wp-content/uploads/2019/03/forestBrookFarmsExterior-2.jpg" class="image portfolioFeaturedImage">
 
 			<p>
 				Fox Structures collaborated with the owner of Forest Brook Farms to design two unique multi-purpose
@@ -118,13 +118,13 @@ get_header();
 
 						<div class="outerWrapper">
 
-							<img src="/wp-content/uploads/2019/03/forestBrookFarmsExterior2Cropped.jpg" class="featuredProjectImage">
+							<img src="/wp-content/uploads/2019/03/forestBrookFarmsExterior2Cropped-2.jpg" class="featuredProjectImage">
 
 						</div>
 
 						<div class="outerWrapper">
 
-							<img src="/wp-content/uploads/2019/03/forestBrookFarmsExterior3Cropped.jpg" class="featuredProjectImage">
+							<img src="/wp-content/uploads/2019/03/forestBrookFarmsExterior3Cropped-2.jpg" class="featuredProjectImage">
 
 						</div>
 
@@ -132,7 +132,7 @@ get_header();
 
 					<div class="col50 paddedWrapper">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsExteriorSquareLarge.jpg" class="featuredProjectImage">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsExteriorSquareLarge-2.jpg" class="featuredProjectImage">
 
 					</div>
 
@@ -140,7 +140,7 @@ get_header();
 
 				<div class="tinyPaddedSection paddedSideWrapper">
 
-					<img src="/wp-content/uploads/2019/03/forestBrookFarmKitchenLarge.jpg" class="image largePortfolioImage">
+					<img src="/wp-content/uploads/2019/03/forestBrookFarmKitchen-2.jpg" class="image largePortfolioImage">
 
 				</div>
 
@@ -148,13 +148,13 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior7.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior7-2.jpg" class="image">
 
 					</div>
 
 					<div class="col50 smallMarginLeft">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior8.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior8-2.jpg" class="image">
 
 					</div>
 
@@ -164,13 +164,13 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior11.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior11-2.jpg" class="image">
 
 					</div>
 
 					<div class="col50 smallMarginLeft">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior1.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior1-2.jpg" class="image">
 
 					</div>
 
@@ -178,7 +178,7 @@ get_header();
 
 				<div class="tinyPaddedSection paddedSideWrapper">
 
-					<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior3Large.jpg" class="image largePortfolioImage">
+					<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior3Medium-2.jpg" class="image largePortfolioImage">
 
 				</div>
 
@@ -186,13 +186,13 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior2.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior2-2.jpg" class="image">
 
 					</div>
 
 					<div class="col50 smallMarginLeft">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior4.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior4-2.jpg" class="image">
 
 					</div>
 
@@ -202,13 +202,13 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior5.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior5-2.jpg" class="image">
 
 					</div>
 
 					<div class="col50 smallMarginLeft">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior6.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior6-2.jpg" class="image">
 
 					</div>
 

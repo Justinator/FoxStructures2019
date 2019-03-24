@@ -24,7 +24,7 @@ get_header();
 
 			</div>
 
-			<img src="/wp-content/uploads/2019/03/N.E.W.PrintingExteriorLargeMedium.jpg" class="image portfolioFeaturedImage">
+			<img src="/wp-content/uploads/2019/03/N.E.W.PrintingExteriorLargeMedium-1.jpg" class="image portfolioFeaturedImage">
 
 		</section>
 
@@ -58,13 +58,13 @@ get_header();
 
 						<div class="outerWrapper">
 
-							<img src="/wp-content/uploads/2019/03/N.E.W.PrintingExterior1Cropped.jpg" class="featuredProjectImage">
+							<img src="/wp-content/uploads/2019/03/N.E.W.PrintingExterior1Cropped-1.jpg" class="featuredProjectImage">
 
 						</div>
 
 						<div class="outerWrapper">
 
-							<img src="/wp-content/uploads/2019/03/N.E.W.BackOfficeSpace.jpg" class="featuredProjectImage">
+							<img src="/wp-content/uploads/2019/03/N.E.W.BackOfficeSpace-1.jpg" class="featuredProjectImage">
 
 						</div>
 
@@ -72,7 +72,7 @@ get_header();
 
 					<div class="col50 paddedWrapper">
 
-						<img src="/wp-content/uploads/2019/03/N.E.W.FrontLobbyMedium.jpg" class="featuredProjectImage">
+						<img src="/wp-content/uploads/2019/03/N.E.W.FrontLobbyMedium-1.jpg" class="featuredProjectImage">
 
 					</div>
 
@@ -82,13 +82,13 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/03/N.E.W.BackOfficeMedium.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/N.E.W.BackOfficeMedium-1.jpg" class="image">
 
 					</div>
 
 					<div class="col50 smallMarginLeft">
 
-						<img src="/wp-content/uploads/2019/03/N.E.W.BackOffice2Medium.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/N.E.W.BackOffice2Medium-1.jpg" class="image">
 
 					</div>
 

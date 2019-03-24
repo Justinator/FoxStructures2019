@@ -32,7 +32,7 @@ get_header();
 							<h5 class="noMargin">Fox Structures, Inc.</h5>
 							<div class="underline"></div>
 
-							<p>2201 E Line Rd<br>
+							<p>2201 Eastline Line Rd<br>
 							Kaukauna,WI 54130</p>
 
 							<hr>
@@ -52,7 +52,7 @@ get_header();
 							</p>
 
 							<p>
-								Phone: <a class="primaryLink" href="tel:(800)236-1369">800-236-1369</a>
+								Phone: <a class="primaryLink" href="tel:(800)236-1369">(800) 236-1369</a>
 								<br>
 								Local: <a class="primaryLink" href="tel:(920)766-9305">(920) 766-9305</a>
 								<br>

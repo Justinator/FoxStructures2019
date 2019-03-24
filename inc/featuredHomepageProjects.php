@@ -30,7 +30,7 @@
 
     <div class="featuredProjectWrapper">
 
-      <a href="/portfolio/the-oaks-golf-club/">
+      <a href="/portfolio/the-oaks-golf-course/">
 
         <div class="featuredProjectOverlay"></div>
 

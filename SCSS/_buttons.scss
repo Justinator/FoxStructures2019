@@ -241,12 +241,14 @@ button{
 	cursor: pointer;
 	transition: .2s ease all;
 	margin: 5px 0;
+	background: $primaryGrey;
+	color: $white;
 	&:active{
-		background: $primaryGrey;
+		background: $primaryYellow;
 		color: $white;
 	}
 	&:focus{
-		background: $primaryGrey;
+		background: $primaryYellow;
 		color: $white;
 	}
 	&:hover{

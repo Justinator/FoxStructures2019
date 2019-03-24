@@ -813,7 +813,8 @@ template {
 
 /*4.0 Header Styling -------------------------------------------*/
 .screenReaderSkipToContent {
-  position: absolute; }
+  position: absolute;
+  top: -100px; }
   .screenReaderSkipToContent:focus {
     left: 6px;
     top: 7px;
@@ -2011,12 +2012,14 @@ button {
   padding: 10px;
   cursor: pointer;
   transition: .2s ease all;
-  margin: 5px 0; }
+  margin: 5px 0;
+  background: #404041;
+  color: #FFFFFF; }
   .filterButton:active {
-    background: #404041;
+    background: #f4a81d;
     color: #FFFFFF; }
   .filterButton:focus {
-    background: #404041;
+    background: #f4a81d;
     color: #FFFFFF; }
   .filterButton:hover {
     background: #f4a81d;
@@ -2615,7 +2618,7 @@ body {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 999;
+  z-index: 99;
   content: "";
   width: 100%;
   height: 100%;
