@@ -90,7 +90,7 @@ get_header();
 
 				<div class="fullWidth centerText greyBlock smallPaddedSection">
 
-					<div class="limitWidth">
+					<div class="testimonial">
 
 						<p>
 

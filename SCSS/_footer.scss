@@ -95,10 +95,17 @@
 }
 #copyrightWrap{
 	display: flex;
-	flex-direction: row;
 	align-items: center;
 	@include breakpoint(smallScreen){
 		flex-direction: column;
+		margin-bottom: 10px;
+	}
+	@include breakpoint(largeMobileScreen){
+		flex-direction: row;
+		margin-bottom: 10px;
+	}
+	@include breakpoint(laptopScreen){
+		margin-bottom: 0;
 	}
 }
 #copyright{
@@ -121,9 +128,9 @@
     }
       a{
         text-decoration: none;
-      	color: $primaryYellow;
+      	color: $white;
 				&:hover{
-					color: $white;
+					color: $primaryYellow;
 				}
       }
 }

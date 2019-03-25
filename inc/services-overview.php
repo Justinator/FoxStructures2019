@@ -1,6 +1,6 @@
 <section class="servicesOverview greyBlock smallPaddedSection">
 
-  <div class="fullWidth centerText">
+  <div class="pageWidth centerText">
 
     <h3 class="noMargin">Agricultural and Commercial Construction Services</h3>
 

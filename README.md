@@ -95,8 +95,12 @@ were all different sizes and created an uneven and scattered gallery display
 
 ## :construction: Adding a new job posting to the careers page
 
-1. Add your new career page to the sites
+1. Add your new career page to the site
 2. Enter your job details and add a featured image to the page. This will be the hero image for the job post
 3. Careers pages use the careers-single.php page template. This loads our sidebar and all components for the page.
 4. To update the sidebar navigate to the inc folder and find careers-sidebar.php.
 5. Add a new list item and upload  
+
+## :rocket: Navigation
+
+This theme has three registered menus. Main menu for the primary navigation, footer menu for the footer menu and mobile menu, for customizing separate menus for each of these locations if needed.

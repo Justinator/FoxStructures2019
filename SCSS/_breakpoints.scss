@@ -16,7 +16,7 @@
     @media (min-width: 600px)  { @content; }
   }
   @else if $point == smallScreen {
-    @media (max-width: 600px)  { @content; }
+    @media (max-width: 599px)  { @content; }
   }
   @else if $point == tinyScreen {
     @media (max-width: 320px)  { @content; }
