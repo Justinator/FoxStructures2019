@@ -45,7 +45,7 @@ get_header();
 
 						<h3>Pages</h3>
 
-							<?php wp_list_pages(array('sort_column' => 'post_title', 'exclude' => '419', 'title_li' => ' ', 'depth' => 0)); ?>
+							<?php wp_list_pages(array('sort_column' => 'post_title', 'exclude' => '419,817,421', 'title_li' => ' ', 'depth' => 0)); ?>
 
 						<h3>News</h3>
 

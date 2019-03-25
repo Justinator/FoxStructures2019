@@ -100,7 +100,7 @@ get_header();
 
 						<div class="outerWrapper">
 
-							<a href="/portfolio/the-oaks-golf-club/"><span class="screen-reader-text">View the Oaks Golf Course Project</span>
+							<a href="/portfolio/the-oaks-golf-course/"><span class="screen-reader-text">View the Oaks Golf Course Project</span>
 
 								<div class="portFeaturedProjectWrapper">
 

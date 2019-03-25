@@ -74,7 +74,7 @@ get_header();
 
 					<div class="col50 paddedWrapper">
 
-						<img src="/wp-content/uploads/2019/03/waterRightEntranceSquare.jpg" class="featuredProjectImage">
+						<img src="/wp-content/uploads/2019/03/waterRightEntranceSquare-1.jpg" class="featuredProjectImage">
 
 					</div>
 
@@ -82,13 +82,13 @@ get_header();
 
 						<div class="outerWrapper">
 
-							<img src="/wp-content/uploads/2019/03/waterRightEntranceTopView2.jpg" class="featuredProjectImage">
+							<img src="/wp-content/uploads/2019/03/waterRightEntranceTopView2-1.jpg" class="featuredProjectImage">
 
 						</div>
 
 						<div class="outerWrapper">
 
-							<img src="/wp-content/uploads/2019/03/waterRightEntranceTopView.jpg" class="featuredProjectImage">
+							<img src="/wp-content/uploads/2019/03/waterRightEntranceTopView-1.jpg" class="featuredProjectImage">
 
 						</div>
 
@@ -100,13 +100,13 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/03/waterRightOfficeSpace.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/waterRightOfficeSpace-1.jpg" class="image">
 
 					</div>
 
 					<div class="col50 smallMarginLeft">
 
-						<img src="/wp-content/uploads/2019/03/waterRightOfficeSpace2.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/waterRightOfficeSpace2-1.jpg" class="image">
 
 					</div>
 
@@ -116,13 +116,13 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/03/waterRightConferenceRoom.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/waterRightConferenceRoom-1.jpg" class="image">
 
 					</div>
 
 					<div class="col50 smallMarginLeft">
 
-						<img src="/wp-content/uploads/2019/03/waterRightBreakRoom.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/waterRightBreakRoom-1.jpg" class="image">
 
 					</div>
 
@@ -132,13 +132,13 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/03/waterRightKitchenMedium.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/waterRightKitchenMedium-1.jpg" class="image">
 
 					</div>
 
 					<div class="col50 smallMarginLeft">
 
-						<img src="/wp-content/uploads/2019/03/waterRightTestingRoom.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/waterRightTestingRoom-1.jpg" class="image">
 
 					</div>
 
@@ -146,7 +146,7 @@ get_header();
 
 				<div class="tinyPaddedSection paddedSideWrapper">
 
-					<img src="/wp-content/uploads/2019/03/waterRight5TonHoist.jpg" class="image">
+					<img src="/wp-content/uploads/2019/03/waterRight5TonHoist-1.jpg" class="image">
 
 				</div>
 

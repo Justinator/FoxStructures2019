@@ -261,3 +261,25 @@
     margin: 0;
   }
 }
+.removeBottomMargin{
+	@include breakpoint(smallScreen){
+		margin-bottom: 0;
+	}
+	@include breakpoint(largeMobileScreen){
+		margin-bottom: 0;
+	}
+	@include breakpoint(laptopScreen){
+		margin-bottom: -7px;
+	}
+}
+.removeBottomMarginMobile{
+	@include breakpoint(smallScreen){
+		margin-bottom: -10px;
+	}
+	@include breakpoint(largeMobileScreen){
+		margin-bottom: -10px;
+	}
+	@include breakpoint(laptopScreen){
+		margin-bottom: 0;
+	}
+}

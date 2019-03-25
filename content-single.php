@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package familyAndChildcareResponsive
+ * @package foxStructuresResponsive
  */
 
 ?>
@@ -28,21 +28,21 @@
 						?>
 						<div class="entry-meta">
 							<?php
-							familyandchildcareresponsive_posted_on();
-							familyandchildcareresponsive_posted_by();
+							foxStructuresResponsive_posted_on();
+							foxStructuresResponsive_posted_by();
 							?>
 						</div><!-- .entry-meta -->
 					<?php endif; ?>
 				</header><!-- .entry-header -->
 
-				<?php familyandchildcareresponsive_post_thumbnail(); ?>
+				<?php foxStructuresResponsive_post_thumbnail(); ?>
 
 				<div class="entry-content">
 					<?php
 						the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark" class="blogTitleLink">', '</a></h2>' );
 
-						familyandchildcareresponsive_posted_on();
-						familyandchildcareresponsive_posted_by();
+						foxStructuresResponsive_posted_on();
+						foxStructuresResponsive_posted_by();
 
 						the_excerpt();
 					?>
@@ -53,7 +53,7 @@
 					<?php
 					$read_more_link = sprintf(
 						/* translators: %s: Name of current post. */
-						wp_kses( __( 'Continue Reading %s', 'familyAndChildcareResponsive' ), array( 'span' => array( 'class' => array() ) ) ),
+						wp_kses( __( 'Continue Reading %s', 'foxStructuresResponsive' ), array( 'span' => array( 'class' => array() ) ) ),
 						the_title( '<span class="screen-reader-text">"', '"</span>', false )
 					);
 					?>

@@ -140,24 +140,6 @@
 		width: 90%;
 	}
 }
-.contentBlock{
-  	width: 70%;
-    @include breakpoint(smallScreen){
-      width: 90%;
-      margin: 0 auto;
-		  height: auto;
-      padding: 50px 20px 50px 20px;
-    }
-    @include breakpoint(largeMobileScreen){
-      width: 90%;
-      margin: 0 auto;
-		  height: auto;
-      padding: 50px 20px 50px 20px;
-    }
-    @include breakpoint(laptopScreen){
-      width: 70%;
-    }
-  }
 .blockText{
 	display: flex;
 	flex-direction: column;
@@ -173,32 +155,6 @@
     @include breakpoint(laptopScreen){
       padding: 25px;
     }
-}
-.blockTextSecondary{
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-    @include breakpoint(smallScreen){
-      padding: 20px;
-			left: 0;
-    }
-    @include breakpoint(largeMobileScreen){
-      padding: 20px;
-			left: 0;
-			width: 90%;
-			margin: 0 auto;
-    }
-    @include breakpoint(laptopScreen){
-      padding: 25px;
-			left: 25px;
-			width: 100%;
-			margin: 0;
-    }
-		@media ( min-width: 1250px){
-			padding: 50px 25px;
-			left: 10px;
-		}
 }
 .hero{
 	position: relative;
@@ -223,35 +179,6 @@
 			background-position: left;
     }
 	}
-.marginedHero{
-	@include breakpoint(smallScreen){
-		margin: 10px;
-	}
-	@include breakpoint(largeMobileScreen){
-		margin: 20px;
-	}
-}
-	.smallHero{
-		position: relative;
-		z-index: 1;
-		width: 100%;
-		background-size: cover;
-		background-repeat: no-repeat;
-	  height: 40vh;
-	}
-.smallHeroHeadingContainer{
-	display: flex;
-	@include breakpoint(smallScreen){
-		align-items: flex-end;
-		position: relative;
-		bottom: 10px;
-	}
-	@include breakpoint(largeMobileScreen){
-		align-items: flex-end;
-		position: relative;
-		bottom: 20px;
-	}
-}
 .mediumHero{
 	position: relative;
 	z-index: 1;
@@ -260,25 +187,6 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 60vh;
-}
-.heroOverlay{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  height: 70vh;
-  width: 100%;
-  content: "";
-  background: rgba(0, 0, 0, .3);
-  @include breakpoint(smallScreen){
-    height: 40vh;
-  }
-  @include breakpoint(largeMobileScreen){
-    height: 60vh
-  }
-  @include breakpoint(laptopScreen){
-    height: 70vh;
-  }
 }
 .flex-container{
 	display: flex;
@@ -334,34 +242,8 @@
 	text-align: center;
 	flex-direction: column;
 }
-.centeredImageContainer{
-	display: flex;
-	@include breakpoint(laptopScreen){
-		align-items: flex-start;
-	}
-	@include breakpoint(largeScreen){
-		align-items: center;
-	}
-}
-.marginTop{
-	@include breakpoint(laptopScreen){
-		margin-top: 35px;
-	}
-}
 .textWrap{
 	padding: 20px;
-}
-.blockWrap{
-	display: flex;
-	margin-bottom: 100px;
-}
-.blockImage{
-	display: flex;
-	max-width:100%;
-	max-height: 100%;
-}
-.imageBlock{
-	padding: 100px 0 100px 0;
 }
 .image{
 	width: 100%;
@@ -379,22 +261,10 @@
 .greyBlock{
 	background: $lightGrey;
 }
-.blackBlock{
-	background: $black;
-}
-.blueBlock{
-	background: $primaryGrey;
-}
-.whiteBlock{
-	background: $white;
-}
-.yellowBlock{
-	background: $primaryGrey;
-}
 .page-content{
 	position: relative;
 	z-index: 2;
-	margin-top: 50vh;
+	margin-top: 50px;
 	background: $white;
 }
 .paddedSection{
@@ -417,52 +287,6 @@
 .paddedContainer{
 	padding: 2em 0;
 }
-.smallTextBlock{
-	padding: 10px;
-}
-.mediumTextBlock{
-	padding: 20px;
-	background-color: $lightGrey;
-	margin-bottom: 25px;
-		li{
-			margin-bottom: 15px;
-		}
-}
-.flexListWrapper{
-	display: flex;
-	justify-content: center;
-}
-.flexList{
-	font-family: 'Oswald', "Lucida Grande", "Lucida Sans", Geneva, Arial, sans-serif;
-	display: flex;
-	color: $white;
-	font-weight: 700;
-	list-style-type: none;
-	padding-inline-start: 0;
-	margin-top: 0;
-  margin-bottom: 0;
-	@include breakpoint(smallScreen){
-		flex-direction: column;
-		font-size: 1.3em;
-	}
-	@include breakpoint(largeMobileScreen){
-		flex-direction: row;
-		font-size: .8em;
-	}
-	@include breakpoint(laptopScreen){
-		flex-direction: row;
-		font-size: 1em;
-	}
-		li{
-			padding: 20px;
-			&:active{
-				background-color: $primaryGrey;
-			}
-			&:hover{
-				background-color: $primaryGrey;
-			}
-		}
-}
 .limitWidth{
   max-width: 1050px;
   margin: 0 auto;
@@ -479,7 +303,15 @@
 .limitPortfolioWidth{
 	max-width: 1350px;
   margin: 0 auto;
-	padding: 20px;
+	@include breakpoint(smallScreen){
+		padding: 50px 20px 0 20px;
+	}
+	@include breakpoint(largeMobileScreen){
+		padding: 50px 20px 0 20px;
+	}
+	@include breakpoint(laptopScreen){
+		padding: 20px;
+	}
 }
 .defaultPadding{
 	@include breakpoint(smallScreen){

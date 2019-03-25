@@ -3,6 +3,7 @@ body{
 	background: $white;
 	margin: 0;
 }
+// Style highlight to match our themes colors
 ::selection{
 		background: rgba(239,174,30, .5);
 }
@@ -12,12 +13,9 @@ body{
 ::-ms-selection{
 	background: rgba(239,174,30, .5);
 }
-.removeBottomMargin{
-	margin-bottom: -7px;
-}
 #privacyPolicy{
 	@include breakpoint(smallScreen){
-			margin-top: 75px;
+			margin-top: 110px;
 	}
 	@include breakpoint(largeMobileScreen){
 			margin-top: 125px;
@@ -38,4 +36,10 @@ body{
 
 ::-webkit-scrollbar-thumb{
     background-color: $primaryGrey;
+}
+.error-404{
+	text-align: center;
+}
+.fourOhFour{
+	font-size: 5em;
 }

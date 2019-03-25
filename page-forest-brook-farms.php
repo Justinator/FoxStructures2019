@@ -24,7 +24,7 @@ get_header();
 
 			</div>
 
-			<img src="/wp-content/uploads/2019/03/forestBrookFarmsExterior.jpg" class="image portfolioFeaturedImage">
+			<img src="/wp-content/uploads/2019/03/forestBrookFarmsExterior-2.jpg" class="image portfolioFeaturedImage">
 
 			<p>
 				Fox Structures collaborated with the owner of Forest Brook Farms to design two unique multi-purpose
@@ -90,25 +90,29 @@ get_header();
 
 				<div class="fullWidth centerText greyBlock smallPaddedSection">
 
-					<p>
+					<div class="limitWidth">
 
-						“Jason put in a lot of long days and nights in the planning stages. Through the process Jason
-						wasn’t just our contractor—he also became a good friend. Alex, Dan, Jesse, Tim and all the rest
-						of the guys were great to work with. Jesse’s craftsmanship on the window sliders and beams was
-						amazing and Tim’s fabrication of the stair railings were spot on. I’d recommend Fox Structures
-						without hesitation.”
+						<p>
 
-					</p>
+							“Jason put in a lot of long days and nights in the planning stages. Through the process Jason
+							wasn’t just our contractor—he also became a good friend. Alex, Dan, Jesse, Tim and all the rest
+							of the guys were great to work with. Jesse’s craftsmanship on the window sliders and beams was
+							amazing and Tim’s fabrication of the stair railings were spot on. I’d recommend Fox Structures
+							without hesitation.”
 
-					<h5 class="noMargin">
-					-	Jay Juckem
-					</h5>
+						</p>
 
-					<div class="centerUnderline"></div>
+						<h5 class="noMargin">
+						-	Jay Juckem
+						</h5>
 
-					<p>
-					Owner, Forest Brook Farms
-					</p>
+						<div class="centerUnderline"></div>
+
+						<p>
+						Owner, Forest Brook Farms
+						</p>
+
+					</div>
 
 				</div>
 
@@ -118,13 +122,13 @@ get_header();
 
 						<div class="outerWrapper">
 
-							<img src="/wp-content/uploads/2019/03/forestBrookFarmsExterior2Cropped.jpg" class="featuredProjectImage">
+							<img src="/wp-content/uploads/2019/03/forestBrookFarmsExterior2Cropped-2.jpg" class="featuredProjectImage">
 
 						</div>
 
 						<div class="outerWrapper">
 
-							<img src="/wp-content/uploads/2019/03/forestBrookFarmsExterior3Cropped.jpg" class="featuredProjectImage">
+							<img src="/wp-content/uploads/2019/03/forestBrookFarmsExterior3Cropped-2.jpg" class="featuredProjectImage">
 
 						</div>
 
@@ -132,7 +136,7 @@ get_header();
 
 					<div class="col50 paddedWrapper">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsExteriorSquareLarge.jpg" class="featuredProjectImage">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsExteriorSquareLarge-2.jpg" class="featuredProjectImage">
 
 					</div>
 
@@ -140,7 +144,7 @@ get_header();
 
 				<div class="tinyPaddedSection paddedSideWrapper">
 
-					<img src="/wp-content/uploads/2019/03/forestBrookFarmKitchenLarge.jpg" class="image largePortfolioImage">
+					<img src="/wp-content/uploads/2019/03/forestBrookFarmKitchen-2.jpg" class="image largePortfolioImage">
 
 				</div>
 
@@ -148,13 +152,13 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior7.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior7-2.jpg" class="image">
 
 					</div>
 
 					<div class="col50 smallMarginLeft">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior8.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior8-2.jpg" class="image">
 
 					</div>
 
@@ -164,13 +168,13 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior11.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior11-2.jpg" class="image">
 
 					</div>
 
-					<div class="col50 smallMarginLeft">
+					<div class="col50 smallMarginLeft removeBottomMarginMobile">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior1.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior1-2.jpg" class="image">
 
 					</div>
 
@@ -178,7 +182,7 @@ get_header();
 
 				<div class="tinyPaddedSection paddedSideWrapper">
 
-					<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior3Large.jpg" class="image largePortfolioImage">
+					<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior3Medium-2.jpg" class="image largePortfolioImage">
 
 				</div>
 
@@ -186,13 +190,13 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior2.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior2-2.jpg" class="image">
 
 					</div>
 
 					<div class="col50 smallMarginLeft">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior4.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior4-2.jpg" class="image">
 
 					</div>
 
@@ -202,13 +206,13 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior5.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior5-2.jpg" class="image">
 
 					</div>
 
 					<div class="col50 smallMarginLeft">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior6.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior6-2.jpg" class="image">
 
 					</div>
 

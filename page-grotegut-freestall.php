@@ -24,7 +24,7 @@ get_header();
 
 			</div>
 
-			<img src="/wp-content/uploads/2019/03/GrotegutGates13.jpg" class="image portfolioFeaturedImage">
+			<img src="/wp-content/uploads/2019/03/GrotegutGates13-1.jpg" class="image portfolioFeaturedImage">
 
 		</section>
 
@@ -38,13 +38,13 @@ get_header();
 
 						<div class="outerWrapper">
 
-							<img src="/wp-content/uploads/2019/03/GrotegutGatesExteriorSmall.jpg" class="featuredProjectImage">
+							<img src="/wp-content/uploads/2019/03/GrotegutGatesExteriorSmall-1.jpg" class="featuredProjectImage">
 
 						</div>
 
 						<div class="outerWrapper">
 
-							<img src="/wp-content/uploads/2017/09/grotegut-freestall-e1552943409243.jpg" class="featuredProjectImage">
+							<img src="/wp-content/uploads/2019/03/grotegut-freestall-e1553433457665.jpg" class="featuredProjectImage">
 
 						</div>
 
@@ -52,7 +52,7 @@ get_header();
 
 					<div class="col50 paddedWrapper">
 
-						<img src="/wp-content/uploads/2019/03/GrotegutGates17SquareMedium.jpg" class="featuredProjectImage">
+						<img src="/wp-content/uploads/2019/03/GrotegutGates17SquareMedium-1.jpg" class="featuredProjectImage">
 
 					</div>
 
@@ -60,7 +60,7 @@ get_header();
 
 				<div class="tinyPaddedSection paddedSideWrapper">
 
-					<img src="/wp-content/uploads/2019/03/GrotegutGates1LargeMedium.jpg" class="image largePortfolioImage">
+					<img src="/wp-content/uploads/2019/03/GrotegutGates1LargeMedium-1.jpg" class="image largePortfolioImage">
 
 				</div>
 
@@ -68,13 +68,13 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/03/GrotegutGates8-1.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/GrotegutGates8-1-1.jpg" class="image">
 
 					</div>
 
 					<div class="col50 smallMarginLeft">
 
-						<img src="/wp-content/uploads/2019/03/GrotegutGates6.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/GrotegutGates6-1.jpg" class="image">
 
 					</div>
 
@@ -84,13 +84,13 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/03/GrotegutGates9.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/GrotegutGates9-1.jpg" class="image">
 
 					</div>
 
 					<div class="col50 smallMarginLeft">
 
-						<img src="/wp-content/uploads/2019/03/GrotegutGates10.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/GrotegutGates10-1.jpg" class="image">
 
 					</div>
 
