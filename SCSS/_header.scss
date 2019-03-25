@@ -188,20 +188,6 @@ nav{
 	margin-left: 10px;
 	right: 100px;
 }
-.menuBars{
-	cursor: pointer;
-	display: inline-block;
-	width: 30px;
-	padding-top: 9px;
-		span{
-			display: block;
-			position: relative;
-			background-color: $white;
-			height: 3px;
-			width: 100%;
-			margin-top: 4px;
-		}
-}
 .mobile-menu{
 	@include breakpoint(smallScreen){
 		display: block;
@@ -242,83 +228,6 @@ nav{
 		}
 	}
 }
-.menuLink{
-	font-family: 'Oswald', "Lucida Grande", "Lucida Sans", Geneva, Arial, sans-serif;
-	position: relative;
-	display: block;
-	padding: 10px;
-	transition: .2s ease all;
-		@include breakpoint(extraLargeScreen){
-			padding: 10px 25px;
-		}
-}
-.menuLink{
-		&:after{
-			position: absolute;
-			content: "";
-			top: 75%;
-			left: 5%;
-			width: 90%;
-			height: 5px;
-			opacity: 0;
-			background-image: url("/wp-content/uploads/2019/02/handDrawnUnderlineLarge.png");
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: cover;
-			transition: .3s ease all;
-		}
-		&:hover{
-			&:after{
-				position: absolute;
-				content: "";
-				top: 100%;
-				left: 5%;
-				width: 90%;
-				height: 5px;
-				opacity: 1;
-				background-image: url("/wp-content/uploads/2019/02/handDrawnUnderlineLarge.png");
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: cover;
-				transition: .3s ease all;
-				transition: opacity .3s ease all;
-		}
-	}
-}
-.contactLink{
-	position: relative;
-	display: block;
-	padding: 10px 30px 10px 30px;
-	transition: .2s ease all;
-		@include breakpoint(largeScreen){
-			padding: 10px 50px 10px 50px;
-		}
-	&:after{
-		position: absolute;
-		content: "";
-		top: 75%;
-		left: 20%;
-		width: 60%;
-		height: 3px;
-		opacity: 0;
-		background-color: $primaryGrey;
-		transition: .3s ease all;
-	}
-	&:hover{
-		&:after{
-			position: absolute;
-			content: "";
-			top: 100%;
-			left: 20%;
-			width: 60%;
-			height: 3px;
-			opacity: 1;
-			background-color: $primaryGrey;
-			transition: .3s ease all;
-			transition: opacity .3s ease all;
-		}
-	}
-}
 .menu{
 	.active{
 		a{
@@ -329,92 +238,12 @@ nav{
 			}
 		}
 }
-.linkList2{
-	.active{
-		a{
-			margin-bottom: -1px;
-			border-bottom: 3px solid $primaryGrey !important;
-			transition: .2s ease all;
-		}
-	}
-}
-.closeMenu{
-	position: absolute;
-	cursor: pointer;
-	top: 30px;
-	right: 50px;
-}
-.closeMenuButton{
-	position: absolute;
-	cursor: pointer;
-	bottom: 0;
-	left: 0;
-	height: 60px;
-	background-color: $primaryYellow;
-}
-#closeMenuTitle{
-	margin: 0 auto;
-	color: $primaryGrey;
-}
-.linkList2{
-	height: 70px;
-	align-items:center;
-	list-style-type: none;
-	letter-spacing: 1px;
-		@include breakpoint(smallScreen){
-			display:none;
-		}
-		@include breakpoint(largeMobileScreen){
-			display:none;
-		}
-		@include breakpoint(laptopScreen){
-			display: flex;
-			font-size: 20px;
-		}
-		a{
-			color:$black;
-			font-weight: 700;
-			text-decoration: none;
-			transition: .3s ease all;
-			&:hover{
-				color: $primaryGrey !important;
-				transition: .3s ease all;
-			}
-		}
-}
 #emailLink{
 	@include breakpoint(smallScreen){
 		display:none;
 	}
 	@include breakpoint(largeMobileScreen){
 		display:flex;
-	}
-}
-.linkList3{
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	font-size: 18px;
-	list-style-type: none;
-	letter-spacing: 1px;
-	@include breakpoint(smallScreen){
-		display:none;
-	}
-	@include breakpoint(largeMobileScreen){
-		display:none;
-	}
-	@include breakpoint(laptopScreen){
-		display: flex;
-	}
-	a{
-		color:$black;
-		font-weight: 700;
-		text-decoration: none;
-		transition: .3s ease all;
-		&:hover{
-			color: $primaryGrey !important;
-			transition: .3s ease all;
-		}
 	}
 }
 .menuButtonWrap{
@@ -429,23 +258,6 @@ nav{
 		@include breakpoint(laptopScreen){
 			display: none;
 		}
-}
-.stickyNav{
-	position: -webkit-sticky;
-	position: sticky;
-	top: 130px;
-	box-shadow: 0 0 28px 0 rgba(0,0,0,.25);
-	z-index: 9998;
-	@include breakpoint(smallScreen){
-		top: 0;
-		position: relative;
-	}
-	@include breakpoint(largeMobileScreen){
-		top: 130px;
-	}
-}
-.subNav{
-	height: 70px;
 }
 // Add Animation to our hamburger Menu
 .hamburger {

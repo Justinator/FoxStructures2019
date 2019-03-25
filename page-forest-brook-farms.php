@@ -90,25 +90,29 @@ get_header();
 
 				<div class="fullWidth centerText greyBlock smallPaddedSection">
 
-					<p>
+					<div class="limitWidth">
 
-						“Jason put in a lot of long days and nights in the planning stages. Through the process Jason
-						wasn’t just our contractor—he also became a good friend. Alex, Dan, Jesse, Tim and all the rest
-						of the guys were great to work with. Jesse’s craftsmanship on the window sliders and beams was
-						amazing and Tim’s fabrication of the stair railings were spot on. I’d recommend Fox Structures
-						without hesitation.”
+						<p>
 
-					</p>
+							“Jason put in a lot of long days and nights in the planning stages. Through the process Jason
+							wasn’t just our contractor—he also became a good friend. Alex, Dan, Jesse, Tim and all the rest
+							of the guys were great to work with. Jesse’s craftsmanship on the window sliders and beams was
+							amazing and Tim’s fabrication of the stair railings were spot on. I’d recommend Fox Structures
+							without hesitation.”
 
-					<h5 class="noMargin">
-					-	Jay Juckem
-					</h5>
+						</p>
 
-					<div class="centerUnderline"></div>
+						<h5 class="noMargin">
+						-	Jay Juckem
+						</h5>
 
-					<p>
-					Owner, Forest Brook Farms
-					</p>
+						<div class="centerUnderline"></div>
+
+						<p>
+						Owner, Forest Brook Farms
+						</p>
+
+					</div>
 
 				</div>
 
@@ -168,7 +172,7 @@ get_header();
 
 					</div>
 
-					<div class="col50 smallMarginLeft">
+					<div class="col50 smallMarginLeft removeBottomMarginMobile">
 
 						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior1-2.jpg" class="image">
 

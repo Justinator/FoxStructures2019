@@ -79,7 +79,7 @@ get_header();
 
 					</div>
 
-					<div class="col50 paddedWrapper">
+					<div class="col50 paddedWrapper removeBottomMarginMobile">
 
 						<img src="/wp-content/uploads/2019/03/OaksGolfClubDroneShotsSquare.jpg" class="featuredProjectImage">
 

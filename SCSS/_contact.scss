@@ -1,7 +1,4 @@
 /* 13.0 Contact Page stylings -------------------------------------------*/
-.contactContent{
-  margin-top: 150px !important;
-}
 #contactContent{
   margin-top: 125px;
   margin-bottom: 25px;
@@ -13,9 +10,6 @@
   @include breakpoint(largeMobileScreen){
     padding: 25px;
   }
-}
-.locationContent{
-  padding: 20px;
 }
 .smallMapWrapper{
   padding: 40px 20px 20px 20px;

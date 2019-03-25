@@ -1,36 +1,4 @@
 /* 7.0 Button Stylings ---------------------------------------*/
-.plainLink{
-	text-decoration: none;
-	color: $primaryGrey !important;
-	transition: .3s ease all;
-	position: relative;
-    &:hover{
-    color: $primaryGrey;
-    transition: .3s ease all;
-			&:after{
-				position: absolute;
-				height: 2px;
-				width: 100%;
-				background: $primaryGrey;
-				content: "";
-				bottom: 0;
-				left: 0;
-				opacity: 1;
-				transition: .3s ease all;
-			}
-    }
-		&:after{
-			position: absolute;
-			height: 2px;
-			width: 100%;
-			background: $primaryGrey;
-			content: "";
-			bottom: 25%;
-			left: 0;
-			opacity: 0;
-			transition: .3s ease all;
-		}
-}
 .primaryLink{
   color: $primaryGrey !important;
 	transition: .3s ease all;
@@ -53,16 +21,6 @@
 				transition: .3s ease all;
 			}
     }
-}
-.plainBlackLink{
-  a{
-    color: $black;
-    transition: .3s ease all;
-      &:hover{
-        color: $primaryGrey;
-        transition: .3s ease all;
-      }
-  }
 }
 .primaryButton{
 	position: relative;
@@ -106,129 +64,11 @@
 			}
 		}
 }
-.primaryButtonReverse{
-	position: relative;
-	z-index:1;
-	background: $transparent;
-	color: $primaryGrey !important;
-  text-decoration: none;
-  width: fit-content;
-	margin-bottom: 10px;
-	transition: .1s ease all;
-  border-width: 0;
-  border-bottom: 2px solid $primaryGrey;
-  border-top: 2px solid $transparent;
-  padding: 10px 20px 10px 20px;
-	cursor: pointer;
-    a{
-      text-decoration: none;
-      color: $primaryGrey !important;
-    }
-    &:after{
-      position: absolute;
-      z-index:2;
-      right: 0;
-      bottom: 0;
-      content: "";
-      width: 2px;
-      opacity: 0;
-      background-color: $primaryGrey;
-      height: 0%;
-      transition: .2s ease all;
-    }
-    &:before{
-      position: absolute;
-      z-index:2;
-      left: 0;
-      bottom: 0;
-      content: "";
-      width: 2px;
-      opacity: 0;
-      background-color: $primaryGrey;
-      height: 0%;
-      transition: .2s ease all;
-    }
-    &:hover{
-      border-top: 2px solid $primaryGrey;
-      transition: .1s .18s ease all;
-        &:after{
-          position: absolute;
-          z-index:2;
-          right: 0;
-          top: 0;
-          content: "";
-          width: 2px;
-          opacity: 1;
-          background-color: $primaryGrey;
-          height: 100%;
-          transition: .2s .15s ease all;
-        }
-        &:before{
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          content: "";
-          width: 2px;
-          opacity: 1;
-          background-color: $primaryGrey;
-          height: 100%;
-          transition: .2s ease all;
-        }
-    }
-}
-.whiteButton{
-	position: relative;
-	z-index:1;
-	border: 2px solid $white;
-	border-radius: 10px;
-	background: $white;
-	padding: 10px 50px 10px 50px;
-	color: $primaryGrey;
-	transition: .3s ease all;
-	cursor: pointer;
-    &:hover{
-      background: $transparent;
-    	color: $white;
-    	transition: .3s ease all;
-    }
-}
-.feedbackSubmit{
-	position: relative;
-	z-index:1;
-	border: 2px solid $white;
-	border-radius: 10px;
-	background: $white;
-	padding: 10px 20px 10px 20px;
-	color: $primaryGrey;
-	transition: .3s ease all;
-	cursor: pointer;
-  font-size: 14px !important;
-    &:hover{
-      background: $transparent;
-    	color: $white;
-    	transition: .3s ease all;
-    }
-}
 .centerButton{
 	margin: 0 auto;
 	text-align: center;
 }
-.buttonWrap{
-	display: flex;
-	justify-content: space-evenly;
-	width: 100%;
-	margin: 50px auto;
-	text-align: center;
-}
-.flexListLink{
-  color: $primaryGrey !important;
-	transition: .3s ease all;
-  text-decoration: none;
-    &:hover{
-      transition: .3s ease all;
-    	color: $primaryGrey !important;
-    }
-}
+
 .buttonWrapper{
 	padding: 50px 0;
 }
