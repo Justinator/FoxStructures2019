@@ -394,7 +394,7 @@
 .page-content{
 	position: relative;
 	z-index: 2;
-	margin-top: 50vh;
+	margin-top: 50px;
 	background: $white;
 }
 .paddedSection{
@@ -479,7 +479,15 @@
 .limitPortfolioWidth{
 	max-width: 1350px;
   margin: 0 auto;
-	padding: 20px;
+	@include breakpoint(smallScreen){
+		padding: 50px 20px 0 20px;
+	}
+	@include breakpoint(largeMobileScreen){
+		padding: 50px 20px 0 20px;
+	}
+	@include breakpoint(laptopScreen){
+		padding: 20px;
+	}
 }
 .defaultPadding{
 	@include breakpoint(smallScreen){

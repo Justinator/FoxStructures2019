@@ -706,7 +706,7 @@ template {
 .page-content {
   position: relative;
   z-index: 2;
-  margin-top: 50vh;
+  margin-top: 50px;
   background: #FFFFFF; }
 
 .paddedSection {
@@ -785,8 +785,16 @@ template {
 
 .limitPortfolioWidth {
   max-width: 1350px;
-  margin: 0 auto;
-  padding: 20px; }
+  margin: 0 auto; }
+  @media (max-width: 600px) {
+    .limitPortfolioWidth {
+      padding: 50px 20px 0 20px; } }
+  @media (min-width: 600px) {
+    .limitPortfolioWidth {
+      padding: 50px 20px 0 20px; } }
+  @media (min-width: 992px) {
+    .limitPortfolioWidth {
+      padding: 20px; } }
 
 @media (max-width: 600px) {
   .defaultPadding {
@@ -1189,77 +1197,15 @@ nav {
 
 .menuButtonWrap {
   display: flex;
-  right: 30px;
-  padding: 20px; }
-  @media (min-width: 992px) {
-    .menuButtonWrap {
-      display: none; } }
+  right: 30px; }
   @media (max-width: 600px) {
     .menuButtonWrap {
-      padding: 15px; } }
-
-.heroNav {
-  display: block;
-  background: #1D1D1D;
-  padding: 50px 0 50px 0;
-  margin-top: -100px; }
-  @media (max-width: 600px) {
-    .heroNav {
-      display: none; } }
+      padding: 15px 0 15px 15px; } }
   @media (min-width: 600px) {
-    .heroNav {
-      display: none; } }
+    .menuButtonWrap {
+      padding: 15px 0 15px 15px; } }
   @media (min-width: 992px) {
-    .heroNav {
-      display: block; } }
-
-.heroNavWrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-  @media (max-width: 600px) {
-    .heroNavWrap {
-      flex-direction: column;
-      justify-content: center; } }
-  @media (min-width: 600px) {
-    .heroNavWrap {
-      flex-direction: column;
-      justify-content: center; } }
-  @media (min-width: 992px) {
-    .heroNavWrap {
-      flex-direction: row;
-      justify-content: space-between; } }
-  .heroNavWrap li {
-    list-style-type: none; }
-    @media (max-width: 600px) {
-      .heroNavWrap li {
-        margin: 5px 0 5px 0; } }
-
-.heroNavLink {
-  color: #fff;
-  text-decoration: none;
-  transition: .3s ease all;
-  padding: 5px 0 5px 0; }
-  @media (max-width: 600px) {
-    .heroNavLink {
-      color: #3598db; } }
-  .heroNavLink:hover {
-    color: #F00000;
-    transition: .3s ease all; }
-
-.mobileHeroNav {
-  display: none; }
-  @media (max-width: 600px) {
-    .mobileHeroNav {
-      background: #1D1D1D;
-      padding: 20px 0 20px 0; } }
-  @media (min-width: 600px) {
-    .mobileHeroNav {
-      background: #1D1D1D;
-      padding: 20px 0 20px 0; } }
-  @media (min-width: 992px) {
-    .mobileHeroNav {
+    .menuButtonWrap {
       display: none; } }
 
 .stickyNav {
@@ -1620,6 +1566,9 @@ nav {
     .footerNavWrapper h6 {
       padding: 10px 0;
       margin-bottom: 0; } }
+
+.socialWrapper a {
+  text-decoration: none; }
 
 /* 6.0 Site Typography -------------------------------------------*/
 body,
@@ -2044,7 +1993,7 @@ body {
 
 @media (max-width: 600px) {
   #privacyPolicy {
-    margin-top: 75px; } }
+    margin-top: 110px; } }
 @media (min-width: 600px) {
   #privacyPolicy {
     margin-top: 125px; } }
@@ -2062,6 +2011,12 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background-color: #404041; }
+
+.error-404 {
+  text-align: center; }
+
+.fourOhFour {
+  font-size: 5em; }
 
 /*9.0 Icon Styling -------------------------------------------*/
 .whiteIcon {
@@ -3249,5 +3204,25 @@ body {
 
 .careersHero {
   background-image: url("/wp-content/uploads/2019/03/foxStructuresCareers.jpg"); }
+
+.careersSidebar {
+  border-right: 1px solid #404041;
+  margin-top: 45px; }
+  @media (max-width: 600px) {
+    .careersSidebar {
+      padding: 0 20px; } }
+  @media (min-width: 600px) {
+    .careersSidebar {
+      padding: 0 20px; } }
+  @media (min-width: 992px) {
+    .careersSidebar {
+      display: block;
+      padding: 0; } }
+
+.careersList {
+  list-style-type: none;
+  padding-left: 0; }
+  .careersList li {
+    margin-bottom: 10px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,7 +4,7 @@
 
     <div class="imageWrapper">
 
-      <img src="/wp-content/uploads/2018/12/OaksIntExtStillsMedium.jpg" class="image">
+      <img src="/wp-content/uploads/2019/03/OaksIntExtStillsMedium.jpg" class="image">
 
       <?php get_template_part("/inc/portfolio-overlay"); ?>
 

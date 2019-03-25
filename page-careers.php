@@ -39,7 +39,7 @@ get_header();
 
 			<section id ="serviceIntro" class="paddedSection">
 
-				<div class="limitWidth flex-container">
+				<div class="limitWidth flex-container-reverse">
 
 					<div class="col20">
 

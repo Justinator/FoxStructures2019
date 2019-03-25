@@ -24,7 +24,7 @@ get_header();
 
 			</div>
 
-			<img src="/wp-content/uploads/2017/09/rosendale-dairy-1.jpg" class="image portfolioFeaturedImage">
+			<img src="/wp-content/uploads/2017/09/rosendale-dairy.jpg" class="image portfolioFeaturedImage">
 
 			<p>
 				Recently featured on the History Channel’s “Only in America” program with Larry the Cable Guy, the complex
@@ -68,7 +68,7 @@ get_header();
 
 				<div class="tinyPaddedSection paddedSideWrapper">
 
-					<img src="/wp-content/uploads/2017/09/rosendale-freestall-1.jpg" class="image">
+					<img src="/wp-content/uploads/2017/09/rosendale-freestall.jpg" class="image">
 
 				</div>
 

@@ -47,6 +47,10 @@ get_header();
 
 </div>
 
+<script>
+filterSelection("all");
+</script>
+
 <?php
 
 get_footer();

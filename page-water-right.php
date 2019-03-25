@@ -24,7 +24,7 @@ get_header();
 
 			</div>
 
-			<img src="/wp-content/uploads/2017/09/water-right-inc-1.jpg" class="image portfolioFeaturedImage">
+			<img src="/wp-content/uploads/2017/09/water-right-inc.jpg" class="image portfolioFeaturedImage">
 
 			<p>
 				During June of 2013 Fox Structures broke ground on a 31,000 sq. ft. addition to Water Right of Appleton.
@@ -66,7 +66,7 @@ get_header();
 
 				<div class="tinyPaddedSection paddedSideWrapper">
 
-					<img src="/wp-content/uploads/2019/03/waterRightExteriorLarge-1.jpg" class="image largePortfolioImage">
+					<img src="/wp-content/uploads/2019/03/waterRightExteriorLarge.jpg" class="image largePortfolioImage">
 
 				</div>
 
