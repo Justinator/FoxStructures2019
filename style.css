@@ -759,6 +759,31 @@ template {
     transform-origin: bottom right;
     transform: scaleX(1); }
 
+.current-menu-item a {
+  position: relative; }
+  .current-menu-item a:before {
+    position: absolute;
+    content: "";
+    background: #f4a81d;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: scaleX(1);
+    height: 2px;
+    transition: transform 0.2s ease-out;
+    transform-origin: top right; }
+  .current-menu-item a:after {
+    position: absolute;
+    content: "";
+    background: #f4a81d;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    transform: scaleX(1);
+    height: 2px;
+    transition: transform 0.2s ease-out;
+    transform-origin: bottom left; }
+
 .menuLinkWrap {
   display: flex;
   justify-content: space-between;

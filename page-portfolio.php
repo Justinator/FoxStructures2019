@@ -192,8 +192,6 @@ get_header();
 
 					<?php get_template_part("/inc/projects/agricultural/schuh-view"); ?>
 
-					<!-- Hide the rest of the projects on first load -->
-
 					<?php get_template_part("/inc/projects/commercial/gillett"); ?>
 
 					<?php get_template_part("/inc/projects/equestrian/gordy"); ?>
@@ -237,8 +235,6 @@ get_header();
 					<?php get_template_part("/inc/projects/storage/mini-warehouse"); ?>
 
 					<?php get_template_part("/inc/projects/agricultural/siemers"); ?>
-
-					<?php get_template_part("/inc/projects/agricultural/tidy-view"); ?>
 
 					<?php get_template_part("/inc/projects/agricultural/tinedale"); ?>
 

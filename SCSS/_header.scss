@@ -124,6 +124,35 @@
 		}
 	}
 }
+.current-menu-item{
+	a{
+		position: relative;
+		&:before{
+			position: absolute;
+			content: "";
+			background: $primaryYellow;
+			top: 0;
+			left: 0;
+			width: 100%;
+  		transform: scaleX(1);
+			height: 2px;
+			transition: transform 0.2s ease-out;
+			transform-origin: top right;
+		}
+		&:after{
+			position: absolute;
+			content: "";
+			background: $primaryYellow;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+  		transform: scaleX(1);
+			height: 2px;
+			transition: transform 0.2s ease-out;
+			transform-origin: bottom left;
+		}
+	}
+}
 .menuLinkWrap{
 	display: flex;
 	justify-content: space-between;
