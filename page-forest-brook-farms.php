@@ -24,7 +24,8 @@ get_header();
 
 			</div>
 
-			<img src="/wp-content/uploads/2019/03/forestBrookFarmsExterior-2.jpg" class="image portfolioFeaturedImage">
+			<img src="/wp-content/uploads/2019/03/forestBrookFarmsExterior-2.jpg" class="image portfolioFeaturedImage"
+			alt="Front exterior view of Forest Brook Farms in Chilton, WI. Agricultural build by Fox Structures">
 
 			<p>
 				Fox Structures collaborated with the owner of Forest Brook Farms to design two unique multi-purpose
@@ -122,13 +123,15 @@ get_header();
 
 						<div class="outerWrapper">
 
-							<img src="/wp-content/uploads/2019/03/forestBrookFarmsExterior2Cropped-2.jpg" class="featuredProjectImage">
+							<img src="/wp-content/uploads/2019/03/forestBrookFarmsExterior2Cropped-2.jpg" class="featuredProjectImage"
+							alt="Front right exterior view of Forest Brook Farms in Chilton, WI. Agricultural build by Fox Structures">
 
 						</div>
 
 						<div class="outerWrapper">
 
-							<img src="/wp-content/uploads/2019/03/forestBrookFarmsExterior3Cropped-2.jpg" class="featuredProjectImage">
+							<img src="/wp-content/uploads/2019/03/forestBrookFarmsExterior3Cropped-2.jpg" class="featuredProjectImage"
+							alt="Side exterior view of Forest Brook Farms in Chilton, WI. Agricultural build by Fox Structures">
 
 						</div>
 
@@ -136,7 +139,8 @@ get_header();
 
 					<div class="col50 paddedWrapper">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsExteriorSquareLarge-2.jpg" class="featuredProjectImage">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsExteriorSquareLarge-2.jpg" class="featuredProjectImage"
+						alt="Front exterior view of Forest Brook Farms in Chilton, WI. Agricultural build by Fox Structures">
 
 					</div>
 
@@ -146,13 +150,15 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/04/entryWayLow-1.jpg" class="image">
+						<img src="/wp-content/uploads/2019/04/entryWayLow-1.jpg" class="image"
+						alt="Front entrance of Forest Brook Farms in Chilton, WI. Agricultural build by Fox Structures">
 
 					</div>
 
 					<div class="col50 smallMarginLeft">
 
-						<img src="/wp-content/uploads/2019/04/entryWayOverheadMedium-1.jpg" class="image">
+						<img src="/wp-content/uploads/2019/04/entryWayOverheadMedium-1.jpg" class="image"
+						alt="Front entrance ceiling of Forest Brook Farms in Chilton, WI. Agricultural build by Fox Structures">
 
 					</div>
 
@@ -160,7 +166,8 @@ get_header();
 
 				<div class="tinyPaddedSection paddedSideWrapper">
 
-					<img src="/wp-content/uploads/2019/03/forestBrookFarmKitchen-2.jpg" class="image largePortfolioImage">
+					<img src="/wp-content/uploads/2019/03/forestBrookFarmKitchen-2.jpg" class="image largePortfolioImage"
+					alt="Kitchen and lounge area of Forest Brook Farms in Chilton, WI. Agricultural build by Fox Structures">
 
 				</div>
 
@@ -168,13 +175,15 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/04/kitchenLow-1.jpg" class="image">
+						<img src="/wp-content/uploads/2019/04/kitchenLow-1.jpg" class="image"
+						alt="Kitchen of Forest Brook Farms in Chilton, WI. Agricultural build by Fox Structures">
 
 					</div>
 
 					<div class="col50 smallMarginLeft">
 
-						<img src="/wp-content/uploads/2019/04/officeSpaceMedium-1.jpg" class="image">
+						<img src="/wp-content/uploads/2019/04/officeSpaceMedium-1.jpg" class="image"
+						alt="Office space of Forest Brook Farms in Chilton, WI. Agricultural build by Fox Structures">
 
 					</div>
 
@@ -184,13 +193,15 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior7-2.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior7-2.jpg" class="image"
+						alt="Conference Table of Forest Brook Farms in Chilton, WI. Agricultural build by Fox Structures">
 
 					</div>
 
 					<div class="col50 smallMarginLeft">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior8-2.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior8-2.jpg" class="image"
+						alt="Office Space of Forest Brook Farms in Chilton, WI. Agricultural build by Fox Structures">
 
 					</div>
 
@@ -200,13 +211,15 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior11-2.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior11-2.jpg" class="image"
+						alt="Custom Welded Railing and staircase at Forest Brook Farms in Chilton, WI. Agricultural build by Fox Structures">
 
 					</div>
 
 					<div class="col50 smallMarginLeft removeBottomMarginMobile">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior1-2.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior1-2.jpg" class="image"
+						alt="Upstairs interior view of Forest Brook Farms in Chilton, WI. Agricultural build by Fox Structures">
 
 					</div>
 
@@ -214,7 +227,8 @@ get_header();
 
 				<div class="tinyPaddedSection paddedSideWrapper">
 
-					<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior3Medium-2.jpg" class="image largePortfolioImage">
+					<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior3Medium-2.jpg" class="image largePortfolioImage"
+					alt="Upstairs ceiling decoration view of Forest Brook Farms in Chilton, WI. Agricultural build by Fox Structures">
 
 				</div>
 
@@ -222,13 +236,15 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior2-2.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior2-2.jpg" class="image"
+						alt="Upstairs view of Forest Brook Farms in Chilton, WI. Agricultural build by Fox Structures">
 
 					</div>
 
 					<div class="col50 smallMarginLeft">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior4-2.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior4-2.jpg" class="image"
+						alt="Upstairs view of Forest Brook Farms in Chilton, WI. Agricultural build by Fox Structures">
 
 					</div>
 
@@ -238,13 +254,15 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior5-2.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior5-2.jpg" class="image"
+						alt="Oil change station of Forest Brook Farms in Chilton, WI. Agricultural build by Fox Structures">
 
 					</div>
 
 					<div class="col50 smallMarginLeft">
 
-						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior6-2.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/forestBrookFarmsInterior6-2.jpg" class="image"
+						alt="Wash bay station at Forest Brook Farms in Chilton, WI. Agricultural build by Fox Structures">
 
 					</div>
 

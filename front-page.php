@@ -106,11 +106,11 @@ get_header();
 
 			</section>
 
-			<section id ="foxStructuresIntro" class="paddedSection">
+			<section class="paddedSection">
 
 				<div class="fullWidth flex-container-reverse centerAlignedContainerTop">
 
-					<div id="introCopy" class="col50">
+					<div class="col50">
 
 						<div class="blockText">
 
@@ -131,9 +131,9 @@ get_header();
 
 					</div>
 
-					<div id="introImage" class="col50">
+					<div class="col50">
 
-						<img src="/wp-content/uploads/2019/02/CalfSourceBldg11.jpg" class="image" role="image"
+						<img src="/wp-content/uploads/2019/02/CalfSourceBldg11.jpg" class="image"
 						alt="Fox Structures working on a custom railing on a calf source agricultural building">
 
 					</div>

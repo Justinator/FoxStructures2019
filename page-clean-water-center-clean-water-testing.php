@@ -65,7 +65,7 @@ get_header();
 
 				<div class="tinyPaddedSection paddedSideWrapper">
 
-					<img src="/wp-content/uploads/2019/03/CleanWaterTestingExteriorLarge-2-1.jpg" class="image">
+					<img src="/wp-content/uploads/2019/03/CleanWaterTestingExteriorLarge-2-1.jpg" class="image" alt="Exterior view of the Clean Water Center in Appleton, WI">
 
 				</div>
 
@@ -73,13 +73,13 @@ get_header();
 
 					<div class="col50 smallMarginRight">
 
-						<img src="/wp-content/uploads/2019/03/CleanWaterTestingExteriorMedium-1.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/CleanWaterTestingExteriorMedium-1.jpg" class="image" alt="Front Left Exterior view of the Clean Water Center in Appleton, WI">
 
 					</div>
 
 					<div class="col50 smallMarginLeft">
 
-						<img src="/wp-content/uploads/2019/03/CleanWaterTestingExteriorMedium-2-1.jpg" class="image">
+						<img src="/wp-content/uploads/2019/03/CleanWaterTestingExteriorMedium-2-1.jpg" class="image" alt="Loading Dock and overhead door Exterior view of the Clean Water Center in Appleton, WI">
 
 					</div>
 

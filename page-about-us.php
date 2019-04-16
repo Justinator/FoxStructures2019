@@ -65,7 +65,7 @@ get_header();
 
 					<div id="leadershipImage" class="col50">
 
-						<img src="/wp-content/uploads/2018/12/Fox_MainGroupMedium.jpg" class="image" role="image"
+						<img src="/wp-content/uploads/2018/12/Fox_MainGroupMedium.jpg" class="image"
 						alt="Fox Structures Leadership Team">
 
 					</div>
