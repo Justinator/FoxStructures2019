@@ -4,6 +4,10 @@ A custom WordPress website theme for Fox Structures
 # :metal: Getting started
 
 1. [Pages](#page_with_curl-pages)
+2. [Styles](#dancer-styles)
+3. [Homepage](#dancer-styles)
+4. [About](#dancer-styles)
+5. [Portfolio](#dancer-styles)
 
 # :open_file_folder: Basic File Structure
 
@@ -67,9 +71,59 @@ Functions.php contains any custom funtions for the site
 
 # :eyes: Usage
 
-## :black_nib: Writing to your SCSS file
+## :house: Homepage
 
-sass --watch \SCSS/style.scss:style.css
+The homepage uses the front-page.php file
+
+### Editing the services blocks on the homepage
+
+The services blocks can be found in the inc folder, inside the file services-overview.php. This file contains the entire section, holding images, descriptions and links to each service page
+
+### Featured Homepage Projects
+
+The homepage featured projects section can be found in featuredHomepageProjects.php. This again holds all images, titles and links for the entire section.
+
+```html
+<div class="featuredProjectWrapper">
+  <a href="/portfolio/the-oaks-golf-course/">
+    <div class="featuredProjectOverlay"></div>
+    <div class="featuredProjectContent">
+      <img src="/wp-content/uploads/2019/02/OaksIntExtStillsMediumSquare.jpg" class="featuredProjectImage" alt="The Oaks Golf Course Club House in Cottage Grove, WI. Designed and built by Fox Structures">
+      <h5 class="featuredProjectTitle"><span class="projectTitleSpan">The Oaks Golf Course</span></h5>
+    </div>
+  </a>
+</div>
+```
+
+To add a new featured project simply switch your URL to your new featured project URL, change your cover image and your title and upload.
+
+### Editing the CTA
+
+At the time of this build we were promoting Fox Structures careers and trying to drive viewers to this page. To update this CTA section navigate to the inc folder and find the file CTA.php
+
+## :cow2: About
+
+### The leadership display  
+
+The leadership team section can be found in the inc folder, titled leadership.php.
+
+```html
+<a href="/leadership/mark-mashlan/">
+  <div class="leaderWrap">
+    <div class="imageWrapper">
+      <img src="/wp-content/uploads/2018/12/Fox_EmployeeMarkMedium.jpg" class="image" alt="Headshot of Fox Structures President Mark Mashlan">
+      <div class="leaderImageOverlay"></div>
+    </div>
+    <div class="leaderInfo centerText">
+      <h5 class="employeeName"><span class="primaryText">Mark Mashlan</span></h5>
+      <div class="centerUnderline"></div>
+      <h6>President</h6>
+    </div>
+  </div>
+</a>
+```
+
+Add or remove your team member as needed. Each individual team member has their own page, where their headshot and bio are displayed. These pages just use the default template.
 
 ## :hammer: Adding projects to the portfolio
 
@@ -87,6 +141,7 @@ Projects are stored in the inc folder. inc>projects>projectType
 
 1. Navigate to the folder for the project type that you're creating.
 2. In your text editor duplicate one of the existing projects and rename it with whatever your new project is titled. The project file will look like the following:
+
 ```html  
 <a href="/portfolio/forest-brook-farms/" class="column agricultural">
   <div class="featuredImageWrap">
