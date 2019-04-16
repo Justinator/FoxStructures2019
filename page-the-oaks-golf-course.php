@@ -62,8 +62,8 @@ get_header();
 
 						<ul>
 
-							<li>1,536-sq.-foot remodel of 6,517-sq.-foot building</li>
-							<li>780-sq.-foot Pro Shop addition</li>
+							<li>1,536 sq. foot remodel of 6,517 sq. foot building</li>
+							<li>780 sq. foot Pro Shop addition</li>
 
 						</ul>
 

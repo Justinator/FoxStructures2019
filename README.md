@@ -185,9 +185,13 @@ were all different sizes and created an uneven and scattered gallery display
 4. To update the sidebar navigate to the inc folder and find careers-sidebar.php.
 5. Add a new list item and upload  
 
+## Services Pages
+
+Each services page has it’s own single page file. To edit the services sub-nav/sidebar navigate to the inc folder and find services-sidebar.php.
+
 ## :newspaper: News Posts  
 
-The news pages and all archive page files can be found in the template-parts folder.
+The news page uses the single.php template file and all archive page files/components can be found in the template-parts folder.
 
 ### Adding a blog post  
 
