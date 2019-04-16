@@ -3,6 +3,8 @@ A custom WordPress website theme for Fox Structures
 
 # :metal: Getting started
 
+1. [Pages](#pages)
+
 # :open_file_folder: Basic File Structure
 
 ## :page_with_curl: Pages
