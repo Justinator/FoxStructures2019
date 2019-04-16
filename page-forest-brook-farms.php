@@ -103,7 +103,7 @@ get_header();
 						</p>
 
 						<h5 class="noMargin">
-						-	Jay Juckem
+						Jay Juckem
 						</h5>
 
 						<div class="centerUnderline"></div>
@@ -116,7 +116,7 @@ get_header();
 
 				</div>
 
-				<div class="flex-container centerAlignedContainer">
+				<div class="flex-container centerAlignedContainer removeBottomMargin">
 
 					<div class="col50 paddedWrapper">
 
@@ -142,9 +142,41 @@ get_header();
 
 				</div>
 
+				<div class="flex-container paddedWrapper">
+
+					<div class="col50 smallMarginRight">
+
+						<img src="/wp-content/uploads/2019/04/entryWayLow-1.jpg" class="image">
+
+					</div>
+
+					<div class="col50 smallMarginLeft">
+
+						<img src="/wp-content/uploads/2019/04/entryWayOverheadMedium-1.jpg" class="image">
+
+					</div>
+
+				</div>
+
 				<div class="tinyPaddedSection paddedSideWrapper">
 
 					<img src="/wp-content/uploads/2019/03/forestBrookFarmKitchen-2.jpg" class="image largePortfolioImage">
+
+				</div>
+
+				<div class="flex-container paddedWrapper removeBottomMargin">
+
+					<div class="col50 smallMarginRight">
+
+						<img src="/wp-content/uploads/2019/04/kitchenLow-1.jpg" class="image">
+
+					</div>
+
+					<div class="col50 smallMarginLeft">
+
+						<img src="/wp-content/uploads/2019/04/officeSpaceMedium-1.jpg" class="image">
+
+					</div>
 
 				</div>
 

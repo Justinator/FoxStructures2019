@@ -12,7 +12,7 @@ get_header();
 
 	<main id="main" class="site-main">
 
-		<section>
+		<section id="homeHero">
 
 			<div class="hero homeHero">
 
@@ -134,7 +134,7 @@ get_header();
 					<div id="introImage" class="col50">
 
 						<img src="/wp-content/uploads/2019/02/CalfSourceBldg11.jpg" class="image" role="image"
-						alt="A Custom built garage by Fox Structures">
+						alt="Fox Structures working on a custom railing on a calf source agricultural building">
 
 					</div>
 

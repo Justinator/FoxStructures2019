@@ -12,7 +12,7 @@ get_header();
 
 	<main id="main" class="site-main">
 
-		<section>
+		<section id="aboutHero">
 
 			<div class="mediumHero aboutHero">
 

@@ -27,7 +27,7 @@ get_header();
 
 							<div class="underline"></div>
 
-							<img src="/wp-content/uploads/2018/12/Fox_GuyGroupMedium.jpg" class="image">
+							<img src="/wp-content/uploads/2018/12/Fox_GuyGroupMedium.jpg" class="image" alt="Group photo of the Fox Structures Team on Owners">
 
 							<h5 class="noMargin">Fox Structures, Inc.</h5>
 							<div class="underline"></div>

@@ -27,7 +27,7 @@ get_header();
 			<img src="/wp-content/uploads/2019/03/OaksGolfClubExteriorLarge.jpg" class="image portfolioFeaturedImage">
 
 			<p>
-				Located in the Madison, WI area, the Oaks Clubhouse features a pro shop and restaurant.
+			Fox Structures collaborated with the owners of The Oaks Golf Course in Cottage Grove to convert their existing retail space into a new office and basement storage area. The remodel also included an approximate 1,500-square-foot addition to the clubhouse Fox Structures built in 2004. As the builders of the original clubhouse, they were able to perfectly match all materials for a beautiful, seamless interior and exterior appearance. Fox Structures kept the work site clean and professional so the clubhouse could remain open for business during construction.
 			</p>
 
 		</section>
@@ -38,24 +38,71 @@ get_header();
 
 				<div class="fullWidth flex-container">
 
-					<div class="col50">
+					<div class="col30">
 
-						<h4 class="noMargin">Date Completed</h4>
+						<h4 class="noMargin">Project Features</h4>
 
 						<div class="underline"></div>
 
-						<p>2007</p>
+						<ul>
+
+							<li>Space-saving Amish barn doors</li>
+							<li>Pre-cast concrete flooring for storage</li>
+							<li>Standing seam metal roof with asphalt shingles</li>
+
+						</ul>
 
 					</div>
 
-					<div class="col50">
+					<div class="col30">
+
+						<h4 class="noMargin">Specs</h4>
+
+						<div class="underline"></div>
+
+						<ul>
+
+							<li>1,536-sq.-foot remodel of 6,517-sq.-foot building</li>
+							<li>780-sq.-foot Pro Shop addition</li>
+
+						</ul>
+
+					</div>
+
+					<div class="col30">
 
 						<h4 class="noMargin">Location</h4>
 
 						<div class="underline"></div>
 
-						<p>4740 Pierceville Road<br>
-							Cottage Grove, WI 53527</p>
+						<p>
+							4740 Pierceville Rd<br>
+							Cottage Grove, WI 53527
+						</p>
+
+					</div>
+
+				</div>
+
+				<div class="fullWidth centerText greyBlock smallPaddedSection">
+
+					<div class="testimonial">
+
+						<p>
+
+							“We have used Fox Structures for other projects in the past, and they have always produced quality work. They were the original builders of our clubhouse, and have always stood behind their work, so it seemed like a no-brainer to bring them on for our addition. Everyone at Fox Structures was always available and quick to answer questions and handle changes or issues with the job. They are so easy to work with—we have already called them for another small project. I would absolutely recommend them to others.”
+
+						</p>
+
+						<h5 class="noMargin">
+						Jessica Blaska-Grady
+						</h5>
+
+						<div class="centerUnderline"></div>
+
+						<p>
+						Manager, The Oaks Golf Course
+						</p>
 
 					</div>
 

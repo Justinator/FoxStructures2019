@@ -18,7 +18,7 @@
 
           <div class="categoryImageWrapper">
 
-            <img src="/wp-content/uploads/2019/02/rieden-farms-calf-barn-cropped.jpg" class="image">
+            <img src="/wp-content/uploads/2019/02/rieden-farms-calf-barn-cropped.jpg" class="image" alt="custom calf barn designed and built by Fox Structures">
 
             <div class="categoryImageOverlay">
 
@@ -59,7 +59,7 @@
 
           <div class="categoryImageWrapper">
 
-            <img src="/wp-content/uploads/2019/02/WaterRightSmall.jpg" class="image">
+            <img src="/wp-content/uploads/2019/02/WaterRightSmall.jpg" class="image" alt="Water Right commercial office in Appleton, WI. Building designed and built by Fox Structures">
 
             <div class="categoryImageOverlay">
 
@@ -100,7 +100,7 @@
 
           <div class="categoryImageWrapper">
 
-            <img src="/wp-content/uploads/2019/02/steve-frisch-equestrian-facility-cropped.jpg" class="image">
+            <img src="/wp-content/uploads/2019/02/steve-frisch-equestrian-facility-cropped.jpg" class="image" alt="custom equestrian style horse barn in Freedom, WI. Designed and built by Fox Structures">
 
             <div class="categoryImageOverlay">
 
@@ -142,7 +142,7 @@
 
           <div class="categoryImageWrapper">
 
-            <img src="/wp-content/uploads/2019/02/residentialBuildingServices.jpg" class="image">
+            <img src="/wp-content/uploads/2019/02/residentialBuildingServices.jpg" class="image" alt="Residential home designed and built by Fox Structures">
 
             <div class="categoryImageOverlay">
 
@@ -183,7 +183,7 @@
 
           <div class="categoryImageWrapper">
 
-            <img src="/wp-content/uploads/2019/02/StorageBuildingServices.jpg" class="image">
+            <img src="/wp-content/uploads/2019/02/StorageBuildingServices.jpg" class="image" alt="Apple Storage outdoor storage facility in Kaukauna, WI. Designed and built by Fox Structures">
 
             <div class="categoryImageOverlay">
 
@@ -224,7 +224,7 @@
 
           <div class="categoryImageWrapper">
 
-            <img src="/wp-content/uploads/2019/02/welderWorkingInShop-1-1024x708.jpg" class="image">
+            <img src="/wp-content/uploads/2019/02/welderWorkingInShop-1-1024x708.jpg" class="image" alt="Fox Structures employee working on a custom welding project">
 
             <div class="categoryImageOverlay">
 

@@ -18,7 +18,7 @@
 
         <div class="featuredProjectContent">
 
-          <img src="/wp-content/uploads/2019/03/forestBrookFarmsExteriorSquareMedium.jpg" class="featuredProjectImage">
+          <img src="/wp-content/uploads/2019/03/forestBrookFarmsExteriorSquareMedium.jpg" class="featuredProjectImage" alt="Forest Brook Farms custom agricultural facility in Chilton, WI. Designed and built by Fox Structures">
 
           <h5 class="featuredProjectTitle"><span class="projectTitleSpan">Forest Brook Farms</span></h5>
 
@@ -36,7 +36,7 @@
 
         <div class="featuredProjectContent">
 
-          <img src="/wp-content/uploads/2019/02/OaksIntExtStillsMediumSquare.jpg" class="featuredProjectImage">
+          <img src="/wp-content/uploads/2019/02/OaksIntExtStillsMediumSquare.jpg" class="featuredProjectImage" alt="The Oaks Golf Course Club House in Cottage Grove, WI. Designed and built by Fox Structures">
 
           <h5 class="featuredProjectTitle"><span class="projectTitleSpan">The Oaks Golf Course</span></h5>
 
@@ -54,7 +54,7 @@
 
         <div class="featuredProjectContent">
 
-          <img src="/wp-content/uploads/2019/02/waterRightSquare.jpg" class="featuredProjectImage">
+          <img src="/wp-content/uploads/2019/02/waterRightSquare.jpg" class="featuredProjectImage" alt="Water Right commercial office in Appleton, WI. Building designed and built by Fox Structures">
 
           <h5 class="featuredProjectTitle"><span class="projectTitleSpan">Water Right</span></h5>
 
@@ -72,7 +72,7 @@
 
         <div class="featuredProjectContent">
 
-          <img src="/wp-content/uploads/2019/03/rosendaleDairySquare.jpg" class="featuredProjectImage">
+          <img src="/wp-content/uploads/2019/03/rosendaleDairySquare.jpg" class="featuredProjectImage" alt="Agricultural build in Rosendale, WI. Design and build by Fox Structures.">
 
           <h5 class="featuredProjectTitle"><span class="projectTitleSpan">Rosendale Dairy</span></h5>
 

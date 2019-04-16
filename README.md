@@ -84,7 +84,20 @@ new project page duplicate the oaks golf club page for a good base and start add
 Projects are stored in the inc folder. inc>projects>projectType
 
 1. Navigate to the folder for the project type that you're creating.
-2. In your text editor duplicate one of the existing projects and rename it with whatever your new project is titled.
+2. In your text editor duplicate one of the existing projects and rename it with whatever your new project is titled. The project file will look like the following:
+```html  
+<a href="/portfolio/forest-brook-farms/" class="column agricultural">
+  <div class="featuredImageWrap">
+    <div class="imageWrapper">
+      <img src="/wp-content/uploads/2019/03/forestBrookFarmsExteriorSmallMedium.jpg" class="image">
+      <?php get_template_part("/inc/portfolio-overlay"); ?>
+    </div>
+    <div class="projectInfo">
+      <h5 class="employeeName"><span class="primaryText">Forest Brook Farms</span></h5>
+    </div>
+  </div>
+</a>
+```
 3. Change the project url to the new page that you created for this project.
 4. Make sure your project has the proper class ex. commercial projects will be classed "column commercial". The class titles are used for the gallery filter so make sure those are accurate
 5. Change your projects featured image. To prevent the image issues the old site had I've been using 600x400 images sizes for all projects so the gallery remains consistent. The old images

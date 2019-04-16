@@ -16,7 +16,7 @@
 
         <div class="imageWrapper">
 
-          <img src="/wp-content/uploads/2018/12/Fox_EmployeeMarkMedium.jpg" class="image">
+          <img src="/wp-content/uploads/2018/12/Fox_EmployeeMarkMedium.jpg" class="image" alt="Headshot of Fox Structures President Mark Mashlan">
 
           <div class="leaderImageOverlay"></div>
 
@@ -42,7 +42,7 @@
 
         <div class="imageWrapper">
 
-          <img src="/wp-content/uploads/2018/12/Fox_EmployeeJasonMedium.jpg" class="image">
+          <img src="/wp-content/uploads/2018/12/Fox_EmployeeJasonMedium.jpg" class="image" alt="Headshot of Fox Structures Sales Rep Jason Van Egeren">
 
           <div class="leaderImageOverlay"></div>
 
@@ -68,7 +68,7 @@
 
         <div class="imageWrapper">
 
-          <img src="/wp-content/uploads/2018/12/Fox_EmployeeMikeMedium.jpg" class="image">
+          <img src="/wp-content/uploads/2018/12/Fox_EmployeeMikeMedium.jpg" class="image" alt="Headshot of Fox Structures Sales Rep Mike Klarner">
 
           <div class="leaderImageOverlay"></div>
 
@@ -94,7 +94,7 @@
 
         <div class="imageWrapper">
 
-          <img src="/wp-content/uploads/2018/12/Fox_EmployeeTimMedium.jpg" class="image">
+          <img src="/wp-content/uploads/2018/12/Fox_EmployeeTimMedium.jpg" class="image" alt="Headshot of Fox Structures Weld Shop Foreman Tim Allen">
 
           <div class="leaderImageOverlay"></div>
 
@@ -124,7 +124,7 @@
 
         <div class="imageWrapper">
 
-          <img src="/wp-content/uploads/2018/12/Fox_EmployeeAlexMedium.jpg" class="image">
+          <img src="/wp-content/uploads/2018/12/Fox_EmployeeAlexMedium.jpg" class="image" alt="Headshot of Fox Structures Designer Alex Sudbrink">
 
           <div class="leaderImageOverlay"></div>
 
@@ -150,7 +150,7 @@
 
         <div class="imageWrapper">
 
-          <img src="/wp-content/uploads/2018/12/Fox_EmployeeTravisMedium.jpg" class="image">
+          <img src="/wp-content/uploads/2018/12/Fox_EmployeeTravisMedium.jpg" class="image" alt="Headshot of Fox Structures Foreman Travis Woldt">
 
           <div class="leaderImageOverlay"></div>
 
@@ -176,7 +176,7 @@
 
         <div class="imageWrapper">
 
-          <img src="/wp-content/uploads/2018/12/Fox_EmployeeBradMedium.jpg" class="image">
+          <img src="/wp-content/uploads/2018/12/Fox_EmployeeBradMedium.jpg" class="image" alt="Headshot of Fox Structures foreman Brad Weyenberg">
 
           <div class="leaderImageOverlay"></div>
 
@@ -202,7 +202,7 @@
 
         <div class="imageWrapper">
 
-          <img src="/wp-content/uploads/2018/12/Fox_EmployeeJillMedium.jpg" class="image">
+          <img src="/wp-content/uploads/2018/12/Fox_EmployeeJillMedium.jpg" class="image" alt="Headshot of Fox Structures office manager Jill Mashlan">
 
           <div class="leaderImageOverlay"></div>
 
