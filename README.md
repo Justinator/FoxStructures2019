@@ -5,9 +5,13 @@ A custom WordPress website theme for Fox Structures
 
 1. [Pages](#page_with_curl-pages)
 2. [Styles](#dancer-styles)
-3. [Homepage](#dancer-styles)
-4. [About](#dancer-styles)
-5. [Portfolio](#dancer-styles)
+3. [Navigation](#rocket-navigation)
+4. [Footer](#shoe-footer)
+5. [Homepage](#house-homepage)
+6. [About](#cow2-about)
+7. [Portfolio](#hammer-adding-projects-to-the-portfolio)
+8. [Careers](#construction-adding-a-new-job-posting-to-the-careers-page)
+9. [News](#newspaper-news-posts)
 
 # :open_file_folder: Basic File Structure
 
@@ -70,6 +74,16 @@ The js folder holds all your JavaScript files
 Functions.php contains any custom funtions for the site
 
 # :eyes: Usage
+
+## :rocket: Navigation
+
+This theme has three registered menus. Main menu for the primary navigation, footer menu for the footer menu and mobile menu, for customizing separate menus for each of these locations if needed.
+
+To edit the main navigation use the header.php file
+
+## :shoe: Footer
+
+Edit the sites footer find footer.php
 
 ## :house: Homepage
 
@@ -171,6 +185,12 @@ were all different sizes and created an uneven and scattered gallery display
 4. To update the sidebar navigate to the inc folder and find careers-sidebar.php.
 5. Add a new list item and upload  
 
-## :rocket: Navigation
+## :newspaper: News Posts  
 
-This theme has three registered menus. Main menu for the primary navigation, footer menu for the footer menu and mobile menu, for customizing separate menus for each of these locations if needed.
+The news pages and all archive page files can be found in the template-parts folder.
+
+### Adding a blog post  
+
+Nothing fancy here. Simply add a blog post just like you would any standard WordPress site. Add a featured image, add your author and change to the News category.
+
+Hopefully that covers anything that you will need to update with this site.
