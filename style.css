@@ -1330,6 +1330,9 @@ h6 {
   .primaryLink:hover:after {
     height: 100%;
     transition: .3s ease all; }
+  .primaryLink:focus:after {
+    height: 100%;
+    transition: .3s ease all; }
 
 .primaryButton {
   position: relative;
@@ -1365,6 +1368,10 @@ h6 {
   .primaryButton:hover:before {
     width: 100%; }
   .primaryButton:hover:after {
+    width: 100%; }
+  .primaryButton:focus:before {
+    width: 100%; }
+  .primaryButton:focus:after {
     width: 100%; }
 
 .centerButton {
@@ -1689,6 +1696,13 @@ body {
   .featuredProjectWrapper:hover .featuredProjectOverlay {
     background-color: rgba(0, 0, 0, 0.7);
     transition: .2s ease all; }
+  .featuredProjectWrapper a:focus span:before {
+    width: 100%; }
+  .featuredProjectWrapper a:focus span:after {
+    width: 100%; }
+  .featuredProjectWrapper a:focus .featuredProjectOverlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: .2s ease all; }
 
 .featuredProjectOverlay {
   position: absolute;
@@ -1772,6 +1786,13 @@ body {
     transition: .2s ease all;
     opacity: 1; }
   .categoryWrapper a:hover .centerUnderline {
+    width: 10em;
+    transition: .2s ease all; }
+  .categoryWrapper a:focus .categoryImageOverlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: .2s ease all;
+    opacity: 1; }
+  .categoryWrapper a:focus .centerUnderline {
     width: 10em;
     transition: .2s ease all; }
 
@@ -2256,6 +2277,14 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     transition: .2s ease all; }
 
+#featuredProjects a:focus span:before {
+  width: 100%; }
+#featuredProjects a:focus span:after {
+  width: 100%; }
+#featuredProjects a:focus .featuredProjectOverlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: .2s ease all; }
+
 .outerWrapper {
   margin: 10px 0; }
 
@@ -2293,6 +2322,13 @@ body {
       transition: .2s ease all;
       opacity: 1; }
     .portfolioWrapper a:hover h5 {
+      transition: .2s ease all;
+      color: #f4a81d; }
+    .portfolioWrapper a:focus .ImageOverlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: .2s ease all;
+      opacity: 1; }
+    .portfolioWrapper a:focus h5 {
       transition: .2s ease all;
       color: #f4a81d; }
     @media (max-width: 599px) {

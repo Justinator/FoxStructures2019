@@ -10,7 +10,7 @@
  */
 ?>
 
-	</div><!-- #content -->
+</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
 
@@ -18,7 +18,7 @@
 
 			<div class="col20">
 
-				<a href="http://www.foxstructures.com"><img src="/wp-content/uploads/2019/01/FoxStructuresLogo-REV.png" class="footerLogo" alt="Fox Structures Logo"><span class="screen-reader-text">Go back to the homepage</span></a>
+				<a href="https://foxstructures.com"><img src="/wp-content/uploads/2019/01/FoxStructuresLogo-REV.png" class="footerLogo" alt="Fox Structures Logo"><span class="screen-reader-text">Go back to the homepage</span></a>
 
 			</div>
 
@@ -82,11 +82,11 @@
 
 							<nav role="navigation" aria-label="Sub Footer Links">
 
-								<a href="/privacy-policy/" class="borderRight" role="link">Privacy Policy</a> |
+								<a href="/privacy-policy/" class="borderRight">Privacy Policy</a> |
 
-								<a href="/sitemap/" class="borderRight" role="link">Sitemap</a> |
+								<a href="/sitemap/" class="borderRight">Sitemap</a> |
 
-								<a href="/contact/" class="borderRight" role="link">Contact Us</a>
+								<a href="/contact/" class="borderRight">Contact Us</a>
 
 							</nav>
 

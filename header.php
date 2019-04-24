@@ -51,7 +51,7 @@
 
 <body <?php body_class(); ?>>
 
-<a class="screenReaderSkipToContent" href="#primary" tabindex="1">Skip to main content</a>
+<a class="screenReaderSkipToContent" href="#primary" tabindex="0">Skip to main content</a>
 
 <nav role="navigation" aria-label="mobile navigation">
 
@@ -93,7 +93,7 @@
 
 						<svg class="blackIcon icon-envelope"><use xlink:href="#icon-envelope"></use></svg>
 
-						<a class="secondaryLink" href="mailto:info@foxstructures.com" role="link" tabindex="-1">info@foxstructures.com</a>
+						<a class="secondaryLink" href="mailto:info@foxstructures.com" tabindex="-1">info@foxstructures.com</a>
 
 					</div>
 
@@ -117,7 +117,7 @@
 
 						<svg class="blackIcon icon-phone"><use xlink:href="#icon-phone"></use></svg>
 
-						<a class="secondaryLink" href="tel:(920)766-9305" role="link" tabindex="-1">(920) 766-9305</a>
+						<a class="secondaryLink" href="tel:(920)766-9305" tabindex="-1">(920) 766-9305</a>
 
 					</div>
 
@@ -133,7 +133,7 @@
 
 				<div class="navWidth menuLinkWrap">
 
-						<a href="http://www.foxstructures.com" role="link">
+						<a href="https://foxstructures.com">
 
 							<img src="/wp-content/uploads/2019/01/FoxStructuresLogo-REV.png" class="siteLogo" alt="Fox Structures Logo"><span class="screen-reader-text">Go back to the homepage</span>
 
@@ -147,7 +147,7 @@
 
 								<span class = "menuText">MENU</span>
 
-								<button class="hamburger hamburger--collapse" type="button">
+								<button class="hamburger hamburger--collapse" type="button" aria-label="Mobile menu button" aria-expanded="false">
 
 								  <span class="hamburger-box">
 

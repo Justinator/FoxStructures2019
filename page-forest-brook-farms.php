@@ -29,7 +29,7 @@ get_header();
 
 			<p>
 				Fox Structures collaborated with the owner of Forest Brook Farms to design two unique multi-purpose
-				buildings for their growing cattle farm in Chilton. The first includes a shop, storage room and a
+				buildings for their farm in Chilton. The first includes a shop, storage room and a
 				sizable wash bay with capacity for multiple semis or large farm equipment, plus a service pit. The
 				second features an employee lounge, work out area and office that can convert to living space.
 			</p>

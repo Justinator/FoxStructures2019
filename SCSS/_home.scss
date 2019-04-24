@@ -204,6 +204,22 @@
 			transition: .2s ease all;
 		}
 	}
+	a{
+		&:focus{
+			span{
+				&:before{
+					width: 100%;
+				}
+				&:after{
+					width: 100%;
+				}
+			}
+			.featuredProjectOverlay{
+				background-color: rgba(0,0,0,.7);
+				transition: .2s ease all;
+			}
+		}
+	}
 }
 .featuredProjectOverlay{
 	position: absolute;
@@ -289,6 +305,17 @@
 		color: $primaryGrey;
 		transition: .2s ease all;
 		&:hover{
+			.categoryImageOverlay{
+				background-color: rgba(0,0,0,.5);
+				transition: .2s ease all;
+				opacity: 1;
+			}
+			.centerUnderline{
+				width: 10em;
+				transition: .2s ease all;
+			}
+		}
+		&:focus{
 			.categoryImageOverlay{
 				background-color: rgba(0,0,0,.5);
 				transition: .2s ease all;
