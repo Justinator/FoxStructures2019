@@ -649,6 +649,9 @@ template {
   .site-content {
     margin-top: 75px; } }
 
+.marginTop {
+  margin-top: 10px; }
+
 /*4.0 Header Styling -------------------------------------------*/
 .screenReaderSkipToContent {
   position: absolute;
