@@ -168,7 +168,7 @@ get_header();
 
 					<?php get_template_part("/inc/projects/commercial/the-oaks"); ?>
 
-					<?php get_template_part("/inc/projects/agricultural/rosendale-dairy"); ?>
+					<?php get_template_part("/inc/projects/commercial/hidden-hollow"); ?>
 
 				</div>
 

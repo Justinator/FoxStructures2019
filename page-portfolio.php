@@ -122,7 +122,7 @@ get_header();
 
 						<div class="outerWrapper">
 
-							<a href="/portfolio/water-right/"><span class="screen-reader-text">View the Water Right Project</span>
+							<a href="/portfolio/hidden-hollow/"><span class="screen-reader-text">View the Hidden Hollow Project</span>
 
 								<div class="portFeaturedProjectWrapper">
 
@@ -130,9 +130,9 @@ get_header();
 
 									<div class="featuredProjectContent">
 
-										<img src="/wp-content/uploads/2019/03/waterRightExteriorFrontViewCropped.jpg" class="featuredProjectImage">
+										<img src="/wp-content/uploads/2019/05/hidden-hollow-outdoor-view-cropped.jpg" class="featuredProjectImage">
 
-										<h4 class="featuredProjectTitle"><span class="projectTitleSpan">Water Right, Inc.</span></h4>
+										<h4 class="featuredProjectTitle"><span class="projectTitleSpan">Hidden Hollow ART</span></h4>
 
 									</div>
 
@@ -169,6 +169,8 @@ get_header();
 				</div>
 
 				<div id="portfolioWrapper" class="pageWidth portfolioWrapper">
+
+					<?php get_template_part("/inc/projects/commercial/water-right"); ?>
 
 					<?php get_template_part("/inc/projects/commercial/N.E.W.Printing"); ?>
 

@@ -39,8 +39,8 @@ get_header();
 				Fox Structures helped bring to life the whimsical vision for Hidden Hollow
 				ART’s retail space, or as they call it, “Inspiration Destination.” As a
 				hand-crafted metal/wood art shop, the stand-alone building reflects the
-				company’s eclectic character with a unique combination of materials. Stand
-				out features include a gorgeous corrugated steel, standing seam roof and
+				company’s eclectic character with a unique combination of materials. Standout
+				features include a gorgeous corrugated steel, standing seam roof and
 				the artist’s custom-made rusty steel shingle pieces. A beautiful I-beam
 				loft served as a perfect canvas for the artists to add their own colorful
 				railings.
@@ -106,7 +106,7 @@ get_header();
 
 						<p>
 
-							“When we first met with Mike and Alex we felt like they were open
+							“When we first met with Mike and Alex, we felt like they were open
 							and up to the challenge of creating a space with a “wow” factor!
 							If we had a question about anything at all, Fox Structures was
 							awesome at explaining why/how things on the project could be done.
@@ -117,7 +117,7 @@ get_header();
 						</p>
 
 						<h5 class="noMargin">
-						-	Jaimie Danes
+						Jaimie Danes
 						</h5>
 
 						<div class="centerUnderline"></div>

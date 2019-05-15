@@ -66,15 +66,15 @@
 
     <div class="featuredProjectWrapper">
 
-      <a href="/portfolio/rosendale-dairy/">
+      <a href="/portfolio/hidden-hollow/">
 
         <div class="featuredProjectOverlay"></div>
 
         <div class="featuredProjectContent">
 
-          <img src="/wp-content/uploads/2019/03/rosendaleDairySquare.jpg" class="featuredProjectImage" alt="Agricultural build in Rosendale, WI. Design and build by Fox Structures.">
+          <img src="/wp-content/uploads/2019/05/hidden-hollow-outdoor-view-square-low.jpg" class="featuredProjectImage" alt="Agricultural build in Rosendale, WI. Design and build by Fox Structures.">
 
-          <h5 class="featuredProjectTitle"><span class="projectTitleSpan">Rosendale Dairy</span></h5>
+          <h5 class="featuredProjectTitle"><span class="projectTitleSpan">Hidden Hollow ART</span></h5>
 
         </div>
 
