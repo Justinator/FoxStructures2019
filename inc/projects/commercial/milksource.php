@@ -12,7 +12,7 @@
 
     <div class="projectInfo">
 
-      <h5 class="employeeName"><span class="primaryText">Milksource Office Complex</span></h5>
+      <h5 class="employeeName"><span class="primaryText">Milk Source Office Complex</span></h5>
 
     </div>
 

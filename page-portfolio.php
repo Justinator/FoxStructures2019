@@ -176,6 +176,8 @@ get_header();
 
 					<?php get_template_part("/inc/projects/agricultural/grotegut"); ?>
 
+					<?php get_template_part("/inc/projects/agricultural/milksource"); ?>
+
 					<?php get_template_part("/inc/projects/equestrian/vlach-horse-barn"); ?>
 
 					<?php get_template_part("/inc/projects/agricultural/shiloh"); ?>

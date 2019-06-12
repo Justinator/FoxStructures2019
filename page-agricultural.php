@@ -107,6 +107,8 @@ get_header();
 
 					<?php get_template_part("/inc/projects/agricultural/rosendale-dairy"); ?>
 
+					<?php get_template_part("/inc/projects/agricultural/milksource"); ?>
+
 					<?php get_template_part("/inc/projects/agricultural/bill-kocourek"); ?>
 
 					<?php get_template_part("/inc/projects/agricultural/brickstead"); ?>
