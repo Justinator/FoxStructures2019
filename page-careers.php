@@ -9,52 +9,28 @@ get_header();
 ?>
 
 <div id="primary" class="content-area">
-
 	<main id="main" class="site-main">
-
 		<section>
-
 			<div class="mediumHero careersHero">
-
 				<div class="fullWidth heroHeadingContainer">
-
 					<div class="heroHeadingWrapper">
-
 						<div class="heroHeading">
-
 							<h1 class="noMargin">Careers</h1>
-
 						</div>
-
 					</div>
-
 				</div>
-
-
 			</div>
-
 		</section>
-
 		<section id="pageContent">
-
 			<section id ="serviceIntro" class="paddedSection">
-
 				<div class="limitWidth flex-container-reverse">
-
 					<div class="col20">
-
 						<?php get_template_part("/inc/careers-sidebar"); ?>
-
 					</div>
-
 					<div id="introCopy" class="col80 limitWidth">
-
 						<div class="blockText">
-
 							<h2 class="noMargin">Join the Fox Structures Team!</h2>
-
 							<div class="underline"></div>
-
 							<p>
 								Our employees are the backbone of our success. Our field and office staff represent the
 								best in their respective fields. We offer benefits such as health insurance, vacation
@@ -77,21 +53,12 @@ get_header();
 								is prohibited by federal, state or local laws. Women and minorities are strongly encouraged
 								to apply.
 							</p>
-
 						</div>
-
 					</div>
-
 				</div>
-
 			</section>
-
 		</section>
-
 	</main>
-
 </div>
-
 <?php
-
 get_footer();

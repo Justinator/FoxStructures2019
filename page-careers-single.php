@@ -14,50 +14,27 @@ get_header();
 ?>
 
 <div id="primary" class="content-area">
-
 	<main id="main" class="site-main">
-
 		<section>
-
 			<?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-
 			<div class="mediumHero" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; background-size: cover; background-position:center;">
-
 				<div class="fullWidth heroHeadingContainer">
-
 					<div class="heroHeadingWrapper">
-
 						<div class="heroHeading">
-
 							<h1>Careers</h1>
-
 						</div>
-
 					</div>
-
 				</div>
-
-
 			</div>
-
 		</section>
-
 		<section id="pageContent">
-
 			<section id ="serviceIntro" class="paddedSection">
-
 				<div class="limitWidth flex-container-reverse">
-
 					<div class="col20">
-
 						<?php get_template_part("/inc/careers-sidebar"); ?>
-
 					</div>
-
 					<div id="introCopy" class="col80 limitWidth">
-
 						<div class="blockText">
-
 							<?php
 						while ( have_posts() ) :
 							the_post();
@@ -68,21 +45,12 @@ get_header();
 							endif;
 						endwhile; // End of the loop.
 						?>
-
 						</div>
-
 					</div>
-
 				</div>
-
 			</section>
-
 		</section>
-
 	</main>
-
 </div>
-
 <?php
-
 get_footer();
