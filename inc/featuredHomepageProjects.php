@@ -23,11 +23,11 @@
       </a>
     </div>
     <div class="featuredProjectWrapper">
-      <a href="/portfolio/appleton-yacht-club/">
+      <a href="/portfolio/water-right/">
         <div class="featuredProjectOverlay"></div>
         <div class="featuredProjectContent">
-          <img src="/wp-content/uploads/2019/07/appleton-yacht-club-cover-square.jpg" class="featuredProjectImage" alt="Appleton Yacht Club">
-          <h5 class="featuredProjectTitle"><span class="projectTitleSpan">Appleton Yacht Club</span></h5>
+          <img src="/wp-content/uploads/2019/02/waterRightSquare.jpg" class="featuredProjectImage" alt="Water Right commercial office in Appleton, WI. Building designed and built by Fox Structures">
+          <h5 class="featuredProjectTitle"><span class="projectTitleSpan">Water Right</span></h5>
         </div>
       </a>
     </div>

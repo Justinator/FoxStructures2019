@@ -19,11 +19,10 @@ get_header();
 			<img
 			sizes="(max-width: 1600px) 100vw, 1600px"
       srcset="
-				/wp-content/uploads/2019/07/appleton-yacht-club-cover-200.jpg 400w,
 				/wp-content/uploads/2019/07/appleton-yacht-club-cover-600.jpg 600w,
-				/wp-content/uploads/2019/07/appleton-yacht-club-cover-900.jpg 900w,
+				/wp-content/uploads/2019/07/appleton-yacht-club-cover-1000.jpg 900w,
         /wp-content/uploads/2019/07/appleton-yacht-club-cover-1400 1600w"
-			src="/wp-content/uploads/2019/07/appleton-yacht-club-cover.jpg" class="image portfolioFeaturedImage"
+			src="/wp-content/uploads/2019/07/appleton-yacht-club-cover-1400.jpg" class="image portfolioFeaturedImage"
 			alt="Appleton Yacht Club">
 			<p>
 			When the Appleton Yacht Club needed to replace their over 50-year-old roof structures covering numerous boat slips, they called upon the repair/replacement experts at Fox Structures. The project was particularly challenging as the work took place over the Fox River in the winter months from January to April. Weather, ice and water were all factors. Adhering to strict DNR compliance standards, the Fox Structures crew worked over the water to not only replace the existing rubber roof system but make it more attractive as well. The roof—once compiled of staggered heights—was straightened, plus front and side facades were added for a cleaner appearance.
@@ -131,16 +130,6 @@ get_header();
 						src="/wp-content/uploads/2019/07/yacht-club-front-900.jpg" class="image"
 						alt="Completed Yacht club project">
 					</div>
-				</div>
-				<div class="tinyPaddedSection paddedSideWrapper">
-					<img
-					sizes="(max-width: 1600px) 100vw, 1600px"
-					srcset="
-						/wp-content/uploads/2019/07/yacht-club-finished-400.jpg 400w,
-						/wp-content/uploads/2019/07/yacht-club-finished-900.jpg 600w,
-						/wp-content/uploads/2019/07/yacht-club-finished-1400.jpg 800w"
-					src="/wp-content/uploads/2019/07/yacht-club-finished-1400.jpg" class="image"
-					alt="Completed Yacht club project">
 				</div>
 			</section>
 			<section class="moreFeaturedProjects smallPaddedSection">

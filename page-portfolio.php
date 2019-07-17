@@ -61,7 +61,7 @@ get_header();
 								<div class="portFeaturedProjectWrapper">
 									<div class="featuredProjectOverlay"></div>
 									<div class="featuredProjectContent">
-										<img src="/wp-content/uploads/2019/07/appleton-yacht-club-cover-croppede.jpg" class="featuredProjectImage">
+										<img src="/wp-content/uploads/2019/07/appleton-yacht-club-cover-new-cropped-short.jpg" class="featuredProjectImage">
 										<h4 class="featuredProjectTitle"><span class="projectTitleSpan">Appleton Yacht Club</span></h4>
 									</div>
 								</div>
