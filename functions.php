@@ -173,7 +173,13 @@ function foxStructuresResponsiveChild_resource_hints( $urls, $relation_type ) {
  return $urls;
 }
 add_filter( 'wp_resource_hints', 'foxStructuresResponsiveChild_resource_hints', 10, 2 );
-
+/*********************************************************
+Add custom admin login screen styles
+*********************************************************/
+function my_login_stylesheet() {
+    wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/style-login.css' );
+}
+add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
 
 /**
  * Enqueue scripts and styles.

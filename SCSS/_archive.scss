@@ -32,7 +32,8 @@
 .screen-reader-text{
   border: 0;
    clip: rect(1px, 1px, 1px, 1px);
-   clip-path: inset(50%);
+   -webkit-clip-path: inset(50%);
+           clip-path: inset(50%);
    height: 1px;
    margin: -1px;
    overflow: hidden;
@@ -44,10 +45,12 @@
 .blogTitleLink{
 	text-decoration: none;
 	color: $primaryGrey;
+	-webkit-transition: .3s ease all;
 	transition: .3s ease all;
 	position: relative;
     &:hover{
     color: $primaryGrey;
+    -webkit-transition: .3s ease all;
     transition: .3s ease all;
   }
 }
@@ -58,9 +61,11 @@
   a{
   	text-decoration: none;
   	color: $primaryYellow !important;
+  	-webkit-transition: .3s ease all;
   	transition: .3s ease all;
       &:hover{
       color: $primaryGrey !important;
+      -webkit-transition: .3s ease all;
       transition: .3s ease all;
       }
   }
@@ -69,21 +74,28 @@
   a{
     text-decoration: none;
   	color: $primaryYellow !important;
+  	-webkit-transition: .3s ease all;
   	transition: .3s ease all;
       &:hover{
       color: $primaryGrey !important;
+      -webkit-transition: .3s ease all;
       transition: .3s ease all;
       }
   }
 }
 .nav-links{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .nav-previous{
   background: $primaryGrey;
   padding: 10px;
+  -webkit-transition: .3s ease all;
   transition: .3s ease all;
   a{
     color: $white;
@@ -91,12 +103,14 @@
   }
   &:hover{
     background: $primaryGrey;
+    -webkit-transition: .3s ease all;
     transition: .3s ease all;
   }
 }
 .nav-next{
   background: $primaryGrey;
   padding: 10px;
+  -webkit-transition: .3s ease all;
   transition: .3s ease all;
   a{
     color: $white;
@@ -104,6 +118,7 @@
   }
   &:hover{
     background: $primaryGrey;
+    -webkit-transition: .3s ease all;
     transition: .3s ease all;
   }
 }
@@ -129,11 +144,13 @@
     background-color: $primaryGrey;
     border: 2px solid $primaryGrey;
     color: $black;
+    -webkit-transition: .3s ease all;
     transition: .3s ease all;
     &:hover{
       background-color: $transparent;
       border: 2px solid $primaryGrey;
       color: $primaryGrey;
+      -webkit-transition: .3s ease all;
       transition: .3s ease all;
     }
   }
@@ -142,9 +159,16 @@
   margin-bottom: 15px;
 }
 .blogText{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	max-width: 800px;
   margin: 0 auto;
     @include breakpoint(smallScreen){

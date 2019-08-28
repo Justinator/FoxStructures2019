@@ -132,5 +132,6 @@ h6{
 	margin-top: 5px;
   margin-bottom: 20px;
 	border-bottom: 3px solid $primaryYellow;
+	-webkit-transition: .2s ease all;
 	transition: .2s ease all;
 }

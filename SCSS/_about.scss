@@ -18,26 +18,40 @@
 	height: calc(100% - 10px);
 	width: 100%;
 	content: "";
+	-webkit-transition: .2s ease all;
 	transition: .2s ease all;
 	background-color: rgba(0,0,0,.0);
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 .leadershipWrapper{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 	a{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 		text-decoration: none;
 		color: $primaryGrey;
+		-webkit-transition: .2s ease all;
 		transition: .2s ease all;
 		&:hover{
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 			.leaderImageOverlay{
 				background-color: rgba(0,0,0,.5);
+				-webkit-transition: .2s ease all;
 				transition: .2s ease all;
 				opacity: 1;
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 			}
 			.centerUnderline{
 				width: 10em;
+				-webkit-transition: .2s ease all;
 				transition: .2s ease all;
 			}
 		}

@@ -1,6 +1,7 @@
 /* 7.0 Button Stylings ---------------------------------------*/
 .primaryLink{
   color: $primaryGrey !important;
+	-webkit-transition: .3s ease all;
 	transition: .3s ease all;
   text-decoration: none;
 	position: relative;
@@ -13,17 +14,20 @@
 			left: 0;
 			width: 100%;
 			height: 2px;
+			-webkit-transition: .3s ease all;
 			transition: .3s ease all;
 		}
     &:hover{
 			&:after{
 				height: 100%;
+				-webkit-transition: .3s ease all;
 				transition: .3s ease all;
 			}
     }
     &:focus{
 			&:after{
 				height: 100%;
+				-webkit-transition: .3s ease all;
 				transition: .3s ease all;
 			}
     }
@@ -32,12 +36,15 @@
 	position: relative;
 	z-index:1;
 	text-decoration: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
 	width: -moz-max-content;
   width: -ms-max-content;
   width: -webkit-max-content;
   width: -o-max-content;
 	color: $primaryGrey;
+	-webkit-transition: .2s ease all;
 	transition: .2s ease all;
   padding: 10px 20px 10px 20px;
 	cursor: pointer;
@@ -49,6 +56,7 @@
 			left: 0;
 			width: 10%;
 			height: 2px;
+			-webkit-transition: 0.2s ease-out;
 			transition: 0.2s ease-out;
 		}
 		&:after{
@@ -59,6 +67,7 @@
 			right: 0;
 			width: 10%;
 			height: 2px;
+			-webkit-transition: 0.2s ease-out;
 			transition: 0.2s ease-out;
 		}
 		&:hover{
@@ -93,6 +102,7 @@ button{
 .filterButton{
 	padding: 10px;
 	cursor: pointer;
+	-webkit-transition: .2s ease all;
 	transition: .2s ease all;
 	margin: 5px 0;
 	background: $primaryGrey;
@@ -107,6 +117,7 @@ button{
 	}
 	&:hover{
 		background: $primaryYellow;
+		-webkit-transition: .2s ease all;
 		transition: .2s ease all;
 	}
 }

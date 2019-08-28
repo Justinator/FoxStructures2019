@@ -4,6 +4,13 @@ body{
 	margin: 0;
 }
 // Style highlight to match our themes colors
+::-moz-selection{
+		background: rgba(239,174,30, .5);
+}
+// Style highlight to match our themes colors
+::-moz-selection{
+		background: rgba(239,174,30, .5);
+}
 ::selection{
 		background: rgba(239,174,30, .5);
 }

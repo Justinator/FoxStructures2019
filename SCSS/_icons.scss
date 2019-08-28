@@ -1,6 +1,7 @@
 /*9.0 Icon Styling -------------------------------------------*/
 .whiteIcon{
 	color: $white;
+	-webkit-transition: .3s ease all;
 	transition: .3s ease all;
 	font-size: 16px;
 }
@@ -12,24 +13,32 @@
 	font-size: 16px;
 }
 .iconBlock{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 .footerSocialIcon{
 	stroke: $primaryYellow;
   fill: $primaryYellow;
 	margin: -5px;
+	-webkit-transition: .3s ease all;
 	transition: .3s ease all;
 	height: 30px;
 	width: 30px;
 		&:hover{
 			stroke: $white;
 		  fill: $white;
+			-webkit-transition: .3s ease all;
 			transition: .3s ease all;
 		}
 }
 .arrowIcon{
 	margin-left: 20px;
+	-webkit-transition: .2s ease all;
 	transition: .2s ease all;
 }
 .smallIcon{

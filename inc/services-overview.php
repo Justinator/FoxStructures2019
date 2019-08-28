@@ -75,7 +75,7 @@
       <div class="categoryWrapper">
         <a href="/services/residential/">
           <div class="categoryImageWrapper">
-            <img src="/wp-content/uploads/2019/02/residentialBuildingServices.jpg" class="image" alt="Residential home designed and built by Fox Structures">
+            <img src="/wp-content/uploads/2019/08/angotti-residential-building-fox-structures-mid.jpg" class="image" alt="Residential home designed and built by Fox Structures">
             <div class="categoryImageOverlay">
               <div class="categoryLinkDesc">
                 <h4>Learn More</h4><span class="screen-reader-text">About Fox Structures' Residential Services</span>

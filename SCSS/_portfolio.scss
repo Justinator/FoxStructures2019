@@ -36,6 +36,7 @@
 			left: 0;
 			width: 10%;
 			height: 2px;
+			-webkit-transition: 0.2s ease-out;
 			transition: 0.2s ease-out;
 		}
 		&:after{
@@ -46,6 +47,7 @@
 			right: 0;
 			width: 10%;
 			height: 2px;
+			-webkit-transition: 0.2s ease-out;
 			transition: 0.2s ease-out;
 		}
 	}
@@ -60,6 +62,7 @@
 		}
 		.featuredProjectOverlay{
 			background-color: rgba(0,0,0,.7);
+			-webkit-transition: .2s ease all;
 			transition: .2s ease all;
 		}
 	}
@@ -77,6 +80,7 @@
   		}
   		.featuredProjectOverlay{
   			background-color: rgba(0,0,0,.7);
+  			-webkit-transition: .2s ease all;
   			transition: .2s ease all;
   		}
   	}
@@ -102,36 +106,56 @@
 	height: calc(100% - 10px);
 	width: 100%;
 	content: "";
+	-webkit-transition: .2s ease all;
 	transition: .2s ease all;
 	background-color: rgba(0,0,0,.0);
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 .portfolioWrapper{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 	a{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 		text-decoration: none;
 		color: $primaryGrey;
+		-webkit-transition: .2s ease all;
 		transition: .2s ease all;
 		&:hover{
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 			.ImageOverlay{
 				background-color: rgba(0,0,0,.5);
+				-webkit-transition: .2s ease all;
 				transition: .2s ease all;
 				opacity: 1;
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 			}
       h5{
+        -webkit-transition: .2s ease all;
         transition: .2s ease all;
         color: $primaryYellow;
       }
 		}
     &:focus{
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 			.ImageOverlay{
 				background-color: rgba(0,0,0,.5);
+				-webkit-transition: .2s ease all;
 				transition: .2s ease all;
 				opacity: 1;
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 			}
       h5{
+        -webkit-transition: .2s ease all;
         transition: .2s ease all;
         color: $primaryYellow;
       }
@@ -187,21 +211,33 @@
   border-bottom: 1px solid $primaryGrey;
 }
 .moreFeaturedProjectsWrapper{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 	a{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 		text-decoration: none;
 		color: $primaryGrey;
+		-webkit-transition: .2s ease all;
 		transition: .2s ease all;
 		&:hover{
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 			.ImageOverlay{
 				background-color: rgba(0,0,0,.5);
+				-webkit-transition: .2s ease all;
 				transition: .2s ease all;
 				opacity: 1;
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 			}
 			.centerUnderline{
 				width: 10em;
+				-webkit-transition: .2s ease all;
 				transition: .2s ease all;
 			}
 		}
@@ -238,12 +274,20 @@
 	height: calc(100% - 10px);
 	width: 100%;
 	content: "";
+	-webkit-transition: .2s ease all;
 	transition: .2s ease all;
 	background-color: rgba(0,0,0,.0);
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 .featuredProjectsBlock{
   border-top: 1px solid $primaryGrey;
@@ -316,4 +360,10 @@
   max-width: 1050px;
   margin: 0 auto;
 	padding: 10px;
+}
+.testimonialWrapper {
+  margin-bottom: 50px;
+}
+.projectCategory {
+  text-transform: capitalize;
 }
