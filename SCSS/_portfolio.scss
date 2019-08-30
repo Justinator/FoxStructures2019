@@ -51,6 +51,9 @@
 			transition: 0.2s ease-out;
 		}
 	}
+  .featuredProjectOverlay{
+    height: calc(100% - 10px);
+  }
 	&:hover{
 		span{
 			&:before{
@@ -87,7 +90,10 @@
   }
 }
 .outerWrapper{
-  margin: 10px 0;
+  margin: 10px 0 -10px 0;
+  @include breakpoint (laptopScreen) {
+    margin: 0;
+  }
 }
 .column {
   display: none;

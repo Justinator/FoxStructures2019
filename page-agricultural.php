@@ -67,6 +67,7 @@ get_header();
 				</div>
 				<div id="portfolioWrapper" class="pageWidth portfolioWrapper">
 					<?php get_template_part("/inc/projects/agricultural/forest-brook-farms"); ?>
+					<?php get_template_part("/inc/projects/agricultural/kesler-family-farm"); ?>
 					<?php get_template_part("/inc/projects/agricultural/rosendale-dairy"); ?>
 					<?php get_template_part("/inc/projects/agricultural/milksource"); ?>
 					<?php get_template_part("/inc/projects/agricultural/bill-kocourek"); ?>

@@ -43,43 +43,66 @@ get_header();
 					<h3 class="noMargin">Featured Building Projects</h3>
 					<div class="centerUnderline"></div>
 				</div>
-				<div class="pageWidth flex-container centerAlignedContainer">
-					<div class="col50 paddedWrapper">
-						<a href="/portfolio/forest-brook-farms/"><span class="screen-reader-text">View the Forest Brook Farms Project</span>
-							<div class="portFeaturedProjectWrapper">
-								<div class="featuredProjectOverlay"></div>
-								<div class="featuredProjectContent">
-									<img src="/wp-content/uploads/2019/03/forestBrookFarmsExteriorSquareLarge.jpg" class="featuredProjectImage">
-									<h4 class="featuredProjectTitle"><span class="projectTitleSpan">Forest Brook Farms</span></h4>
-								</div>
-							</div>
-						</a>
-					</div>
-					<div class="col50 paddedWrapper">
-						<div class="outerWrapper">
-							<a href="/portfolio/appleton-yacht-club/"><span class="screen-reader-text">View the Appleton Yacht Club Project</span>
-								<div class="portFeaturedProjectWrapper">
-									<div class="featuredProjectOverlay"></div>
-									<div class="featuredProjectContent">
-										<img src="/wp-content/uploads/2019/07/appleton-yacht-club-cover-new-cropped-short.jpg" class="featuredProjectImage">
-										<h4 class="featuredProjectTitle"><span class="projectTitleSpan">Appleton Yacht Club</span></h4>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="outerWrapper">
-							<a href="/portfolio/the-oaks-golf-course/"><span class="screen-reader-text">View the Oaks Golf Course Project</span>
-								<div class="portFeaturedProjectWrapper">
-									<div class="featuredProjectOverlay"></div>
-									<div class="featuredProjectContent">
-										<img src="/wp-content/uploads/2019/03/OaksIntExtStillsMediumCropped.jpg" class="featuredProjectImage">
-										<h4 class="featuredProjectTitle"><span class="projectTitleSpan">The Oaks Golf Course</span></h4>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div>
-				</div>
+				<?php
+					// check if the flexible content field has rows of data
+					if( have_rows('featured_projects_content') ):
+					     // loop through the rows of data
+					    while ( have_rows('featured_projects_content') ) : the_row();
+								// Vars
+								$image = get_sub_field('project_featured_image');
+								$imageFull = get_sub_field('full_width_image');
+								$imageFirstHalf = get_sub_field('image_first_half');
+								$imageSecondHalf = get_sub_field('image_second_half');
+								$imageTop = get_sub_field('image_top');
+								$imageBottom = get_sub_field('image_bottom');
+								$imageLeft = get_sub_field('image_left');
+									if( get_row_layout() == 'image_double_stacked' ):
+										echo '<div class="pageWidth flex-container centerAlignedContainer">';
+										echo '<div class="col50 smallMarginRight removeBottomMarginMobile">';
+										echo '<a href="' . get_sub_field('project_1_url') . '"><span class="screen-reader-text">' . get_sub_field('project_1_screen_reader_text') . '</span>';
+										echo '<div class="portFeaturedProjectWrapper">';
+										echo '<div class="featuredProjectOverlay"></div>';
+										echo '<div class="featuredProjectContent">';
+										$imageID = $imageLeft['ID'];
+										echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+										echo '<h4 class="featuredProjectTitle"><span class="projectTitleSpan">' . get_sub_field('project_1_title') . '</span></h4>';
+										echo '</div>';
+										echo '</div>';
+										echo '</a>';
+										echo '</div>';
+										echo '<div class="col50 smallMarginLeft">';
+										echo '<div class="outerWrapper">';
+										echo '<a href="' . get_sub_field('project_2_url') . '"><span class="screen-reader-text">' . get_sub_field('project_2_screen_reader_text') . '</span>';
+										echo '<div class="portFeaturedProjectWrapper">';
+										echo '<div class="featuredProjectOverlay"></div>';
+										echo '<div class="featuredProjectContent">';
+										$imageID = $imageTop['ID'];
+										echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+										echo '<h4 class="featuredProjectTitle"><span class="projectTitleSpan">' . get_sub_field('project_2_title') . '</span></h4>';
+										echo '</div>';
+										echo '</div>';
+										echo '</a>';
+										echo '</div>';
+										echo '<div class="outerWrapper">';
+										echo '<a href="' . get_sub_field('project_3_url') . '"><span class="screen-reader-text">' . get_sub_field('project_3_screen_reader_text') . '</span>';
+										echo '<div class="portFeaturedProjectWrapper">';
+										echo '<div class="featuredProjectOverlay"></div>';
+										echo '<div class="featuredProjectContent">';
+										$imageID = $imageBottom['ID'];
+										echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+										echo '<h4 class="featuredProjectTitle"><span class="projectTitleSpan">' . get_sub_field('project_3_title') . '</span></h4>';
+										echo '</div>';
+										echo '</div>';
+										echo '</a>';
+										echo '</div>';
+										echo '</div>';
+										echo '</div>';
+					        endif;
+					    endwhile;
+					else :
+					    // no layouts found
+					endif;
+				?>
 			</section>
 			<section class="portfolio paddedSection">
 				<div class="pageWidth">
@@ -95,6 +118,7 @@ get_header();
 					</div>
 				</div>
 				<div id="portfolioWrapper" class="pageWidth portfolioWrapper">
+					<?php get_template_part("/inc/projects/commercial/the-oaks"); ?>
 					<?php get_template_part("/inc/projects/commercial/hidden-hollow"); ?>
 					<?php get_template_part("/inc/projects/commercial/water-right"); ?>
 					<?php get_template_part("/inc/projects/commercial/N.E.W.Printing"); ?>

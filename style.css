@@ -2675,6 +2675,8 @@ body {
     height: 2px;
     -webkit-transition: 0.2s ease-out;
     transition: 0.2s ease-out; }
+  .portFeaturedProjectWrapper .featuredProjectOverlay {
+    height: calc(100% - 10px); }
   .portFeaturedProjectWrapper:hover span:before {
     width: 100%; }
   .portFeaturedProjectWrapper:hover span:after {
@@ -2694,7 +2696,10 @@ body {
   transition: .2s ease all; }
 
 .outerWrapper {
-  margin: 10px 0; }
+  margin: 10px 0 -10px 0; }
+  @media (min-width: 992px) {
+    .outerWrapper {
+      margin: 0; } }
 
 .column {
   display: none; }
