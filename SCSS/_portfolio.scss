@@ -2,6 +2,9 @@
 .portfolioHero{
   background-image: url("/wp-content/uploads/2019/03/waterRightCropped.jpg");
 }
+#featuredThree {
+  margin-top: 25px;
+}
 .paddedWrapper{
   @include breakpoint(smallScreen){
     padding: 0;
@@ -372,4 +375,7 @@
 }
 .projectCategory {
   text-transform: capitalize;
+}
+.videoWrapper {
+  margin-bottom: 10px;
 }

@@ -36,18 +36,24 @@ get_header();
 					        echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image portfolioFeaturedImage', 'data-sizes' => 'auto' ) );
 									echo get_sub_field('project_description');
 									echo '<div class="fullWidth flex-container">';
-									echo '<div class="col30">' . '<h4 class="noMargin">Project Features</h4>';
-									echo '<div class="underline"></div>';
-									echo get_sub_field('project_features');
-									echo '</div>';
-									echo '<div class="col30">' . '<h4 class="noMargin">Specs</h4>';
-									echo '<div class="underline"></div>';
-									echo get_sub_field('specs');
-									echo '</div>';
-									echo '<div class="col30">' . '<h4 class="noMargin">Location</h4>';
-									echo '<div class="underline"></div>';
-									echo get_sub_field('location');
-									echo '</div>';
+									if (get_sub_field('project_features')):
+										echo '<div class="col30">' . '<h4 class="noMargin">Project Features</h4>';
+										echo '<div class="underline"></div>';
+										echo get_sub_field('project_features');
+										echo '</div>';
+									endif;
+									if (get_sub_field('specs')):
+										echo '<div class="col30">' . '<h4 class="noMargin">Specs</h4>';
+										echo '<div class="underline"></div>';
+										echo get_sub_field('specs');
+										echo '</div>';
+									endif;
+									if (get_sub_field('location')):
+										echo '<div class="col30">' . '<h4 class="noMargin">Location</h4>';
+										echo '<div class="underline"></div>';
+										echo get_sub_field('location');
+										echo '</div>';
+									endif;
 									echo '</div>';
 								elseif( get_row_layout() == 'testimonial' ):
 									echo '<div class="fullWidth centerText greyBlock smallPaddedSection testimonialWrapper">';
@@ -61,7 +67,7 @@ get_header();
 									echo '</div>';
 									echo '</div>';
 								elseif( get_row_layout() == 'image_full_width' ):
-									echo '<div class="marginTop">';
+									echo '<div>';
 									$imageID = $imageFull['ID'];
 									echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
 									echo '</div>';
@@ -88,6 +94,27 @@ get_header();
 									$imageID = $imageRight['ID'];
 									echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
 									echo '</div>';
+									echo '</div>';
+								elseif( get_row_layout() == 'video_container' ):
+									echo '<div class="videoWrapper">';
+									// get iframe HTML
+									$iframe = get_sub_field('video');
+									// use preg_match to find iframe src
+									preg_match('/src="(.+?)"/', $iframe, $matches);
+									$src = $matches[1];
+									// add extra params to iframe src
+									$params = array(
+									    'controls'    => 0,
+									    'hd'        => 1,
+									    'autohide'    => 1
+									);
+									$new_src = add_query_arg($params, $src);
+									$iframe = str_replace($src, $new_src, $iframe);
+									// add extra attributes to iframe html
+									$attributes = 'frameborder="0"';
+									$iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
+									// echo $iframe
+									echo $iframe;
 									echo '</div>';
 				        endif;
 				    endwhile;

@@ -518,7 +518,7 @@ template {
   -ms-flex-direction: row;
   flex-direction: row;
   -ms-flex-pack: distribute;
-  justify-content: space-around; }
+  justify-content: space-between; }
   @media (max-width: 599px) {
     .flex-container {
       -webkit-box-orient: vertical;
@@ -2632,6 +2632,9 @@ body {
 .portfolioHero {
   background-image: url("/wp-content/uploads/2019/03/waterRightCropped.jpg"); }
 
+#featuredThree {
+  margin-top: 25px; }
+
 @media (max-width: 599px) {
   .paddedWrapper {
     padding: 0; } }
@@ -2958,6 +2961,9 @@ body {
 
 .projectCategory {
   text-transform: capitalize; }
+
+.videoWrapper {
+  margin-bottom: 10px; }
 
 /* 18.0 Careers Page stylings -------------------------------------------*/
 .subNavLink {

@@ -57,7 +57,7 @@ get_header();
 								$imageBottom = get_sub_field('image_bottom');
 								$imageLeft = get_sub_field('image_left');
 									if( get_row_layout() == 'image_double_stacked' ):
-										echo '<div class="pageWidth flex-container centerAlignedContainer">';
+										echo '<div id="featuredThree" class="pageWidth flex-container centerAlignedContainer">';
 										echo '<div class="col50 smallMarginRight removeBottomMarginMobile">';
 										echo '<a href="' . get_sub_field('project_1_url') . '"><span class="screen-reader-text">' . get_sub_field('project_1_screen_reader_text') . '</span>';
 										echo '<div class="portFeaturedProjectWrapper">';
@@ -119,6 +119,7 @@ get_header();
 				</div>
 				<div id="portfolioWrapper" class="pageWidth portfolioWrapper">
 					<?php get_template_part("/inc/projects/commercial/the-oaks"); ?>
+					<?php get_template_part("/inc/projects/commercial/appleton-yacht-club"); ?>
 					<?php get_template_part("/inc/projects/commercial/hidden-hollow"); ?>
 					<?php get_template_part("/inc/projects/commercial/water-right"); ?>
 					<?php get_template_part("/inc/projects/commercial/N.E.W.Printing"); ?>

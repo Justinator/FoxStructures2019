@@ -204,7 +204,7 @@
 	    -ms-flex-direction: row;
 	        flex-direction: row;
 	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+	    justify-content: space-between;
     @include breakpoint(smallScreen){
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;

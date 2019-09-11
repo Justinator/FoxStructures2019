@@ -3,40 +3,56 @@
     <h3 class="noMargin">Featured Building Projects</h3>
     <div class="centerUnderline"></div>
   </div>
-  <div class="fullWidth wrappedFlexContainer">
+  <div class="fullWidth wrappedFlexContainer marginTop">
     <div class="featuredProjectWrapper">
-      <a href="/portfolio/forest-brook-farms/">
+      <a href="<?php the_field('featured_project_url_1'); ?>">
         <div class="featuredProjectOverlay"></div>
         <div class="featuredProjectContent">
-          <img src="/wp-content/uploads/2019/03/forestBrookFarmsExteriorSquareMedium.jpg" class="featuredProjectImage" alt="Forest Brook Farms custom agricultural facility in Chilton, WI. Designed and built by Fox Structures">
-          <h5 class="featuredProjectTitle"><span class="projectTitleSpan">Forest Brook Farms</span></h5>
+          <?php
+          $image = get_field('project_square_cover_image_1');
+          $imageID = $image['ID'];
+          echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'featuredProjectImage', 'data-sizes' => 'auto' ) );
+          ?>
+          <h5 class="featuredProjectTitle"><span class="projectTitleSpan"><?php the_field('featured_project_title_1'); ?></span></h5>
         </div>
       </a>
     </div>
     <div class="featuredProjectWrapper">
-      <a href="/portfolio/the-oaks-golf-course/">
+      <a href="<?php the_field('featured_project_url_2'); ?>">
         <div class="featuredProjectOverlay"></div>
         <div class="featuredProjectContent">
-          <img src="/wp-content/uploads/2019/02/OaksIntExtStillsMediumSquare.jpg" class="featuredProjectImage" alt="The Oaks Golf Course Club House in Cottage Grove, WI. Designed and built by Fox Structures">
-          <h5 class="featuredProjectTitle"><span class="projectTitleSpan">The Oaks Golf Course</span></h5>
+          <?php
+          $image = get_field('project_square_cover_image_2');
+          $imageID = $image['ID'];
+          echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'featuredProjectImage', 'data-sizes' => 'auto' ) );
+          ?>
+          <h5 class="featuredProjectTitle"><span class="projectTitleSpan"><?php the_field('featured_project_title_2'); ?></span></h5>
         </div>
       </a>
     </div>
     <div class="featuredProjectWrapper">
-      <a href="/portfolio/water-right/">
+      <a href="<?php the_field('featured_project_url_3'); ?>">
         <div class="featuredProjectOverlay"></div>
         <div class="featuredProjectContent">
-          <img src="/wp-content/uploads/2019/02/waterRightSquare.jpg" class="featuredProjectImage" alt="Water Right commercial office in Appleton, WI. Building designed and built by Fox Structures">
-          <h5 class="featuredProjectTitle"><span class="projectTitleSpan">Water Right</span></h5>
+          <?php
+          $image = get_field('project_square_cover_image_3');
+          $imageID = $image['ID'];
+          echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'featuredProjectImage', 'data-sizes' => 'auto' ) );
+          ?>
+          <h5 class="featuredProjectTitle"><span class="projectTitleSpan"><?php the_field('featured_project_title_3'); ?></span></h5>
         </div>
       </a>
     </div>
     <div class="featuredProjectWrapper">
-      <a href="/portfolio/hidden-hollow/">
+      <a href="<?php the_field('featured_project_url_4'); ?>">
         <div class="featuredProjectOverlay"></div>
         <div class="featuredProjectContent">
-          <img src="/wp-content/uploads/2019/05/hidden-hollow-outdoor-view-square-low.jpg" class="featuredProjectImage" alt="Agricultural build in Rosendale, WI. Design and build by Fox Structures.">
-          <h5 class="featuredProjectTitle"><span class="projectTitleSpan">Hidden Hollow ART</span></h5>
+          <?php
+          $image = get_field('project_square_cover_image_4');
+          $imageID = $image['ID'];
+          echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'featuredProjectImage', 'data-sizes' => 'auto' ) );
+          ?>
+          <h5 class="featuredProjectTitle"><span class="projectTitleSpan"><?php the_field('featured_project_title_4'); ?></span></h5>
         </div>
       </a>
     </div>
