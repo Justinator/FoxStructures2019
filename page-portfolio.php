@@ -1,13 +1,9 @@
 <?php
 /**
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
  * @package foxStructuresResponsive
  */
 get_header();
-
 ?>
-
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 		<section>
@@ -136,6 +132,7 @@ get_header();
 					<?php get_template_part("/inc/projects/agricultural/schuh-view"); ?>
 					<?php get_template_part("/inc/projects/commercial/gillett"); ?>
 					<?php get_template_part("/inc/projects/equestrian/gordy"); ?>
+					<?php get_template_part("/inc/projects/agricultural/rosendale-dairy"); ?>
 					<?php get_template_part("/inc/projects/residential/hartzheim-shed"); ?>
 					<?php get_template_part("/inc/projects/storage/appleton-northest"); ?>
 					<?php get_template_part("/inc/projects/agricultural/bill-kocourek"); ?>

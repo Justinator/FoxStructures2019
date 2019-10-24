@@ -1,16 +1,11 @@
 <?php
 /**
- * The template for displaying all pages
- *
  * Template Name: Single Projects
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package foxStructuresResponsive
  */
 get_header();
 ?>
-
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 		<div id="simpleProject" class="pageWidth paddedSection limitPortfolioWidth">

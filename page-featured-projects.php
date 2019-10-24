@@ -1,15 +1,11 @@
 <?php
 /**
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
  * Template Name: Featured Case Study Projects
  *
  * @package foxStructuresResponsive
  */
 get_header();
-
 ?>
-
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 		<section class="pageWidth paddedSection limitPortfolioWidth project">

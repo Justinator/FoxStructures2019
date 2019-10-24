@@ -1,13 +1,9 @@
 <?php
 /**
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
  * @package foxStructuresResponsive
  */
-
 get_header();
 ?>
-
 <section>
 	<div class="mediumHero blueprintHero">
 		<div class="fullWidth heroHeadingContainer">

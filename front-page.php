@@ -1,13 +1,9 @@
 <?php
 /**
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
  * @package foxStructuresResponsive
  */
 get_header();
-
 ?>
-
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 		<section id="homeHero">

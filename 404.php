@@ -1,15 +1,9 @@
 <?php
 /**
- * The template for displaying 404 pages (not found)
- *
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
- *
  * @package foxStructuresResponsive
  */
-
 get_header();
 ?>
-
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 		<div class="limitWidth">
@@ -19,7 +13,8 @@ get_header();
 					<h2 class="page-title">Oops! This page hasn't been built yet.</h2>
 				</header><!-- .page-header -->
 				<div class="page-content">
-					<p>View some of featured projects below, or try going back to the <a href="https://foxstructures.com" class="primaryLink">homepage</a></p>
+					<img src="https://foxstructures.com/wp-content/uploads/2019/03/foxStructuresEmployeeOnJob3-1.jpg" class="image">
+					<p>View some of featured projects below, or try going back to the <a href="<?=site_url()?>" class="primaryLink">homepage</a></p>
 				</div><!-- .page-content -->
 				<?php get_template_part("/inc/projects/featured-projects"); ?>
 			</section><!-- .error-404 -->
