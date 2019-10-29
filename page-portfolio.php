@@ -114,6 +114,7 @@ get_header();
 					</div>
 				</div>
 				<div id="portfolioWrapper" class="pageWidth portfolioWrapper">
+					<?php get_template_part("/inc/projects/agricultural/forest-brook-farms"); ?>
 					<?php get_template_part("/inc/projects/commercial/the-oaks"); ?>
 					<?php get_template_part("/inc/projects/commercial/appleton-yacht-club"); ?>
 					<?php get_template_part("/inc/projects/commercial/hidden-hollow"); ?>

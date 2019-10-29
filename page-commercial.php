@@ -61,6 +61,7 @@ get_header();
 					<div class="underline"></div>
 				</div>
 				<div id="portfolioWrapper" class="pageWidth portfolioWrapper">
+					<?php get_template_part("/inc/projects/commercial/clean-water-center-remodel"); ?>
 					<?php get_template_part("/inc/projects/commercial/temmes-waterfront-workshop"); ?>
 					<?php get_template_part("/inc/projects/commercial/the-oaks"); ?>
 					<?php get_template_part("/inc/projects/commercial/appleton-yacht-club"); ?>

@@ -125,9 +125,9 @@ get_header();
 				<div class="centerUnderline"></div>
 			</div>
 			<div class="moreFeaturedProjectsWrapper">
-				<?php get_template_part("/inc/projects/commercial/the-oaks"); ?>
-				<?php get_template_part("/inc/projects/commercial/hidden-hollow"); ?>
-				<?php get_template_part("/inc/projects/agricultural/forest-brook-farms"); ?>
+				<?php get_template_part("/inc/projects/commercial/clean-water-center-remodel"); ?>
+				<?php get_template_part("/inc/projects/agricultural/kesler-family-farm"); ?>
+				<?php get_template_part("/inc/projects/commercial/temmes-waterfront-workshop"); ?>
 			</div>
 		</section>
 	</main>
