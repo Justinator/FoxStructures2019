@@ -189,6 +189,14 @@ function my_acf_admin_head() {
     <?php
 }
 add_action('acf/input/admin_head', 'my_acf_admin_head');
+
+function search_filter( $query ) {
+    if ( $query->is_search ) {
+        $query->set( 'post_type', array('post','page') );
+    }
+    return $query;
+}
+add_filter('pre_get_posts','search_filter');
 /**
 * Enqueue scripts and styles.
 */

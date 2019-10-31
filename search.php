@@ -1,68 +1,40 @@
 <?php
 /**
- * The template for displaying search results pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
- *
  * @package foxStructuresResponsive
  */
-
 get_header();
 ?>
-
-<div id="barba-wrapper">
-
-	<div class="barba-container">
-
-		<div class="pageWidth defaultPadding limitWidth">
-
-			<section id="primary" class="content-area">
-
-				<main id="main" class="site-main">
-
+<div class="pageWidth paddedSection">
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main">
+			<div id="search" class="pageWidth limitWidth">
 				<?php if ( have_posts() ) : ?>
-
 					<header class="page-header">
 						<h1 class="page-title">
 							<?php
-							/* translators: %s: search query. */
-							printf( esc_html__( 'Search Results for: %s', 'foxStructuresresponsive' ), '<span>' . get_search_query() . '</span>' );
+								$allsearch = new WP_Query("s=$s&showposts=0");
+								echo $allsearch ->found_posts.' results found';
+								/* translators: %s: search query. */
+								printf( esc_html__( ' for: %s', 'insightcustom' ), '<span>' . get_search_query() . '</span>' );
 							?>
 						</h1>
 					</header><!-- .page-header -->
-
-					<?php
-					/* Start the Loop */
-					while ( have_posts() ) :
-						the_post();
-
-						/**
-						 * Run the loop for the search to output the results.
-						 * If you want to overload this in a child theme then include a file
-						 * called content-search.php and that will be used instead.
-						 */
-						get_template_part( 'template-parts/content', 'search' );
-
-					endwhile;
-
-					the_posts_navigation();
-
-				else :
-
-					get_template_part( 'template-parts/content', 'none' );
-
-				endif;
-				?>
-
-				</main><!-- #main -->
-
-			</section><!-- #primary -->
-
-		</div>
-
-	</div>
-
+					<div>
+						<?php
+						/* Start the Loop */
+						while ( have_posts() ) :
+							the_post();
+							get_template_part( 'template-parts/content', 'search' );
+						endwhile;
+						the_posts_navigation();
+					else :
+						get_template_part( 'template-parts/content', 'none' );
+					endif;
+					?>
+				</div>
+			</div>
+		</main><!-- #main -->
+	</section><!-- #primary -->
 </div>
-
 <?php
 get_footer();

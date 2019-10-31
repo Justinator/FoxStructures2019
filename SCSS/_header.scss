@@ -26,6 +26,7 @@
 	z-index: 9999;
 	height: 70px;
 	width: 100vw;
+	background-color: $primaryGrey;
 }
 .main-navigation{
 	height: 100px;
@@ -84,6 +85,10 @@
 			}
 		}
 	}
+}
+.menu-main-menu-container-outer {
+	display: flex;
+	align-items: center;
 }
 .menu-item{
 	a{
@@ -251,6 +256,12 @@
 	}
 	@include breakpoint(largeMobileScreen){
 		width: 150px;
+	}
+	@include breakpoint (laptopScreen) {
+		width: 130px;
+	}
+	@include breakpoint (largeScreen) {
+		width: 160px;
 	}
 }
 nav{

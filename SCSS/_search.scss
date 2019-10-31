@@ -1,0 +1,235 @@
+.search {
+  .site-content {
+    margin-top: 75px;
+    @include breakpoint (laptopScreen) {
+      margin-top: 100px;
+    }
+  }
+  .entry-header {
+    display: block;
+  }
+  .entry-title {
+    margin-bottom: 15px;
+    a {
+      color: $primaryGrey;
+      transition: .3s ease;
+      &:hover {
+        color: $primaryYellow;
+        transition: .3s ease;
+      }
+    }
+  }
+  .attachment-post-thumbnail {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  .postWrapper {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid $primaryGrey;
+  }
+  .post {
+    padding: 0;
+  }
+  .page-content {
+    input {
+      color: $primaryGrey !important;
+      margin-bottom: 25px;
+    }
+    input::-webkit-input-placeholder {
+      color: $primaryGrey;
+    }
+    input::-moz-placeholder {
+      color: $primaryGrey;
+    }
+    input:-ms-input-placeholder {
+      color: $primaryGrey;
+    }
+    input::-ms-input-placeholder {
+      color: $primaryGrey;
+    }
+    input::placeholder {
+      color: $primaryGrey;
+    }
+  }
+  .cat-links {
+    a {
+      color: $primaryYellow;
+      text-decoration: none;
+      transition: .3s ease;
+      &:hover {
+        color: $primaryGrey;
+        transition: .3s ease;
+      }
+    }
+  }
+}
+#searchWrap {
+  display: none;
+  @include breakpoint (laptopScreen) {
+    display: block;
+  }
+  .whiteIcon {
+    position: absolute;
+    top: -18px;
+    left: 0;
+  }
+}
+#searchFormWrap {
+  text-align: center;
+  display: none;
+  form {
+    display: flex;
+    flex-direction: row;
+    label {
+      width: 100%;
+    }
+  }
+  input {
+    width: 100%;
+    background-color: $black;
+    border: 1px solid $black;
+    padding: 10px;
+  }
+  input::-webkit-input-placeholder {
+    color: $white;
+  }
+  input::-moz-placeholder {
+    color: $white;
+  }
+  input:-ms-input-placeholder {
+    color: $white;
+  }
+  input::-ms-input-placeholder {
+    color: $white;
+  }
+  input::placeholder {
+    color: $white;
+  }
+}
+#mobileSearch {
+  text-align: center;
+  padding: 10px;
+  display: block;
+  background-color: $black;
+  @include breakpoint (laptopScreen) {
+    display: none;
+  }
+  form {
+    display: flex;
+    flex-direction: row;
+    label {
+      width: 100%;
+    }
+  }
+  input {
+    width: 100%;
+    background-color: $primaryGrey;
+    border: 1px solid $primaryGrey;
+    padding: 10px;
+  }
+  input::-webkit-input-placeholder {
+    color: $white;
+  }
+  input::-moz-placeholder {
+    color: $white;
+  }
+  input:-ms-input-placeholder {
+    color: $white;
+  }
+  input::-ms-input-placeholder {
+    color: $white;
+  }
+  input::placeholder {
+    color: $white;
+  }
+  .search-submit {
+    width: 20%;
+    padding: 10px;
+  }
+}
+.icon-search {
+  opacity: 1;
+  transition: opacity .3s;
+}
+.icon-close {
+  opacity: 0;
+  transition: opacity .3s;
+}
+.searchOpen {
+  display: block !important;
+}
+.iconOpacity {
+  .icon-close {
+    opacity: 1;
+    transition: opacity .3s;
+  }
+  .icon-search {
+    opacity: 0;
+    transition: opacity .3s;
+  }
+}
+#search {
+  padding: 0 10px;
+  position: relative;
+  height: 100%;
+  i {
+    position: absolute;
+    top: 15%;
+    left: 0;
+  }
+}
+#mobileSearch {
+  @include breakpoint (laptopScreen) {
+    display: none;
+  }
+}
+.searchForm {
+	background-color: $primaryGrey;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+		label {
+				display: none;
+		}
+	@include breakpoint (laptopScreen) {
+		height: auto;
+		-webkit-box-align: normal;
+		    -ms-flex-align: normal;
+		            -ms-grid-row-align: normal;
+		        align-items: normal;
+	}
+}
+.searchField{
+	font-size: 12px;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 30px;
+	height: 30px;
+	padding: 10px;
+	@include breakpoint (smallScreen) {
+		width: 90%;
+	}
+	@include breakpoint (largeMobileScreen) {
+		width: 90%;
+	}
+	@include breakpoint (laptopScreen) {
+		width: 175px;
+	}
+}
+.searchIcon {
+	width: 18px;
+	height: 18px;
+	position: relative;
+	right: 30px;
+	@include breakpoint (laptopScreen) {
+		top: 5px;
+	}
+}

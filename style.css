@@ -749,7 +749,8 @@ template {
   left: 0;
   z-index: 9999;
   height: 70px;
-  width: 100vw; }
+  width: 100vw;
+  background-color: #404041; }
 
 .main-navigation {
   height: 100px;
@@ -805,6 +806,10 @@ template {
     @media (min-width: 1250px) {
       #primary-menu li a {
         font-size: 20px; } }
+
+.menu-main-menu-container-outer {
+  display: flex;
+  align-items: center; }
 
 .menu-item a {
   position: relative; }
@@ -956,6 +961,12 @@ template {
   @media (min-width: 600px) {
     .siteLogo {
       width: 150px; } }
+  @media (min-width: 992px) {
+    .siteLogo {
+      width: 130px; } }
+  @media (min-width: 1250px) {
+    .siteLogo {
+      width: 160px; } }
 
 nav {
   display: -webkit-box;
@@ -1700,10 +1711,12 @@ body {
 
 /*9.0 Icon Styling -------------------------------------------*/
 .whiteIcon {
-  color: #FFFFFF;
+  stroke: #FFFFFF;
+  fill: #FFFFFF;
   -webkit-transition: .3s ease all;
   transition: .3s ease all;
-  font-size: 16px; }
+  width: 20px;
+  height: 20px; }
 
 .greyIcon {
   color: #f6f6f6; }
@@ -1737,8 +1750,16 @@ body {
 
 .arrowIcon {
   margin-left: 20px;
-  -webkit-transition: .2s ease all;
-  transition: .2s ease all; }
+  stroke: #404041;
+  fill: #404041;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  width: 40px;
+  height: 40px; }
+
+.icon-angle-double-right {
+  position: relative;
+  top: -5px; }
 
 .smallIcon {
   position: absolute;
@@ -2999,5 +3020,195 @@ body {
   padding-left: 0; }
   .careersList li {
     margin-bottom: 10px; }
+
+.search .site-content {
+  margin-top: 75px; }
+  @media (min-width: 992px) {
+    .search .site-content {
+      margin-top: 100px; } }
+.search .entry-header {
+  display: block; }
+.search .entry-title {
+  margin-bottom: 15px; }
+  .search .entry-title a {
+    color: #404041;
+    transition: .3s ease; }
+    .search .entry-title a:hover {
+      color: #f4a81d;
+      transition: .3s ease; }
+.search .attachment-post-thumbnail {
+  margin-top: 10px;
+  margin-bottom: 0; }
+.search .postWrapper {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #404041; }
+.search .post {
+  padding: 0; }
+.search .page-content input {
+  color: #404041 !important;
+  margin-bottom: 25px; }
+.search .page-content input::-webkit-input-placeholder {
+  color: #404041; }
+.search .page-content input::-moz-placeholder {
+  color: #404041; }
+.search .page-content input:-ms-input-placeholder {
+  color: #404041; }
+.search .page-content input::-ms-input-placeholder {
+  color: #404041; }
+.search .page-content input::placeholder {
+  color: #404041; }
+.search .cat-links a {
+  color: #f4a81d;
+  text-decoration: none;
+  transition: .3s ease; }
+  .search .cat-links a:hover {
+    color: #404041;
+    transition: .3s ease; }
+
+#searchWrap {
+  display: none; }
+  @media (min-width: 992px) {
+    #searchWrap {
+      display: block; } }
+  #searchWrap .whiteIcon {
+    position: absolute;
+    top: -18px;
+    left: 0; }
+
+#searchFormWrap {
+  text-align: center;
+  display: none; }
+  #searchFormWrap form {
+    display: flex;
+    flex-direction: row; }
+    #searchFormWrap form label {
+      width: 100%; }
+  #searchFormWrap input {
+    width: 100%;
+    background-color: #000000;
+    border: 1px solid #000000;
+    padding: 10px; }
+  #searchFormWrap input::-webkit-input-placeholder {
+    color: #FFFFFF; }
+  #searchFormWrap input::-moz-placeholder {
+    color: #FFFFFF; }
+  #searchFormWrap input:-ms-input-placeholder {
+    color: #FFFFFF; }
+  #searchFormWrap input::-ms-input-placeholder {
+    color: #FFFFFF; }
+  #searchFormWrap input::placeholder {
+    color: #FFFFFF; }
+
+#mobileSearch {
+  text-align: center;
+  padding: 10px;
+  display: block;
+  background-color: #000000; }
+  @media (min-width: 992px) {
+    #mobileSearch {
+      display: none; } }
+  #mobileSearch form {
+    display: flex;
+    flex-direction: row; }
+    #mobileSearch form label {
+      width: 100%; }
+  #mobileSearch input {
+    width: 100%;
+    background-color: #404041;
+    border: 1px solid #404041;
+    padding: 10px; }
+  #mobileSearch input::-webkit-input-placeholder {
+    color: #FFFFFF; }
+  #mobileSearch input::-moz-placeholder {
+    color: #FFFFFF; }
+  #mobileSearch input:-ms-input-placeholder {
+    color: #FFFFFF; }
+  #mobileSearch input::-ms-input-placeholder {
+    color: #FFFFFF; }
+  #mobileSearch input::placeholder {
+    color: #FFFFFF; }
+  #mobileSearch .search-submit {
+    width: 20%;
+    padding: 10px; }
+
+.icon-search {
+  opacity: 1;
+  transition: opacity .3s; }
+
+.icon-close {
+  opacity: 0;
+  transition: opacity .3s; }
+
+.searchOpen {
+  display: block !important; }
+
+.iconOpacity .icon-close {
+  opacity: 1;
+  transition: opacity .3s; }
+.iconOpacity .icon-search {
+  opacity: 0;
+  transition: opacity .3s; }
+
+#search {
+  padding: 0 10px;
+  position: relative;
+  height: 100%; }
+  #search i {
+    position: absolute;
+    top: 15%;
+    left: 0; }
+
+@media (min-width: 992px) {
+  #mobileSearch {
+    display: none; } }
+
+.searchForm {
+  background-color: #404041;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .searchForm label {
+    display: none; }
+  @media (min-width: 992px) {
+    .searchForm {
+      height: auto;
+      -webkit-box-align: normal;
+      -ms-flex-align: normal;
+      -ms-grid-row-align: normal;
+      align-items: normal; } }
+
+.searchField {
+  font-size: 12px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  height: 30px;
+  padding: 10px; }
+  @media (max-width: 599px) {
+    .searchField {
+      width: 90%; } }
+  @media (min-width: 600px) {
+    .searchField {
+      width: 90%; } }
+  @media (min-width: 992px) {
+    .searchField {
+      width: 175px; } }
+
+.searchIcon {
+  width: 18px;
+  height: 18px;
+  position: relative;
+  right: 30px; }
+  @media (min-width: 992px) {
+    .searchIcon {
+      top: 5px; } }
 
 /*# sourceMappingURL=style.css.map */

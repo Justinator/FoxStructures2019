@@ -24,12 +24,15 @@
 <body <?php body_class(); ?>>
 <a class="screenReaderSkipToContent" href="#primary" tabindex="0">Skip to main content</a>
 <nav role="navigation" aria-label="mobile navigation">
-	<div class = "mobile-menu">
+	<div class="mobile-menu">
 		<?php wp_nav_menu( array( 'theme_location' => 'mobileNav', 'menu_id' => 'mobile-menu' ) ); ?>
 	</div>
 </nav>
 <div id="page" class="site">
 	<header id="masthead" class="site-header" role="banner">
+		<div id="searchFormWrap" class="pageWidth">
+		  <?php get_search_form(); ?>
+		</div>
 		<?php get_template_part('/inc/header/secondary'); ?>
 		<?php get_template_part('/inc/header/primary'); ?>
 	</header><!-- #masthead -->

@@ -27,7 +27,7 @@
 							</defs>
 						</svg>
 						<svg class="icon icon-copyright"><use xlink:href="#icon-copyright"></use></svg>
-						<p>&nbsp;<script>document.write(new Date().getFullYear());</script> Fox Structures</p>
+						<p>&nbsp;<script>document.write(new Date().getFullYear());</script> Fox Structures, Inc.</p>
 					</div>
 					<div id="closingLinks">
 						<nav role="navigation" aria-label="Sub Footer Links">
