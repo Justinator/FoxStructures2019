@@ -53,46 +53,54 @@ get_header();
 								$imageBottom = get_sub_field('image_bottom');
 								$imageLeft = get_sub_field('image_left');
 									if( get_row_layout() == 'image_double_stacked' ):
-										echo '<div id="featuredThree" class="pageWidth flex-container centerAlignedContainer">';
-										echo '<div class="col50 smallMarginRight removeBottomMarginMobile">';
-										echo '<a href="' . get_sub_field('project_1_url') . '"><span class="screen-reader-text">' . get_sub_field('project_1_screen_reader_text') . '</span>';
-										echo '<div class="portFeaturedProjectWrapper">';
-										echo '<div class="featuredProjectOverlay"></div>';
-										echo '<div class="featuredProjectContent">';
-										$imageID = $imageLeft['ID'];
-										echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
-										echo '<h4 class="featuredProjectTitle"><span class="projectTitleSpan">' . get_sub_field('project_1_title') . '</span></h4>';
-										echo '</div>';
-										echo '</div>';
-										echo '</a>';
-										echo '</div>';
-										echo '<div class="col50 smallMarginLeft">';
-										echo '<div class="outerWrapper">';
-										echo '<a href="' . get_sub_field('project_2_url') . '"><span class="screen-reader-text">' . get_sub_field('project_2_screen_reader_text') . '</span>';
-										echo '<div class="portFeaturedProjectWrapper">';
-										echo '<div class="featuredProjectOverlay"></div>';
-										echo '<div class="featuredProjectContent">';
-										$imageID = $imageTop['ID'];
-										echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
-										echo '<h4 class="featuredProjectTitle"><span class="projectTitleSpan">' . get_sub_field('project_2_title') . '</span></h4>';
-										echo '</div>';
-										echo '</div>';
-										echo '</a>';
-										echo '</div>';
-										echo '<div class="outerWrapper">';
-										echo '<a href="' . get_sub_field('project_3_url') . '"><span class="screen-reader-text">' . get_sub_field('project_3_screen_reader_text') . '</span>';
-										echo '<div class="portFeaturedProjectWrapper">';
-										echo '<div class="featuredProjectOverlay"></div>';
-										echo '<div class="featuredProjectContent">';
-										$imageID = $imageBottom['ID'];
-										echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
-										echo '<h4 class="featuredProjectTitle"><span class="projectTitleSpan">' . get_sub_field('project_3_title') . '</span></h4>';
-										echo '</div>';
-										echo '</div>';
-										echo '</a>';
-										echo '</div>';
-										echo '</div>';
-										echo '</div>';
+										?>
+										<div id="featuredThree" class="pageWidth flex-container centerAlignedContainer">
+											<div class="col50 smallMarginRight removeBottomMarginMobile">
+												<a href="<?php echo get_sub_field('project_1_url') ?> "><span class="screen-reader-text"><?php echo get_sub_field('project_1_screen_reader_text') ?></span>
+													<div class="portFeaturedProjectWrapper">
+														<div class="featuredProjectOverlay"></div>
+														<div class="featuredProjectContent">
+															<?php
+															$imageID = $imageLeft['ID'];
+															echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+															?>
+															<h4 class="featuredProjectTitle"><span class="projectTitleSpan"><?php echo get_sub_field('project_1_title') ?></span></h4>
+														</div>
+													</div>
+												</a>
+											</div>
+										<div class="col50 smallMarginLeft">
+											<div class="outerWrapper">
+												<a href="<?php echo get_sub_field('project_2_url') ?>"><span class="screen-reader-text"><?php echo get_sub_field('project_2_screen_reader_text') ?></span>
+													<div class="portFeaturedProjectWrapper">
+														<div class="featuredProjectOverlay"></div>
+														<div class="featuredProjectContent">
+															<?php
+															$imageID = $imageTop['ID'];
+															echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+															?>
+															<h4 class="featuredProjectTitle"><span class="projectTitleSpan"><?php echo get_sub_field('project_2_title') ?></span></h4>
+														</div>
+													</div>
+													</a>
+												</div>
+												<div class="outerWrapper">
+													<a href="<?php echo get_sub_field('project_3_url') ?>"><span class="screen-reader-text"><?php get_sub_field('project_3_screen_reader_text') ?></span>
+														<div class="portFeaturedProjectWrapper">
+															<div class="featuredProjectOverlay"></div>
+															<div class="featuredProjectContent">
+																<?php
+																$imageID = $imageBottom['ID'];
+																echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+																?>
+																<h4 class="featuredProjectTitle"><span class="projectTitleSpan"><?php echo get_sub_field('project_3_title') ?></span></h4>
+															</div>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+										<?php
 					        endif;
 					    endwhile;
 					else :
@@ -114,6 +122,7 @@ get_header();
 					</div>
 				</div>
 				<div id="portfolioWrapper" class="pageWidth portfolioWrapper">
+					<?php get_template_part("/inc/projects/commercial/temme-waterfront-workshop"); ?>
 					<?php get_template_part("/inc/projects/agricultural/forest-brook-farms"); ?>
 					<?php get_template_part("/inc/projects/commercial/the-oaks"); ?>
 					<?php get_template_part("/inc/projects/commercial/appleton-yacht-club"); ?>
@@ -161,8 +170,5 @@ get_header();
 		</section>
 	</main>
 </div>
-<script>
-filterSelection("all");
-</script>
 <?php
 get_footer();

@@ -1,7 +1,7 @@
 <?php
 /**
- * @package foxStructuresResponsive
- */
+* @package foxStructuresResponsive
+*/
 get_header();
 ?>
 <div id="primary" class="content-area">
@@ -71,7 +71,9 @@ get_header();
 								through construction to your final walk-through, you’ll have our dedicated
 								attention every step of the way.
 							</p>
-							<a href="/about-us/" class="primaryButton">About the company</a>
+							<p>
+								<a href="/about-us/" class="primaryButton">About the company</a>
+							</p>
 						</div>
 					</div>
 					<div class="col50">
@@ -84,5 +86,4 @@ get_header();
 	</main>
 </div>
 <?php
-
 get_footer();

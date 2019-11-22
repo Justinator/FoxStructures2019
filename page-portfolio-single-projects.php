@@ -24,8 +24,5 @@ get_header();
 		</div>
 	</main><!-- #main -->
 </div><!-- #primary -->
-<script>
-filterSelection("all");
-</script>
 <?php
 get_footer();

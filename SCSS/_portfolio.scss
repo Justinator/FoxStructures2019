@@ -261,6 +261,18 @@
     }
 	}
 }
+.relatedPostWrap {
+  width: 100%;
+  @include breakpoint(largeMobileScreen){
+    width: 50%;
+  }
+  @include breakpoint(laptopScreen){
+    width: 33%;
+  }
+  a {
+    width: 100% !important;
+  }
+}
 #largeDroneImage{
   @include breakpoint(smallScreen){
     margin-top: 10px;
@@ -378,4 +390,54 @@
 }
 .videoWrapper {
   margin-bottom: 10px;
+}
+.nav-links-container {
+  margin-top: 50px;
+  .nav-links {
+    width: 100%;
+  	display: -webkit-box;
+  	display: -ms-flexbox;
+  	display: flex;
+  	-webkit-box-align: center;
+  	    -ms-flex-align: center;
+  	        align-items: center;
+  }
+  .nav-previous, .nav-next {
+    font-size: 14px;
+    @include breakpoint (largeMobileScreen) {
+      font-size: 20px;
+    }
+    a {
+      background-color: $primaryGrey;
+      color: $white;
+      text-decoration: none;
+      padding: 10px;
+      -webkit-transition: .3s ease all;
+      transition: .3s ease all;
+      &:hover{
+        background-color: $primaryYellow;
+        -webkit-transition: .3s ease all;
+        transition: .3s ease all;
+      }
+    }
+  }
+  .nav-back {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    a {
+      color: $primaryGrey;
+      text-decoration: none;
+    }
+  }
+  .back {
+  	display: -webkit-box;
+  	display: -ms-flexbox;
+  	display: flex;
+  	-webkit-box-orient: vertical;
+  	-webkit-box-direction: normal;
+  	    -ms-flex-direction: column;
+  	        flex-direction: column;
+  	align-items: center;
+  }
 }

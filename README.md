@@ -146,7 +146,7 @@ things up this way to have full control of styles and usage. I also wanted full 
 I didn't want to bury the good projects like the old site did. Projects are displayed exactly the way you set them, so if you have a great new project to add, add it in the featured projects
 section at the top and then move the project you're replacing to the first spot of the main portfolio section so it's easy for site visitors to see.
 
-To allow full customization on project pages, the more detailed projects have their own page files. The projects that have little to no detail just use the default template. To create a
+Featured projects use the template file Featured Case Study Projects. The projects that have little to no detail just use the default template. To create a
 new project page duplicate the oaks golf club page for a good base and start adding in your new info and project images.
 
 ### Add your new project to the portfolio.

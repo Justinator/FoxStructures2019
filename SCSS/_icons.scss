@@ -1,4 +1,7 @@
 /*9.0 Icon Styling -------------------------------------------*/
+svg {
+	width: 0;
+}
 .whiteIcon{
 	stroke: $white;
 	fill: $white;
@@ -6,6 +9,14 @@
 	transition: .3s ease all;
 	width: 20px;
 	height: 20px;
+}
+.icon-th {
+	stroke: $primaryGrey;
+	fill: $primaryGrey;
+	-webkit-transition: .3s ease all;
+	transition: .3s ease all;
+	width: 40px;
+	height: 40px;
 }
 .greyIcon{
 	color: $lightGrey;
@@ -88,4 +99,13 @@
   stroke-width: 0;
   stroke: $white;
   fill: $white;
+}
+.path1 {
+	fill:#FFFFFF;
+}
+.path2 {
+	fill:#A6A8AB;
+}
+.path3 {
+	fill:#404041;
 }

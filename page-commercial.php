@@ -76,8 +76,5 @@ get_header();
 		</section>
 	</main>
 </div>
-<script>
-filterSelection("all");
-</script>
 <?php
 get_footer();

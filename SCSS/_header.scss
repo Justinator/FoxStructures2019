@@ -236,6 +236,7 @@
 	-webkit-transition: .3s ease all;
 	transition: .3s ease all;
 	font-size: 14px;
+	position: relative;
 		&:hover{
 			color: $lightGrey;
 			-webkit-transition: .3s ease all;
@@ -248,7 +249,10 @@
 .entry-header{
 	display:none;
 }
-.siteLogo{
+.logoWrap {
+	text-decoration: none;
+}
+.foxStructuresLogo{
 	margin-top: 8px;
 	height: auto;
 	@include breakpoint(smallScreen){

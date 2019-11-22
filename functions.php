@@ -197,6 +197,9 @@ function search_filter( $query ) {
     return $query;
 }
 add_filter('pre_get_posts','search_filter');
+require_once("inc/portfolio/custom-post-type.php");
+require_once("inc/portfolio/custom-cats.php");
+require_once("inc/portfolio/custom-search.php");
 /**
 * Enqueue scripts and styles.
 */
@@ -219,9 +222,3 @@ require get_template_directory() . '/inc/template-tags.php';
 * Functions which enhance the theme by hooking into WordPress.
 */
 require get_template_directory() . '/inc/template-functions.php';
-/**
-* Load Jetpack compatibility file.
-*/
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
-}

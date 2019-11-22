@@ -60,15 +60,9 @@
 	}
 }
 #contactInfo{
-	@include breakpoint(smallScreen){
-		width: 100%;
-	}
-	@include breakpoint(largeMobileScreen){
-		width: 50%;
-	}
-	@include breakpoint(laptopScreen){
-		width: 40%;
-	}
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
 }
 .site-footer{
 	position: relative;
@@ -82,9 +76,9 @@
 	background-repeat: no-repeat;
 }
 .footerLogo{
-	margin-top: 10px;
 	height: auto;
 	width: 180px;
+	text-decoration: none;
 		@include breakpoint(smallScreen){
 			width: 150px;
 		}

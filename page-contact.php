@@ -21,8 +21,10 @@ get_header();
 							<img src="/wp-content/uploads/2018/12/Fox_GuyGroupMedium.jpg" class="image" alt="Group photo of the Fox Structures Team on Owners">
 							<h5 class="noMargin">Fox Structures, Inc.</h5>
 							<div class="underline"></div>
-							<p>2201 Eastline Line Rd<br>
-							Kaukauna,WI 54130</p>
+							<address>
+								<p>2201 Eastline Line Rd<br>
+								Kaukauna,WI 54130</p>
+							</address>
 							<hr>
 							<p>
 							Fox Structures is located in the Kaukauna Industrial Park, near U.S. 41 between Hwy 55 and County Road J.

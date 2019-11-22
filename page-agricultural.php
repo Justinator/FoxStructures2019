@@ -62,6 +62,7 @@ get_header();
 					<div class="underline"></div>
 				</div>
 				<div id="portfolioWrapper" class="pageWidth portfolioWrapper">
+					<?php get_template_part("/inc/projects/agricultural/vir-clar-farms"); ?>
 					<?php get_template_part("/inc/projects/agricultural/forest-brook-farms"); ?>
 					<?php get_template_part("/inc/projects/agricultural/kesler-family-farm"); ?>
 					<?php get_template_part("/inc/projects/agricultural/rosendale-dairy"); ?>
@@ -88,8 +89,5 @@ get_header();
 		</section>
 	</main>
 </div>
-<script>
-filterSelection("all");
-</script>
 <?php
 get_footer();

@@ -940,7 +940,8 @@ template {
   text-decoration: none;
   -webkit-transition: .3s ease all;
   transition: .3s ease all;
-  font-size: 14px; }
+  font-size: 14px;
+  position: relative; }
   .secondaryLink:hover {
     color: #f6f6f6;
     -webkit-transition: .3s ease all;
@@ -952,20 +953,23 @@ template {
 .entry-header {
   display: none; }
 
-.siteLogo {
+.logoWrap {
+  text-decoration: none; }
+
+.foxStructuresLogo {
   margin-top: 8px;
   height: auto; }
   @media (max-width: 599px) {
-    .siteLogo {
+    .foxStructuresLogo {
       width: 120px; } }
   @media (min-width: 600px) {
-    .siteLogo {
+    .foxStructuresLogo {
       width: 150px; } }
   @media (min-width: 992px) {
-    .siteLogo {
+    .foxStructuresLogo {
       width: 130px; } }
   @media (min-width: 1250px) {
-    .siteLogo {
+    .foxStructuresLogo {
       width: 160px; } }
 
 nav {
@@ -1244,15 +1248,10 @@ nav {
       #footer-menu li a {
         font-size: 20px; } }
 
-@media (max-width: 599px) {
-  #contactInfo {
-    width: 100%; } }
-@media (min-width: 600px) {
-  #contactInfo {
-    width: 50%; } }
-@media (min-width: 992px) {
-  #contactInfo {
-    width: 40%; } }
+#contactInfo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
 
 .site-footer {
   position: relative;
@@ -1266,9 +1265,9 @@ nav {
   background-repeat: no-repeat; }
 
 .footerLogo {
-  margin-top: 10px;
   height: auto;
-  width: 180px; }
+  width: 180px;
+  text-decoration: none; }
   @media (max-width: 599px) {
     .footerLogo {
       width: 150px; } }
@@ -1665,7 +1664,21 @@ button {
 /* 8.0 General Body Styles -------------------------------------------*/
 body {
   background: #FFFFFF;
-  margin: 0; }
+  margin: 0;
+  overflow-x: hidden; }
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important; }
 
 ::-moz-selection {
   background: rgba(239, 174, 30, 0.5); }
@@ -1709,7 +1722,13 @@ body {
 .fourOhFour {
   font-size: 5em; }
 
+address {
+  font-style: normal; }
+
 /*9.0 Icon Styling -------------------------------------------*/
+svg {
+  width: 0; }
+
 .whiteIcon {
   stroke: #FFFFFF;
   fill: #FFFFFF;
@@ -1717,6 +1736,14 @@ body {
   transition: .3s ease all;
   width: 20px;
   height: 20px; }
+
+.icon-th {
+  stroke: #404041;
+  fill: #404041;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+  width: 40px;
+  height: 40px; }
 
 .greyIcon {
   color: #f6f6f6; }
@@ -1798,6 +1825,15 @@ body {
   stroke-width: 0;
   stroke: #FFFFFF;
   fill: #FFFFFF; }
+
+.path1 {
+  fill: #FFFFFF; }
+
+.path2 {
+  fill: #A6A8AB; }
+
+.path3 {
+  fill: #404041; }
 
 /* 10.0 Homepage stylings -------------------------------------------*/
 .heroHeadingWrap {
@@ -2097,7 +2133,8 @@ body {
   width: 85%;
   margin: 0 auto;
   position: relative;
-  top: -50px; }
+  top: -50px;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1); }
 
 .categoryImageWrapper {
   position: relative; }
@@ -2498,6 +2535,30 @@ body {
   margin-bottom: 15px; }
 .post p {
   margin-top: 15px; }
+.post .nav-previous {
+  background: #404041;
+  padding: 10px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all; }
+  .post .nav-previous a {
+    color: #FFFFFF;
+    text-decoration: none; }
+  .post .nav-previous:hover {
+    background: #404041;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all; }
+.post .nav-next {
+  background: #404041;
+  padding: 10px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all; }
+  .post .nav-next a {
+    color: #FFFFFF;
+    text-decoration: none; }
+  .post .nav-next:hover {
+    background: #404041;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all; }
 
 @media (max-width: 599px) {
   .singlePost .entry-title {
@@ -2508,19 +2569,6 @@ body {
 @media (min-width: 992px) {
   .singlePost .entry-title {
     margin-top: 50px; } }
-
-.screen-reader-text {
-  border: 0;
-  clip: rect(1px, 1px, 1px, 1px);
-  -webkit-clip-path: inset(50%);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute !important;
-  width: 1px;
-  word-wrap: normal !important; }
 
 .blogTitleLink {
   text-decoration: none;
@@ -2564,32 +2612,6 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-
-.nav-previous {
-  background: #404041;
-  padding: 10px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all; }
-  .nav-previous a {
-    color: #FFFFFF;
-    text-decoration: none; }
-  .nav-previous:hover {
-    background: #404041;
-    -webkit-transition: .3s ease all;
-    transition: .3s ease all; }
-
-.nav-next {
-  background: #404041;
-  padding: 10px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all; }
-  .nav-next a {
-    color: #FFFFFF;
-    text-decoration: none; }
-  .nav-next:hover {
-    background: #404041;
-    -webkit-transition: .3s ease all;
-    transition: .3s ease all; }
 
 .post-thumbnail {
   text-align: center; }
@@ -2875,6 +2897,17 @@ body {
       .moreFeaturedProjectsWrapper a {
         width: 33%; } }
 
+.relatedPostWrap {
+  width: 100%; }
+  @media (min-width: 600px) {
+    .relatedPostWrap {
+      width: 50%; } }
+  @media (min-width: 992px) {
+    .relatedPostWrap {
+      width: 33%; } }
+  .relatedPostWrap a {
+    width: 100% !important; }
+
 @media (max-width: 599px) {
   #largeDroneImage {
     margin-top: 10px; } }
@@ -2985,6 +3018,49 @@ body {
 
 .videoWrapper {
   margin-bottom: 10px; }
+
+.nav-links-container {
+  margin-top: 50px; }
+  .nav-links-container .nav-links {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .nav-links-container .nav-previous, .nav-links-container .nav-next {
+    font-size: 14px; }
+    @media (min-width: 600px) {
+      .nav-links-container .nav-previous, .nav-links-container .nav-next {
+        font-size: 20px; } }
+    .nav-links-container .nav-previous a, .nav-links-container .nav-next a {
+      background-color: #404041;
+      color: #FFFFFF;
+      text-decoration: none;
+      padding: 10px;
+      -webkit-transition: .3s ease all;
+      transition: .3s ease all; }
+      .nav-links-container .nav-previous a:hover, .nav-links-container .nav-next a:hover {
+        background-color: #f4a81d;
+        -webkit-transition: .3s ease all;
+        transition: .3s ease all; }
+  .nav-links-container .nav-back {
+    display: flex;
+    justify-content: center;
+    text-align: center; }
+    .nav-links-container .nav-back a {
+      color: #404041;
+      text-decoration: none; }
+  .nav-links-container .back {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    align-items: center; }
 
 /* 18.0 Careers Page stylings -------------------------------------------*/
 .subNavLink {
