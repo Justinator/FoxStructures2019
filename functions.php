@@ -200,6 +200,7 @@ add_filter('pre_get_posts','search_filter');
 require_once("inc/portfolio/custom-post-type.php");
 require_once("inc/portfolio/custom-cats.php");
 require_once("inc/portfolio/custom-search.php");
+require_once("inc/header/get-child-pages.php");
 /**
 * Enqueue scripts and styles.
 */

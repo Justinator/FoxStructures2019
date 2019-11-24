@@ -4,6 +4,39 @@
 }
 #featuredThree {
   margin-top: 25px;
+  .featured {
+    background-size: cover;
+    background-position: center right;
+    position: relative;
+  }
+  .colLeft {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 10px;
+    @include breakpoint (laptopScreen) {
+      height: 500px;
+      width: 60%;
+      margin-bottom: 0;
+    }
+  }
+  .portFeaturedProjectWrapper {
+    position: relative;
+    height: calc(100% + 10px);
+  }
+  .outerWrapper {
+    height: 245px;
+    width: 100%;
+  }
+  .outerWrapper:first-of-type {
+    margin-bottom: 10px;
+  }
+  a {
+    height: 100%;
+    width: 100%;
+  }
+  h4 {
+    font-size: 1em;
+  }
 }
 .paddedWrapper{
   @include breakpoint(smallScreen){
@@ -391,6 +424,11 @@
 .videoWrapper {
   margin-bottom: 10px;
 }
+.postWrapper {
+  .post-thumbnail {
+    margin: 0 auto;
+  }
+}
 .nav-links-container {
   margin-top: 50px;
   .nav-links {
@@ -440,4 +478,7 @@
   	        flex-direction: column;
   	align-items: center;
   }
+}
+.relatedposts {
+  margin-top: 25px;
 }

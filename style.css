@@ -1661,6 +1661,31 @@ button {
     -webkit-transition: .2s ease all;
     transition: .2s ease all; }
 
+.post .nav-previous, .search .nav-previous {
+  background: #404041;
+  padding: 10px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all; }
+  .post .nav-previous a, .search .nav-previous a {
+    color: #FFFFFF;
+    text-decoration: none; }
+  .post .nav-previous:hover, .search .nav-previous:hover {
+    background: #404041;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all; }
+.post .nav-next, .search .nav-next {
+  background: #404041;
+  padding: 10px;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all; }
+  .post .nav-next a, .search .nav-next a {
+    color: #FFFFFF;
+    text-decoration: none; }
+  .post .nav-next:hover, .search .nav-next:hover {
+    background: #404041;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all; }
+
 /* 8.0 General Body Styles -------------------------------------------*/
 body {
   background: #FFFFFF;
@@ -2521,6 +2546,9 @@ svg {
 .pagenav {
   list-style-type: none; }
 
+.page-id-806 h3 {
+  margin-bottom: 0; }
+
 /* 16.0 Archive/News Page stylings -------------------------------------------*/
 @media (max-width: 599px) {
   .post {
@@ -2535,30 +2563,6 @@ svg {
   margin-bottom: 15px; }
 .post p {
   margin-top: 15px; }
-.post .nav-previous {
-  background: #404041;
-  padding: 10px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all; }
-  .post .nav-previous a {
-    color: #FFFFFF;
-    text-decoration: none; }
-  .post .nav-previous:hover {
-    background: #404041;
-    -webkit-transition: .3s ease all;
-    transition: .3s ease all; }
-.post .nav-next {
-  background: #404041;
-  padding: 10px;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all; }
-  .post .nav-next a {
-    color: #FFFFFF;
-    text-decoration: none; }
-  .post .nav-next:hover {
-    background: #404041;
-    -webkit-transition: .3s ease all;
-    transition: .3s ease all; }
 
 @media (max-width: 599px) {
   .singlePost .entry-title {
@@ -2677,6 +2681,32 @@ svg {
 
 #featuredThree {
   margin-top: 25px; }
+  #featuredThree .featured {
+    background-size: cover;
+    background-position: center right;
+    position: relative; }
+  #featuredThree .colLeft {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 10px; }
+    @media (min-width: 992px) {
+      #featuredThree .colLeft {
+        height: 500px;
+        width: 60%;
+        margin-bottom: 0; } }
+  #featuredThree .portFeaturedProjectWrapper {
+    position: relative;
+    height: calc(100% + 10px); }
+  #featuredThree .outerWrapper {
+    height: 245px;
+    width: 100%; }
+  #featuredThree .outerWrapper:first-of-type {
+    margin-bottom: 10px; }
+  #featuredThree a {
+    height: 100%;
+    width: 100%; }
+  #featuredThree h4 {
+    font-size: 1em; }
 
 @media (max-width: 599px) {
   .paddedWrapper {
@@ -3019,6 +3049,9 @@ svg {
 .videoWrapper {
   margin-bottom: 10px; }
 
+.postWrapper .post-thumbnail {
+  margin: 0 auto; }
+
 .nav-links-container {
   margin-top: 50px; }
   .nav-links-container .nav-links {
@@ -3061,6 +3094,9 @@ svg {
     -ms-flex-direction: column;
     flex-direction: column;
     align-items: center; }
+
+.relatedposts {
+  margin-top: 25px; }
 
 /* 18.0 Careers Page stylings -------------------------------------------*/
 .subNavLink {

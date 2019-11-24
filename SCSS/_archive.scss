@@ -15,36 +15,6 @@
     p{
       margin-top: 15px;
     }
-    .nav-previous{
-      background: $primaryGrey;
-      padding: 10px;
-      -webkit-transition: .3s ease all;
-      transition: .3s ease all;
-      a{
-        color: $white;
-        text-decoration: none;
-      }
-      &:hover{
-        background: $primaryGrey;
-        -webkit-transition: .3s ease all;
-        transition: .3s ease all;
-      }
-    }
-    .nav-next{
-      background: $primaryGrey;
-      padding: 10px;
-      -webkit-transition: .3s ease all;
-      transition: .3s ease all;
-      a{
-        color: $white;
-        text-decoration: none;
-      }
-      &:hover{
-        background: $primaryGrey;
-        -webkit-transition: .3s ease all;
-        transition: .3s ease all;
-      }
-    }
 }
 .singlePost{
   .entry-title{
