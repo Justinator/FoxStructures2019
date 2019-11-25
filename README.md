@@ -97,19 +97,7 @@ The services blocks can be found in the inc folder, inside the file services-ove
 
 The homepage featured projects section can be found in featuredHomepageProjects.php. This again holds all images, titles and links for the entire section.
 
-```html
-<div class="featuredProjectWrapper">
-  <a href="/portfolio/the-oaks-golf-course/">
-    <div class="featuredProjectOverlay"></div>
-    <div class="featuredProjectContent">
-      <img src="/wp-content/uploads/2019/02/OaksIntExtStillsMediumSquare.jpg" class="featuredProjectImage" alt="The Oaks Golf Course Club House in Cottage Grove, WI. Designed and built by Fox Structures">
-      <h5 class="featuredProjectTitle"><span class="projectTitleSpan">The Oaks Golf Course</span></h5>
-    </div>
-  </a>
-</div>
-```
-
-To add a new featured project simply switch your URL to your new featured project URL, change your cover image and your title and upload.
+To add a new featured project, navigate to the homepage, find the homepage Featured Projects Section. Here you can select which projects you want to feature on the homepage. Click update when done.
 
 ### Editing the CTA
 
@@ -141,41 +129,23 @@ Add or remove your team member as needed. Each individual team member has their 
 
 ## :hammer: Adding projects to the portfolio
 
-I know this may have not been the most elegant way of setting this up but, I don't like using WordPress plugins like contentViews for things like displaying content. I set
-things up this way to have full control of styles and usage. I also wanted full control of the order that projects are displayed. Since so many of them have very little to no detail,
-I didn't want to bury the good projects like the old site did. Projects are displayed exactly the way you set them, so if you have a great new project to add, add it in the featured projects
-section at the top and then move the project you're replacing to the first spot of the main portfolio section so it's easy for site visitors to see.
+!!! Update !!!
+In order to avoid using WordPress plugins like contentViews for things like displaying content this portfolio now uses a portfolio custom post type for all projects. I wanted to add some inner post navigation, full control of the order that projects are displayed, easier addition of new projects, and better flexibility when selecting related projects.
 
-Featured projects use the template file Featured Case Study Projects. The projects that have little to no detail just use the default template. To create a
-new project page duplicate the oaks golf club page for a good base and start adding in your new info and project images.
+Since so many projects have very little to no detail, I didn't want to bury the good projects like the old site did. Projects are displayed in the order of their post date. The first three featured projects blocks will use the three latest posts to the site. All posts after the first three are listed underneath the featured projects and can be filtered by project category. When a new project is successfully added these will all update on their own with the newest project being added to the first featured project block on the page.
+
+Featured projects use the template file single-portfolio.
 
 ### Add your new project to the portfolio.
 
-Projects are stored in the inc folder. inc>projects>projectType
+Projects are stored in the Portfolio custom post type
 
-1. Navigate to the folder for the project type that you're creating.
-2. In your text editor duplicate one of the existing projects and rename it with whatever your new project is titled. The project file will look like the following:
-
-```html  
-<a href="/portfolio/forest-brook-farms/" class="column agricultural">
-  <div class="featuredImageWrap">
-    <div class="imageWrapper">
-      <img src="/wp-content/uploads/2019/03/forestBrookFarmsExteriorSmallMedium.jpg" class="image">
-      <?php get_template_part("/inc/portfolio-overlay"); ?>
-    </div>
-    <div class="projectInfo">
-      <h5 class="employeeName"><span class="primaryText">Forest Brook Farms</span></h5>
-    </div>
-  </div>
-</a>
-```
-3. Change the project url to the new page that you created for this project.
-4. Make sure your project has the proper class ex. commercial projects will be classed "column commercial". The class titles are used for the gallery filter so make sure those are accurate
-5. Change your projects featured image. To prevent the image issues the old site had I've been using 600x400 images sizes for all projects so the gallery remains consistent. The old images
-were all different sizes and created an uneven and scattered gallery display
-6. In the projectInfo div change your projects Title
-7. Open the portfolio page file page-portfolio.php and add your new template part to the portfolio.
-8. Upload and enjoy your new project
+1. Navigate to the Portfolio.
+2. Click "Add New Project"
+3. Enter your project title
+4. Make sure to select you project category. This is essential to ensure that your projects show up in the filter section of the portfolio. Without this they will not get displayed or filtered.
+5. Set your projects featured image. To prevent the image issues the old site had I've been using 1500x1000 featured images sizes for all projects so the gallery remains consistent. The old images were all different sizes and created an uneven and scattered gallery display
+6. Click publish and enjoy your new project
 
 ## :construction: Adding a new job posting to the careers page
 
