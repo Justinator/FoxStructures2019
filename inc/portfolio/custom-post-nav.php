@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="col60 nav-back">
-      <a href="/projects/" class="back">
+      <a href="/portfolio/" class="back">
         <?php get_template_part("/inc/svg-icons/table") ?>
         Back to all Projects
       </a>

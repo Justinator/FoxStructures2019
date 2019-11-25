@@ -18,7 +18,7 @@ get_header();
 			</div>
 		</section>
 		<section id="pageContent">
-			<section id ="serviceIntro" class="paddedSection">
+			<section id="serviceIntro" class="paddedSection">
 				<div class="limitWidth flex-container">
 					<div class="col20">
 						<?php get_template_part("/inc/services-sidebar"); ?>
@@ -62,28 +62,44 @@ get_header();
 					<div class="underline"></div>
 				</div>
 				<div id="portfolioWrapper" class="pageWidth portfolioWrapper">
-					<?php get_template_part("/inc/projects/agricultural/vir-clar-farms"); ?>
-					<?php get_template_part("/inc/projects/agricultural/forest-brook-farms"); ?>
-					<?php get_template_part("/inc/projects/agricultural/kesler-family-farm"); ?>
-					<?php get_template_part("/inc/projects/agricultural/rosendale-dairy"); ?>
-					<?php get_template_part("/inc/projects/agricultural/milksource"); ?>
-					<?php get_template_part("/inc/projects/agricultural/bill-kocourek"); ?>
-					<?php get_template_part("/inc/projects/agricultural/brickstead"); ?>
-					<?php get_template_part("/inc/projects/agricultural/conard"); ?>
-					<?php get_template_part("/inc/projects/agricultural/fitzpine"); ?>
-					<?php get_template_part("/inc/projects/agricultural/grandview"); ?>
-					<?php get_template_part("/inc/projects/agricultural/grotegut"); ?>
-					<?php get_template_part("/inc/projects/agricultural/larry-becker"); ?>
-					<?php get_template_part("/inc/projects/agricultural/schuh-view"); ?>
-					<?php get_template_part("/inc/projects/agricultural/scott-seward"); ?>
-					<?php get_template_part("/inc/projects/agricultural/seven-oaks"); ?>
-					<?php get_template_part("/inc/projects/agricultural/shiloh"); ?>
-					<?php get_template_part("/inc/projects/agricultural/siemers"); ?>
-					<?php get_template_part("/inc/projects/agricultural/soaring-eagle"); ?>
-					<?php get_template_part("/inc/projects/agricultural/tidy-view"); ?>
-					<?php get_template_part("/inc/projects/agricultural/tinedale"); ?>
-					<?php get_template_part("/inc/projects/agricultural/vogel"); ?>
-					<?php get_template_part("/inc/projects/residential/rieden"); ?>
+					<?php
+					$the_query = new WP_Query( array(
+						'post_type' => 'Portfolio',
+						'tax_query' => array(
+							array (
+	  					'taxonomy' => 'Project Categories',
+  					'field' => 'slug',
+	  			'terms' => 'agricultural',
+						)
+					),
+				) );
+				while ( $the_query->have_posts() ) :
+    		$the_query->the_post();
+				////////////////////////////////
+				// Get the category for the post
+				////////////////////////////////
+				$terms = get_the_terms( get_the_ID(), 'Project Categories' );
+				if ( $terms && ! is_wp_error( $terms ) ) :
+						$cat_links = array();
+						foreach ( $terms as $term ) {
+								$cat_links[] = $term->name;
+						}
+				$custom_cat = join( ", ", $cat_links );
+				endif; ?>
+					<a href="<?php the_permalink() ?>" class="column <?php echo $custom_cat ?>">
+						<div class="featuredImageWrap">
+							<div class="imageWrapper">
+								<?php echo get_the_post_thumbnail( $post_id, 'full' ); ?><br>
+								<?php get_template_part("/inc/portfolio-overlay"); ?>
+							</div>
+							<div class="projectInfo">
+								<h5 class="employeeName"><span class="primaryText"><?php the_title(); ?></span></h5>
+							</div>
+						</div>
+					</a>
+					<?php endwhile;
+				/* Restore original Post Data */
+				wp_reset_postdata(); ?>
 				</div>
 			</section>
 		</section>

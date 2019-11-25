@@ -31,7 +31,7 @@ $args = array(
   'labels' => $labels,
   'public' => true,
   'query_var' => true,
-  'rewrite' => array('slug' => 'projects'),
+  'rewrite' => array('slug' => 'portfolio'),
   'has_archive' => true,
   'hierarchical' => false,
   'menu_icon' => 'dashicons-admin-tools',

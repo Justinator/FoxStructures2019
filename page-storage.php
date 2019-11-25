@@ -54,10 +54,44 @@ get_header();
 					<div class="underline"></div>
 				</div>
 				<div id="portfolioWrapper" class="pageWidth portfolioWrapper">
-					<?php get_template_part("/inc/projects/storage/apple-storage"); ?>
-					<?php get_template_part("/inc/projects/storage/appleton-northest"); ?>
-					<?php get_template_part("/inc/projects/storage/badgerland"); ?>
-					<?php get_template_part("/inc/projects/storage/salm-storage"); ?>
+					<?php
+					$the_query = new WP_Query( array(
+						'post_type' => 'Portfolio',
+						'tax_query' => array(
+							array (
+	  					'taxonomy' => 'Project Categories',
+  					'field' => 'slug',
+	  			'terms' => 'storage',
+						)
+					),
+				) );
+				while ( $the_query->have_posts() ) :
+    		$the_query->the_post();
+				////////////////////////////////
+				// Get the category for the post
+				////////////////////////////////
+				$terms = get_the_terms( get_the_ID(), 'Project Categories' );
+				if ( $terms && ! is_wp_error( $terms ) ) :
+						$cat_links = array();
+						foreach ( $terms as $term ) {
+								$cat_links[] = $term->name;
+						}
+				$custom_cat = join( ", ", $cat_links );
+				endif; ?>
+					<a href="<?php the_permalink() ?>" class="column <?php echo $custom_cat ?>">
+						<div class="featuredImageWrap">
+							<div class="imageWrapper">
+								<?php echo get_the_post_thumbnail( $post_id, 'full' ); ?><br>
+								<?php get_template_part("/inc/portfolio-overlay"); ?>
+							</div>
+							<div class="projectInfo">
+								<h5 class="employeeName"><span class="primaryText"><?php the_title(); ?></span></h5>
+							</div>
+						</div>
+					</a>
+					<?php endwhile;
+				/* Restore original Post Data */
+				wp_reset_postdata(); ?>
 				</div>
 			</section>
 		</section>
