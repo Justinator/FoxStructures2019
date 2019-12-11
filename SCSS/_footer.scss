@@ -139,18 +139,14 @@
 			margin-top: 1em;
 			margin-bottom: 1em;
 		}
-		@include breakpoint(smallScreen){
-			font-size: 14px;
-		}
-		@include breakpoint(largeMobileScreen){
+		@include breakpoint(largeScreen){
 			font-size: 14px;
 		}
     @include breakpoint(largeScreen){
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-			font-size: 16px;
+      -ms-flex-direction: row;
+      flex-direction: row;
     }
       a{
         text-decoration: none;
@@ -218,8 +214,17 @@
 		}
 }
 #closingLinks{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
 	margin: 0;
 	position: relative;
+	@include breakpoint (tabletScreen) {
+		flex-direction: row;
+	}
+	nav {
+		width: auto;
+	}
 	a{
 		padding: 10px;
 	}

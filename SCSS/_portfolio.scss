@@ -437,11 +437,19 @@
   	display: -ms-flexbox;
   	display: flex;
   	-webkit-box-align: center;
-  	    -ms-flex-align: center;
-  	        align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    .nav-next {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+    }
   }
   .nav-previous, .nav-next {
-    font-size: 14px;
+    font-size: 10px;
     @include breakpoint (largeMobileScreen) {
       font-size: 20px;
     }

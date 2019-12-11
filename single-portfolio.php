@@ -106,7 +106,7 @@ get_header();
 									$imageID = $imageBottom['ID'];
 									echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
 									echo '</div>';
-									echo '<div class="col50 smallMarginLeft removeBottomMarginMobile">';
+									echo '<div class="col50 smallMarginLeft">';
 									$imageID = $imageRight['ID'];
 									echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
 									echo '</div>';

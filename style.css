@@ -866,9 +866,9 @@ template {
     -webkit-transform: scaleX(1);
     transform: scaleX(1); }
 
-.current-menu-item a {
+.current-menu-item a, .current-page-ancestor a {
   position: relative; }
-  .current-menu-item a:before {
+  .current-menu-item a:before, .current-page-ancestor a:before {
     position: absolute;
     content: "";
     background: #f4a81d;
@@ -884,7 +884,7 @@ template {
     transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
     -webkit-transform-origin: top right;
     transform-origin: top right; }
-  .current-menu-item a:after {
+  .current-menu-item a:after, .current-page-ancestor a:after {
     position: absolute;
     content: "";
     background: #f4a81d;
@@ -1325,10 +1325,7 @@ nav {
   #copyright p {
     margin-top: 1em;
     margin-bottom: 1em; }
-  @media (max-width: 599px) {
-    #copyright {
-      font-size: 14px; } }
-  @media (min-width: 600px) {
+  @media (min-width: 1250px) {
     #copyright {
       font-size: 14px; } }
   @media (min-width: 1250px) {
@@ -1336,8 +1333,7 @@ nav {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
       -ms-flex-direction: row;
-      flex-direction: row;
-      font-size: 16px; } }
+      flex-direction: row; } }
   #copyright a {
     text-decoration: none;
     color: #FFFFFF; }
@@ -1402,8 +1398,16 @@ nav {
       font-size: 14px; } }
 
 #closingLinks {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   margin: 0;
   position: relative; }
+  @media (min-width: 768px) {
+    #closingLinks {
+      flex-direction: row; } }
+  #closingLinks nav {
+    width: auto; }
   #closingLinks a {
     padding: 10px; }
 
@@ -2131,7 +2135,7 @@ svg {
   text-align: center; }
 
 .servicesWrapper {
-  margin: 0 auto; }
+  margin: 10px auto; }
   @media (max-width: 599px) {
     .servicesWrapper {
       width: 100%; } }
@@ -3062,8 +3066,15 @@ svg {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+    .nav-links-container .nav-links .nav-next {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end; }
   .nav-links-container .nav-previous, .nav-links-container .nav-next {
-    font-size: 14px; }
+    font-size: 10px; }
     @media (min-width: 600px) {
       .nav-links-container .nav-previous, .nav-links-container .nav-next {
         font-size: 20px; } }
