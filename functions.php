@@ -189,7 +189,9 @@ function my_acf_admin_head() {
     <?php
 }
 add_action('acf/input/admin_head', 'my_acf_admin_head');
-
+/*
+* edits to the search query
+*/
 function search_filter( $query ) {
     if ( $query->is_search ) {
         $query->set( 'post_type', array('post','page') );
@@ -197,6 +199,9 @@ function search_filter( $query ) {
     return $query;
 }
 add_filter('pre_get_posts','search_filter');
+/*
+* Add in our custom post types
+*/
 require_once("inc/portfolio/custom-post-type.php");
 require_once("inc/portfolio/custom-cats.php");
 require_once("inc/portfolio/custom-search.php");
