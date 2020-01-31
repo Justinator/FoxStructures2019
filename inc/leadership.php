@@ -4,7 +4,7 @@
     <div class="centerUnderline"></div>
   </div>
   <div class="navWidth leadershipWrapper">
-    <a href="/leadership/mark-mashlan/">
+    <a href="/about-us/leadership/mark-mashlan/">
       <div class="leaderWrap">
         <div class="imageWrapper">
           <img src="/wp-content/uploads/2018/12/Fox_EmployeeMarkMedium.jpg" class="image" alt="Headshot of Fox Structures President Mark Mashlan">
@@ -17,7 +17,7 @@
         </div>
       </div>
     </a>
-    <a href="/leadership/jason-van-egeren/">
+    <a href="/about-us/leadership/jason-van-egeren/">
       <div class="leaderWrap">
         <div class="imageWrapper">
           <img src="/wp-content/uploads/2018/12/Fox_EmployeeJasonMedium.jpg" class="image" alt="Headshot of Fox Structures Sales Rep Jason Van Egeren">
@@ -30,7 +30,7 @@
         </div>
       </div>
     </a>
-    <a href="/leadership/mike-klarner/">
+    <a href="/about-us/leadership/mike-klarner/">
       <div class="leaderWrap">
         <div class="imageWrapper">
           <img src="/wp-content/uploads/2018/12/Fox_EmployeeMikeMedium.jpg" class="image" alt="Headshot of Fox Structures Sales Rep Mike Klarner">
@@ -43,7 +43,7 @@
         </div>
       </div>
     </a>
-    <a href="/leadership/tim-allen/">
+    <a href="/about-us/leadership/tim-allen/">
       <div class="leaderWrap">
         <div class="imageWrapper">
           <img src="/wp-content/uploads/2018/12/Fox_EmployeeTimMedium.jpg" class="image" alt="Headshot of Fox Structures Weld Shop Foreman Tim Allen">
@@ -52,13 +52,13 @@
         <div class="leaderInfo centerText">
           <h5 class="employeeName"><span class="primaryText">Tim Allen</span></h5>
           <div class="centerUnderline"></div>
-          <h6>Weld Shop Foreman</h6>
+          <h6>Agriculture Specialist</h6>
         </div>
       </div>
     </a>
   </div>
   <div class="navWidth leadershipWrapper">
-    <a href="/leadership/alex-sudbrink/">
+    <a href="/about-us/leadership/alex-sudbrink/">
       <div class="leaderWrap">
         <div class="imageWrapper">
           <img src="/wp-content/uploads/2018/12/Fox_EmployeeAlexMedium.jpg" class="image" alt="Headshot of Fox Structures Designer Alex Sudbrink">
@@ -71,7 +71,7 @@
         </div>
       </div>
     </a>
-    <a href="/leadership/travis-woldt/">
+    <a href="/about-us/leadership/travis-woldt/">
       <div class="leaderWrap">
         <div class="imageWrapper">
           <img src="/wp-content/uploads/2018/12/Fox_EmployeeTravisMedium.jpg" class="image" alt="Headshot of Fox Structures Foreman Travis Woldt">
@@ -84,7 +84,7 @@
         </div>
       </div>
     </a>
-    <a href="/leadership/brad-weyenberg/">
+    <a href="/about-us/leadership/brad-weyenberg/">
       <div class="leaderWrap">
         <div class="imageWrapper">
           <img src="/wp-content/uploads/2018/12/Fox_EmployeeBradMedium.jpg" class="image" alt="Headshot of Fox Structures foreman Brad Weyenberg">
@@ -97,7 +97,7 @@
         </div>
       </div>
     </a>
-    <a href="/leadership/jill-mashlan/">
+    <a href="/about-us/leadership/jill-mashlan/">
       <div class="leaderWrap">
         <div class="imageWrapper">
           <img src="/wp-content/uploads/2018/12/Fox_EmployeeJillMedium.jpg" class="image" alt="Headshot of Fox Structures office manager Jill Mashlan">
@@ -107,6 +107,21 @@
           <h5 class="employeeName"><span class="primaryText">Jill Mashlan</span></h5>
           <div class="centerUnderline"></div>
           <h6>Human Resources/Office Manager</h6>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="navWidth leadershipWrapper">
+    <a href="/about-us/leadership/dan-weyers/">
+      <div class="leaderWrap">
+        <div class="imageWrapper">
+          <img src="/wp-content/uploads/2020/01/Dan-HeadShot-600.jpg" class="image" alt="Headshot of Fox Structures Designer Dan Weyers">
+          <div class="leaderImageOverlay"></div>
+        </div>
+        <div class="leaderInfo centerText">
+          <h5 class="employeeName"><span class="primaryText">Dan Weyers</span></h5>
+          <div class="centerUnderline"></div>
+          <h6>Agriculture Specialist</h6>
         </div>
       </div>
     </a>
