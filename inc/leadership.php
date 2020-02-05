@@ -17,19 +17,6 @@
         </div>
       </div>
     </a>
-    <a href="/about-us/leadership/jason-van-egeren/">
-      <div class="leaderWrap">
-        <div class="imageWrapper">
-          <img src="/wp-content/uploads/2018/12/Fox_EmployeeJasonMedium.jpg" class="image" alt="Headshot of Fox Structures Sales Rep Jason Van Egeren">
-          <div class="leaderImageOverlay"></div>
-        </div>
-        <div class="leaderInfo centerText">
-          <h5 class="employeeName"><span class="primaryText">Jason Van Egeren</span></h5>
-          <div class="centerUnderline"></div>
-          <h6>Sales Representative – Agriculture Specialist</h6>
-        </div>
-      </div>
-    </a>
     <a href="/about-us/leadership/mike-klarner/">
       <div class="leaderWrap">
         <div class="imageWrapper">
@@ -43,21 +30,6 @@
         </div>
       </div>
     </a>
-    <a href="/about-us/leadership/tim-allen/">
-      <div class="leaderWrap">
-        <div class="imageWrapper">
-          <img src="/wp-content/uploads/2018/12/Fox_EmployeeTimMedium.jpg" class="image" alt="Headshot of Fox Structures Weld Shop Foreman Tim Allen">
-          <div class="leaderImageOverlay"></div>
-        </div>
-        <div class="leaderInfo centerText">
-          <h5 class="employeeName"><span class="primaryText">Tim Allen</span></h5>
-          <div class="centerUnderline"></div>
-          <h6>Agriculture Specialist</h6>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="navWidth leadershipWrapper">
     <a href="/about-us/leadership/alex-sudbrink/">
       <div class="leaderWrap">
         <div class="imageWrapper">
@@ -84,6 +56,8 @@
         </div>
       </div>
     </a>
+  </div>
+  <div class="navWidth leadershipWrapper">
     <a href="/about-us/leadership/brad-weyenberg/">
       <div class="leaderWrap">
         <div class="imageWrapper">
@@ -107,21 +81,6 @@
           <h5 class="employeeName"><span class="primaryText">Jill Mashlan</span></h5>
           <div class="centerUnderline"></div>
           <h6>Human Resources/Office Manager</h6>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="navWidth leadershipWrapper">
-    <a href="/about-us/leadership/dan-weyers/">
-      <div class="leaderWrap">
-        <div class="imageWrapper">
-          <img src="/wp-content/uploads/2020/01/Dan-HeadShot-600.jpg" class="image" alt="Headshot of Fox Structures Designer Dan Weyers">
-          <div class="leaderImageOverlay"></div>
-        </div>
-        <div class="leaderInfo centerText">
-          <h5 class="employeeName"><span class="primaryText">Dan Weyers</span></h5>
-          <div class="centerUnderline"></div>
-          <h6>Agriculture Specialist</h6>
         </div>
       </div>
     </a>

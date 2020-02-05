@@ -52,6 +52,7 @@ get_header();
 						</div>
 					</div>
 				</div>
+				<?php get_template_part("/inc/employee-videos"); ?>
 			</section>
 		</section>
 	</main>

@@ -57,6 +57,7 @@ get_header();
 				</div>
 			</section>
 			<?php get_template_part("/inc/leadership"); ?>
+			<?php get_template_part("/inc/ag-team"); ?>
 			<section class="navWidth paddedSection">
 				<?php get_template_part('inc/CTA')?>
 			</section>
