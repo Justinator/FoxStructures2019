@@ -11,7 +11,7 @@ get_header();
 				<div class="fullWidth heroHeadingContainer">
 					<div class="heroHeadingWrapper">
 						<div class="heroHeading">
-							<h1 class="noMargin">Storage</h1>
+							<h1 class="noMargin"><?php echo get_the_title(); ?></h1>
 						</div>
 					</div>
 				</div>

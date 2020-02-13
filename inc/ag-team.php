@@ -30,18 +30,5 @@
         </div>
       </div>
     </a>
-    <a href="/about-us/leadership/dan-weyers/">
-      <div class="leaderWrap">
-        <div class="imageWrapper">
-          <img src="/wp-content/uploads/2020/01/Dan-HeadShot-600.jpg" class="image" alt="Headshot of Fox Structures Designer Dan Weyers">
-          <div class="leaderImageOverlay"></div>
-        </div>
-        <div class="leaderInfo centerText">
-          <h5 class="employeeName"><span class="primaryText">Dan Weyers</span></h5>
-          <div class="centerUnderline"></div>
-          <h6>Agriculture Specialist</h6>
-        </div>
-      </div>
-    </a>
   </div>
 </section>
