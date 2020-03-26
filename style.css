@@ -2568,15 +2568,17 @@ svg {
 .post p {
   margin-top: 15px; }
 
-@media (max-width: 599px) {
-  .singlePost .entry-title {
-    margin-top: 125px; } }
-@media (min-width: 600px) {
-  .singlePost .entry-title {
-    margin-top: 75px; } }
-@media (min-width: 992px) {
-  .singlePost .entry-title {
-    margin-top: 50px; } }
+.singlePost .entry-title {
+  margin-bottom: 15px; }
+  @media (max-width: 599px) {
+    .singlePost .entry-title {
+      margin-top: 125px; } }
+  @media (min-width: 600px) {
+    .singlePost .entry-title {
+      margin-top: 75px; } }
+  @media (min-width: 992px) {
+    .singlePost .entry-title {
+      margin-top: 50px; } }
 
 .blogTitleLink {
   text-decoration: none;
@@ -2678,6 +2680,13 @@ svg {
 
 .thumbnailWrapper .post-thumbnail .attachment-post-thumbnail {
   width: 70%; }
+
+.single-post #post-1632 .post-thumbnail img {
+  width: 50%;
+  margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .single-post #post-1632 .post-thumbnail img {
+      width: 30%; } }
 
 /* 17.0 Portfolio Page stylings -------------------------------------------*/
 .portfolioHero {

@@ -18,6 +18,7 @@
 }
 .singlePost{
   .entry-title{
+    margin-bottom: 15px;
     @include breakpoint(smallScreen){
       margin-top: 125px;
     }
@@ -142,6 +143,19 @@
   .post-thumbnail{
     .attachment-post-thumbnail{
       width: 70%;
+    }
+  }
+}
+.single-post {
+  #post-1632 {
+    .post-thumbnail {
+      img {
+        width: 50%;
+        margin-bottom: 0;
+        @include breakpoint (tabletScreen) {
+          width: 30%;
+        }
+      }
     }
   }
 }
