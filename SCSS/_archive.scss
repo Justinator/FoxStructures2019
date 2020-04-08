@@ -1,4 +1,7 @@
 /* 16.0 Archive/News Page stylings -------------------------------------------*/
+.blueprintHero{
+	background-image: url("/wp-content/uploads/2019/03/CustomPlans-CroppedMedium-1.jpg");
+}
 .post{
   @include breakpoint(smallScreen){
     padding: 0 0 20px 0;

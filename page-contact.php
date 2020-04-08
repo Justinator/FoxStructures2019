@@ -18,7 +18,7 @@ get_header();
 						<div id="formWrapInner">
 							<h4 class="noMargin">Contact Us to Discuss Your Project.</h4>
 							<div class="underline"></div>
-							<img src="/wp-content/uploads/2018/12/Fox_GuyGroupMedium.jpg" class="image" alt="Group photo of the Fox Structures Team on Owners">
+							<img src="/wp-content/uploads/2020/04/Fox-Structures-Owners-Group.jpg" class="image" alt="Group photo of the Fox Structures Team on Owners">
 							<h5 class="noMargin">Fox Structures, Inc.</h5>
 							<div class="underline"></div>
 							<address>
