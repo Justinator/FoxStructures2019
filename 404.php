@@ -16,7 +16,7 @@ get_header();
 					<img src="https://foxstructures.com/wp-content/uploads/2019/03/foxStructuresEmployeeOnJob3-1.jpg" class="image">
 					<p>View some of featured projects below, or try going back to the <a href="<?=site_url()?>" class="primaryLink">homepage</a></p>
 				</div><!-- .page-content -->
-				<?php get_template_part("/inc/projects/featured-projects"); ?>
+				<?php get_template_part('/template-parts/latest-projects'); ?>
 			</section><!-- .error-404 -->
 		</div>
 	</main><!-- #main -->

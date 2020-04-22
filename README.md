@@ -3,16 +3,6 @@ A custom WordPress website theme for Fox Structures
 
 # :metal: Getting started
 
-1. [Pages](#page_with_curl-pages)
-2. [Styles](#dancer-styles)
-3. [Navigation](#rocket-navigation)
-4. [Footer](#shoe-footer)
-5. [Homepage](#house-homepage)
-6. [About](#cow2-about)
-7. [Portfolio](#hammer-adding-projects-to-the-portfolio)
-8. [Careers](#construction-adding-a-new-job-posting-to-the-careers-page)
-9. [News](#newspaper-news-posts)
-
 # :open_file_folder: Basic File Structure
 
 ## :page_with_curl: Pages
@@ -75,77 +65,33 @@ Functions.php contains any custom funtions for the site
 
 # :eyes: Usage
 
-## :rocket: Navigation
+## :black_nib: Writing to your SCSS file
 
-This theme has three registered menus. Main menu for the primary navigation, footer menu for the footer menu and mobile menu, for customizing separate menus for each of these locations if needed.
-
-To edit the main navigation use the header.php file
-
-## :shoe: Footer
-
-Edit the sites footer find footer.php
-
-## :house: Homepage
-
-The homepage uses the front-page.php file
-
-### Editing the services blocks on the homepage
-
-The services blocks can be found in the inc folder, inside the file services-overview.php. This file contains the entire section, holding images, descriptions and links to each service page
-
-### Featured Homepage Projects
-
-The homepage featured projects section can be found in featuredHomepageProjects.php. This again holds all images, titles and links for the entire section.
-
-To add a new featured project, navigate to the homepage, find the homepage Featured Projects Section. Here you can select which projects you want to feature on the homepage. Click update when done.
-
-### Editing the CTA
-
-At the time of this build we were promoting Fox Structures careers and trying to drive viewers to this page. To update this CTA section navigate to the inc folder and find the file CTA.php
-
-## :cow2: About
-
-### The leadership display  
-
-The leadership team section can be found in the inc folder, titled leadership.php.
-
-```html
-<a href="/leadership/mark-mashlan/">
-  <div class="leaderWrap">
-    <div class="imageWrapper">
-      <img src="/wp-content/uploads/2018/12/Fox_EmployeeMarkMedium.jpg" class="image" alt="Headshot of Fox Structures President Mark Mashlan">
-      <div class="leaderImageOverlay"></div>
-    </div>
-    <div class="leaderInfo centerText">
-      <h5 class="employeeName"><span class="primaryText">Mark Mashlan</span></h5>
-      <div class="centerUnderline"></div>
-      <h6>President</h6>
-    </div>
-  </div>
-</a>
-```
-
-Add or remove your team member as needed. Each individual team member has their own page, where their headshot and bio are displayed. These pages just use the default template.
+sass --watch \SCSS/style.scss:style.css
 
 ## :hammer: Adding projects to the portfolio
 
-!!! Update !!!
-In order to avoid using WordPress plugins like contentViews for things like displaying content this portfolio now uses a portfolio custom post type for all projects. I wanted to add some inner post navigation, full control of the order that projects are displayed, easier addition of new projects, and better flexibility when selecting related projects.
+I know this may have not been the most elegant way of setting this up but, I don't like using WordPress plugins like contentViews for things like displaying content. I set
+things up this way to have full control of styles and usage. I also wanted full control of the order that projects are displayed. Since so many of them have very little to no detail,
+I didn't want to bury the good projects like the old site did. Projects are displayed exactly the way you set them, so if you have a great new project to add, add it in the featured projects
+section at the top and then move the project you're replacing to the first spot of the main portfolio section so it's easy for site visitors to see.
 
-Since so many projects have very little to no detail, I didn't want to bury the good projects like the old site did. Projects are displayed in the order of their post date. The first three featured projects blocks will use the three latest posts to the site. All posts after the first three are listed underneath the featured projects and can be filtered by project category. When a new project is successfully added these will all update on their own with the newest project being added to the first featured project block on the page.
-
-Featured projects use the template file single-portfolio.
+To allow full customization on project pages, the more detailed projects have their own page files. The projects that have little to no detail just use the default template. To create a
+new project page duplicate the oaks golf club page for a good base and start adding in your new info and project images.
 
 ### Add your new project to the portfolio.
 
-Projects are stored in the Portfolio custom post type
+Projects are stored in the inc folder. inc>projects>projectType
 
-1. Navigate to the Portfolio.
-2. Click "Add New Project"
-3. Enter your project title
-4. Make sure to select you project category. This is essential to ensure that your projects show up in the filter section of the portfolio. Without this they will not get displayed or filtered.
-5. Set your projects featured image. To prevent the image issues the old site had I've been using 1500x1000 featured images sizes for all projects so the gallery remains consistent. The old images were all different sizes and created an uneven and scattered gallery display
-6. Click publish and enjoy your new project
+1. Navigate to the folder for the project type that you're creating.
+2. In your text editor duplicate one of the existing projects and rename it with whatever your new project is titled.
+3. Change the project url to the new page that you created for this project.
+4. Make sure your project has the proper class ex. commercial projects will be classed "column commercial". The class titles are used for the gallery filter so make sure those are accurate
+5. Change your projects featured image. To prevent the image issues the old site had I've been using 600x400 images sizes for all projects so the gallery remains consistent. The old images
+were all different sizes and created an uneven and scattered gallery display
+6. In the projectInfo div change your projects Title
+7. Open the portfolio page file page-portfolio.php and add your new template part to the portfolio.
+8. Upload and enjoy your new project
 
 ## :construction: Adding a new job posting to the careers page
 
@@ -155,16 +101,6 @@ Projects are stored in the Portfolio custom post type
 4. To update the sidebar navigate to the inc folder and find careers-sidebar.php.
 5. Add a new list item and upload  
 
-## Services Pages
+## :rocket: Navigation
 
-Each services page has it’s own single page file. To edit the services sub-nav/sidebar navigate to the inc folder and find services-sidebar.php.
-
-## :newspaper: News Posts  
-
-The news page uses the single.php template file and all archive page files/components can be found in the template-parts folder.
-
-### Adding a blog post  
-
-Nothing fancy here. Simply add a blog post just like you would any standard WordPress site. Add a featured image, add your author and change to the News category.
-
-Hopefully that covers anything that you will need to update with this site.
+This theme has three registered menus. Main menu for the primary navigation, footer menu for the footer menu and mobile menu, for customizing separate menus for each of these locations if needed.

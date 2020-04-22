@@ -107,61 +107,6 @@ function foxStructuresResponsive_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'foxStructuresResponsive_widgets_init' );
-
-function foxStructuresResponsiveChild_fonts_url() {
- $fonts_url = '';
-/**
-* Translators: If there are characters in your language that are not
-* supported by Libre Franklin and Open Sans, translate this to 'off'. Do not translate
-* into your own language.
-*/
- $Poppins = _x( 'on', 'Poppins font: on or off', 'foxStructuresResponsiveChild' );
- $OpenSans = _x( 'on', 'Open Sans font: on or off', 'foxStructuresResponsiveChild' );
-
- $font_families = array();
-
- if ( 'off' !== $Poppins ) {
-	 $font_families[] = 'Poppins:400,700,900';
- }
-
- if ( 'off' !== 	$OpenSans ) {
-	 $font_families[] = 'Open Sans:400,700';
- }
-
-
- if ( in_array( 'on', array($Poppins, 	$OpenSans) ) ) {
-
-	 $query_args = array(
-		 'family' => urlencode( implode( '|', $font_families ) ),
-		 'subset' => urlencode( 'latin,latin-ext' ),
-	 );
-
-	 $fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
- }
-
- return esc_url_raw( $fonts_url );
-}
-
-/**
- * Add preconnect for Google Fonts.
- *
- * @since Twenty Seventeen 1.0
- *
- * @param array  $urls           URLs to print for resource hints.
- * @param string $relation_type  The relation type the URLs are printed.
- * @return array $urls           URLs to print for resource hints.
- */
-function foxStructuresResponsiveChild_resource_hints( $urls, $relation_type ) {
- if ( wp_style_is( 'foxStructuresResponsiveChild-fonts', 'queue' ) && 'preconnect' === $relation_type ) {
-	 $urls[] = array(
-		 'href' => 'https://fonts.gstatic.com',
-		 'crossorigin',
-	 );
- }
-
- return $urls;
-}
-add_filter( 'wp_resource_hints', 'foxStructuresResponsiveChild_resource_hints', 10, 2 );
 /*********************************************************
 Add custom admin login screen styles
 *********************************************************/
@@ -169,26 +114,6 @@ function my_login_stylesheet() {
     wp_enqueue_style( 'custom-login', get_stylesheet_directory_uri() . '/style-login.css' );
 }
 add_action( 'login_enqueue_scripts', 'my_login_stylesheet' );
-
-// Advanced Custom Fields Customizations
-// Add ACF options page for global settings
-if( function_exists('acf_add_options_page') ) {
-	acf_add_options_page();
-}
-// Set fields to collapsed for a condensed view for new users
-function my_acf_admin_head() {
-    ?>
-    <script type="text/javascript">
-        (function($){
-            $(document).ready(function(){
-                $('.layout').addClass('-collapsed');
-                $('.acf-postbox').addClass('closed');
-            });
-        })(jQuery);
-    </script>
-    <?php
-}
-add_action('acf/input/admin_head', 'my_acf_admin_head');
 /*
 * edits to the search query
 */
@@ -200,49 +125,22 @@ function search_filter( $query ) {
 }
 add_filter('pre_get_posts','search_filter');
 /********************************************
-Remove default authentication and require login through password only
+Require login by email address
+********************************************/
+require_once("inc/login-by-email.php");
+/*********************************************
+Limit Login Attempts
 *********************************************/
-//remove wordpress authentication
-remove_filter('authenticate', 'wp_authenticate_username_password', 20);
-add_filter('authenticate', function($user, $email, $password){
-//Check for empty fields
-  if(empty($email) || empty ($password)){
-    //create new error object and add errors to it.
-    $error = new WP_Error();
-    if(empty($email)){ //No email
-        $error->add('empty_username', __('<strong>ERROR</strong>: Email field is empty.'));
-    }
-    else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){ //Invalid Email
-        $error->add('invalid_username', __('<strong>ERROR</strong>: Email is invalid.'));
-    }
-    if(empty($password)){ //No password
-        $error->add('empty_password', __('<strong>ERROR</strong>: Password field is empty.'));
-    }
-    return $error;
-  }
-  //Check if user exists in WordPress database
-  $user = get_user_by('email', $email);
-  //bad email
-  if(!$user){
-    $error = new WP_Error();
-    $error->add('invalid', __('<strong>ERROR</strong>: Either the email or password you entered is invalid.'));
-    return $error;
-  }
-  else{ //check password
-    if(!wp_check_password($password, $user->user_pass, $user->ID)){ //bad password
-      $error = new WP_Error();
-      $error->add('invalid', __('<strong>ERROR</strong>: Either the email or password you entered is invalid.'));
-      return $error;
-    }else{
-      return $user; //passed
-    }
-  }
-}, 20, 3);
+require_once("inc/limit-login.php");
+/*********************************************************
+Advanced Custom Fields Customizations
+*********************************************************/
+require_once("inc/acf/acf.php");
 /*
 * Add in our custom post types
 */
-require_once("inc/portfolio/custom-post-type.php");
-require_once("inc/portfolio/custom-cats.php");
+require_once("inc/custom-post-type.php");
+require_once("inc/custom-cats.php");
 require_once("inc/portfolio/custom-search.php");
 require_once("inc/header/get-child-pages.php");
 /**
@@ -250,10 +148,9 @@ require_once("inc/header/get-child-pages.php");
 */
 function foxStructuresResponsive_scripts() {
 	wp_enqueue_style( 'foxStructuresResponsive-style', get_stylesheet_uri() );
-	wp_enqueue_script( 'foxStructuresResponsive-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
-	wp_enqueue_script('customJS', get_stylesheet_directory_uri() . '/js/customJS.js');
-	// Enqueue Google Fonts for our site
-	wp_enqueue_script('foxStructuresFonts', foxStructuresResponsiveChild_fonts_url());
+	wp_enqueue_style( 'poppins', 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900', false );
+	wp_enqueue_script('custom', get_stylesheet_directory_uri() . '/js/custom.min.js');
+	wp_enqueue_script('vendor', get_stylesheet_directory_uri() . '/js/vendor.min.js');
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

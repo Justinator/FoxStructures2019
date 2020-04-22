@@ -1,7 +1,7 @@
 <div id="site-navigation" class="main-navigation">
   <nav role="navigation" aria-label="primary navigation">
     <div class="navWidth menuLinkWrap">
-      <a href="<?=site_url()?>" class="logoWrap">
+      <a href="<?=site_url()?>" class="logoWrap" title="Fox Structures Home">
         <?php get_template_part("/inc/svg-icons/fox-structures-logo"); ?><span class="screen-reader-text">Go back to the homepage</span>
       </a>
       <div class="menu-main-menu-container-outer" role="menu" aria-label="Main Menu">

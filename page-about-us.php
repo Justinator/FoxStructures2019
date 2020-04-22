@@ -6,17 +6,7 @@ get_header();
 ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
-		<section id="aboutHero">
-			<div class="mediumHero aboutHero">
-				<div class="fullWidth heroHeadingContainer">
-					<div class="heroHeadingWrapper">
-						<div class="heroHeading">
-							<h1 class="noMargin">Fox Structures—Experts at Building Success.</h1>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		<?php get_template_part("/template-parts/hero"); ?>
 		<section id="pageContent">
 			<section id ="foxStructuresIntro" class="paddedSection">
 				<div class="fullWidth flex-container centerAlignedContainerTop">
@@ -36,7 +26,7 @@ get_header();
 						</div>
 					</div>
 					<div id="leadershipImage" class="col50">
-						<img src="/wp-content/uploads/2018/12/Fox_MainGroupMedium.jpg" class="image"
+						<img src="/wp-content/uploads/2020/04/Fox-Structures-Owners-Group.jpg" class="image"
 						alt="Fox Structures Leadership Team">
 					</div>
 				</div>
@@ -56,10 +46,9 @@ get_header();
 					</div>
 				</div>
 			</section>
-			<?php get_template_part("/inc/leadership"); ?>
-			<?php get_template_part("/inc/ag-team"); ?>
+			<?php get_template_part("/template-parts/leadership"); ?>
 			<section class="navWidth paddedSection">
-				<?php get_template_part('inc/CTA')?>
+				<?php get_template_part('template-parts/cta')?>
 			</section>
 		</section>
 	</main>

@@ -178,11 +178,7 @@
 			background-position: center;
     }
 		@include breakpoint(tabletScreen){
-      height: 90vh;
-			background-position: left;
-    }
-    @include breakpoint(laptopScreen){
-      height: 90vh;
+      height: 80vh;
 			background-position: left;
     }
 	}
@@ -398,17 +394,9 @@
 .removeBottomPadding{
 	padding-bottom: 0;
 }
-.site-content{
-	@include breakpoint(smallScreen){
-		margin-top: 45px;
-	}
-	@include breakpoint(largeMobileScreen){
-		margin-top: 45px;
-	}
-	@include breakpoint(laptopScreen){
-		margin-top: 75px;
-	}
-}
 .marginTop{
 	margin-top: 10px;
+}
+.none {
+	display: none !important;
 }

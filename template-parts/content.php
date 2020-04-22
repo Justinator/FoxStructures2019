@@ -11,7 +11,7 @@
 <div class="postWrapper">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> >
 		<div class="flex-container">
-			<div class="col40">
+			<div class="col30">
 				<header class="entry-header">
 					<?php
 					if ( is_singular() ) :
@@ -31,7 +31,7 @@
 				</header><!-- .entry-header -->
 				<?php foxStructuresresponsive_post_thumbnail(); ?>
 			</div>
-			<div class="col60">
+			<div class="col70">
 				<div class="blogText">
 					<div class="entry-content">
 						<?php

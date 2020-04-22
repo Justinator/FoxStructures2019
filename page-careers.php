@@ -6,22 +6,12 @@ get_header();
 ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
-		<section>
-			<div class="mediumHero careersHero">
-				<div class="fullWidth heroHeadingContainer">
-					<div class="heroHeadingWrapper">
-						<div class="heroHeading">
-							<h1 class="noMargin">Careers</h1>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+		<?php get_template_part("/template-parts/hero"); ?>
 		<section id="pageContent">
 			<section id ="serviceIntro" class="paddedSection">
 				<div class="limitWidth flex-container-reverse">
 					<div class="col20">
-						<?php get_template_part("/inc/careers-sidebar"); ?>
+						<?php get_sidebar(); ?>
 					</div>
 					<div id="introCopy" class="col80 limitWidth">
 						<div class="blockText">
@@ -52,7 +42,7 @@ get_header();
 						</div>
 					</div>
 				</div>
-				<?php get_template_part("/inc/employee-videos"); ?>
+				<?php get_template_part("/template-parts/employee-videos"); ?>
 			</section>
 		</section>
 	</main>

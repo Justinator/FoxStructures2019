@@ -7,7 +7,7 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info navWidth">
 			<div class="col20">
-				<a href="<?=site_url()?>" class="footerLogo">
+				<a href="<?=site_url()?>" class="footerLogo" title="Fox Structures Home">
 					<?php get_template_part("/inc/svg-icons/fox-structures-logo"); ?>
 					<span class="screen-reader-text">Go back to the homepage</span></a>
 			</div>
@@ -25,11 +25,11 @@
 					</div>
 					<div id="closingLinks">
 						<nav role="navigation" aria-label="Sub Footer Links">
-							<a href="/privacy-policy/" class="borderRight" role="menuitem">Privacy Policy</a> |
-							<a href="/sitemap/" class="borderRight" role="menuitem">Sitemap</a> |
-							<a href="/contact/" class="borderRight" role="menuitem">Contact Us</a> |
+							<a href="/privacy-policy/" class="borderRight" role="menuitem" title="Privacy Policy">Privacy Policy</a> |
+							<a href="/sitemap/" class="borderRight" role="menuitem" title="Sitemap">Sitemap</a> |
+							<a href="/contact/" class="borderRight" role="menuitem" title="Contact Us">Contact Us</a> |
 						</nav>
-							<a href="https://insightcreative.com" target="_blank">Website by Insight Creative, Inc.</a>
+							<a href="https://insightcreative.com" target="_blank" title="Website by Insight Creative, Inc.">Website by Insight Creative, Inc.</a>
 					</div>
 				</div>
 				<?php get_template_part("/inc/socialNav"); ?>

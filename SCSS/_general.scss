@@ -65,3 +65,14 @@ body{
 address {
 	font-style: normal;
 }
+.site-content{
+	@include breakpoint(smallScreen){
+		margin-top: 45px;
+	}
+	@include breakpoint(largeMobileScreen){
+		margin-top: 45px;
+	}
+	@include breakpoint(laptopScreen){
+		margin-top: 125px;
+	}
+}
