@@ -3,17 +3,23 @@ A custom WordPress website theme for Fox Structures
 
 # :metal: Getting started
 
-# :open_file_folder: Basic File Structure
+# :open_file_folder: Basic Folder Structure
 
-## :page_with_curl: Pages
+## images
 
-Each individual page is titled page - page title ex. about = page-about.php
+## inc
 
-## :dancer: Styles
+The inc folder contains items included in the header and footer, portfolio navigation, svg-icons and more functions that the site uses.
 
-Do not make style changes in the css directory. The styles for the website are all in the \_scss directory. Each individual page has had its own style sheet setup for styles unique to that page, and then there are sheets setup for general styling like the footer or typography. The \_variables.scss sheet has site wide variables that can be used in your scss sheets.
+## :milky_way: js
 
-## \_scss folder
+The js folder holds all your JavaScript files
+
+## :dancer: scss
+
+The styles for the website are all in the \_scss directory. Each individual page has had its own style sheet setup for styles unique to that page, and then there are sheets setup for general styling like the footer or typography. The \_variables.scss sheet has site wide variables that can be used in your scss sheets.
+
+## scss folder
 
 ### Variables
 
@@ -55,43 +61,27 @@ Styling for any icons the site might use
 
 Each individual pages custom styles are held in the scss file with the corresponding page name ex. home = home.scss
 
-## :milky_way: JavaScript
+## template-parts
 
-The js folder holds all your JavaScript files
+Here you will find pieces of the page templates. Some are reused on multiple pages so you can edit here once and it will take effect everywhere they are used.
 
 ## :computer: Functions
 
 Functions.php contains any custom funtions for the site
 
+## :page_with_curl: Pages
+
+Each individual page is titled page - page title ex. about = page-about.php
+
 # :eyes: Usage
-
-## :black_nib: Writing to your SCSS file
-
-sass --watch \SCSS/style.scss:style.css
 
 ## :hammer: Adding projects to the portfolio
 
-I know this may have not been the most elegant way of setting this up but, I don't like using WordPress plugins like contentViews for things like displaying content. I set
-things up this way to have full control of styles and usage. I also wanted full control of the order that projects are displayed. Since so many of them have very little to no detail,
-I didn't want to bury the good projects like the old site did. Projects are displayed exactly the way you set them, so if you have a great new project to add, add it in the featured projects
-section at the top and then move the project you're replacing to the first spot of the main portfolio section so it's easy for site visitors to see.
-
-To allow full customization on project pages, the more detailed projects have their own page files. The projects that have little to no detail just use the default template. To create a
-new project page duplicate the oaks golf club page for a good base and start adding in your new info and project images.
+Projects use the Portfolio custom post type. The portfolio archive page uses archive-portfolio.php and the single portfolio posts use the single-portfolio.php template file. Make edits here if needed.
 
 ### Add your new project to the portfolio.
 
-Projects are stored in the inc folder. inc>projects>projectType
-
-1. Navigate to the folder for the project type that you're creating.
-2. In your text editor duplicate one of the existing projects and rename it with whatever your new project is titled.
-3. Change the project url to the new page that you created for this project.
-4. Make sure your project has the proper class ex. commercial projects will be classed "column commercial". The class titles are used for the gallery filter so make sure those are accurate
-5. Change your projects featured image. To prevent the image issues the old site had I've been using 600x400 images sizes for all projects so the gallery remains consistent. The old images
-were all different sizes and created an uneven and scattered gallery display
-6. In the projectInfo div change your projects Title
-7. Open the portfolio page file page-portfolio.php and add your new template part to the portfolio.
-8. Upload and enjoy your new project
+In your admin dashboard navigate to portfolio and click add new. Each portfolio post uses Advanced Custom Fields and the field group Featured Project. Select from the fields to input the content you need for your project. Enter in your category and featured image and publish.
 
 ## :construction: Adding a new job posting to the careers page
 
@@ -100,6 +90,10 @@ were all different sizes and created an uneven and scattered gallery display
 3. Careers pages use the careers-single.php page template. This loads our sidebar and all components for the page.
 4. To update the sidebar navigate to the inc folder and find careers-sidebar.php.
 5. Add a new list item and upload  
+
+## :hammer: Staff
+
+The leadership team and agricultural team use the custom post type staff. Add a new staff post and select from the category in which they should be listed. The staff archive page uses the archive-staff.php template file and the single staff posts use the single-staff.php template file. Make edits here if needed.
 
 ## :rocket: Navigation
 
