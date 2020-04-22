@@ -1,7 +1,7 @@
 <?php
 /**
-* @package foxStructuresResponsive
-*/
+ * @package foxStructuresResponsive
+ */
 get_header();
 ?>
 <div id="primary" class="content-area">
@@ -54,10 +54,10 @@ get_header();
 					</div>
 				</div>
 			</section>
-			<?php get_template_part("/inc/services-overview"); ?>
-			<?php get_template_part("/inc/featuredHomepageProjects"); ?>
+			<?php get_template_part("/template-parts/services-overview"); ?>
+			<?php get_template_part("/template-parts/featuredHomepageProjects"); ?>
 			<section class="navWidth">
-				<?php get_template_part('inc/CTA')?>
+				<?php get_template_part('/template-parts/cta')?>
 			</section>
 			<section class="paddedSection">
 				<div class="fullWidth flex-container-reverse centerAlignedContainerTop">
@@ -86,4 +86,5 @@ get_header();
 	</main>
 </div>
 <?php
+
 get_footer();

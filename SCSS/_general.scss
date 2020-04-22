@@ -65,8 +65,14 @@ body{
 address {
 	font-style: normal;
 }
-.page-id-792 {
-	.entry-header {
-		display: block;
+.site-content{
+	@include breakpoint(smallScreen){
+		margin-top: 45px;
+	}
+	@include breakpoint(largeMobileScreen){
+		margin-top: 45px;
+	}
+	@include breakpoint(laptopScreen){
+		margin-top: 125px;
 	}
 }

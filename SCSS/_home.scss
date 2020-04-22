@@ -72,9 +72,6 @@
 	@include breakpoint(tabletScreen){
 		width: 60%;
 	}
-	@include breakpoint(largeScreen){
-		width: 50%;
-	}
 }
 #heroSwooshWrapper{
 	position: absolute;
@@ -305,7 +302,7 @@
 	}
 }
 .servicesWrapper{
-	margin: 10px auto;
+	margin: 0 auto;
 	@include breakpoint(smallScreen){
 		width: 100%;
 	}

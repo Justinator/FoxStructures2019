@@ -31,6 +31,20 @@ if ( $postid == '62' ) {
     </div>
   </section>
   <?php
+} elseif ( is_archive('staff') ) {
+  ?>
+  <section id="aboutHero">
+    <div class="mediumHero" style="background: url('/wp-content/themes/foxStructures/images/OaksGolfCourseDroneShot.jpg') no-repeat; background-size: cover; background-position:center;">
+      <div class="fullWidth heroHeadingContainer">
+        <div class="heroHeadingWrapper">
+          <div class="heroHeading">
+            <h1 class="noMargin">Leadership</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <?php
 } elseif ( $postid == '10' || $parentid == '10' ) {
   ?>
   <section>

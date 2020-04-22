@@ -38,6 +38,12 @@ $(function() {
         	e.stopPropagation();
     });
 });
+$(function() {
+    $("#btnCloseUpdateBrowser").click(function(e){
+        $("#outdated").addClass("none");
+        	e.stopPropagation();
+    });
+});
 // filter for our portfolio categories
 filterSelection("all");
 function filterSelection(c) {
@@ -80,8 +86,4 @@ for (var i = 0; i < btns.length; i++) {
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
-}
-// detect IE and display an error message prompting users to upgrade to a modern browser
-if (navigator.appName == 'Microsoft Internet Explorer' || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/))) {
-  document.write('<p style="text-align: center; position: relative; z-index: 99999; background-color: #f4a81d; color: #000000;">You are using a browser no longer supported by Microsoft. For the best and most secure viewing experience, please use a modern browser like <a href="https://www.google.com/chrome/" target="_blank" rel="noreferrer" style="color: #000000;">Chrome</a> or <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank" rel="noreferrer" style="color: #000000;">Firefox</a>.</p>');
 }

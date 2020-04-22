@@ -35,7 +35,7 @@
 				get_search_form();
 			endif;
 			?>
-			<?php get_template_part("/inc/projects/featured-projects"); ?>
+			<?php get_template_part('/template-parts/latest-projects'); ?>
 		</div><!-- .page-content -->
 	</section><!-- .no-results -->
 </div>

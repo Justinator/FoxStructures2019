@@ -6,7 +6,7 @@ get_header();
 ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
-		<?php get_template_part("/inc/hero"); ?>
+		<?php get_template_part("/template-parts/hero"); ?>
 		<section id="pageContent">
 			<section id ="serviceIntro" class="paddedSection">
 				<div class="limitWidth flex-container-reverse">
@@ -42,7 +42,7 @@ get_header();
 						</div>
 					</div>
 				</div>
-				<?php get_template_part("/inc/employee-videos"); ?>
+				<?php get_template_part("/template-parts/employee-videos"); ?>
 			</section>
 		</section>
 	</main>

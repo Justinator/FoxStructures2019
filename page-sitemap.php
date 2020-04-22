@@ -16,6 +16,29 @@ get_header();
 				<div class="col50">
 					<h3>Pages</h3>
 						<?php wp_list_pages(array('sort_column' => 'post_title', 'exclude' => '419,817,421', 'title_li' => ' ', 'depth' => 0)); ?>
+					<h3>Staff</h3>
+					<?php
+					$staff = new WP_Query( array(
+						'post_type' => 'staff',
+						'order' => 'ASC',
+						'orderby' => 'title',
+						)
+					);
+					?>
+					<ul>
+					<?php
+					while ( $staff->have_posts() ) :
+		  		$staff->the_post();
+					?>
+						<li class="page_item">
+							<a href="<?php the_permalink() ?>">
+	            	<?php the_title(); ?>
+	          	</a>
+						</li>
+					<?php endwhile;
+					wp_reset_postdata();
+					?>
+					</ul>
 					<h3>News</h3>
 					<ul class="newsPosts">
 						<?php wp_get_archives('type=alpha'); ?>
@@ -41,7 +64,9 @@ get_header();
 	            	<?php the_title(); ?>
 	          	</a>
 						</li>
-					<?php endwhile; ?>
+					<?php endwhile;
+					wp_reset_postdata();
+					?>
 					</ul>
 				</div>
 			</div>
