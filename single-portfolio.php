@@ -72,7 +72,7 @@ get_header();
 									endif;
 									echo '</div>';
 								elseif( get_row_layout() == 'testimonial' ):
-									echo '<div class="fullWidth centerText greyBlock smallPaddedSection testimonialWrapper">';
+									echo '<div class="fullWidth centerText greyBlock testimonialWrapper">';
 									echo '<div class="testimonial">';
 									echo '<p>' . get_sub_field('client_testimonial') . '</p>';
 									echo '<h5 class="noMargin">';

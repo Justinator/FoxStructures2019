@@ -33,12 +33,8 @@
 	width: 100%;
 	margin: 0 auto;
 	background: $primaryGrey;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	align-items: center;
 	box-shadow: 0 0 28px 0 rgba(0,0,0,.25);
 		@include breakpoint(smallScreen){
 			height: 70px;
@@ -49,12 +45,8 @@
 	margin: 0 auto;
 	width: 100%;
 	background: $primaryGrey;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	align-items: center;
 }
 #primary-menu{
 	@include breakpoint(smallScreen){
@@ -64,8 +56,6 @@
 		display: none;
 	}
 	@include breakpoint(laptopScreen){
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
 	}
 	li{
@@ -75,7 +65,7 @@
 			text-decoration: none;
 			color: $white;
 			font-weight: 700;
-    	letter-spacing: 1px;
+			letter-spacing: 1px;
 			padding: 5px;
 			@include breakpoint(tabletScreen){
 				font-size: 16px;
@@ -100,15 +90,10 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-  		-webkit-transform: scaleX(0);
-  		        transform: scaleX(0);
+			transform: scaleX(0);
 			height: 2px;
-			-webkit-transition: -webkit-transform 0.2s ease-out;
-			transition: -webkit-transform 0.2s ease-out;
 			transition: transform 0.2s ease-out;
-			transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
-			-webkit-transform-origin: top right;
-			        transform-origin: top right;
+			transform-origin: top right;
 		}
 		&:after{
 			position: absolute;
@@ -117,42 +102,29 @@
 			bottom: 0;
 			right: 0;
 			width: 100%;
-  		-webkit-transform: scaleX(0);
-  		        transform: scaleX(0);
+			transform: scaleX(0);
 			height: 2px;
-			-webkit-transition: -webkit-transform 0.2s ease-out;
-			transition: -webkit-transform 0.2s ease-out;
 			transition: transform 0.2s ease-out;
-			transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
-			-webkit-transform-origin: bottom left;
-			        transform-origin: bottom left;
+			transform-origin: bottom left;
 		}
 		&:hover{
 			&:before{
-				-webkit-transform-origin: top left;
-				        transform-origin: top left;
-				-webkit-transform: scaleX(1);
-				        transform: scaleX(1);
+				transform-origin: top left;
+				transform: scaleX(1);
 			}
 			&:after{
-				-webkit-transform-origin: bottom right;
-				        transform-origin: bottom right;
-				-webkit-transform: scaleX(1);
-				        transform: scaleX(1);
+				transform-origin: bottom right;
+				transform: scaleX(1);
 			}
 		}
 		&:focus{
 			&:before{
-				-webkit-transform-origin: top left;
-				        transform-origin: top left;
-				-webkit-transform: scaleX(1);
-				        transform: scaleX(1);
+				transform-origin: top left;
+				transform: scaleX(1);
 			}
 			&:after{
-				-webkit-transform-origin: bottom right;
-				        transform-origin: bottom right;
-				-webkit-transform: scaleX(1);
-				        transform: scaleX(1);
+				transform-origin: bottom right;
+				transform: scaleX(1);
 			}
 		}
 	}
@@ -167,15 +139,10 @@
 			top: 0;
 			left: 0;
 			width: 100%;
-  		-webkit-transform: scaleX(1);
-  		        transform: scaleX(1);
+			transform: scaleX(1);
 			height: 2px;
-			-webkit-transition: -webkit-transform 0.2s ease-out;
-			transition: -webkit-transform 0.2s ease-out;
 			transition: transform 0.2s ease-out;
-			transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
-			-webkit-transform-origin: top right;
-			        transform-origin: top right;
+			transform-origin: top right;
 		}
 		&:after{
 			position: absolute;
@@ -184,62 +151,39 @@
 			bottom: 0;
 			right: 0;
 			width: 100%;
-  		-webkit-transform: scaleX(1);
-  		        transform: scaleX(1);
+			transform: scaleX(1);
 			height: 2px;
-			-webkit-transition: -webkit-transform 0.2s ease-out;
-			transition: -webkit-transform 0.2s ease-out;
 			transition: transform 0.2s ease-out;
-			transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
-			-webkit-transform-origin: bottom left;
-			        transform-origin: bottom left;
+			transform-origin: bottom left;
 		}
 	}
 }
 .menuLinkWrap{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	justify-content: space-between;
+	align-items: center;
 }
 .secondaryMenuWrap{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: end;
-	    -ms-flex-pack: end;
-	        justify-content: flex-end;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	justify-content: flex-end;
+	align-items: center;
 }
 .secondaryLinkWrapper{
 	background-color: $secondaryGrey;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 10px;
-  margin: 0 10px;
+	align-items: center;
+	padding: 0 10px;
+	margin: 0 10px;
 }
 .secondaryLink{
 	color: $black;
 	padding: 0 15px;
 	text-decoration: none;
-	-webkit-transition: .3s ease all;
 	transition: .3s ease all;
 	font-size: 14px;
 	position: relative;
 		&:hover{
 			color: $lightGrey;
-			-webkit-transition: .3s ease all;
 			transition: .3s ease all;
 		}
 			@include breakpoint(smallScreen){
@@ -269,12 +213,8 @@
 	}
 }
 nav{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align:center;
-	    -ms-flex-align:center;
-	        align-items:center;
+	align-items:center;
 	width: 100%;
 }
 .menuText{
@@ -284,16 +224,11 @@ nav{
 	padding-right: 10px;
 	color: $white;
 	text-decoration: none;
-	-webkit-transition: .3s ease-out all;
 	transition: .3s ease-out all;
 }
 .menuTextWrap{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: baseline;
-	    -ms-flex-align: baseline;
-	        align-items: baseline;
+	align-items: baseline;
 	margin-left: 10px;
 	right: 100px;
 }
@@ -310,31 +245,25 @@ nav{
 }
 .open{
 	position: fixed !important;
-	-webkit-transform: translate(0) !important;
-	        transform: translate(0) !important;
-	-webkit-transition: .1s ease-out all !important;
+	transform: translate(0) !important;
 	transition: .1s ease-out all !important;
 }
 #mobile-menu{
 	position: fixed;
-  width: 90%;
-  top: 0;
-  padding: 125px 0 20px 0;
-  margin: 0 auto;
-  z-index: 999;
-  height: auto;
-  width: 100%;
-  background-color: $primaryGrey;
-  -webkit-transition: .2s ease-out all;
-  transition: .2s ease-out all;
-	-webkit-transform: translateY(-120%);
-	        transform: translateY(-120%);
+	width: 90%;
+	top: 0;
+	padding: 125px 0 20px 0;
+	margin: 0 auto;
+	z-index: 999;
+	height: auto;
+	width: 100%;
+	background-color: $primaryGrey;
+	transition: .2s ease-out all;
+	transform: translateY(-120%);
 	li{
 		list-style-type: none;
 		font-size: 20px;
 		padding: 5px 20px;
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
 		a{
 			color: $white;
@@ -358,14 +287,10 @@ nav{
 		display:none;
 	}
 	@include breakpoint(largeMobileScreen){
-		display:-webkit-box;
-		display:-ms-flexbox;
 		display:flex;
 	}
 }
 .menuButtonWrap{
-	display:-webkit-box;
-	display:-ms-flexbox;
 	display:flex;
 	right: 30px;
 		@include breakpoint(smallScreen){

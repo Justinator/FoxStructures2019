@@ -36,10 +36,10 @@
 			</div>
 		</div>
 	</footer><!-- #colophon -->
+	<script>
+	filterSelection("all");
+	</script>
 </div><!-- #page -->
-<script>
-filterSelection("all");
-</script>
 <?php wp_footer(); ?>
 </body>
 </html>

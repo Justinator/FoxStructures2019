@@ -1,26 +1,12 @@
 /* 5.0 Footer Stylings -------------------------------------------*/
 .site-info{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-moz-justify-content: space-between;
-	-webkit-justify-content: space-between;
-	-ms-justify-content: space-between;
-	-o-justify-content: space-between;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	justify-content: space-between;
+	flex-direction: column;
 	padding: 20px 0 20px 0;
 	list-style-type: none;
     @include breakpoint(laptopScreen){
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
+		flex-direction: row;
     }
 }
 #footer-menu{
@@ -31,8 +17,6 @@
 		display: none;
 	}
 	@include breakpoint(laptopScreen){
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
 	}
 	li{
@@ -60,8 +44,6 @@
 	}
 }
 #contactInfo{
-	width: -webkit-fit-content;
-	width: -moz-fit-content;
 	width: fit-content;
 }
 .site-footer{
@@ -86,45 +68,28 @@
 .footerContact{
 	margin-top: 25px;
 	margin-bottom: 70px;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	flex-direction: column;
   a{
   	text-decoration: none;
   	color: $primaryYellow;
-  	-webkit-transition: .2s ease all;
   	transition: .2s ease all;
 		font-weight: 700;
       &:hover{
         color: $primaryGrey;
-        -webkit-transition: .2s ease all;
         transition: .2s ease all;
       }
   }
 }
 #copyrightWrap{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	align-items: center;
 	@include breakpoint(smallScreen){
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+		flex-direction: column;
 		margin-bottom: 10px;
 	}
 	@include breakpoint(largeMobileScreen){
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: row;
-		        flex-direction: row;
+		flex-direction: row;
 		margin-bottom: 10px;
 	}
 	@include breakpoint(laptopScreen){
@@ -146,11 +111,8 @@
 			font-size: 14px;
 		}
     @include breakpoint(largeScreen){
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-			font-size: 16px;
+		flex-direction: row;
+		font-size: 16px;
     }
       a{
         text-decoration: none;
@@ -161,58 +123,26 @@
       }
 }
 .copyrightContentWrap{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
     @include breakpoint(smallScreen){
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+		justify-content: center;
+		flex-direction: column;
     }
 		@include breakpoint(largeMobileScreen){
-			-webkit-box-pack: center;
-			    -ms-flex-pack: center;
-			        justify-content: center;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+			justify-content: center;
+			flex-direction: column;
 		}
 		@include breakpoint(laptopScreen){
-			-webkit-box-orient: horizontal;
-			-webkit-box-direction: normal;
-			    -ms-flex-direction: row;
-			        flex-direction: row;
-			-webkit-box-pack: justify;
-			    -ms-flex-pack: justify;
-			        justify-content: space-between;
-			-moz-justify-content: space-between;
-			-webkit-justify-content: space-between;
-			-ms-justify-content: space-between;
-			-o-justify-content: space-between;
+			flex-direction: row;
+			justify-content: space-between;
 		}
 }
 #copyrightContent{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	align-items: center;
 		@include breakpoint(smallScreen){
 			font-size: 14px;
 		}

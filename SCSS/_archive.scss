@@ -42,12 +42,10 @@
 .blogTitleLink{
 	text-decoration: none;
 	color: $primaryGrey;
-	-webkit-transition: .3s ease all;
 	transition: .3s ease all;
 	position: relative;
     &:hover{
     color: $primaryGrey;
-    -webkit-transition: .3s ease all;
     transition: .3s ease all;
   }
 }
@@ -58,11 +56,9 @@
   a{
   	text-decoration: none;
   	color: $primaryYellow !important;
-  	-webkit-transition: .3s ease all;
   	transition: .3s ease all;
       &:hover{
       color: $primaryGrey !important;
-      -webkit-transition: .3s ease all;
       transition: .3s ease all;
       }
   }
@@ -71,22 +67,16 @@
   a{
     text-decoration: none;
   	color: $primaryYellow !important;
-  	-webkit-transition: .3s ease all;
   	transition: .3s ease all;
       &:hover{
       color: $primaryGrey !important;
-      -webkit-transition: .3s ease all;
       transition: .3s ease all;
       }
   }
 }
 .nav-links{
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
           justify-content: space-between;
 }
 .post-thumbnail{
@@ -109,13 +99,11 @@
     background-color: $primaryGrey;
     border: 2px solid $primaryGrey;
     color: $black;
-    -webkit-transition: .3s ease all;
     transition: .3s ease all;
     &:hover{
       background-color: $transparent;
       border: 2px solid $primaryGrey;
       color: $primaryGrey;
-      -webkit-transition: .3s ease all;
       transition: .3s ease all;
     }
   }
@@ -124,16 +112,9 @@
   margin-bottom: 15px;
 }
 .blogText{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+  flex-direction: column;
+  justify-content: center;
 	max-width: 800px;
   margin: 0 auto;
     @include breakpoint(smallScreen){

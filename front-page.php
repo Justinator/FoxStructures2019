@@ -15,7 +15,7 @@ get_header();
 						</div>
 					</div>
 					<div id="heroSwooshWrapper" class="fullWidth">
-						<img src="/wp-content/uploads/2019/02/bottomSmallCurve2-1.png" class="image">
+						<img src="/wp-content/uploads/2020/09/bottomSmallCurve2-1-1.png" class="image">
 					</div>
 					<div class="heroCTA fullWidth">
 						<div class="heroCTAContent pageWidth">
@@ -49,7 +49,7 @@ get_header();
 						</div>
 					</div>
 					<div id="introImage" class="col50">
-						<img src="/wp-content/uploads/2019/02/foxStructuresCustomBuild.jpg" class="image"
+						<img src="/wp-content/uploads/2020/09/foxStructuresCustomBuild-1.jpg" class="image"
 						alt="A Custom built garage by Fox Structures">
 					</div>
 				</div>

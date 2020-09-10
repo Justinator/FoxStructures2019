@@ -79,7 +79,6 @@
 			left: 0;
 			width: 10%;
 			height: 2px;
-			-webkit-transition: 0.2s ease-out;
 			transition: 0.2s ease-out;
 		}
 		&:after{
@@ -90,7 +89,6 @@
 			right: 0;
 			width: 10%;
 			height: 2px;
-			-webkit-transition: 0.2s ease-out;
 			transition: 0.2s ease-out;
 		}
 	}
@@ -108,7 +106,6 @@
 		}
 		.featuredProjectOverlay{
 			background-color: rgba(0,0,0,.7);
-			-webkit-transition: .2s ease all;
 			transition: .2s ease all;
 		}
 	}
@@ -126,7 +123,6 @@
   		}
   		.featuredProjectOverlay{
   			background-color: rgba(0,0,0,.7);
-  			-webkit-transition: .2s ease all;
   			transition: .2s ease all;
   		}
   	}
@@ -155,56 +151,36 @@
 	height: calc(100% - 10px);
 	width: 100%;
 	content: "";
-	-webkit-transition: .2s ease all;
 	transition: .2s ease all;
 	background-color: rgba(0,0,0,.0);
   opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 .portfolioWrapper{
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 	a{
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 		text-decoration: none;
 		color: $primaryGrey;
-		-webkit-transition: .2s ease all;
 		transition: .2s ease all;
 		&:hover{
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 			.ImageOverlay{
 				background-color: rgba(0,0,0,.5);
-				-webkit-transition: .2s ease all;
 				transition: .2s ease all;
 				opacity: 1;
-				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 			}
       h5{
-        -webkit-transition: .2s ease all;
         transition: .2s ease all;
         color: $primaryYellow;
       }
 		}
     &:focus{
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 			.ImageOverlay{
 				background-color: rgba(0,0,0,.5);
-				-webkit-transition: .2s ease all;
 				transition: .2s ease all;
 				opacity: 1;
-				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 			}
       h5{
-        -webkit-transition: .2s ease all;
         transition: .2s ease all;
         color: $primaryYellow;
       }
@@ -260,33 +236,21 @@
   border-bottom: 1px solid $primaryGrey;
 }
 .moreFeaturedProjectsWrapper{
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-wrap: wrap;
+  justify-content: center;
 	a{
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 		text-decoration: none;
 		color: $primaryGrey;
-		-webkit-transition: .2s ease all;
 		transition: .2s ease all;
 		&:hover{
-      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 			.ImageOverlay{
 				background-color: rgba(0,0,0,.5);
-				-webkit-transition: .2s ease all;
 				transition: .2s ease all;
 				opacity: 1;
-				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 			}
 			.centerUnderline{
 				width: 10em;
-				-webkit-transition: .2s ease all;
 				transition: .2s ease all;
 			}
 		}
@@ -300,6 +264,9 @@
       width: 33%;
     }
 	}
+}
+.relatedposts {
+  margin-top: 25px;
 }
 .relatedPostWrap {
   width: 100%;
@@ -335,20 +302,14 @@
 	height: calc(100% - 10px);
 	width: 100%;
 	content: "";
-	-webkit-transition: .2s ease all;
 	transition: .2s ease all;
 	background-color: rgba(0,0,0,.0);
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 .featuredProjectsBlock{
   border-top: 1px solid $primaryGrey;
@@ -420,7 +381,10 @@
 .testimonial{
   max-width: 1050px;
   margin: 0 auto;
-	padding: 10px;
+  padding: 10px;
+  @include breakpoint (laptopScreen) {
+    padding: 20px;
+  }
 }
 .testimonialWrapper {
   margin-bottom: 50px;
@@ -443,9 +407,7 @@
   	display: -webkit-box;
   	display: -ms-flexbox;
   	display: flex;
-  	-webkit-box-align: center;
-  	    -ms-flex-align: center;
-  	        align-items: center;
+    align-items: center;
   }
   .nav-previous, .nav-next {
     font-size: 14px;
@@ -457,14 +419,17 @@
       color: $white;
       text-decoration: none;
       padding: 10px;
-      -webkit-transition: .3s ease all;
       transition: .3s ease all;
+      width: 100%;
+      display: inline-block;
       &:hover{
         background-color: $primaryYellow;
-        -webkit-transition: .3s ease all;
         transition: .3s ease all;
       }
     }
+  }
+  .nav-next {
+    text-align: right;
   }
   .nav-back {
     display: flex;
@@ -476,13 +441,8 @@
     }
   }
   .back {
-  	display: -webkit-box;
-  	display: -ms-flexbox;
   	display: flex;
-  	-webkit-box-orient: vertical;
-  	-webkit-box-direction: normal;
-  	    -ms-flex-direction: column;
-  	        flex-direction: column;
+    flex-direction: column;
   	align-items: center;
   }
 }

@@ -141,18 +141,11 @@
 	}
 }
 .blockText{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	flex-direction: column;
+	justify-content: center;
 	max-width: 800px;
-  margin: 0 auto;
+  	margin: 0 auto;
     @include breakpoint(smallScreen){
       padding: 20px;
     }
@@ -192,115 +185,58 @@
 	height: 60vh;
 }
 .flex-container{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-ms-flex-pack: distribute;
-	    justify-content: space-between;
+	flex-direction: row;
+	justify-content: space-between;
     @include breakpoint(smallScreen){
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+		flex-direction: column;
     }
     @include breakpoint(largeMobileScreen){
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+		flex-direction: column;
     }
     @include breakpoint(laptopScreen){
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
+		flex-direction: row;
     }
 }
 .flex-container-reverse{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
+	flex-direction: row;
+	justify-content: space-around;
     @include breakpoint(smallScreen){
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: reverse;
-          -ms-flex-direction: column-reverse;
-              flex-direction: column-reverse;
+		flex-direction: column-reverse;
     }
     @include breakpoint(largeMobileScreen){
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: reverse;
-          -ms-flex-direction: column-reverse;
-              flex-direction: column-reverse;
+		flex-direction: column-reverse;
     }
     @include breakpoint(laptopScreen){
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
+		flex-direction: row;
     }
 }
 .wrappedFlexContainer{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 .centerAlignedContainer{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	align-items: center;
 }
 .centerAlignedContainerTop{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	align-items: center;
 	@include breakpoint(laptopScreen){
-		-webkit-box-align: start;
-		    -ms-flex-align: start;
-		            -ms-grid-row-align: flex-start;
-		        align-items: flex-start;
+		align-items: flex-start;
 	}
 	@include breakpoint(largeScreen){
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		            -ms-grid-row-align: center;
-		        align-items: center;
+		align-items: center;
 	}
 }
 .centeredContainer{
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	justify-content: center;
 	margin: 0 auto;
 	text-align: center;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	flex-direction: column;
 }
 .textWrap{
 	padding: 20px;
@@ -313,16 +249,9 @@
 	padding: 0;
 	margin: 50px 0 50px 0;
 	background: $white;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	flex-direction: column;
+	align-items: center;
 	text-align: center;
 }
 .greyBlock{
@@ -368,8 +297,8 @@
 	}
 }
 .limitPortfolioWidth{
-	max-width: 1350px;
-  margin: 0 auto;
+	max-width: 1000px;
+  	margin: 0 auto;
 	@include breakpoint(smallScreen){
 		padding: 50px 20px 0 20px;
 	}

@@ -149,7 +149,8 @@ require_once("inc/header/get-child-pages.php");
 function foxStructuresResponsive_scripts() {
 	wp_enqueue_style( 'foxStructuresResponsive-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'poppins', 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900', false );
-	wp_enqueue_script('custom', get_stylesheet_directory_uri() . '/js/custom.min.js');
+	wp_enqueue_script('portfolio', get_stylesheet_directory_uri() . '/js/portfolio-filter.js', ['jquery'], '1.0.1', false);
+	wp_enqueue_script('custom', get_stylesheet_directory_uri() . '/js/custom.min.js', ['jquery'], '1.0.1', true);
 	wp_enqueue_script('vendor', get_stylesheet_directory_uri() . '/js/vendor.min.js');
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
