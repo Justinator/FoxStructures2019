@@ -1,77 +1,77 @@
 /* 17.0 Portfolio Page stylings -------------------------------------------*/
-.portfolioHero{
-  background-image: url("/wp-content/uploads/2019/03/waterRightCropped.jpg");
+.portfolioHero {
+	background-image: url("/wp-content/uploads/2019/03/waterRightCropped.jpg");
 }
 .single-portfolio {
-  .post-thumbnail {
-    img {
-      margin-top: 25px;
-    }
-  }
+	.post-thumbnail {
+		img {
+			margin-top: 25px;
+		}
+	}
 }
 #featuredThree {
-  margin-top: 25px;
-  .featured {
-    background-size: cover;
-    background-position: center right;
-    position: relative;
-  }
-  .colLeft {
-    height: 400px;
-    width: 100%;
-    margin-bottom: 10px;
-    @include breakpoint (laptopScreen) {
-      height: 500px;
-      width: 60%;
-      margin-bottom: 0;
-    }
-  }
-  .portFeaturedProjectWrapper {
-    position: relative;
-    height: calc(100% + 10px);
-  }
-  .outerWrapper {
-    height: 245px;
-    width: 100%;
-  }
-  .outerWrapper:first-of-type {
-    margin-bottom: 10px;
-  }
-  a {
-    height: 100%;
-    width: 100%;
-  }
-  h4 {
-    font-size: 1em;
-  }
+	margin-top: 25px;
+	.featured {
+		background-size: cover;
+		background-position: center right;
+		position: relative;
+	}
+	.colLeft {
+		height: 400px;
+		width: 100%;
+		margin-bottom: 10px;
+		@include breakpoint(laptopScreen) {
+			height: 500px;
+			width: 60%;
+			margin-bottom: 0;
+		}
+	}
+	.portFeaturedProjectWrapper {
+		position: relative;
+		height: calc(100% + 10px);
+	}
+	.outerWrapper {
+		height: 245px;
+		width: 100%;
+	}
+	.outerWrapper:first-of-type {
+		margin-bottom: 10px;
+	}
+	a {
+		height: 100%;
+		width: 100%;
+	}
+	h4 {
+		font-size: 1em;
+	}
 }
-.paddedWrapper{
-  @include breakpoint(smallScreen){
-    padding: 0;
-  }
-  @include breakpoint(largeMobileScreen){
-    padding: 0;
-  }
-  @include breakpoint(laptopScreen){
-    padding: 5px;
-  }
+.paddedWrapper {
+	@include breakpoint(smallScreen) {
+		padding: 0;
+	}
+	@include breakpoint(largeMobileScreen) {
+		padding: 0;
+	}
+	@include breakpoint(laptopScreen) {
+		padding: 5px;
+	}
 }
-.paddedSideWrapper{
-  @include breakpoint(smallScreen){
-    padding: 0;
-  }
-  @include breakpoint(largeMobileScreen){
-    padding: 0;
-  }
-  @include breakpoint(laptopScreen){
-    padding: 0 5px;
-  }
+.paddedSideWrapper {
+	@include breakpoint(smallScreen) {
+		padding: 0;
+	}
+	@include breakpoint(largeMobileScreen) {
+		padding: 0;
+	}
+	@include breakpoint(laptopScreen) {
+		padding: 0 5px;
+	}
 }
-.portFeaturedProjectWrapper{
+.portFeaturedProjectWrapper {
 	position: relative;
 	width: 100%;
-	span{
-		&:before{
+	span {
+		&:before {
 			position: absolute;
 			content: "";
 			background: $primaryYellow;
@@ -81,7 +81,7 @@
 			height: 2px;
 			transition: 0.2s ease-out;
 		}
-		&:after{
+		&:after {
 			position: absolute;
 			content: "";
 			background: $primaryYellow;
@@ -92,357 +92,358 @@
 			transition: 0.2s ease-out;
 		}
 	}
-  .featuredProjectOverlay{
-    height: calc(100% - 10px);
-  }
-	&:hover{
-		span{
-			&:before{
+	.featuredProjectOverlay {
+		height: calc(100% - 10px);
+	}
+	&:hover {
+		span {
+			&:before {
 				width: 100%;
 			}
-			&:after{
+			&:after {
 				width: 100%;
 			}
 		}
-		.featuredProjectOverlay{
-			background-color: rgba(0,0,0,.7);
-			transition: .2s ease all;
+		.featuredProjectOverlay {
+			background-color: rgba(0, 0, 0, 0.7);
+			transition: 0.2s ease all;
 		}
 	}
 }
-#featuredProjects{
-  a{
-    &:focus{
-  		span{
-  			&:before{
-  				width: 100%;
-  			}
-  			&:after{
-  				width: 100%;
-  			}
-  		}
-  		.featuredProjectOverlay{
-  			background-color: rgba(0,0,0,.7);
-  			transition: .2s ease all;
-  		}
-  	}
-  }
+#featuredProjects {
+	a {
+		&:focus {
+			span {
+				&:before {
+					width: 100%;
+				}
+				&:after {
+					width: 100%;
+				}
+			}
+			.featuredProjectOverlay {
+				background-color: rgba(0, 0, 0, 0.7);
+				transition: 0.2s ease all;
+			}
+		}
+	}
 }
-.outerWrapper{
-  margin: 10px 0 -10px 0;
-  @include breakpoint (laptopScreen) {
-    margin: 0;
-  }
+.outerWrapper {
+	margin: 10px 0 -10px 0;
+	@include breakpoint(laptopScreen) {
+		margin: 0;
+	}
 }
 .column {
-  display: none;
+	display: none;
 }
 .show {
-  display: block;
+	display: block;
 }
 .primaryButton.active {
-  background-color: #666;
-  color: white;
+	background-color: #666;
+	color: white;
 }
-.leaderImageOverlay{
-  position: absolute;
+.leaderImageOverlay {
+	position: absolute;
 	top: 0;
 	left: 0;
 	height: calc(100% - 10px);
 	width: 100%;
 	content: "";
-	transition: .2s ease all;
-	background-color: rgba(0,0,0,.0);
-  opacity: 0;
+	transition: 0.2s ease all;
+	background-color: rgba(0, 0, 0, 0);
+	opacity: 0;
 }
-.portfolioWrapper{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-	a{
+.portfolioWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	a {
 		text-decoration: none;
 		color: $primaryGrey;
-		transition: .2s ease all;
-		&:hover{
-			.ImageOverlay{
-				background-color: rgba(0,0,0,.5);
-				transition: .2s ease all;
+		transition: 0.2s ease all;
+		&:hover {
+			.ImageOverlay {
+				background-color: rgba(0, 0, 0, 0.5);
+				transition: 0.2s ease all;
 				opacity: 1;
 			}
-      h5{
-        transition: .2s ease all;
-        color: $primaryYellow;
-      }
+			h5 {
+				transition: 0.2s ease all;
+				color: $primaryYellow;
+			}
 		}
-    &:focus{
-			.ImageOverlay{
-				background-color: rgba(0,0,0,.5);
-				transition: .2s ease all;
+		&:focus {
+			.ImageOverlay {
+				background-color: rgba(0, 0, 0, 0.5);
+				transition: 0.2s ease all;
 				opacity: 1;
 			}
-      h5{
-        transition: .2s ease all;
-        color: $primaryYellow;
-      }
+			h5 {
+				transition: 0.2s ease all;
+				color: $primaryYellow;
+			}
 		}
-    @include breakpoint(smallScreen){
-      width: 100%;
-    }
-    @include breakpoint(largeMobileScreen){
-      width: 50%;
-    }
+		@include breakpoint(smallScreen) {
+			width: 100%;
+		}
+		@include breakpoint(largeMobileScreen) {
+			width: 50%;
+		}
 	}
 }
-.featuredImageWrap{
-  padding: 10px;
+.featuredImageWrap {
+	padding: 10px;
 }
-.imageWrapper{
-  position: relative;
+.imageWrapper {
+	position: relative;
 }
-.employeeName{
-  margin-bottom: 15px;
+.employeeName {
+	margin-bottom: 15px;
 }
-.imageWrap{
-  text-align: center;
+.imageWrap {
+	text-align: center;
 }
-.portfolioFeaturedImage{
-  margin-bottom: 25px;
-  margin-top: 25px;
+.portfolioFeaturedImage {
+	margin-bottom: 25px;
+	margin-top: 25px;
 }
-.smallMarginRight{
-  @include breakpoint(smallScreen){
-    margin-right:0;
-  }
-  @include breakpoint(largeMobileScreen){
-    margin-right:0;
-  }
-  @include breakpoint(laptopScreen){
-    margin-right:5px;
-  }
+.smallMarginRight {
+	@include breakpoint(smallScreen) {
+		margin-right: 0;
+	}
+	@include breakpoint(largeMobileScreen) {
+		margin-right: 0;
+	}
+	@include breakpoint(laptopScreen) {
+		margin-right: 5px;
+	}
 }
-.smallMarginLeft{
-  @include breakpoint(smallScreen){
-    margin-left:0;
-  }
-  @include breakpoint(largeMobileScreen){
-    margin-left:0;
-  }
-  @include breakpoint(laptopScreen){
-    margin-left:5px;
-  }
+.smallMarginLeft {
+	@include breakpoint(smallScreen) {
+		margin-left: 0;
+	}
+	@include breakpoint(largeMobileScreen) {
+		margin-left: 0;
+	}
+	@include breakpoint(laptopScreen) {
+		margin-left: 5px;
+	}
 }
-.project{
-  padding-bottom: 50px;
-  border-bottom: 1px solid $primaryGrey;
+.project {
+	padding-bottom: 50px;
+	border-bottom: 1px solid $primaryGrey;
 }
-.moreFeaturedProjectsWrapper{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-	a{
+.moreFeaturedProjectsWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	a {
 		text-decoration: none;
 		color: $primaryGrey;
-		transition: .2s ease all;
-		&:hover{
-			.ImageOverlay{
-				background-color: rgba(0,0,0,.5);
-				transition: .2s ease all;
+		transition: 0.2s ease all;
+		&:hover {
+			.ImageOverlay {
+				background-color: rgba(0, 0, 0, 0.5);
+				transition: 0.2s ease all;
 				opacity: 1;
 			}
-			.centerUnderline{
+			.centerUnderline {
 				width: 10em;
-				transition: .2s ease all;
+				transition: 0.2s ease all;
 			}
 		}
-    @include breakpoint(smallScreen){
-      width: 100%;
-    }
-    @include breakpoint(largeMobileScreen){
-      width: 50%;
-    }
-    @include breakpoint(laptopScreen){
-      width: 33%;
-    }
+		@include breakpoint(smallScreen) {
+			width: 100%;
+		}
+		@include breakpoint(largeMobileScreen) {
+			width: 50%;
+		}
+		@include breakpoint(laptopScreen) {
+			width: 33%;
+		}
 	}
 }
 .relatedposts {
-  margin-top: 25px;
+	margin-top: 25px;
 }
 .relatedPostWrap {
-  width: 100%;
-  @include breakpoint(largeMobileScreen){
-    width: 50%;
-  }
-  @include breakpoint(laptopScreen){
-    width: 33%;
-  }
-  a {
-    width: 100% !important;
-  }
+	width: 100%;
+	@include breakpoint(largeMobileScreen) {
+		width: 50%;
+	}
+	@include breakpoint(laptopScreen) {
+		width: 33%;
+	}
+	a {
+		width: 100% !important;
+	}
 }
-#largeDroneImage{
-  @include breakpoint(smallScreen){
-    margin-top: 10px;
-  }
-  @include breakpoint(largeMobileScreen){
-    margin-top: 10px;
-  }
-  @include breakpoint(laptopScreen){
-    margin-top: 0;
-  }
+#largeDroneImage {
+	@include breakpoint(smallScreen) {
+		margin-top: 10px;
+	}
+	@include breakpoint(largeMobileScreen) {
+		margin-top: 10px;
+	}
+	@include breakpoint(laptopScreen) {
+		margin-top: 0;
+	}
 }
-.portfolioTitle{
-  margin-top: 1em;
-  margin-bottom: 0;
+.portfolioTitle {
+	margin-top: 1em;
+	margin-bottom: 0;
 }
-.ImageOverlay{
-  position: absolute;
+.ImageOverlay {
+	position: absolute;
 	top: 0;
 	left: 0;
 	height: calc(100% - 10px);
 	width: 100%;
 	content: "";
-	transition: .2s ease all;
-	background-color: rgba(0,0,0,.0);
+	transition: 0.2s ease all;
+	background-color: rgba(0, 0, 0, 0);
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
 }
-.featuredProjectsBlock{
-  border-top: 1px solid $primaryGrey;
+.featuredProjectsBlock {
+	border-top: 1px solid $primaryGrey;
 }
-#simpleProject{
-  .post-thumbnail{
-      margin-top: -5px;
-  }
+#simpleProject {
+	.post-thumbnail {
+		margin-top: -5px;
+	}
 }
-.hidden{
-  display: none;
+.hidden {
+	display: none;
 }
-.largePortfolioImage{
-  margin: -5px 0;
-  @include breakpoint(smallScreen){
-    margin: 10px 0 0 0;
-  }
-  @include breakpoint(largeMobileScreen){
-    margin: 10px 0 0 0;
-  }
-  @include breakpoint(laptopScreen){
-    margin: -5px 0;
-  }
+.largePortfolioImage {
+	margin: -5px 0;
+	@include breakpoint(smallScreen) {
+		margin: 10px 0 0 0;
+	}
+	@include breakpoint(largeMobileScreen) {
+		margin: 10px 0 0 0;
+	}
+	@include breakpoint(laptopScreen) {
+		margin: -5px 0;
+	}
 }
-.doubleImageWrapper{
-  @include breakpoint(smallScreen){
-    margin-bottom: -8px;
-  }
-  @include breakpoint(largeMobileScreen){
-    margin-bottom: -8px;
-  }
-  @include breakpoint(laptopScreen){
-    margin-bottom: 0;
-  }
-}
-.doubleImageWrapper2{
-  @include breakpoint(smallScreen){
-    margin: 10px 0 -10px 0;
-  }
-  @include breakpoint(largeMobileScreen){
-    margin: 10px 0 -10px 0;
-  }
-  @include breakpoint(laptopScreen){
-    margin: 0;
-  }
-}
-.removeBottomMargin{
-	@include breakpoint(smallScreen){
+.doubleImageWrapper {
+	@include breakpoint(smallScreen) {
+		margin-bottom: -8px;
+	}
+	@include breakpoint(largeMobileScreen) {
+		margin-bottom: -8px;
+	}
+	@include breakpoint(laptopScreen) {
 		margin-bottom: 0;
 	}
-	@include breakpoint(largeMobileScreen){
+}
+.doubleImageWrapper2 {
+	@include breakpoint(smallScreen) {
+		margin: 10px 0 -10px 0;
+	}
+	@include breakpoint(largeMobileScreen) {
+		margin: 10px 0 -10px 0;
+	}
+	@include breakpoint(laptopScreen) {
+		margin: 0;
+	}
+}
+.removeBottomMargin {
+	@include breakpoint(smallScreen) {
 		margin-bottom: 0;
 	}
-	@include breakpoint(laptopScreen){
+	@include breakpoint(largeMobileScreen) {
+		margin-bottom: 0;
+	}
+	@include breakpoint(laptopScreen) {
 		margin-bottom: -7px;
 	}
 }
-.removeBottomMarginMobile{
-	@include breakpoint(smallScreen){
+.removeBottomMarginMobile {
+	@include breakpoint(smallScreen) {
 		margin-bottom: -10px;
 	}
-	@include breakpoint(largeMobileScreen){
+	@include breakpoint(largeMobileScreen) {
 		margin-bottom: -10px;
 	}
-	@include breakpoint(laptopScreen){
+	@include breakpoint(laptopScreen) {
 		margin-bottom: 0;
 	}
 }
-.testimonial{
-  max-width: 1050px;
-  margin: 0 auto;
-  padding: 10px;
-  @include breakpoint (laptopScreen) {
-    padding: 20px;
-  }
+.testimonial {
+	max-width: 1050px;
+	margin: 0 auto;
+	padding: 10px;
+	@include breakpoint(laptopScreen) {
+		padding: 20px;
+	}
 }
 .testimonialWrapper {
-  margin-bottom: 50px;
+	margin-bottom: 50px;
 }
 .projectCategory {
-  text-transform: capitalize;
+	text-transform: capitalize;
 }
 .videoWrapper {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 .postWrapper {
-  .post-thumbnail {
-    margin: 0 auto;
-  }
+	.post-thumbnail {
+		margin: 0 auto;
+	}
 }
 .nav-links-container {
-  margin-top: 50px;
-  .nav-links {
-    width: 100%;
-  	display: -webkit-box;
-  	display: -ms-flexbox;
-  	display: flex;
-    align-items: center;
-  }
-  .nav-previous, .nav-next {
-    font-size: 14px;
-    @include breakpoint (largeMobileScreen) {
-      font-size: 20px;
-    }
-    a {
-      background-color: $primaryGrey;
-      color: $white;
-      text-decoration: none;
-      padding: 10px;
-      transition: .3s ease all;
-      width: 100%;
-      display: inline-block;
-      &:hover{
-        background-color: $primaryYellow;
-        transition: .3s ease all;
-      }
-    }
-  }
-  .nav-next {
-    text-align: right;
-  }
-  .nav-back {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    a {
-      color: $primaryGrey;
-      text-decoration: none;
-    }
-  }
-  .back {
-  	display: flex;
-    flex-direction: column;
-  	align-items: center;
-  }
+	margin-top: 50px;
+	.nav-links {
+		width: 100%;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		align-items: center;
+	}
+	.nav-previous,
+	.nav-next {
+		font-size: 14px;
+		@include breakpoint(largeMobileScreen) {
+			font-size: 16px;
+		}
+		a {
+			background-color: $primaryGrey;
+			color: $white;
+			text-decoration: none;
+			padding: 10px;
+			transition: 0.3s ease all;
+			width: 100%;
+			display: inline-block;
+			&:hover {
+				background-color: $primaryYellow;
+				transition: 0.3s ease all;
+			}
+		}
+	}
+	.nav-next {
+		text-align: right;
+	}
+	.nav-back {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		a {
+			color: $primaryGrey;
+			text-decoration: none;
+		}
+	}
+	.back {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }
