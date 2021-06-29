@@ -72,13 +72,13 @@ get_header();
 									endif;
 									echo '</div>';
 								elseif( get_row_layout() == 'testimonial' ):
-									echo '<div class="fullWidth centerText greyBlock testimonialWrapper">';
+									echo '<div class="fullWidth greyBlock testimonialWrapper">';
 									echo '<div class="testimonial">';
 									echo '<p>' . get_sub_field('client_testimonial') . '</p>';
 									echo '<h5 class="noMargin">';
 									echo get_sub_field('testminonial_author');
 									echo '</h5>';
-									echo '<div class="centerUnderline"></div>';
+									echo '<div class="underline"></div>';
 									echo '<p>' . get_sub_field('author_title') . '</p>';
 									echo '</div>';
 									echo '</div>';

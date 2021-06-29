@@ -36,8 +36,6 @@
 					<div class="entry-content">
 						<?php
 							the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark" class="blogTitleLink">', '</a></h2>' );
-							foxStructuresresponsive_posted_on();
-							foxStructuresresponsive_posted_by();
 							the_excerpt();
 						?>
 					</div><!-- .entry-content -->
